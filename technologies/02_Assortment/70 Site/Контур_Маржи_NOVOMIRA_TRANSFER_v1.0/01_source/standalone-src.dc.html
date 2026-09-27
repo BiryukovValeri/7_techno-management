@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Контур Маржи — технология управления маржей ассортимента в омниканальных продажах | C-Level Insight</title>
+<meta name="description" content="Контур Маржи показывает, где товарная позиция в канале теряет управляемую прибыль, и закрепляет за красной зоной владельца, решение, срок и метрику проверки. Вход — платная Диагностика.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://c-level-insight.ru/kontur-marzhi/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://c-level-insight.ru/kontur-marzhi/">
+<meta property="og:site_name" content="C-Level Insight">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Контур Маржи — управляемая маржа ассортимента">
+<meta property="og:description" content="Где товар и канал теряют управляемую прибыль: карта утечки, красная зона SKU × канал, владелец решения и проверка на 30-60-90.">
+<meta property="og:image" content="https://c-level-insight.ru/kontur-marzhi/og-kontur-marzhi.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"Organization","@id":"https://c-level-insight.ru/#org","name":"C-Level Insight","url":"https://c-level-insight.ru/","description":"Платформа управленческих технологий для C-level: семь технологий, включая Контур Маржи."},
+ {"@type":"WebPage","@id":"https://c-level-insight.ru/kontur-marzhi/","name":"Контур Маржи — технология управления маржей ассортимента","isPartOf":{"@id":"https://c-level-insight.ru/#org"},"inLanguage":"ru-RU","about":"Управляемая маржа ассортимента в омниканальных продажах"},
+ {"@type":"Service","name":"Контур Маржи","provider":{"@id":"https://c-level-insight.ru/#org"},"serviceType":"Технология управления ассортиментной прибылью","areaServed":"RU","hasOfferCatalog":{"@type":"OfferCatalog","name":"Продуктовая линейка","itemListElement":[
+   {"@type":"Offer","name":"Диагностика","description":"Первый платный вход: карта потерь, красные зоны, метрики проверки, контрольный вердикт."},
+   {"@type":"Offer","name":"Сессия","description":"Красная зона превращается в решение: коридор цены, условие промо, правило по запасу."},
+   {"@type":"Offer","name":"Спринт 30-60-90","description":"Проверка решения на ассортиментном контуре."},
+   {"@type":"Offer","name":"Сопровождение","description":"Контур работает в ритме компании без внешнего участия."}]}},
+ {"@type":"FAQPage","mainEntity":[
+   {"@type":"Question","name":"Чем это отличается от BI-панели, которая у нас уже есть?","acceptedAnswer":{"@type":"Answer","text":"Панель показывает состояние. Контур Маржи назначает владельца, решение, срок и метрику проверки по строке SKU × канал, и не требует новой системы."}},
+   {"@type":"Question","name":"Почему Диагностика платная?","acceptedAnswer":{"@type":"Answer","text":"Диагностика — работа с данными компании и первая карта потерь. Результат остаётся у компании независимо от продолжения работы."}},
+   {"@type":"Question","name":"Какие данные нужны на входе?","acceptedAnswer":{"@type":"Answer","text":"Продажи по позициям и каналам, цена и промо, комиссии каналов, логистика, возвраты и запас."}},
+   {"@type":"Question","name":"Кто участвует со стороны компании?","acceptedAnswer":{"@type":"Answer","text":"Роли с мандатом: коммерция, категорийное управление, финансы, операции."}},
+   {"@type":"Question","name":"Что если после Диагностики продолжать не нужно?","acceptedAnswer":{"@type":"Answer","text":"Право на STOP сохраняется у обеих сторон. Вердикт No Fit означает, что технология сейчас не уместна."}},
+   {"@type":"Question","name":"Технология остаётся у команды или требует сопровождения?","acceptedAnswer":{"@type":"Answer","text":"Контур проектируется так, чтобы работать без внешнего участия. Сопровождение — ритм проверки, а не условие работоспособности."}}]}
+]}
+</script>
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#07141F">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#07141F"></rect>
+    <rect x="180" y="360" width="120" height="240" rx="22" fill="#1B2C3D"></rect>
+    <rect x="330" y="320" width="120" height="280" rx="22" fill="#22364A"></rect>
+    <rect x="480" y="345" width="120" height="255" rx="22" fill="#1B2C3D"></rect>
+    <rect x="640" y="290" width="70" height="310" rx="22" fill="#8F1616"></rect>
+    <rect x="750" y="325" width="120" height="275" rx="22" fill="#24384C"></rect>
+    <rect x="900" y="370" width="120" height="230" rx="22" fill="#162838"></rect>
+    <rect x="150" y="436" width="900" height="8" rx="4" fill="#C97F4D"></rect>
+    <rect x="180" y="200" width="420" height="30" rx="15" fill="#F3EBDD"></rect>
+    <rect x="180" y="252" width="280" height="30" rx="15" fill="#F3EBDD" opacity="0.45"></rect>
+    <rect x="180" y="660" width="320" height="52" rx="26" fill="#F3EBDD"></rect>
+  </svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/c-level-insight-design-system-27a32f2d-6669-45e2-9bfb-403566f2ed97/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/c-level-insight-design-system-27a32f2d-6669-45e2-9bfb-403566f2ed97/tokens/colors.css">
+<link rel="stylesheet" href="_ds/c-level-insight-design-system-27a32f2d-6669-45e2-9bfb-403566f2ed97/tokens/typography.css">
+<link rel="stylesheet" href="_ds/c-level-insight-design-system-27a32f2d-6669-45e2-9bfb-403566f2ed97/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/c-level-insight-design-system-27a32f2d-6669-45e2-9bfb-403566f2ed97/tokens/border.css">
+<link rel="stylesheet" href="_ds/c-level-insight-design-system-27a32f2d-6669-45e2-9bfb-403566f2ed97/tokens/elevation.css">
+<link rel="stylesheet" href="_ds/c-level-insight-design-system-27a32f2d-6669-45e2-9bfb-403566f2ed97/tokens/motion.css">
+<link rel="stylesheet" href="_ds/c-level-insight-design-system-27a32f2d-6669-45e2-9bfb-403566f2ed97/tokens/base.css">
+<link rel="stylesheet" href="_ds/c-level-insight-design-system-27a32f2d-6669-45e2-9bfb-403566f2ed97/styles.css">
+<script src="_ds/c-level-insight-design-system-27a32f2d-6669-45e2-9bfb-403566f2ed97/_ds_bundle.js"></script>
+<script src="./assets/image-slot.js"></script>
+<style>
+  body { margin: 0; background: #F3EBDD; font-family: "IBM Plex Sans", system-ui, sans-serif; color: #111827; }
+  a { color: #0F766E; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: #115E59; text-decoration-thickness: 2px; }
+  *:focus-visible { outline: 2px solid #B46A3C; outline-offset: 2px; }
+  @keyframes cmDraw { from { transform: scaleX(0); opacity: 0; } to { transform: scaleX(1); opacity: 1; } }
+  @keyframes cmRise { from { transform: translateY(18px); opacity: 0; } to { transform: none; opacity: 1; } }
+  @keyframes cmFade { from { opacity: 0; } to { opacity: 1; } }
+  /* Breakpoints — the only rules that cannot live inline. Mobile is a separate
+     composition: desk-only layers hide, mobile-only layers appear. */
+  [data-hd-name], [data-hd-links] a, [data-hd-links] { white-space: nowrap; }
+  @media (max-width: 1250px) {
+    [data-hd-links] { display: none !important; }
+    [data-hd-cta] { display: inline-block !important; }
+    [data-rail] { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+    [data-row3] { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  }
+  @media (max-width: 900px) {
+    html, body { overflow-x: hidden; }
+    [data-desk] { display: none !important; }
+    [data-mob] { display: block !important; }
+    [data-band] { padding: 56px 20px 64px !important; }
+    [data-split] { grid-template-columns: minmax(0, 1fr) !important; gap: 28px !important; }
+    [data-row3], [data-row4] { grid-template-columns: minmax(0, 1fr) !important; gap: 16px !important; }
+    [data-t-h2] { font-size: 28px !important; line-height: 1.15 !important; }
+    [data-t-h3] { font-size: 20px !important; }
+    [data-lead] { font-size: 17px !important; }
+    [data-pad] { padding: 20px !important; }
+    [data-scene-m] { min-height: 0 !important; height: auto !important; }
+    [data-rail] { grid-template-columns: minmax(0, 1fr) !important; }
+    [data-form] { grid-template-columns: minmax(0, 1fr) !important; }
+    [data-foot] { flex-direction: column !important; align-items: flex-start !important; gap: 24px !important; }
+    /* Mobile hero is its own composition, not a cropped desktop one. */
+    [data-hero] { min-height: 0 !important; }
+    [data-hero-head] { padding: 18px 20px !important; gap: 12px !important; }
+    [data-hd-sub] { display: none !important; }
+    [data-hd-cta] { flex: none; padding: 11px 16px !important; font-size: 13px !important; }
+    [data-hd-name] { font-size: 20px !important; }
+    [data-hero-body] { padding: 22px 20px 28px !important; max-width: none !important; }
+    [data-t-hero] { font-size: 34px !important; line-height: 1.08 !important; }
+    [data-hero-cta] { flex-direction: column !important; align-items: stretch !important; gap: 12px !important; margin-top: 28px !important; }
+    [data-hero-cta] a { text-align: center; padding: 17px 20px !important; font-size: 15px !important; }
+    [data-cta-long] { display: none !important; }
+    [data-cta-short] { display: inline !important; }
+    [data-hero-strip] { background: rgba(28,48,68,.92) !important; }
+    [data-hero-strip] { margin: 0 20px 28px !important; grid-template-columns: minmax(0, 1fr) !important; gap: 18px !important; padding: 22px !important; border-radius: 20px !important; }
+    [data-hero-strip] a { text-align: left !important; }
+    [data-hero-scene] { top: 34% !important; height: 34% !important; left: 0 !important; right: 0 !important; }
+    /* Section rail: readable horizontal scroll with a visible start */
+    [data-rail-scroll] { padding: 10px 20px 10px 20px !important; gap: 6px !important; scroll-padding-left: 20px; scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch; mask-image: linear-gradient(90deg, #000 0, #000 88%, transparent 100%); }
+    [data-rail-scroll] a { scroll-snap-align: start; padding: 10px 12px !important; }
+    [data-mat-card] { grid-template-columns: 64px minmax(0, 1fr) !important; gap: 16px !important; padding: 18px !important; }
+    /* Desktop label/number columns collapse instead of squeezing the text column */
+    [data-num-row] { grid-template-columns: minmax(0, 1fr) !important; gap: 8px !important; padding: 24px 22px !important; }
+    [data-kv-row] { grid-template-columns: minmax(0, 1fr) !important; gap: 4px 0 !important; }
+    [data-kv-row] > div:nth-child(odd) { padding-top: 12px !important; }
+    [data-isnot-row] { grid-template-columns: minmax(0, 1fr) !important; }
+    [data-isnot-row] > div:first-child { border-right: none !important; border-bottom: 1px solid #D8CFBE !important; padding-bottom: 14px !important; }
+    [data-mat-card] > div:first-child { width: 64px !important; height: 64px !important; }
+  }
+  @media (max-width: 380px) {
+    [data-t-hero] { font-size: 30px !important; }
+    [data-t-h2] { font-size: 25px !important; }
+    [data-band] { padding: 48px 16px 56px !important; }
+    [data-hero-head], [data-hero-body] { padding-left: 16px !important; padding-right: 16px !important; }
+    [data-hero-strip] { margin: 0 16px 24px !important; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+</helmet>
+
+<div id="top" style="background: #F3EBDD; min-height: 100vh;">
+
+  <!-- ======================= HERO ======================= -->
+  <div data-screen-label="Hero" data-scene data-hero style="position: relative; min-height: 92vh; background: #07141F; overflow: hidden;">
+    <div data-slot-layer style="position: absolute; inset: 0; opacity: 0; z-index: 0;">
+      <image-slot id="cm-hero" shape="rect" fit="cover" placeholder="Кинематографическая сцена управляемой маржи"></image-slot>
+    </div>
+    <div data-scene-art style="position: absolute; inset: 0; z-index: 1;">
+      <div style="position: absolute; inset: 0; background: radial-gradient(120% 90% at 18% 8%, rgba(232,205,182,.22) 0%, rgba(11,31,51,.10) 42%, #07141F 78%);"></div>
+      <div data-desk style="position: absolute; left: -6%; right: -6%; top: 26%; height: 60%; display: flex; align-items: flex-end; gap: 26px; transform: perspective(1400px) rotateX(16deg); transform-origin: center bottom;">
+        <div style="flex: 1; height: 46%; border-radius: 18px 18px 4px 4px; background: linear-gradient(#1B2C3D, #0A1826); box-shadow: inset 0 1px 0 rgba(232,205,182,.16);"></div>
+        <div style="flex: 1; height: 62%; border-radius: 18px 18px 4px 4px; background: linear-gradient(#22364A, #0A1826); box-shadow: inset 0 1px 0 rgba(232,205,182,.2);"></div>
+        <div style="flex: 1; height: 54%; border-radius: 18px 18px 4px 4px; background: linear-gradient(#1B2C3D, #091420); box-shadow: inset 0 1px 0 rgba(232,205,182,.14);"></div>
+        <div style="flex: 1.15; height: 78%; border-radius: 20px 20px 4px 4px; background: linear-gradient(#2A3E52, #0B1A29); box-shadow: inset 0 1px 0 rgba(232,205,182,.24);"></div>
+        <div style="flex: .5; height: 88%; border-radius: 20px 20px 4px 4px; background: linear-gradient(rgba(143,22,22,.9), rgba(58,14,18,.75)); box-shadow: 0 0 40px 10px rgba(185,28,28,.3), inset 0 1px 0 rgba(238,200,200,.35);"></div>
+        <div style="flex: 1.15; height: 70%; border-radius: 20px 20px 4px 4px; background: linear-gradient(#24384C, #0A1826); box-shadow: inset 0 1px 0 rgba(232,205,182,.2);"></div>
+        <div style="flex: 1; height: 58%; border-radius: 18px 18px 4px 4px; background: linear-gradient(#1B2C3D, #091420); box-shadow: inset 0 1px 0 rgba(232,205,182,.14);"></div>
+        <div style="flex: 1; height: 44%; border-radius: 18px 18px 4px 4px; background: linear-gradient(#162838, #081422);"></div>
+      </div>
+      <div data-mob data-hero-scene style="display: none; position: absolute; left: 0; right: 0; top: 34%; height: 34%; padding: 0 20px;">
+        <div style="display: flex; align-items: flex-end; gap: 10px; height: 100%;">
+          <div style="flex: 1; height: 54%; border-radius: 14px 14px 3px 3px; background: linear-gradient(#1B2C3D, #0A1826);"></div>
+          <div style="flex: 1.2; height: 78%; border-radius: 16px 16px 3px 3px; background: linear-gradient(#2A3E52, #0B1A29);"></div>
+          <div style="flex: .5; height: 100%; border-radius: 16px 16px 3px 3px; background: linear-gradient(rgba(143,22,22,.92), rgba(58,14,18,.78)); box-shadow: 0 0 30px 8px rgba(185,28,28,.34);"></div>
+          <div style="flex: 1.1; height: 68%; border-radius: 16px 16px 3px 3px; background: linear-gradient(#24384C, #0A1826);"></div>
+          <div style="flex: 1; height: 48%; border-radius: 14px 14px 3px 3px; background: linear-gradient(#162838, #081422);"></div>
+        </div>
+      </div>
+      <div style="position: absolute; left: 0; right: 0; top: 52%; height: 3px; z-index: 2; background: linear-gradient(90deg, rgba(201,127,77,0), #C97F4D 14%, #E8CDB6 44%, rgba(201,127,77,.1) 52%, #C97F4D 64%, rgba(201,127,77,0) 96%); box-shadow: 0 0 18px 4px rgba(201,127,77,.3); transform-origin: left center; animation: cmDraw 1.1s cubic-bezier(.22,.61,.36,1) both;"></div>
+      <div style="position: absolute; left: 0; right: 0; bottom: 0; height: 74%; z-index: 3; background: linear-gradient(rgba(7,20,31,0), rgba(4,10,16,.92));"></div>
+      <div style="position: absolute; inset: 0; z-index: 4; background: radial-gradient(90% 70% at 50% 45%, rgba(0,0,0,0) 40%, rgba(0,0,0,.55) 100%);"></div>
+    </div>
+
+    <div data-hero-head style="position: relative; z-index: 6; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 30px 56px;">
+      <div style="display: flex; align-items: baseline; gap: 14px;">
+        <span data-hd-name style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 22px; color: #F3EBDD;">Контур Маржи</span>
+        <span data-hd-sub style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: rgba(243,235,221,.62);">C-Level Insight</span>
+      </div>
+      <div data-desk data-hd-links style="display: flex; align-items: center; gap: 32px; font-size: 15px; color: rgba(243,235,221,.86);">
+        <a href="#tech" style="color: inherit; text-decoration: none;" style-hover="color:#FFFFFF">Технология</a>
+        <a href="#leak" style="color: inherit; text-decoration: none;" style-hover="color:#FFFFFF">Где течёт маржа</a>
+        <a href="#ladder" style="color: inherit; text-decoration: none;" style-hover="color:#FFFFFF">Как работает</a>
+        <a href="#cases" style="color: inherit; text-decoration: none;" style-hover="color:#FFFFFF">Кейсы</a>
+        <a href="#materials" style="color: inherit; text-decoration: none;" style-hover="color:#FFFFFF">Материалы</a>
+        <a href="#request" style="border-radius: 999px; background: rgba(243,235,221,.1); border: 1px solid rgba(243,235,221,.4); padding: 13px 22px; color: #F3EBDD; font-size: 15px; font-weight: 600; text-decoration: none;" style-hover="background:rgba(243,235,221,.2)">Диагностика</a>
+      </div>
+      <a data-mob data-hd-cta href="#request" style="display: none; white-space: nowrap; border-radius: 999px; background: rgba(243,235,221,.12); border: 1px solid rgba(243,235,221,.42); padding: 12px 18px; color: #F3EBDD; font-size: 14px; font-weight: 600; text-decoration: none;">Диагностика</a>
+    </div>
+
+    <div data-hero-body style="position: relative; z-index: 6; padding: 110px 56px 44px; max-width: 1000px; animation: cmRise .8s cubic-bezier(.22,.61,.36,1) .15s both;">
+      <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 28px;">
+        <span style="width: 56px; height: 2px; background: #C97F4D; border-radius: 2px;"></span>
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .22em; text-transform: uppercase; color: rgba(243,235,221,.9);">Управляемая маржа ассортимента</span>
+      </div>
+      <h1 data-t-hero style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 78px; line-height: 1.03; color: #F3EBDD; text-wrap: pretty;">Прибыль уходит тихо<br>и всегда в одном месте</h1>
+      <p data-lead style="font-size: 21px; line-height: 1.55; color: rgba(243,235,221,.82); max-width: 52ch; margin: 28px 0 0;">Контур Маржи находит это место — строку SKU × канал — и закрепляет за ней владельца, решение и метрику проверки.</p>
+      <div data-hero-cta style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 40px;">
+        <a href="#request" style="border-radius: 999px; background: #F3EBDD; color: #0B1F33; font-size: 16px; font-weight: 600; padding: 19px 32px; text-decoration: none; box-shadow: 0 18px 40px -18px rgba(243,235,221,.5); transition: background 120ms cubic-bezier(.22,.61,.36,1);" style-hover="background:#FFFFFF"><span data-cta-long>Запросить платную Диагностику</span><span data-cta-short style="display: none;">Платная Диагностика</span></a>
+        <a href="#tech" style="border-radius: 999px; border: 1px solid rgba(243,235,221,.45); color: #F3EBDD; font-size: 16px; font-weight: 600; padding: 18px 30px; background: rgba(23,41,60,.5); text-decoration: none; transition: background 120ms cubic-bezier(.22,.61,.36,1);" style-hover="background:rgba(23,41,60,.9)">Посмотреть, как работает контур →</a>
+      </div>
+    </div>
+
+    <div data-hero-strip style="position: relative; z-index: 6; margin: 0 56px 44px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) auto; gap: 36px; align-items: center; background: rgba(23,41,60,.78); border: 1px solid rgba(243,235,221,.16); border-radius: 24px; padding: 28px 34px; backdrop-filter: blur(8px); animation: cmRise .8s cubic-bezier(.22,.61,.36,1) .45s both;" data-row4>
+      <div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #C97F4D; margin-bottom: 10px;">Место</div>
+        <div style="font-size: 16px; line-height: 1.5; color: rgba(243,235,221,.9);">Потеря получает адрес: позиция в канале, а не средняя цифра</div>
+      </div>
+      <div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #BFE0DC; margin-bottom: 10px;">Владелец</div>
+        <div style="font-size: 16px; line-height: 1.5; color: rgba(243,235,221,.9);">У красной зоны появляется имя, срок и метрика проверки</div>
+      </div>
+      <div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #C97F4D; margin-bottom: 10px;">Маршрут</div>
+        <div style="font-size: 16px; line-height: 1.5; color: rgba(243,235,221,.9);">Цена, промо, комиссия, логистика, возвраты и запас — один контур</div>
+      </div>
+      <a href="#opportunity" style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: rgba(243,235,221,.7); text-align: right; line-height: 1.9; white-space: nowrap; text-decoration: none;" style-hover="color:#F3EBDD">Смотреть карту ↓</a>
+    </div>
+  </div>
+
+  <!-- ======================= SECTION RAIL ======================= -->
+  <div data-nav style="position: sticky; top: 0; z-index: 40; background: rgba(250,246,238,.94); border-bottom: 1px solid #D8CFBE; backdrop-filter: blur(8px);">
+    <div data-rail-scroll style="display: flex; gap: 8px; overflow-x: auto; padding: 12px 56px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase;">
+      <a data-navlink href="#opportunity" style="padding: 10px 14px; border-radius: 999px; color: #475569; text-decoration: none; white-space: nowrap;" style-hover="background:#F3EBDD;color:#0B1F33">Что открывает</a>
+      <a data-navlink href="#situation" style="padding: 10px 14px; border-radius: 999px; color: #475569; text-decoration: none; white-space: nowrap;" style-hover="background:#F3EBDD;color:#0B1F33">Ситуация</a>
+      <a data-navlink href="#tech" style="padding: 10px 14px; border-radius: 999px; color: #475569; text-decoration: none; white-space: nowrap;" style-hover="background:#F3EBDD;color:#0B1F33">Ядро</a>
+      <a data-navlink href="#leak" style="padding: 10px 14px; border-radius: 999px; color: #475569; text-decoration: none; white-space: nowrap;" style-hover="background:#F3EBDD;color:#0B1F33">Где течёт</a>
+      <a data-navlink href="#redzone" style="padding: 10px 14px; border-radius: 999px; color: #475569; text-decoration: none; white-space: nowrap;" style-hover="background:#F3EBDD;color:#0B1F33">Красная зона</a>
+      <a data-navlink href="#isnot" style="padding: 10px 14px; border-radius: 999px; color: #475569; text-decoration: none; white-space: nowrap;" style-hover="background:#F3EBDD;color:#0B1F33">Это не</a>
+      <a data-navlink href="#ladder" style="padding: 10px 14px; border-radius: 999px; color: #475569; text-decoration: none; white-space: nowrap;" style-hover="background:#F3EBDD;color:#0B1F33">Продуктовая линейка</a>
+      <a data-navlink href="#gallery" style="padding: 10px 14px; border-radius: 999px; color: #475569; text-decoration: none; white-space: nowrap;" style-hover="background:#F3EBDD;color:#0B1F33">Визуализации</a>
+      <a data-navlink href="#cases" style="padding: 10px 14px; border-radius: 999px; color: #475569; text-decoration: none; white-space: nowrap;" style-hover="background:#F3EBDD;color:#0B1F33">Кейсы</a>
+      <a data-navlink href="#materials" style="padding: 10px 14px; border-radius: 999px; color: #475569; text-decoration: none; white-space: nowrap;" style-hover="background:#F3EBDD;color:#0B1F33">Материалы</a>
+      <a data-navlink href="#scope" style="padding: 10px 14px; border-radius: 999px; color: #475569; text-decoration: none; white-space: nowrap;" style-hover="background:#F3EBDD;color:#0B1F33">Границы</a>
+      <a data-navlink href="#faq" style="padding: 10px 14px; border-radius: 999px; color: #475569; text-decoration: none; white-space: nowrap;" style-hover="background:#F3EBDD;color:#0B1F33">FAQ</a>
+    </div>
+  </div>
+
+  <!-- ======================= ЧТО ОТКРЫВАЕТ ======================= -->
+  <div id="opportunity" data-screen-label="Что открывает" data-band data-reveal style="background: #F3EBDD; padding: 96px 56px 104px;">
+    <div style="display: grid; grid-template-columns: 38% minmax(0, 1fr); gap: 64px; align-items: start; max-width: 1520px; margin: 0 auto;" data-split>
+      <div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: #B46A3C; margin-bottom: 20px;">Что открывает Контур Маржи</div>
+        <h2 data-t-h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 44px; line-height: 1.12; color: #0B1F33; text-wrap: pretty;">Что становится управляемым</h2>
+        <p data-lead style="font-size: 18px; line-height: 1.6; color: #475569; margin: 24px 0 0; max-width: 40ch;">Цена, промо, комиссия канала, логистика, возвраты и запас собираются вокруг результата позиции, а не вокруг отделов.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+        <div data-num-row style="display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 22px; align-items: baseline; background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 20px; padding: 30px 34px; box-shadow: 0 1px 2px rgba(11,31,51,.05), 0 14px 34px -22px rgba(11,31,51,.3); transition: transform 200ms cubic-bezier(.22,.61,.36,1), box-shadow 200ms cubic-bezier(.22,.61,.36,1);" style-hover="transform:translateY(-2px);box-shadow:0 1px 2px rgba(11,31,51,.05),0 22px 44px -24px rgba(11,31,51,.4)">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 24px; color: #B46A3C;">01</div>
+          <div>
+            <div data-t-h3 style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 23px; color: #0B1F33; margin-bottom: 10px;">Адрес потери</div>
+            <div style="font-size: 17px; line-height: 1.6; color: #475569;">Потеря перестаёт быть средней цифрой: у неё есть позиция, канал и причина.</div>
+          </div>
+        </div>
+        <div data-num-row style="display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 22px; align-items: baseline; background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 20px; padding: 30px 34px; box-shadow: 0 1px 2px rgba(11,31,51,.05), 0 14px 34px -22px rgba(11,31,51,.3); transition: transform 200ms cubic-bezier(.22,.61,.36,1), box-shadow 200ms cubic-bezier(.22,.61,.36,1);" style-hover="transform:translateY(-2px);box-shadow:0 1px 2px rgba(11,31,51,.05),0 22px 44px -24px rgba(11,31,51,.4)">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 24px; color: #0F766E;">02</div>
+          <div>
+            <div data-t-h3 style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 23px; color: #0B1F33; margin-bottom: 10px;">Владелец решения</div>
+            <div style="font-size: 17px; line-height: 1.6; color: #475569;">У каждой красной зоны есть имя, срок и метрика проверки — зона выходит из состояния наблюдения.</div>
+          </div>
+        </div>
+        <div data-num-row style="display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 22px; align-items: baseline; background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 20px; padding: 30px 34px; box-shadow: 0 1px 2px rgba(11,31,51,.05), 0 14px 34px -22px rgba(11,31,51,.3); transition: transform 200ms cubic-bezier(.22,.61,.36,1), box-shadow 200ms cubic-bezier(.22,.61,.36,1);" style-hover="transform:translateY(-2px);box-shadow:0 1px 2px rgba(11,31,51,.05),0 22px 44px -24px rgba(11,31,51,.4)">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 24px; color: #B46A3C;">03</div>
+          <div>
+            <div data-t-h3 style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 23px; color: #0B1F33; margin-bottom: 10px;">Коридор цены и промо</div>
+            <div style="font-size: 17px; line-height: 1.6; color: #475569;">Цена и промо задаются от чистого вклада позиции в канале, а не от логики категории.</div>
+          </div>
+        </div>
+        <div data-num-row style="display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 22px; align-items: baseline; background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 20px; padding: 30px 34px; box-shadow: 0 1px 2px rgba(11,31,51,.05), 0 14px 34px -22px rgba(11,31,51,.3); transition: transform 200ms cubic-bezier(.22,.61,.36,1), box-shadow 200ms cubic-bezier(.22,.61,.36,1);" style-hover="transform:translateY(-2px);box-shadow:0 1px 2px rgba(11,31,51,.05),0 22px 44px -24px rgba(11,31,51,.4)">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 24px; color: #0F766E;">04</div>
+          <div>
+            <div data-t-h3 style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 23px; color: #0B1F33; margin-bottom: 10px;">Ритм проверки</div>
+            <div style="font-size: 17px; line-height: 1.6; color: #475569;">Решение проверяется на горизонте 30-60-90, а не обсуждается повторно на следующем совещании.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================= СИТУАЦИЯ КЛИЕНТА ======================= -->
+  <div id="situation" data-screen-label="Ситуация" data-band data-reveal style="background: #E8E1D5; padding: 88px 56px 96px;">
+    <div style="max-width: 1520px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) 42%; gap: 64px; align-items: center;" data-split>
+      <div style="background: #FAF6EE; border-radius: 24px; padding: 20px; box-shadow: 0 2px 4px rgba(11,31,51,.06), 0 30px 70px -34px rgba(11,31,51,.42);" data-viz data-viz-title="Средняя маржа не показывает, где именно течёт прибыль" data-viz-caption="Одна средняя цифра может скрывать несколько красных строк SKU × канал.">
+        <div style="border-radius: 14px; overflow: hidden; background: #F3EBDD;">
+          <img data-ba-img src="assets/vizw/viz-02-average-hides.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Средняя маржа не показывает, где именно течёт прибыль: матрица SKU × канал" style="display: block; width: 100%; height: auto;">
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 18px 12px 6px;">
+          <div data-viz-cap style="font-size: 15px; line-height: 1.5; color: #475569;">Одна средняя цифра может скрывать несколько красных строк SKU × канал.</div>
+          <button type="button" onClick="{{ openViz }}" style="flex: none; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; background: none; border: 1px solid #0F766E; border-radius: 999px; padding: 12px 18px; cursor: pointer; min-height: 44px;" style-hover="background:#0F766E;color:#FAF6EE">Открыть ↗</button>
+        </div>
+      </div>
+      <div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: #B46A3C; margin-bottom: 20px;">Ситуация</div>
+        <h2 data-t-h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 42px; line-height: 1.12; color: #0B1F33; text-wrap: pretty;">Выручка видна. Управляемая маржа — нет.</h2>
+        <p data-lead style="font-size: 18px; line-height: 1.6; color: #475569; margin: 24px 0 0;">Отчёт показывает итог по категории и каналу. Решение принимается по строке: позиция в канале, где цена, промо, комиссия и возвраты сходятся в один результат.</p>
+        <p style="font-size: 17px; line-height: 1.6; color: #475569; margin: 18px 0 0;">Переключатель меняет состояние схемы: макет не сдвигается.</p>
+        <div style="display: inline-flex; gap: 4px; margin-top: 30px; background: #F3EBDD; border: 1px solid #D8CFBE; border-radius: 999px; padding: 4px;">
+          <button type="button" data-layer="avg" data-layer-btn onClick="{{ switchLayer }}" style="border: none; border-radius: 999px; padding: 14px 22px; font-size: 15px; font-weight: 600; cursor: pointer; min-height: 44px; background: #0B1F33; color: #F3EBDD;">Средняя цифра</button>
+          <button type="button" data-layer="managed" data-layer-btn onClick="{{ switchLayer }}" style="border: none; border-radius: 999px; padding: 14px 22px; font-size: 15px; font-weight: 600; cursor: pointer; min-height: 44px; background: transparent; color: #0B1F33;">Управляемая строка</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================= ЯДРО ТЕХНОЛОГИИ ======================= -->
+  <div id="tech" data-screen-label="Ядро технологии" data-band data-reveal style="background: #F3EBDD; padding: 96px 56px 104px;">
+    <div style="max-width: 1520px; margin: 0 auto;">
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 48px; border-bottom: 2px solid #0B1F33; padding-bottom: 22px; margin-bottom: 52px;" data-foot>
+        <div>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: #B46A3C; margin-bottom: 16px;">Ядро технологии</div>
+          <h2 data-t-h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 42px; line-height: 1.12; color: #0B1F33;">Один контур от строки до эффекта</h2>
+        </div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #475569; text-align: right; line-height: 1.9;">Клиентский слой<br>Architecture flow</div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0, 1fr) 46%; gap: 64px; align-items: center;" data-split>
+        <div>
+          <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: #0B1F33;">
+            <span style="background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 999px; padding: 12px 18px;">SKU × канал</span>
+            <span style="color: #B46A3C;">→</span>
+            <span style="background: rgba(185,28,28,.08); border: 1px solid rgba(185,28,28,.4); border-radius: 999px; padding: 12px 18px; color: #B91C1C;">Красная зона</span>
+            <span style="color: #B46A3C;">→</span>
+            <span style="background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 999px; padding: 12px 18px;">Владелец</span>
+            <span style="color: #B46A3C;">→</span>
+            <span style="background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 999px; padding: 12px 18px;">Решение</span>
+            <span style="color: #B46A3C;">→</span>
+            <span style="background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 999px; padding: 12px 18px;">Проверка</span>
+            <span style="color: #B46A3C;">→</span>
+            <span style="background: rgba(15,118,110,.1); border: 1px solid rgba(15,118,110,.4); border-radius: 999px; padding: 12px 18px; color: #0F766E;">Эффект при условиях</span>
+          </div>
+          <p data-lead style="font-size: 18px; line-height: 1.6; color: #475569; margin: 32px 0 0; max-width: 52ch;">Контур замыкается только целиком. Строка без владельца остаётся наблюдением, решение без метрики проверки — мнением, эффект без выполненных условий — обещанием.</p>
+          <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 34px;" data-row3>
+            <div style="background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 18px; padding: 24px 26px;">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B46A3C; margin-bottom: 12px;">Единица работы</div>
+              <div style="font-size: 17px; line-height: 1.55; color: #0B1F33;">Строка: товарная позиция в конкретном канале продаж.</div>
+            </div>
+            <div style="background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 18px; padding: 24px 26px;">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #0F766E; margin-bottom: 12px;">Единица решения</div>
+              <div style="font-size: 17px; line-height: 1.55; color: #0B1F33;">Коридор цены, условие входа в промо, правило по запасу.</div>
+            </div>
+          </div>
+        </div>
+        <div style="background: #FAF6EE; border-radius: 24px; padding: 20px; box-shadow: 0 2px 4px rgba(11,31,51,.06), 0 30px 70px -34px rgba(11,31,51,.42);" data-viz data-viz-title="Контур Маржи: от SKU × канал к решению" data-viz-caption="Товарная строка становится управляемой, когда у красной зоны есть владелец, решение и проверка.">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #475569; padding: 6px 10px 14px; display: flex; justify-content: space-between; gap: 16px;">
+            <span>Визуализация 01</span><span>Клиентский слой</span>
+          </div>
+          <img src="assets/vizw/viz-01-core.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Контур Маржи: от SKU × канал к решению" style="display: block; width: 100%; height: auto; border-radius: 14px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 18px 12px 6px;">
+            <div style="font-size: 15px; line-height: 1.5; color: #475569;">Товарная строка становится управляемой, когда у красной зоны есть владелец, решение и проверка.</div>
+            <button type="button" onClick="{{ openViz }}" style="flex: none; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; background: none; border: 1px solid #0F766E; border-radius: 999px; padding: 12px 18px; cursor: pointer; min-height: 44px;" style-hover="background:#0F766E;color:#FAF6EE">Открыть ↗</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================= ГДЕ ТЕЧЁТ МАРЖА (сцена) ======================= -->
+  <div id="leak" data-screen-label="Где течёт маржа" data-scene data-scene-m style="position: relative; height: 760px; background: #07141F; overflow: hidden;">
+    <div data-slot-layer style="position: absolute; inset: 0; opacity: 0; z-index: 0;">
+      <image-slot id="cm-leak" shape="rect" fit="cover" placeholder="Сцена утечки: тёплый медный свет на матовой тёмной поверхности"></image-slot>
+    </div>
+    <div data-scene-art style="position: absolute; inset: 0; z-index: 1;">
+      <div style="position: absolute; inset: 0; background: linear-gradient(140deg, #0B1F33 0%, #07141F 55%, #0D1B28 100%);"></div>
+      <div style="position: absolute; right: -4%; top: -10%; width: 62%; height: 120%; background: radial-gradient(58% 58% at 40% 40%, rgba(232,205,182,.16), rgba(11,31,51,0) 72%);"></div>
+      <div data-desk style="position: absolute; left: 46%; top: 0; bottom: 0; width: 30%; background: linear-gradient(#1E3145, #0D1B29 70%); border-radius: 60px 0 0 60px; box-shadow: -40px 0 120px -40px rgba(0,0,0,.8);"></div>
+      <div data-desk style="position: absolute; left: 76%; top: 0; bottom: 0; width: 26%; background: linear-gradient(#162838, #091420); border-radius: 60px 0 0 0;"></div>
+      <div style="position: absolute; left: 75.4%; top: 8%; bottom: 8%; width: 12px; border-radius: 999px; background: linear-gradient(rgba(185,28,28,0), #B91C1C 34%, #EEC8C8 50%, #B91C1C 66%, rgba(185,28,28,0)); box-shadow: 0 0 34px 10px rgba(185,28,28,.4); animation: cmFade 1.4s ease-out .3s both;"></div>
+      <div style="position: absolute; left: 46%; right: 0; top: 30%; height: 2px; background: linear-gradient(90deg, rgba(201,127,77,0), #C97F4D 30%, #E8CDB6 62%, rgba(201,127,77,0)); box-shadow: 0 0 16px 4px rgba(201,127,77,.28);"></div>
+      <div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(7,20,31,.96) 0%, rgba(7,20,31,.72) 40%, rgba(7,20,31,.05) 66%, rgba(7,20,31,.4) 100%);"></div>
+    </div>
+    <div style="position: relative; z-index: 3; padding: 108px 56px 96px; max-width: 720px;" data-pad>
+      <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 26px;">
+        <span style="width: 56px; height: 2px; background: #B91C1C; border-radius: 2px;"></span>
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .22em; text-transform: uppercase; color: rgba(243,235,221,.9);">Шаг 01 · где течёт маржа</span>
+      </div>
+      <h2 data-t-h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 62px; line-height: 1.06; color: #F3EBDD; text-wrap: pretty;">Утечка живёт в стыке, а не внутри функции</h2>
+      <p data-lead style="font-size: 19px; line-height: 1.6; color: rgba(243,235,221,.8); margin: 26px 0 0; max-width: 44ch;">Цена, промо, комиссия канала, логистика, возвраты и запас по отдельности выглядят нормально. Прибыль уходит там, где они сходятся и никто не отвечает за шов.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px;">
+        <span style="border-radius: 999px; border: 1px solid rgba(243,235,221,.28); background: rgba(243,235,221,.06); padding: 12px 20px; font-size: 15px; color: rgba(243,235,221,.9);">Цена ниже коридора</span>
+        <span style="border-radius: 999px; border: 1px solid rgba(243,235,221,.28); background: rgba(243,235,221,.06); padding: 12px 20px; font-size: 15px; color: rgba(243,235,221,.9);">Промо без чистого вклада</span>
+        <span style="border-radius: 999px; border: 1px solid rgba(243,235,221,.28); background: rgba(243,235,221,.06); padding: 12px 20px; font-size: 15px; color: rgba(243,235,221,.9);">Комиссия канала</span>
+        <span style="border-radius: 999px; border: 1px solid rgba(243,235,221,.28); background: rgba(243,235,221,.06); padding: 12px 20px; font-size: 15px; color: rgba(243,235,221,.9);">Логистика и возвраты</span>
+        <span style="border-radius: 999px; border: 1px solid rgba(238,200,200,.45); background: rgba(185,28,28,.16); padding: 12px 20px; font-size: 15px; color: #F3EBDD;">Замороженный запас</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================= ДОКАЗАТЕЛЬСТВО: КАРТА УТЕЧКИ ======================= -->
+  <div data-screen-label="Карта утечки" data-band data-reveal style="background: #F3EBDD; padding: 88px 56px 96px;">
+    <div style="max-width: 1520px; margin: 0 auto; display: grid; grid-template-columns: 34% minmax(0, 1fr); gap: 64px; align-items: center;" data-split>
+      <div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: #B46A3C; margin-bottom: 18px;">Доказательство</div>
+        <h2 data-t-h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 40px; line-height: 1.14; color: #0B1F33; text-wrap: pretty;">Шесть мест, где ассортимент теряет прибыль</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #475569; margin: 22px 0 0;">Сцена показывает, как это ощущается внутри компании. Карта утечки называет адреса. Это метод, а не поиск виноватого отдела.</p>
+        <button type="button" onClick="{{ openViz }}" data-viz-open style="margin-top: 28px; display: inline-flex; align-items: center; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; background: none; border: 1px solid #0F766E; border-radius: 999px; padding: 14px 22px; cursor: pointer; min-height: 44px;" style-hover="background:#0F766E;color:#FAF6EE">Открыть схему ↗</button>
+      </div>
+      <div style="background: #FAF6EE; border-radius: 24px; padding: 20px; box-shadow: 0 2px 4px rgba(11,31,51,.06), 0 30px 70px -34px rgba(11,31,51,.42);" data-viz data-viz-title="Карта утечки: где ассортимент теряет прибыль" data-viz-caption="Потери возникают на стыке цены, промо, комиссии канала, логистики, возвратов и запаса.">
+        <img src="assets/vizw/viz-04-leakage-map.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Карта утечки маржи: цена, промо, комиссия канала, логистика, возвраты, запас" style="display: block; width: 100%; height: auto; border-radius: 14px;">
+        <div style="padding: 18px 12px 6px; font-size: 15px; line-height: 1.5; color: #475569;">Потери возникают на стыке цены, промо, комиссии канала, логистики, возвратов и запаса.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================= КРАСНАЯ ЗОНА И ВЛАДЕЛЕЦ ======================= -->
+  <div id="redzone" data-screen-label="Красная зона" data-scene data-scene-m style="position: relative; min-height: 820px; background: #07141F; overflow: hidden;">
+    <div data-slot-layer style="position: absolute; inset: 0; opacity: 0; z-index: 0;">
+      <image-slot id="cm-redzone" shape="rect" fit="cover" placeholder="Сцена красной зоны: тёмный стол, один медный маркер"></image-slot>
+    </div>
+    <div data-scene-art style="position: absolute; inset: 0; z-index: 1;">
+      <div style="position: absolute; inset: 0; background: linear-gradient(120deg, #0B1F33 0%, #07141F 60%, #0F1F2E 100%);"></div>
+      <div style="position: absolute; left: 8%; top: 18%; width: 46%; height: 64%; background: radial-gradient(50% 50% at 50% 50%, rgba(185,28,28,.28), rgba(7,20,31,0) 70%); animation: cmFade 1.6s ease-out .2s both;"></div>
+      <div style="position: absolute; left: 12%; top: 42%; width: 120px; height: 220px; border-radius: 22px; background: linear-gradient(rgba(143,22,22,.85), rgba(58,14,18,.6)); box-shadow: 0 0 60px 16px rgba(185,28,28,.24);"></div>
+      <div style="position: absolute; left: 0; right: 0; top: 52%; height: 2px; background: linear-gradient(90deg, rgba(201,127,77,0), #C97F4D 26%, #E8CDB6 58%, rgba(201,127,77,0) 92%); box-shadow: 0 0 16px 4px rgba(201,127,77,.24);"></div>
+      <div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(7,20,31,.94) 0%, rgba(7,20,31,.72) 46%, rgba(7,20,31,.55) 100%);"></div>
+    </div>
+    <div style="position: relative; z-index: 3; display: grid; grid-template-columns: minmax(0, 1fr) 42%; gap: 64px; align-items: center; padding: 108px 56px 104px;" data-split data-pad>
+      <div>
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 26px;">
+          <span style="width: 56px; height: 2px; background: #B91C1C; border-radius: 2px;"></span>
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .22em; text-transform: uppercase; color: rgba(243,235,221,.9);">Шаг 02 · красная зона и владелец</span>
+        </div>
+        <h2 data-t-h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 56px; line-height: 1.06; color: #F3EBDD; text-wrap: pretty;">Пока у зоны нет владельца, это наблюдение</h2>
+        <p data-lead style="font-size: 19px; line-height: 1.6; color: rgba(243,235,221,.8); margin: 26px 0 0; max-width: 42ch;">Красная строка перестаёт быть тревожной меткой в момент, когда у неё появляется имя, срок и метрика проверки.</p>
+      </div>
+      <div style="background: rgba(23,41,60,.82); border: 1px solid rgba(243,235,221,.18); border-radius: 24px; padding: 30px 34px; backdrop-filter: blur(8px);" data-pad>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: rgba(243,235,221,.66); margin-bottom: 22px;">Строка решения</div>
+        <div style="display: flex; flex-direction: column; gap: 18px;">
+          <div>
+            <div style="font-size: 13px; color: rgba(243,235,221,.6); margin-bottom: 6px;">Симптом</div>
+            <div style="font-size: 17px; line-height: 1.5; color: #F3EBDD;">Позиция уходит в минус в одном канале при нормальной средней марже</div>
+          </div>
+          <div style="height: 1px; background: rgba(243,235,221,.14);"></div>
+          <div>
+            <div style="font-size: 13px; color: rgba(243,235,221,.6); margin-bottom: 6px;">Вероятная причина</div>
+            <div style="font-size: 17px; line-height: 1.5; color: #F3EBDD;">Комиссия канала и возвраты не учтены в решении о цене</div>
+          </div>
+          <div style="height: 1px; background: rgba(243,235,221,.14);"></div>
+          <div>
+            <div style="font-size: 13px; color: rgba(243,235,221,.6); margin-bottom: 6px;">Владелец и срок</div>
+            <div style="font-size: 17px; line-height: 1.5; color: #F3EBDD;">Директор по коммерции · ближайший цикл цен</div>
+          </div>
+          <div style="height: 1px; background: rgba(243,235,221,.14);"></div>
+          <div>
+            <div style="font-size: 13px; color: rgba(243,235,221,.6); margin-bottom: 6px;">Решение</div>
+            <div style="font-size: 17px; line-height: 1.5; color: #F3EBDD;">Коридор цены по каналу и условие входа в промо</div>
+          </div>
+          <div style="height: 1px; background: rgba(243,235,221,.14);"></div>
+          <div>
+            <div style="font-size: 13px; color: rgba(243,235,221,.6); margin-bottom: 6px;">Метрика проверки</div>
+            <div style="font-size: 17px; line-height: 1.5; color: #F3EBDD;">Чистый вклад позиции в канале после решения</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-screen-label="Владелец красной зоны" data-band data-reveal style="background: #F3EBDD; padding: 88px 56px 96px;">
+    <div style="max-width: 1520px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) 34%; gap: 64px; align-items: center;" data-split>
+      <div style="background: #FAF6EE; border-radius: 24px; padding: 20px; box-shadow: 0 2px 4px rgba(11,31,51,.06), 0 30px 70px -34px rgba(11,31,51,.42);" data-viz data-viz-title="Владелец красной зоны: кто может изменить результат" data-viz-caption="Зона без владельца — состояние, которое технология не допускает.">
+        <img src="assets/vizw/viz-06-owner.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Владелец красной зоны: кто может изменить результат" style="display: block; width: 100%; height: auto; border-radius: 14px;">
+        <div style="padding: 18px 12px 6px; font-size: 15px; line-height: 1.5; color: #475569;">Зона без владельца — состояние, которое технология не допускает.</div>
+      </div>
+      <div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: #B46A3C; margin-bottom: 18px;">Владелец</div>
+        <h2 data-t-h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 36px; line-height: 1.14; color: #0B1F33;">Кто может изменить результат</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #475569; margin: 22px 0 0;">Владелец — не автор отчёта и не куратор. Это роль, у которой есть мандат на цену, промо, условия канала или запас.</p>
+        <button type="button" onClick="{{ openViz }}" style="margin-top: 26px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; background: none; border: 1px solid #0F766E; border-radius: 999px; padding: 14px 22px; cursor: pointer; min-height: 44px;" style-hover="background:#0F766E;color:#FAF6EE">Открыть схему ↗</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================= ЭТО / ЭТО НЕ ======================= -->
+  <div id="isnot" data-screen-label="Это не" data-band data-reveal style="background: #E8E1D5; padding: 96px 56px 104px;">
+    <div style="max-width: 1520px; margin: 0 auto;">
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 48px; border-bottom: 2px solid #0B1F33; padding-bottom: 22px; margin-bottom: 48px;" data-foot>
+        <div>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: #B46A3C; margin-bottom: 16px;">Это не</div>
+          <h2 data-t-h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 42px; line-height: 1.12; color: #0B1F33;">Правильная категория восприятия</h2>
+        </div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #475569; text-align: right; line-height: 1.9;">Антипозиционирование<br>Визуализация 12</div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0, 1fr) 42%; gap: 56px; align-items: start;" data-split>
+        <div style="background: #FAF6EE; border: 2px solid #0B1F33; border-radius: 24px; overflow: hidden;">
+          <div data-isnot-row style="display: grid; grid-template-columns: 44% minmax(0, 1fr); gap: 0; border-bottom: 1px solid #D8CFBE;">
+            <div style="padding: 24px 26px; font-size: 17px; line-height: 1.55; color: #B91C1C; border-right: 1px solid #D8CFBE;">Не BI-панель и не отчётность</div>
+            <div style="padding: 24px 26px; font-size: 17px; line-height: 1.55; color: #0B1F33;">Технология управления ассортиментной прибылью в омниканальных продажах</div>
+          </div>
+          <div data-isnot-row style="display: grid; grid-template-columns: 44% minmax(0, 1fr); gap: 0; border-bottom: 1px solid #D8CFBE;">
+            <div style="padding: 24px 26px; font-size: 17px; line-height: 1.55; color: #B91C1C; border-right: 1px solid #D8CFBE;">Не финмодель и не бюджетный цикл</div>
+            <div style="padding: 24px 26px; font-size: 17px; line-height: 1.55; color: #0B1F33;">Контур решения по позиции в канале: владелец, срок, метрика проверки</div>
+          </div>
+          <div data-isnot-row style="display: grid; grid-template-columns: 44% minmax(0, 1fr); gap: 0; border-bottom: 1px solid #D8CFBE;">
+            <div style="padding: 24px 26px; font-size: 17px; line-height: 1.55; color: #B91C1C; border-right: 1px solid #D8CFBE;">Не выгрузка в Excel и не таблица SKU</div>
+            <div style="padding: 24px 26px; font-size: 17px; line-height: 1.55; color: #0B1F33;">Карта адресов потери, по которой принимается решение</div>
+          </div>
+          <div data-isnot-row style="display: grid; grid-template-columns: 44% minmax(0, 1fr); gap: 0;">
+            <div style="padding: 24px 26px; font-size: 17px; line-height: 1.55; color: #B91C1C; border-right: 1px solid #D8CFBE;">Не аудит маркетплейсов и не финансовый аудит</div>
+            <div style="padding: 24px 26px; font-size: 17px; line-height: 1.55; color: #0B1F33;">Управляемость маржи ассортимента внутри компании, в её собственном ритме</div>
+          </div>
+        </div>
+        <div>
+          <div style="background: #FAF6EE; border-radius: 24px; padding: 20px; box-shadow: 0 2px 4px rgba(11,31,51,.06), 0 30px 70px -34px rgba(11,31,51,.42);" data-viz data-viz-title="Контур Маржи — это не панель, не аудит и не набор таблиц" data-viz-caption="Матрица антипозиционирования: ложная категория и правильная категория восприятия.">
+            <img src="assets/vizw/viz-12-anti-positioning.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Антипозиционирование: Контур Маржи — не панель, не аудит и не набор таблиц" style="display: block; width: 100%; height: auto; border-radius: 14px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 12px 6px;">
+              <div style="font-size: 15px; line-height: 1.5; color: #475569;">Ложная категория и правильная категория восприятия.</div>
+              <button type="button" onClick="{{ openViz }}" style="flex: none; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; background: none; border: 1px solid #0F766E; border-radius: 999px; padding: 12px 18px; cursor: pointer; min-height: 44px;" style-hover="background:#0F766E;color:#FAF6EE">Открыть ↗</button>
+            </div>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px;">
+            <span style="border-radius: 999px; background: #F3EBDD; border: 1px solid #D8CFBE; padding: 10px 18px; font-size: 14px; color: #475569;">не BI</span>
+            <span style="border-radius: 999px; background: #F3EBDD; border: 1px solid #D8CFBE; padding: 10px 18px; font-size: 14px; color: #475569;">не dashboard</span>
+            <span style="border-radius: 999px; background: #F3EBDD; border: 1px solid #D8CFBE; padding: 10px 18px; font-size: 14px; color: #475569;">не Excel</span>
+            <span style="border-radius: 999px; background: #F3EBDD; border: 1px solid #D8CFBE; padding: 10px 18px; font-size: 14px; color: #475569;">не финмодель</span>
+            <span style="border-radius: 999px; background: #F3EBDD; border: 1px solid #D8CFBE; padding: 10px 18px; font-size: 14px; color: #475569;">не отчётность</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================= УПРАВЛЯЕМОСТЬ ======================= -->
+  <div data-screen-label="Управляемость" data-band data-reveal style="position: relative; background: linear-gradient(#FAF6EE, #F3EBDD); padding: 96px 56px 104px; overflow: hidden;">
+    <div style="max-width: 1520px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: minmax(0, 1fr) 38%; gap: 56px; align-items: end; margin-bottom: 48px;" data-split>
+        <div>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: #B46A3C; margin-bottom: 18px;">Шаг 03 · управляемый результат</div>
+          <h2 data-t-h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 46px; line-height: 1.1; color: #0B1F33; text-wrap: pretty;">Маржа становится решением, а не отчётом</h2>
+        </div>
+        <p style="font-size: 17px; line-height: 1.6; color: #475569; margin: 0;">Управляемость — это не новая цифра. Это то, что после Диагностики у каждой красной зоны есть владелец, решение, срок и метрика проверки.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0, 1fr) 46%; gap: 56px; align-items: start;" data-split>
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div data-num-row style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 20px; background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 20px; padding: 28px 32px; box-shadow: 0 1px 2px rgba(11,31,51,.05), 0 14px 34px -22px rgba(11,31,51,.3);">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 22px; color: #B46A3C;">01</div>
+            <div>
+              <div data-t-h3 style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 22px; color: #0B1F33; margin-bottom: 8px;">Решение принимается по строке</div>
+              <div style="font-size: 17px; line-height: 1.6; color: #475569;">Цена и промо перестают быть категорийными: коридор задаётся по позиции в канале и проверяется чистым вкладом.</div>
+            </div>
+          </div>
+          <div data-num-row style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 20px; background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 20px; padding: 28px 32px; box-shadow: 0 1px 2px rgba(11,31,51,.05), 0 14px 34px -22px rgba(11,31,51,.3);">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 22px; color: #0F766E;">02</div>
+            <div>
+              <div data-t-h3 style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 22px; color: #0B1F33; margin-bottom: 8px;">У каждой зоны есть имя</div>
+              <div style="font-size: 17px; line-height: 1.6; color: #475569;">Владелец, срок и метрика фиксируются на Сессии — красная зона выходит из состояния наблюдения.</div>
+            </div>
+          </div>
+          <div data-num-row style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 20px; background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 20px; padding: 28px 32px; box-shadow: 0 1px 2px rgba(11,31,51,.05), 0 14px 34px -22px rgba(11,31,51,.3);">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 22px; color: #B46A3C;">03</div>
+            <div>
+              <div data-t-h3 style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 22px; color: #0B1F33; margin-bottom: 8px;">Контур работает без нас</div>
+              <div style="font-size: 17px; line-height: 1.6; color: #475569;">Карта обновляется в ритме компании: новые красные зоны получают владельцев внутри, а не приходят извне.</div>
+            </div>
+          </div>
+        </div>
+        <div style="background: #FAF6EE; border-radius: 24px; padding: 20px; box-shadow: 0 2px 4px rgba(11,31,51,.06), 0 30px 70px -34px rgba(11,31,51,.42);" data-viz data-viz-title="До: виден итог. После: видна зона действия" data-viz-caption="Переход от итога к зоне действия: там, где решение может изменить результат.">
+          <img src="assets/vizw/viz-10-before-after.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="До: виден итог. После: видна зона действия" style="display: block; width: 100%; height: auto; border-radius: 14px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 12px 6px;">
+            <div style="font-size: 15px; line-height: 1.5; color: #475569;">Переход от итога к зоне действия.</div>
+            <button type="button" onClick="{{ openViz }}" style="flex: none; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; background: none; border: 1px solid #0F766E; border-radius: 999px; padding: 12px 18px; cursor: pointer; min-height: 44px;" style-hover="background:#0F766E;color:#FAF6EE">Открыть ↗</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================= ПРОДУКТОВАЯ ЛИНЕЙКА ======================= -->
+  <div id="ladder" data-screen-label="Продуктовая линейка" data-band data-reveal style="background: #E8E1D5; padding: 96px 56px 104px;">
+    <div style="max-width: 1520px; margin: 0 auto;">
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 48px; border-bottom: 2px solid #0B1F33; padding-bottom: 22px; margin-bottom: 26px;" data-foot>
+        <div>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: #B46A3C; margin-bottom: 16px;">Продуктовая линейка</div>
+          <h2 data-t-h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 42px; line-height: 1.12; color: #0B1F33;">Диагностика → Сессия → Спринт 30-60-90 → Сопровождение</h2>
+        </div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #475569; text-align: right; line-height: 1.9;">Первый платный вход<br>Право на STOP</div>
+      </div>
+      <div style="height: 3px; background: linear-gradient(90deg, #B46A3C, rgba(180,106,60,.15)); border-radius: 2px; margin-bottom: 34px;"></div>
+      <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px;" data-rail>
+        <div style="background: #FAF6EE; border: 2px solid #0B1F33; border-radius: 22px; padding: 30px 28px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 1px 2px rgba(11,31,51,.05), 0 20px 44px -26px rgba(11,31,51,.4);">
+          <div style="display: flex; align-items: center; justify-content: space-between; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B46A3C;"><span>Шаг 01</span><span>Платный вход</span></div>
+          <h3 data-t-h3 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 26px; color: #0B1F33;">Диагностика</h3>
+          <div style="font-size: 16px; line-height: 1.6; color: #475569;">Карта потерь: данные, красные зоны, метрики проверки и контрольный вердикт. Диагностика — первый платный вход, а не бесплатный аудит.</div>
+          <div style="margin-top: auto; display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #475569;">
+            <div style="display: flex; gap: 10px;"><span style="color: #0F766E;">→</span> Карта утечки по строкам SKU × канал</div>
+            <div style="display: flex; gap: 10px;"><span style="color: #B91C1C;">→</span> Право на STOP и вердикт No Fit</div>
+          </div>
+        </div>
+        <div style="background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 22px; padding: 30px 28px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 1px 2px rgba(11,31,51,.05), 0 14px 34px -22px rgba(11,31,51,.3);">
+          <div style="display: flex; align-items: center; justify-content: space-between; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B46A3C;"><span>Шаг 02</span><span>Решение</span></div>
+          <h3 data-t-h3 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 26px; color: #0B1F33;">Сессия</h3>
+          <div style="font-size: 16px; line-height: 1.6; color: #475569;">Красная зона превращается в решение: коридор цены, условие промо, правило по запасу. У каждой зоны фиксируется владелец и срок.</div>
+          <div style="margin-top: auto; display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #475569;">
+            <div style="display: flex; gap: 10px;"><span style="color: #0F766E;">→</span> Владелец, срок, метрика проверки</div>
+          </div>
+        </div>
+        <div style="background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 22px; padding: 30px 28px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 1px 2px rgba(11,31,51,.05), 0 14px 34px -22px rgba(11,31,51,.3);">
+          <div style="display: flex; align-items: center; justify-content: space-between; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B46A3C;"><span>Шаг 03</span><span>Проверка</span></div>
+          <h3 data-t-h3 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 26px; color: #0B1F33;">Спринт 30-60-90</h3>
+          <div style="font-size: 16px; line-height: 1.6; color: #475569;">Решение проверяется на ассортиментном контуре: что подтвердилось на 30, что закрепляется на 60, что становится правилом на 90.</div>
+          <div style="margin-top: auto; display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #475569;">
+            <div style="display: flex; gap: 10px;"><span style="color: #0F766E;">→</span> Эффект фиксируется при выполнении условий</div>
+          </div>
+        </div>
+        <div style="background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 22px; padding: 30px 28px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 1px 2px rgba(11,31,51,.05), 0 14px 34px -22px rgba(11,31,51,.3);">
+          <div style="display: flex; align-items: center; justify-content: space-between; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B46A3C;"><span>Шаг 04</span><span>Ритм</span></div>
+          <h3 data-t-h3 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 26px; color: #0B1F33;">Сопровождение</h3>
+          <div style="font-size: 16px; line-height: 1.6; color: #475569;">Контур живёт в ритме компании: новые красные зоны получают владельцев внутри, карта обновляется без внешнего участия.</div>
+          <div style="margin-top: auto; display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #475569;">
+            <div style="display: flex; gap: 10px;"><span style="color: #0F766E;">→</span> Технология остаётся у команды</div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 40px; display: grid; grid-template-columns: minmax(0, 1fr) 34%; gap: 56px; align-items: center;" data-split>
+        <div style="background: #FAF6EE; border-radius: 24px; padding: 20px; box-shadow: 0 2px 4px rgba(11,31,51,.06), 0 30px 70px -34px rgba(11,31,51,.42);" data-viz data-viz-title="Клиентский путь: Диагностика → Сессия → Спринт → Сопровождение" data-viz-caption="Диагностика стоит первым платным входом, Stop-ветка и вердикт No Fit сохранены.">
+          <img src="assets/vizw/viz-07-client-path.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Клиентский путь четырёх продуктов: Диагностика, Сессия, Спринт, Сопровождение" style="display: block; width: 100%; height: auto; border-radius: 14px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 12px 6px;">
+            <div style="font-size: 15px; line-height: 1.5; color: #475569;">Диагностика стоит первым платным входом, Stop-ветка и вердикт No Fit сохранены.</div>
+            <button type="button" onClick="{{ openViz }}" style="flex: none; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; background: none; border: 1px solid #0F766E; border-radius: 999px; padding: 12px 18px; cursor: pointer; min-height: 44px;" style-hover="background:#0F766E;color:#FAF6EE">Открыть ↗</button>
+          </div>
+        </div>
+        <div>
+          <div data-t-h3 style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 26px; color: #0B1F33; margin-bottom: 14px;">Вход только через Диагностику
+</div>
+          <p style="font-size: 17px; line-height: 1.6; color: #475569; margin: 0;">Сессия, Спринт и Сопровождение начинаются только после Диагностики: без карты потерь решение не на чём проверять. Вердикт No Fit — законный исход первого шага.</p>
+          <a href="#request" style="display: inline-block; margin-top: 24px; border-radius: 999px; background: #0B1F33; color: #F3EBDD; font-size: 16px; font-weight: 600; padding: 18px 28px; text-decoration: none; transition: background 120ms cubic-bezier(.22,.61,.36,1);" style-hover="background:#123049">Запросить платную Диагностику</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================= ГАЛЕРЕЯ ВИЗУАЛИЗАЦИЙ ======================= -->
+  <div id="gallery" data-screen-label="Визуализации" data-band data-reveal style="background: #F3EBDD; padding: 96px 56px 104px;">
+    <div style="max-width: 1520px; margin: 0 auto;">
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 48px; border-bottom: 2px solid #0B1F33; padding-bottom: 22px; margin-bottom: 44px;" data-foot>
+        <div>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: #B46A3C; margin-bottom: 16px;">Визуализации · доказательный слой</div>
+          <h2 data-t-h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 42px; line-height: 1.12; color: #0B1F33;">Схемы, по которым принимается решение</h2>
+        </div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #475569; text-align: right; line-height: 1.9;">Открыть на весь экран ↗<br>12 схем · 16:9</div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px;" data-row3>
+        <div data-viz data-viz-title="Диагностика: сначала карта потерь, потом решение" data-viz-caption="Диагностика — первый платный вход. Вердикт может быть No Fit." style="background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 22px; padding: 16px; transition: transform 200ms cubic-bezier(.22,.61,.36,1), box-shadow 200ms cubic-bezier(.22,.61,.36,1);" style-hover="transform:translateY(-3px);box-shadow:0 2px 4px rgba(11,31,51,.06),0 26px 54px -28px rgba(11,31,51,.45)">
+          <img src="assets/vizw/viz-03-diagnostics.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Диагностика: сначала карта потерь, потом решение" style="display: block; width: 100%; height: auto; border-radius: 14px;">
+          <div style="padding: 16px 10px 6px;">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B46A3C; margin-bottom: 8px;">Визуализация 03 · коммерческий слой</div>
+            <div style="font-size: 16px; line-height: 1.5; color: #0B1F33; margin-bottom: 14px;">Диагностика: сначала карта потерь, потом решение</div>
+            <button type="button" onClick="{{ openViz }}" style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; background: none; border: 1px solid #0F766E; border-radius: 999px; padding: 12px 18px; cursor: pointer; min-height: 44px;" style-hover="background:#0F766E;color:#FAF6EE">Открыть ↗</button>
+          </div>
+        </div>
+        <div data-viz data-viz-title="Красная зона: строка, где прибыль стала управленческой задачей" data-viz-caption="Восемь обязательных полей строки: названы поля, а не выдуманные значения." style="background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 22px; padding: 16px; transition: transform 200ms cubic-bezier(.22,.61,.36,1), box-shadow 200ms cubic-bezier(.22,.61,.36,1);" style-hover="transform:translateY(-3px);box-shadow:0 2px 4px rgba(11,31,51,.06),0 26px 54px -28px rgba(11,31,51,.45)">
+          <img src="assets/vizw/viz-05-red-zone.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Красная зона: строка, где прибыль стала управленческой задачей" style="display: block; width: 100%; height: auto; border-radius: 14px;">
+          <div style="padding: 16px 10px 6px;">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B46A3C; margin-bottom: 8px;">Визуализация 05 · консультантский слой</div>
+            <div style="font-size: 16px; line-height: 1.5; color: #0B1F33; margin-bottom: 14px;">Красная зона: строка, где прибыль стала управленческой задачей</div>
+            <button type="button" onClick="{{ openViz }}" style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; background: none; border: 1px solid #0F766E; border-radius: 999px; padding: 12px 18px; cursor: pointer; min-height: 44px;" style-hover="background:#0F766E;color:#FAF6EE">Открыть ↗</button>
+          </div>
+        </div>
+        <div data-viz data-viz-title="Сессия: красная зона превращается в решение" data-viz-caption="Решение собирается на Сессии: коридор цены, условие промо, правило по запасу." style="background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 22px; padding: 16px; transition: transform 200ms cubic-bezier(.22,.61,.36,1), box-shadow 200ms cubic-bezier(.22,.61,.36,1);" style-hover="transform:translateY(-3px);box-shadow:0 2px 4px rgba(11,31,51,.06),0 26px 54px -28px rgba(11,31,51,.45)">
+          <img src="assets/vizw/viz-08-session.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Сессия: красная зона превращается в решение" style="display: block; width: 100%; height: auto; border-radius: 14px;">
+          <div style="padding: 16px 10px 6px;">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B46A3C; margin-bottom: 8px;">Визуализация 08 · консультантский слой</div>
+            <div style="font-size: 16px; line-height: 1.5; color: #0B1F33; margin-bottom: 14px;">Сессия: красная зона превращается в решение</div>
+            <button type="button" onClick="{{ openViz }}" style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; background: none; border: 1px solid #0F766E; border-radius: 999px; padding: 12px 18px; cursor: pointer; min-height: 44px;" style-hover="background:#0F766E;color:#FAF6EE">Открыть ↗</button>
+          </div>
+        </div>
+        <div data-viz data-viz-title="Спринт 30-60-90: проверка решения на ассортиментном контуре" data-viz-caption="Что подтвердилось на 30, что закрепляется на 60, что становится правилом на 90." style="background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 22px; padding: 16px; transition: transform 200ms cubic-bezier(.22,.61,.36,1), box-shadow 200ms cubic-bezier(.22,.61,.36,1);" style-hover="transform:translateY(-3px);box-shadow:0 2px 4px rgba(11,31,51,.06),0 26px 54px -28px rgba(11,31,51,.45)">
+          <img src="assets/vizw/viz-09-sprint.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Спринт 30-60-90: проверка решения на ассортиментном контуре" style="display: block; width: 100%; height: auto; border-radius: 14px;">
+          <div style="padding: 16px 10px 6px;">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B46A3C; margin-bottom: 8px;">Визуализация 09 · консультантский слой</div>
+            <div style="font-size: 16px; line-height: 1.5; color: #0B1F33; margin-bottom: 14px;">Спринт 30-60-90: проверка решения на контуре</div>
+            <button type="button" onClick="{{ openViz }}" style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; background: none; border: 1px solid #0F766E; border-radius: 999px; padding: 12px 18px; cursor: pointer; min-height: 44px;" style-hover="background:#0F766E;color:#FAF6EE">Открыть ↗</button>
+          </div>
+        </div>
+        <div data-viz data-viz-title="Кейс: боль → красная зона → владелец → решение → эффект" data-viz-caption="Модельный сценарий. Эффект показан как условный: при выполнении условий." style="background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 22px; padding: 16px; transition: transform 200ms cubic-bezier(.22,.61,.36,1), box-shadow 200ms cubic-bezier(.22,.61,.36,1);" style-hover="transform:translateY(-3px);box-shadow:0 2px 4px rgba(11,31,51,.06),0 26px 54px -28px rgba(11,31,51,.45)">
+          <img src="assets/vizw/viz-11-case-flow.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Кейсовая схема: боль, красная зона, владелец, решение, эффект" style="display: block; width: 100%; height: auto; border-radius: 14px;">
+          <div style="padding: 16px 10px 6px;">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B46A3C; margin-bottom: 8px;">Визуализация 11 · модельный сценарий</div>
+            <div style="font-size: 16px; line-height: 1.5; color: #0B1F33; margin-bottom: 14px;">Кейс: боль → красная зона → владелец → решение → эффект</div>
+            <button type="button" onClick="{{ openViz }}" style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; background: none; border: 1px solid #0F766E; border-radius: 999px; padding: 12px 18px; cursor: pointer; min-height: 44px;" style-hover="background:#0F766E;color:#FAF6EE">Открыть ↗</button>
+          </div>
+        </div>
+        <div data-viz data-viz-title="Средняя маржа не показывает, где именно течёт прибыль" data-viz-caption="Матрица SKU × канал без цифр: адрес потери, а не оценка отдела." style="background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 22px; padding: 16px; transition: transform 200ms cubic-bezier(.22,.61,.36,1), box-shadow 200ms cubic-bezier(.22,.61,.36,1);" style-hover="transform:translateY(-3px);box-shadow:0 2px 4px rgba(11,31,51,.06),0 26px 54px -28px rgba(11,31,51,.45)">
+          <img src="assets/vizw/viz-02-average-hides.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Средняя маржа не показывает, где именно течёт прибыль" style="display: block; width: 100%; height: auto; border-radius: 14px;">
+          <div style="padding: 16px 10px 6px;">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B46A3C; margin-bottom: 8px;">Визуализация 02 · клиентский слой</div>
+            <div style="font-size: 16px; line-height: 1.5; color: #0B1F33; margin-bottom: 14px;">Средняя маржа не показывает, где именно течёт прибыль</div>
+            <button type="button" onClick="{{ openViz }}" style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; background: none; border: 1px solid #0F766E; border-radius: 999px; padding: 12px 18px; cursor: pointer; min-height: 44px;" style-hover="background:#0F766E;color:#FAF6EE">Открыть ↗</button>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 22px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #475569;">На мобильном схема открывается в режиме чтения: полный кадр и увеличение по фрагментам.</div>
+    </div>
+  </div>
+
+  <!-- ======================= КЕЙСЫ ======================= -->
+  <div id="cases" data-screen-label="Кейсы" data-band data-reveal style="background: #E8E1D5; padding: 96px 56px 104px;">
+    <div style="max-width: 1520px; margin: 0 auto;">
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 48px; border-bottom: 2px solid #0B1F33; padding-bottom: 22px; margin-bottom: 44px;" data-foot>
+        <div>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: #B46A3C; margin-bottom: 16px;">Кейсы · модельные сценарии</div>
+          <h2 data-t-h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 42px; line-height: 1.12; color: #0B1F33;">Как красная зона становится решением</h2>
+        </div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #B91C1C; text-align: right; line-height: 1.9;">Модельный сценарий<br>Эффект при условиях</div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 22px;" data-row3>
+        <div style="background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 24px; padding: 34px 36px; box-shadow: 0 1px 2px rgba(11,31,51,.05), 0 18px 40px -24px rgba(11,31,51,.35); transition: transform 200ms cubic-bezier(.22,.61,.36,1), box-shadow 200ms cubic-bezier(.22,.61,.36,1);" style-hover="transform:translateY(-3px);box-shadow:0 2px 4px rgba(11,31,51,.06),0 28px 58px -28px rgba(11,31,51,.45)" data-pad>
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 22px;">
+            <span style="border-radius: 999px; border: 1px solid rgba(185,28,28,.45); background: rgba(185,28,28,.08); padding: 8px 14px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B91C1C;">Модельный сценарий</span>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #475569;">Промо в маркетплейс-канале</span>
+          </div>
+          <div data-t-h3 style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 26px; line-height: 1.16; color: #0B1F33; margin-bottom: 24px;">Средняя маржа в норме, а канал забирает вклад</div>
+          <div data-kv-row style="display: grid; grid-template-columns: 26% minmax(0, 1fr); gap: 14px 20px; font-size: 16px; line-height: 1.55;">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #B46A3C; padding-top: 4px;">Ситуация</div>
+            <div style="color: #0B1F33;">Ассортимент растёт в объёме, категория показывает нормальную среднюю маржу.</div>
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #B46A3C; padding-top: 4px;">Неуправляемо</div>
+            <div style="color: #0B1F33;">Промо и комиссия канала обсуждаются отдельно от цены, чистый вклад позиции не виден.</div>
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #B46A3C; padding-top: 4px;">Технология</div>
+            <div style="color: #0B1F33;">Карта утечки называет строки, где промо уходит без чистого вклада.</div>
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #B46A3C; padding-top: 4px;">Первый шаг</div>
+            <div style="color: #0B1F33;">Диагностика: коридор цены и условие входа в промо по каналу.</div>
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; padding-top: 4px;">Управляемо</div>
+            <div style="color: #0B1F33;">У каждой красной строки есть владелец, срок и метрика проверки на 30-60-90.</div>
+          </div>
+        </div>
+        <div style="background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 24px; padding: 34px 36px; box-shadow: 0 1px 2px rgba(11,31,51,.05), 0 18px 40px -24px rgba(11,31,51,.35); transition: transform 200ms cubic-bezier(.22,.61,.36,1), box-shadow 200ms cubic-bezier(.22,.61,.36,1);" style-hover="transform:translateY(-3px);box-shadow:0 2px 4px rgba(11,31,51,.06),0 28px 58px -28px rgba(11,31,51,.45)" data-pad>
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 22px;">
+            <span style="border-radius: 999px; border: 1px solid rgba(185,28,28,.45); background: rgba(185,28,28,.08); padding: 8px 14px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B91C1C;">Модельный сценарий</span>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #475569;">Запас и возвраты</span>
+          </div>
+          <div data-t-h3 style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 26px; line-height: 1.16; color: #0B1F33; margin-bottom: 24px;">Прибыль замерла в запасе, а не в отчёте</div>
+          <div data-kv-row style="display: grid; grid-template-columns: 26% minmax(0, 1fr); gap: 14px 20px; font-size: 16px; line-height: 1.55;">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #B46A3C; padding-top: 4px;">Ситуация</div>
+            <div style="color: #0B1F33;">Часть позиций держится в ассортименте по инерции: спрос переехал в другой канал.</div>
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #B46A3C; padding-top: 4px;">Неуправляемо</div>
+            <div style="color: #0B1F33;">Решение о выводе позиции никому не принадлежит: запас и возвраты остаются вне цены.</div>
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #B46A3C; padding-top: 4px;">Технология</div>
+            <div style="color: #0B1F33;">Красная зона собирается по строке: запас, возвраты, логистика и цена в одном контуре.</div>
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #B46A3C; padding-top: 4px;">Первый шаг</div>
+            <div style="color: #0B1F33;">Диагностика: правило по запасу и владелец решения о выводе позиции.</div>
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; padding-top: 4px;">Управляемо</div>
+            <div style="color: #0B1F33;">Ассортимент сокращается по правилу, а не по спору; эффект фиксируется при условиях.</div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 22px; display: grid; grid-template-columns: minmax(0, 1fr) 34%; gap: 22px;" data-split>
+        <div style="position: relative; border-radius: 24px; overflow: hidden; min-height: 320px; background: #07141F;">
+          <div data-slot-layer style="position: absolute; inset: 0; opacity: 0;">
+            <image-slot id="cm-case" shape="rect" fit="cover" placeholder="Кадр кейсового блока"></image-slot>
+          </div>
+          <div data-scene-art style="position: absolute; inset: 0;">
+            <div style="position: absolute; inset: 0; background: linear-gradient(140deg, #0B1F33, #07141F 60%, #0F1F2E);"></div>
+            <div style="position: absolute; left: 12%; top: 22%; width: 46%; height: 40%; border-radius: 20px; background: linear-gradient(rgba(243,235,221,.16), rgba(243,235,221,.03)); transform: rotate(-4deg);"></div>
+            <div style="position: absolute; left: 26%; top: 34%; width: 46%; height: 40%; border-radius: 20px; background: linear-gradient(rgba(243,235,221,.1), rgba(243,235,221,.02)); transform: rotate(3deg);"></div>
+            <div style="position: absolute; left: 18%; bottom: 26%; width: 52%; height: 3px; border-radius: 2px; background: linear-gradient(90deg, rgba(201,127,77,0), #C97F4D 40%, rgba(201,127,77,0));"></div>
+          </div>
+          <div style="position: absolute; inset: 0; background: linear-gradient(rgba(7,20,31,0) 40%, rgba(7,20,31,.9)); pointer-events: none;"></div>
+          <div style="position: absolute; left: 30px; right: 30px; bottom: 28px; pointer-events: none;">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: rgba(243,235,221,.7); margin-bottom: 10px;">Кейсовый слой</div>
+            <div style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 26px; line-height: 1.2; color: #F3EBDD;">Имена клиентов и проценты публикуются только после согласования</div>
+          </div>
+        </div>
+        <div data-viz data-viz-title="Кейс: боль → красная зона → владелец → решение → эффект" data-viz-caption="Кейсовая схема технологии: пять частей в одном порядке." style="background: #FAF6EE; border-radius: 24px; padding: 16px; box-shadow: 0 2px 4px rgba(11,31,51,.06), 0 24px 54px -30px rgba(11,31,51,.4);">
+          <img src="assets/vizw/viz-11-case-flow.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Кейсовая схема: боль, красная зона, владелец, решение, эффект" style="display: block; width: 100%; height: auto; border-radius: 14px;">
+          <div style="padding: 14px 10px 4px; font-size: 15px; line-height: 1.5; color: #475569;">Пять частей кейса в одном порядке.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================= МАТЕРИАЛЫ / БЛОГ / РАЗБОРЫ ======================= -->
+  <div id="materials" data-screen-label="Материалы" data-band data-reveal style="background: #F3EBDD; padding: 96px 56px 104px;">
+    <div style="max-width: 1520px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 40px; align-items: end; margin-bottom: 44px;" data-split>
+        <div>
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 18px;">
+            <span style="width: 56px; height: 2px; background: #B46A3C; border-radius: 2px;"></span>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: #B46A3C;">Материалы · разборы · наблюдения</span>
+          </div>
+          <h2 data-t-h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 42px; line-height: 1.12; color: #0B1F33; text-wrap: pretty;">Как маржа теряется и как возвращается</h2>
+          <p style="font-size: 17px; line-height: 1.6; color: #475569; margin: 20px 0 0; max-width: 62ch;">Раздел обновляется в ритме технологии: разборы маржи, кейсовые заметки, ошибки управления ассортиментной прибылью и связки с другими технологиями C-Level Insight. Материалы публикуются на сайте и в каналах платформы.</p>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; max-width: 520px;">
+          <button type="button" data-chip data-tag="all" onClick="{{ filterMaterials }}" style="border-radius: 999px; border: 1px solid #0B1F33; background: #0B1F33; color: #F3EBDD; padding: 12px 18px; font-size: 14px; cursor: pointer; min-height: 44px;">Все</button>
+          <button type="button" data-chip data-tag="razbor" onClick="{{ filterMaterials }}" style="border-radius: 999px; border: 1px solid #D8CFBE; background: #FAF6EE; color: #475569; padding: 12px 18px; font-size: 14px; cursor: pointer; min-height: 44px;">Разборы маржи</button>
+          <button type="button" data-chip data-tag="case" onClick="{{ filterMaterials }}" style="border-radius: 999px; border: 1px solid #D8CFBE; background: #FAF6EE; color: #475569; padding: 12px 18px; font-size: 14px; cursor: pointer; min-height: 44px;">Кейсовые заметки</button>
+          <button type="button" data-chip data-tag="errors" onClick="{{ filterMaterials }}" style="border-radius: 999px; border: 1px solid #D8CFBE; background: #FAF6EE; color: #475569; padding: 12px 18px; font-size: 14px; cursor: pointer; min-height: 44px;">Ошибки управления</button>
+          <button type="button" data-chip data-tag="links" onClick="{{ filterMaterials }}" style="border-radius: 999px; border: 1px solid #D8CFBE; background: #FAF6EE; color: #475569; padding: 12px 18px; font-size: 14px; cursor: pointer; min-height: 44px;">Связки технологий</button>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: 46% minmax(0, 1fr); gap: 22px; align-items: start;" data-split>
+        <a data-mat="razbor" href="#materials" style="display: block; text-decoration: none; border-radius: 24px; overflow: hidden; background: #07141F; position: relative; min-height: 420px; box-shadow: 0 2px 4px rgba(11,31,51,.06), 0 30px 70px -34px rgba(11,31,51,.5);">
+          <div data-slot-layer style="position: absolute; inset: 0; opacity: 0;">
+            <image-slot id="cm-material" shape="rect" fit="cover" placeholder="Кадр разбора"></image-slot>
+          </div>
+          <div data-scene-art style="position: absolute; inset: 0;">
+            <div style="position: absolute; inset: 0; background: linear-gradient(160deg, #0B1F33, #07141F 55%, #101F2C);"></div>
+            <div style="position: absolute; left: -6%; top: 18%; width: 70%; height: 46%; border-radius: 26px; background: linear-gradient(rgba(232,205,182,.16), rgba(232,205,182,.03)); transform: rotate(-6deg);"></div>
+            <div style="position: absolute; right: 8%; top: 30%; width: 12px; height: 34%; border-radius: 999px; background: linear-gradient(rgba(201,127,77,0), #C97F4D 45%, rgba(201,127,77,0));"></div>
+          </div>
+          <div style="position: absolute; inset: 0; background: linear-gradient(rgba(7,20,31,.1) 30%, rgba(7,20,31,.92)); pointer-events: none;"></div>
+          <div style="position: absolute; left: 32px; right: 32px; bottom: 32px; pointer-events: none;">
+            <span style="display: inline-block; border-radius: 999px; background: rgba(243,235,221,.14); border: 1px solid rgba(243,235,221,.3); padding: 8px 14px; font-size: 13px; color: #F3EBDD; margin-bottom: 18px;">Разбор маржи</span>
+            <div data-t-h3 style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 32px; line-height: 1.16; color: #F3EBDD;">Почему средняя маржа сохраняет спокойствие и теряет прибыль</div>
+            <div style="font-size: 16px; line-height: 1.55; color: rgba(243,235,221,.8); margin-top: 14px; max-width: 46ch;">Как одна средняя цифра скрывает несколько красных строк и что меняется, когда решение принимается по строке.</div>
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: rgba(243,235,221,.66); margin-top: 20px;">Черновик · 8 минут · читать →</div>
+          </div>
+        </a>
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <a data-mat="errors" href="#materials" data-mat-card style="display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 22px; text-decoration: none; background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 20px; padding: 22px 24px; transition: transform 200ms cubic-bezier(.22,.61,.36,1), box-shadow 200ms cubic-bezier(.22,.61,.36,1);" style-hover="transform:translateY(-2px);box-shadow:0 1px 2px rgba(11,31,51,.05),0 20px 40px -24px rgba(11,31,51,.4)">
+            <div style="width: 88px; height: 88px; border-radius: 16px; background: linear-gradient(#0B1F33, #07141F); display: flex; align-items: center; justify-content: center;">
+              <span style="width: 30px; height: 8px; border-radius: 999px; background: #B91C1C; box-shadow: 0 0 18px 4px rgba(185,28,28,.4);"></span>
+            </div>
+            <div>
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B46A3C; margin-bottom: 8px;">Ошибки управления</div>
+              <div style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 21px; line-height: 1.2; color: #0B1F33;">Промо без чистого вклада: шесть признаков утечки</div>
+              <div style="font-size: 16px; line-height: 1.55; color: #475569; margin-top: 10px;">Когда акция забирает больше, чем приносит: признаки, которые видны до конца периода.</div>
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; margin-top: 12px;">Черновик · 6 минут · разобрать →</div>
+            </div>
+          </a>
+          <a data-mat="case" href="#materials" data-mat-card style="display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 22px; text-decoration: none; background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 20px; padding: 22px 24px; transition: transform 200ms cubic-bezier(.22,.61,.36,1), box-shadow 200ms cubic-bezier(.22,.61,.36,1);" style-hover="transform:translateY(-2px);box-shadow:0 1px 2px rgba(11,31,51,.05),0 20px 40px -24px rgba(11,31,51,.4)">
+            <div style="width: 88px; height: 88px; border-radius: 16px; background: linear-gradient(#0B1F33, #07141F); display: flex; align-items: center; justify-content: center;">
+              <span style="width: 26px; height: 26px; border-radius: 8px; background: #0F766E; box-shadow: 0 0 18px 4px rgba(15,118,110,.35);"></span>
+            </div>
+            <div>
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B46A3C; margin-bottom: 8px;">Кейсовая заметка</div>
+              <div style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 21px; line-height: 1.2; color: #0B1F33;">Красная зона SKU × канал, у которой впервые появился владелец</div>
+              <div style="font-size: 16px; line-height: 1.55; color: #475569; margin-top: 10px;">Что меняется в компании в момент, когда у строки появляются имя, срок и метрика проверки.</div>
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; margin-top: 12px;">Черновик · 5 минут · читать →</div>
+            </div>
+          </a>
+          <a data-mat="links" href="#materials" data-mat-card style="display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 22px; text-decoration: none; background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 20px; padding: 22px 24px; transition: transform 200ms cubic-bezier(.22,.61,.36,1), box-shadow 200ms cubic-bezier(.22,.61,.36,1);" style-hover="transform:translateY(-2px);box-shadow:0 1px 2px rgba(11,31,51,.05),0 20px 40px -24px rgba(11,31,51,.4)">
+            <div style="width: 88px; height: 88px; border-radius: 16px; background: linear-gradient(#0B1F33, #07141F); display: flex; align-items: center; justify-content: center;">
+              <span style="width: 34px; height: 3px; border-radius: 999px; background: #C97F4D;"></span>
+            </div>
+            <div>
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B46A3C; margin-bottom: 8px;">Связки технологий</div>
+              <div style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 21px; line-height: 1.2; color: #0B1F33;">Контур Маржи и Повторяемый Спрос: где заканчивается один и начинается другой</div>
+              <div style="font-size: 16px; line-height: 1.55; color: #475569; margin-top: 10px;">Связка технологий C-Level Insight: управляемая маржа ассортимента и устойчивый спрос.</div>
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; margin-top: 12px;">Черновик · 7 минут · читать →</div>
+            </div>
+          </a>
+          <a data-mat="razbor" href="#materials" data-mat-card style="display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 22px; text-decoration: none; background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 20px; padding: 22px 24px; transition: transform 200ms cubic-bezier(.22,.61,.36,1), box-shadow 200ms cubic-bezier(.22,.61,.36,1);" style-hover="transform:translateY(-2px);box-shadow:0 1px 2px rgba(11,31,51,.05),0 20px 40px -24px rgba(11,31,51,.4)">
+            <div style="width: 88px; height: 88px; border-radius: 16px; background: linear-gradient(#0B1F33, #07141F); display: flex; align-items: center; justify-content: center;">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #C97F4D;">30·60·90</span>
+            </div>
+            <div>
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B46A3C; margin-bottom: 8px;">Разбор маржи</div>
+              <div style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 21px; line-height: 1.2; color: #0B1F33;">Спринт 30-60-90: что проверяется, что закрепляется, что становится правилом</div>
+              <div style="font-size: 16px; line-height: 1.55; color: #475569; margin-top: 10px;">Ритм проверки решения по марже без повторного обсуждения на каждом совещании.</div>
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; margin-top: 12px;">Черновик · 9 минут · разобрать →</div>
+            </div>
+          </a>
+          <a data-mat="errors" data-mat-card href="#materials" style="display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 22px; text-decoration: none; background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 20px; padding: 22px 24px; transition: transform 200ms cubic-bezier(.22,.61,.36,1), box-shadow 200ms cubic-bezier(.22,.61,.36,1);" style-hover="transform:translateY(-2px);box-shadow:0 1px 2px rgba(11,31,51,.05),0 20px 40px -24px rgba(11,31,51,.4)">
+            <div style="width: 88px; height: 88px; border-radius: 16px; background: linear-gradient(#0B1F33, #07141F); display: flex; align-items: center; justify-content: center;">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #BFE0DC;">SKU × канал</span>
+            </div>
+            <div>
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B46A3C; margin-bottom: 8px;">Ошибки управления</div>
+              <div style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 21px; line-height: 1.2; color: #0B1F33;">Потери маржи в каналах: комиссия внутри цены и слишком позднее решение</div>
+              <div style="font-size: 16px; line-height: 1.55; color: #475569; margin-top: 10px;">Почему решение о цене в канале принимается после того, как прибыль уже ушла.</div>
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; margin-top: 12px;">Черновик · 6 минут · разобрать →</div>
+            </div>
+          </a>
+          <a data-mat="razbor" data-mat-card href="#materials" style="display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 22px; text-decoration: none; background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 20px; padding: 22px 24px; transition: transform 200ms cubic-bezier(.22,.61,.36,1), box-shadow 200ms cubic-bezier(.22,.61,.36,1);" style-hover="transform:translateY(-2px);box-shadow:0 1px 2px rgba(11,31,51,.05),0 20px 40px -24px rgba(11,31,51,.4)">
+            <div style="width: 88px; height: 88px; border-radius: 16px; background: linear-gradient(#0B1F33, #07141F); display: flex; align-items: center; justify-content: center;">
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #C97F4D;">01 → 06</span>
+            </div>
+            <div>
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B46A3C; margin-bottom: 8px;">Разбор маржи</div>
+              <div style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 21px; line-height: 1.2; color: #0B1F33;">Диагностика маржинальности SKU: с чего начинается карта потерь</div>
+              <div style="font-size: 16px; line-height: 1.55; color: #475569; margin-top: 10px;">Какие данные нужны на входе и что становится видно после первого платного шага.</div>
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; margin-top: 12px;">Черновик · 8 минут · разобрать →</div>
+            </div>
+          </a>
+          <a data-mat="links" data-mat-card href="#materials" style="display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 22px; text-decoration: none; background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 20px; padding: 22px 24px; transition: transform 200ms cubic-bezier(.22,.61,.36,1), box-shadow 200ms cubic-bezier(.22,.61,.36,1);" style-hover="transform:translateY(-2px);box-shadow:0 1px 2px rgba(11,31,51,.05),0 20px 40px -24px rgba(11,31,51,.4)">
+            <div style="width: 88px; height: 88px; border-radius: 16px; background: linear-gradient(#0B1F33, #07141F); display: flex; align-items: center; justify-content: center;">
+              <span style="width: 34px; height: 34px; border-radius: 10px; border: 2px solid #C97F4D;"></span>
+            </div>
+            <div>
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B46A3C; margin-bottom: 8px;">Разбор маржи</div>
+              <div style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 21px; line-height: 1.2; color: #0B1F33;">Управление маржей ассортимента: что именно делает её управляемой</div>
+              <div style="font-size: 16px; line-height: 1.55; color: #475569; margin-top: 10px;">Шесть мест утечки, один контур решения и роль, у которой есть мандат на цену.</div>
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #0F766E; margin-top: 12px;">Черновик · 7 минут · читать →</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div style="margin-top: 34px; display: flex; align-items: center; justify-content: space-between; gap: 32px; background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 22px; padding: 28px 34px;" data-foot>
+        <div style="font-size: 18px; line-height: 1.55; color: #0B1F33; max-width: 60ch;">Материалы показывают метод. Разбор конкретной ситуации происходит внутри Диагностики.</div>
+        <a href="#request" style="flex: none; border-radius: 999px; background: #0B1F33; color: #F3EBDD; font-size: 16px; font-weight: 600; padding: 18px 28px; text-decoration: none;" style-hover="background:#123049">Получить разбор своей ситуации →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================= СТОИМОСТЬ И ГРАНИЦЫ ======================= -->
+  <div id="scope" data-screen-label="Границы" data-band data-reveal style="background: #E8E1D5; padding: 96px 56px 104px;">
+    <div style="max-width: 1520px; margin: 0 auto;">
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 48px; border-bottom: 2px solid #0B1F33; padding-bottom: 22px; margin-bottom: 44px;" data-foot>
+        <div>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: #B46A3C; margin-bottom: 16px;">Стоимость и границы</div>
+          <h2 data-t-h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 42px; line-height: 1.12; color: #0B1F33;">Где технология уместна, а где нет</h2>
+        </div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #475569; text-align: right; line-height: 1.9;">Диагностика · первый платный вход<br>Право на STOP сохраняется</div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px;" data-row3>
+        <div style="background: #FAF6EE; border: 2px solid #0B1F33; border-radius: 22px; padding: 32px 34px;" data-pad>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B46A3C; margin-bottom: 16px;">Вход</div>
+          <div data-t-h3 style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 24px; color: #0B1F33; margin-bottom: 14px;">Диагностика оплачивается</div>
+          <div style="font-size: 17px; line-height: 1.6; color: #475569;">Это платный первый шаг, а не бесплатный аудит и не тестовая сессия. Объём и стоимость определяются контуром: число каналов и глубина ассортимента.</div>
+          <div style="margin-top: 22px; padding-top: 20px; border-top: 1px solid #D8CFBE;">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #0F766E; margin-bottom: 14px;">Что остаётся у компании</div>
+            <div style="display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.55; color: #0B1F33;">
+              <div style="display: flex; gap: 12px;"><span style="color: #0F766E;">→</span> Карта утечки по строкам SKU × канал</div>
+              <div style="display: flex; gap: 12px;"><span style="color: #0F766E;">→</span> Перечень красных зон с причиной и предполагаемым владельцем</div>
+              <div style="display: flex; gap: 12px;"><span style="color: #0F766E;">→</span> Метрики проверки для каждой зоны</div>
+              <div style="display: flex; gap: 12px;"><span style="color: #0F766E;">→</span> Приоритет: с каких строк начинается Сессия</div>
+              <div style="display: flex; gap: 12px;"><span style="color: #0F766E;">→</span> Контрольный вердикт: продолжение, пауза или No Fit</div>
+            </div>
+          </div>
+        </div>
+        <div style="background: #FAF6EE; border: 1px solid #D8CFBE; border-radius: 22px; padding: 32px 34px;" data-pad>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #0F766E; margin-bottom: 16px;">Уместна, когда</div>
+          <div style="display: flex; flex-direction: column; gap: 12px; font-size: 17px; line-height: 1.55; color: #0B1F33;">
+            <div style="display: flex; gap: 12px;"><span style="color: #0F766E;">→</span> продажи идут в нескольких каналах одновременно</div>
+            <div style="display: flex; gap: 12px;"><span style="color: #0F766E;">→</span> ассортимент шире, чем можно вести вручную</div>
+            <div style="display: flex; gap: 12px;"><span style="color: #0F766E;">→</span> решения по цене и промо принимаются регулярно</div>
+            <div style="display: flex; gap: 12px;"><span style="color: #0F766E;">→</span> есть роль с мандатом на цену и условия канала</div>
+          </div>
+        </div>
+        <div style="background: #FAF6EE; border: 1px solid rgba(185,28,28,.4); border-radius: 22px; padding: 32px 34px;" data-pad>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #B91C1C; margin-bottom: 16px;">Не уместна, когда</div>
+          <div style="display: flex; flex-direction: column; gap: 12px; font-size: 17px; line-height: 1.55; color: #0B1F33;">
+            <div style="display: flex; gap: 12px;"><span style="color: #B91C1C;">→</span> нужен BI-контур или внедрение системы отчётности</div>
+            <div style="display: flex; gap: 12px;"><span style="color: #B91C1C;">→</span> нужна оценка сотрудников или реорганизация</div>
+            <div style="display: flex; gap: 12px;"><span style="color: #B91C1C;">→</span> данные по каналам не собираются в принципе</div>
+            <div style="display: flex; gap: 12px;"><span style="color: #B91C1C;">→</span> решение по цене не принадлежит никому внутри</div>
+          </div>
+          <div style="margin-top: 20px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #B91C1C;">Вердикт No Fit — законный исход</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================= FAQ ======================= -->
+  <div id="faq" data-screen-label="FAQ" data-band data-reveal style="background: #F3EBDD; padding: 96px 56px 104px;">
+    <div style="max-width: 1000px; margin: 0 auto;">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: #B46A3C; margin-bottom: 18px;">FAQ</div>
+      <h2 data-t-h2 style="margin: 0 0 40px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 42px; line-height: 1.12; color: #0B1F33;">Вопросы, которые задают до Диагностики</h2>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div data-faq-item style="background: #FFFDF8; border: 1px solid #D8CFBE; border-radius: 18px; overflow: hidden;">
+          <button type="button" aria-expanded="false" onClick="{{ toggleFaq }}" style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; background: none; border: none; cursor: pointer; padding: 26px 30px; text-align: left; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 21px; color: #0B1F33; min-height: 44px;">
+            <span>Чем это отличается от BI-панели, которая у нас уже есть?</span>
+            <span data-faq-sign style="font-family: 'IBM Plex Mono', monospace; font-size: 22px; color: #B46A3C;">+</span>
+          </button>
+          <div data-faq-a style="display: none; padding: 0 30px 26px; font-size: 17px; line-height: 1.6; color: #475569;">Панель показывает состояние. Контур Маржи назначает владельца, решение, срок и метрику проверки по строке SKU × канал. Технология работает с любыми данными, которые уже собираются, и не требует новой системы.</div>
+        </div>
+        <div data-faq-item style="background: #FFFDF8; border: 1px solid #D8CFBE; border-radius: 18px; overflow: hidden;">
+          <button type="button" aria-expanded="false" onClick="{{ toggleFaq }}" style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; background: none; border: none; cursor: pointer; padding: 26px 30px; text-align: left; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 21px; color: #0B1F33; min-height: 44px;">
+            <span>Почему Диагностика платная?</span>
+            <span data-faq-sign style="font-family: 'IBM Plex Mono', monospace; font-size: 22px; color: #B46A3C;">+</span>
+          </button>
+          <div data-faq-a style="display: none; padding: 0 30px 26px; font-size: 17px; line-height: 1.6; color: #475569;">Диагностика — это работа с данными компании и первая карта потерь, а не презентация. Её результат остаётся у компании независимо от того, продолжается ли работа дальше.</div>
+        </div>
+        <div data-faq-item style="background: #FFFDF8; border: 1px solid #D8CFBE; border-radius: 18px; overflow: hidden;">
+          <button type="button" aria-expanded="false" onClick="{{ toggleFaq }}" style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; background: none; border: none; cursor: pointer; padding: 26px 30px; text-align: left; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 21px; color: #0B1F33; min-height: 44px;">
+            <span>Какие данные нужны на входе?</span>
+            <span data-faq-sign style="font-family: 'IBM Plex Mono', monospace; font-size: 22px; color: #B46A3C;">+</span>
+          </button>
+          <div data-faq-a style="display: none; padding: 0 30px 26px; font-size: 17px; line-height: 1.6; color: #475569;">Продажи по позициям и каналам, цена и промо, комиссии каналов, логистика, возвраты и запас. Если часть данных не собирается, Диагностика фиксирует это как отдельный разрыв контура.</div>
+        </div>
+        <div data-faq-item style="background: #FFFDF8; border: 1px solid #D8CFBE; border-radius: 18px; overflow: hidden;">
+          <button type="button" aria-expanded="false" onClick="{{ toggleFaq }}" style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; background: none; border: none; cursor: pointer; padding: 26px 30px; text-align: left; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 21px; color: #0B1F33; min-height: 44px;">
+            <span>Кто участвует со стороны компании?</span>
+            <span data-faq-sign style="font-family: 'IBM Plex Mono', monospace; font-size: 22px; color: #B46A3C;">+</span>
+          </button>
+          <div data-faq-a style="display: none; padding: 0 30px 26px; font-size: 17px; line-height: 1.6; color: #475569;">Роли с мандатом: коммерция, категорийное управление, финансы, операции. Без владельца решения красная зона остаётся наблюдением, поэтому участие мандатных ролей обязательно.</div>
+        </div>
+        <div data-faq-item style="background: #FFFDF8; border: 1px solid #D8CFBE; border-radius: 18px; overflow: hidden;">
+          <button type="button" aria-expanded="false" onClick="{{ toggleFaq }}" style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; background: none; border: none; cursor: pointer; padding: 26px 30px; text-align: left; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 21px; color: #0B1F33; min-height: 44px;">
+            <span>Что если после Диагностики продолжать не нужно?</span>
+            <span data-faq-sign style="font-family: 'IBM Plex Mono', monospace; font-size: 22px; color: #B46A3C;">+</span>
+          </button>
+          <div data-faq-a style="display: none; padding: 0 30px 26px; font-size: 17px; line-height: 1.6; color: #475569;">Право на STOP сохраняется у обеих сторон. Вердикт No Fit означает, что технология сейчас не уместна, и работа не продолжается.</div>
+        </div>
+        <div data-faq-item style="background: #FFFDF8; border: 1px solid #D8CFBE; border-radius: 18px; overflow: hidden;">
+          <button type="button" aria-expanded="false" onClick="{{ toggleFaq }}" style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; background: none; border: none; cursor: pointer; padding: 26px 30px; text-align: left; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 21px; color: #0B1F33; min-height: 44px;">
+            <span>Технология остаётся у команды или требует сопровождения?</span>
+            <span data-faq-sign style="font-family: 'IBM Plex Mono', monospace; font-size: 22px; color: #B46A3C;">+</span>
+          </button>
+          <div data-faq-a style="display: none; padding: 0 30px 26px; font-size: 17px; line-height: 1.6; color: #475569;">Контур проектируется так, чтобы работать без внешнего участия. Сопровождение — это ритм проверки, а не условие работоспособности.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================= CTA + ФОРМА ======================= -->
+  <div id="request" data-screen-label="CTA и форма" data-scene data-scene-m style="position: relative; min-height: 860px; background: #07141F; overflow: hidden;">
+    <div data-slot-layer style="position: absolute; inset: 0; opacity: 0; z-index: 0;">
+      <image-slot id="cm-cta" shape="rect" fit="cover" placeholder="Финальная сцена: медная линия по тёмному коридору"></image-slot>
+    </div>
+    <div data-scene-art style="position: absolute; inset: 0; z-index: 1;">
+      <div style="position: absolute; inset: 0; background: radial-gradient(100% 80% at 20% 20%, rgba(232,205,182,.18), rgba(7,20,31,0) 62%), linear-gradient(160deg, #0B1F33, #07141F 60%, #050E17);"></div>
+      <div style="position: absolute; left: 0; right: 0; top: 46%; height: 2px; background: linear-gradient(90deg, rgba(201,127,77,0), #C97F4D 22%, #E8CDB6 54%, rgba(201,127,77,0) 92%); box-shadow: 0 0 18px 4px rgba(201,127,77,.26);"></div>
+      <div style="position: absolute; left: 6%; bottom: 0; width: 26%; height: 44%; background: linear-gradient(rgba(23,41,60,.7), rgba(7,20,31,0)); border-radius: 40px 40px 0 0;"></div>
+      <div style="position: absolute; right: 10%; bottom: 0; width: 18%; height: 34%; background: linear-gradient(rgba(15,118,110,.28), rgba(7,20,31,0)); border-radius: 40px 40px 0 0;"></div>
+    </div>
+    <div style="position: relative; z-index: 3; display: grid; grid-template-columns: minmax(0, 1fr) 46%; gap: 64px; align-items: center; padding: 104px 56px 110px;" data-split data-pad>
+      <div>
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 26px;">
+          <span style="width: 56px; height: 2px; background: #C97F4D; border-radius: 2px;"></span>
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .22em; text-transform: uppercase; color: rgba(243,235,221,.9);">Первый платный вход</span>
+        </div>
+        <h2 data-t-h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 56px; line-height: 1.06; color: #F3EBDD; text-wrap: pretty;">Переход начинается с карты потерь</h2>
+        <p data-lead style="font-size: 19px; line-height: 1.6; color: rgba(243,235,221,.82); margin: 26px 0 0; max-width: 46ch;">Диагностика показывает, где ассортимент теряет управляемую прибыль, и кто внутри компании может это изменить.</p>
+        <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 36px;">
+          <div style="display: flex; gap: 14px; font-size: 17px; color: rgba(243,235,221,.86);"><span style="color: #C97F4D;">→</span> Карта утечки по строкам SKU × канал</div>
+          <div style="display: flex; gap: 14px; font-size: 17px; color: rgba(243,235,221,.86);"><span style="color: #C97F4D;">→</span> Красные зоны с владельцем, сроком и метрикой</div>
+          <div style="display: flex; gap: 14px; font-size: 17px; color: rgba(243,235,221,.86);"><span style="color: #C97F4D;">→</span> Контрольный вердикт, включая право на STOP</div>
+        </div>
+      </div>
+      <div style="background: rgba(250,246,238,.97); border: 2px solid rgba(243,235,221,.5); border-radius: 26px; padding: 36px 38px; box-shadow: 0 30px 80px -40px rgba(0,0,0,.9);" data-pad>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: #B46A3C; margin-bottom: 10px;">Заявка на Диагностику</div>
+        <div data-t-h3 style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 26px; color: #0B1F33; margin-bottom: 26px;">Запросить платную Диагностику</div>
+        <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px;" data-form>
+          <div style="display: flex; flex-direction: column; gap: 8px; min-width: 0;">
+            <label for="cm-name" style="font-size: 14px; color: #475569;">Имя и роль</label>
+            <input id="cm-name" type="text" placeholder="Например: коммерческий директор" style="min-width: 0; width: 100%; box-sizing: border-box; border: 1px solid #D8CFBE; border-radius: 12px; background: #FFFDF8; padding: 15px 16px; font-size: 16px; font-family: inherit; color: #111827; min-height: 44px;">
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px; min-width: 0;">
+            <label for="cm-company" style="font-size: 14px; color: #475569;">Компания</label>
+            <input id="cm-company" type="text" style="min-width: 0; width: 100%; box-sizing: border-box; border: 1px solid #D8CFBE; border-radius: 12px; background: #FFFDF8; padding: 15px 16px; font-size: 16px; font-family: inherit; color: #111827; min-height: 44px;">
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px; min-width: 0;">
+            <label for="cm-email" style="font-size: 14px; color: #475569;">Рабочая почта</label>
+            <input id="cm-email" type="email" style="min-width: 0; width: 100%; box-sizing: border-box; border: 1px solid #D8CFBE; border-radius: 12px; background: #FFFDF8; padding: 15px 16px; font-size: 16px; font-family: inherit; color: #111827; min-height: 44px;">
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px; min-width: 0;">
+            <label for="cm-channels" style="font-size: 14px; color: #475569;">Каналы продаж</label>
+            <input id="cm-channels" type="text" placeholder="Розница, опт, маркетплейсы" style="min-width: 0; width: 100%; box-sizing: border-box; border: 1px solid #D8CFBE; border-radius: 12px; background: #FFFDF8; padding: 15px 16px; font-size: 16px; font-family: inherit; color: #111827; min-height: 44px;">
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 18px;">
+          <label for="cm-task" style="font-size: 14px; color: #475569;">Что сейчас неуправляемо</label>
+          <textarea id="cm-task" rows="3" placeholder="Вы можете описать ситуацию в двух-трёх предложениях" style="min-width: 0; width: 100%; box-sizing: border-box; border: 1px solid #D8CFBE; border-radius: 12px; background: #FFFDF8; padding: 15px 16px; font-size: 16px; font-family: inherit; color: #111827; resize: vertical;"></textarea>
+        </div>
+        <button type="button" style="width: 100%; margin-top: 26px; border: none; border-radius: 999px; background: #0B1F33; color: #F3EBDD; font-size: 17px; font-weight: 600; padding: 19px 28px; cursor: pointer; min-height: 44px; transition: background 120ms cubic-bezier(.22,.61,.36,1);" style-hover="background:#123049">Отправить заявку</button>
+        <div style="margin-top: 16px; font-size: 14px; line-height: 1.5; color: #475569;">Диагностика — платный первый шаг. Ответ приходит с описанием объёма и условий, включая право на STOP.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================= FOOTER ======================= -->
+  <div data-screen-label="Footer" style="background: #050E17; padding: 64px 56px 56px;" data-band>
+    <div style="max-width: 1520px; margin: 0 auto;">
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 48px; padding-bottom: 40px; border-bottom: 1px solid rgba(243,235,221,.18);" data-foot>
+        <div>
+          <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 14px;">
+            <span style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 24px; color: #F3EBDD;">Контур Маржи</span>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: rgba(243,235,221,.6);">одна из семи технологий C-Level Insight</span>
+          </div>
+          <div style="font-size: 16px; line-height: 1.6; color: rgba(243,235,221,.78); max-width: 52ch;">Управляемая маржа ассортимента в омниканальных продажах: строка, владелец, решение, проверка.</div>
+        </div>
+        <div style="display: flex; gap: 40px; font-size: 15px; color: rgba(243,235,221,.8);" data-foot>
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: rgba(243,235,221,.5);">Сайт</div>
+            <a href="#tech" style="color: inherit; text-decoration: none;" style-hover="color:#FFFFFF">Технология</a>
+            <a href="#ladder" style="color: inherit; text-decoration: none;" style-hover="color:#FFFFFF">Как работает</a>
+            <a href="#cases" style="color: inherit; text-decoration: none;" style-hover="color:#FFFFFF">Кейсы</a>
+            <a href="#materials" style="color: inherit; text-decoration: none;" style-hover="color:#FFFFFF">Материалы</a>
+            <a href="#scope" style="color: inherit; text-decoration: none;" style-hover="color:#FFFFFF">Стоимость и границы</a>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: rgba(243,235,221,.5);">Вход</div>
+            <a href="#request" style="color: inherit; text-decoration: none;" style-hover="color:#FFFFFF">Диагностика</a>
+            <a href="#faq" style="color: inherit; text-decoration: none;" style-hover="color:#FFFFFF">FAQ</a>
+            <a href="#request" style="color: inherit; text-decoration: none;" style-hover="color:#FFFFFF">Контакты</a>
+          </div>
+        </div>
+      </div>
+      <div style="padding-top: 34px;">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: rgba(243,235,221,.5); margin-bottom: 20px;">Семь технологий C-Level Insight</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <a href="https://c-level-insight.ru/technologies/" style="border-radius: 999px; border: 1px solid rgba(243,235,221,.24); padding: 11px 18px; font-size: 14px; color: rgba(243,235,221,.84); text-decoration: none;" style-hover="border-color:rgba(243,235,221,.6);color:#FFFFFF">проSTRAнство</a>
+          <a href="https://c-level-insight.ru/technologies/" style="border-radius: 999px; border: 1px solid rgba(243,235,221,.24); padding: 11px 18px; font-size: 14px; color: rgba(243,235,221,.84); text-decoration: none;" style-hover="border-color:rgba(243,235,221,.6);color:#FFFFFF">AI переход</a>
+          <a href="https://c-level-insight.ru/technologies/" style="border-radius: 999px; border: 1px solid rgba(243,235,221,.24); padding: 11px 18px; font-size: 14px; color: rgba(243,235,221,.84); text-decoration: none;" style-hover="border-color:rgba(243,235,221,.6);color:#FFFFFF">Управленческая Точность</a>
+          <a href="https://c-level-insight.ru/technologies/" style="border-radius: 999px; border: 1px solid rgba(243,235,221,.24); padding: 11px 18px; font-size: 14px; color: rgba(243,235,221,.84); text-decoration: none;" style-hover="border-color:rgba(243,235,221,.6);color:#FFFFFF">Управление Директорами · CLM</a>
+          <a href="https://c-level-insight.ru/technologies/" style="border-radius: 999px; border: 1px solid rgba(243,235,221,.24); padding: 11px 18px; font-size: 14px; color: rgba(243,235,221,.84); text-decoration: none;" style-hover="border-color:rgba(243,235,221,.6);color:#FFFFFF">Архитектура Переговоров</a>
+          <span style="border-radius: 999px; border: 1px solid #C97F4D; background: rgba(201,127,77,.14); padding: 11px 18px; font-size: 14px; color: #F3EBDD;">Контур Маржи</span>
+          <a href="https://c-level-insight.ru/technologies/" style="border-radius: 999px; border: 1px solid rgba(243,235,221,.24); padding: 11px 18px; font-size: 14px; color: rgba(243,235,221,.84); text-decoration: none;" style-hover="border-color:rgba(243,235,221,.6);color:#FFFFFF">Повторяемый Спрос</a>
+        </div>
+        <div style="margin-top: 34px; display: flex; align-items: center; justify-content: space-between; gap: 24px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: rgba(243,235,221,.45);" data-foot>
+          <span>C-Level Insight · Контур Маржи</span>
+          <a href="#top" style="color: inherit; text-decoration: none;" style-hover="color:rgba(243,235,221,.8)">Наверх ↑</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================= ПОЛНОЭКРАННЫЙ ПРОСМОТР СХЕМЫ ======================= -->
+  <div data-lightbox role="dialog" aria-modal="true" aria-label="Визуализация в режиме чтения" style="display: none; position: fixed; inset: 0; z-index: 100; background: rgba(5,14,23,.96); align-items: center; justify-content: center; padding: 40px;">
+    <div style="width: 100%; max-width: 1400px;">
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 18px;">
+        <div>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: rgba(243,235,221,.6); margin-bottom: 10px;">Визуализация · режим чтения</div>
+          <div data-lb-title style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 26px; color: #F3EBDD;"></div>
+        </div>
+        <button type="button" aria-label="Закрыть схему" onClick="{{ closeViz }}" style="flex: none; width: 48px; height: 48px; border-radius: 999px; border: 1px solid rgba(243,235,221,.4); background: rgba(243,235,221,.08); color: #F3EBDD; font-size: 20px; cursor: pointer;" style-hover="background:rgba(243,235,221,.2)">×</button>
+      </div>
+      <div style="background: #FAF6EE; border-radius: 20px; padding: 16px; max-height: 74vh; overflow: auto;">
+        <img data-lb-img src="assets/vizw/viz-01-core.webp" alt="" style="display: block; width: 100%; min-width: 700px; height: auto; border-radius: 12px;">
+      </div>
+      <div data-lb-caption style="margin-top: 16px; font-size: 16px; line-height: 1.55; color: rgba(243,235,221,.8);"></div>
+    </div>
+  </div>
+
+</div></x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;stickyNav&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Поведение&quot;},&quot;heroHeight&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:92,&quot;min&quot;:70,&quot;max&quot;:100,&quot;step&quot;:2,&quot;unit&quot;:&quot;vh&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Поведение&quot;},&quot;sceneGlow&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;сдержанный&quot;,&quot;соразмерный&quot;,&quot;выраженный&quot;],&quot;default&quot;:&quot;соразмерный&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Сцены&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    this.applyProps();
+    this.setupReveal();
+    this.setupNav();
+    this.setupSlots();
+    this._onKey = (e) => { if (e.key === 'Escape') this.closeViz(); };
+    document.addEventListener('keydown', this._onKey);
+  }
+  componentWillUnmount() { document.removeEventListener('keydown', this._onKey); }
+
+  componentDidUpdate() { this.applyProps(); }
+
+  applyProps() {
+    const r = this.root();
+    const nav = r.querySelector('[data-nav]');
+    if (nav) nav.style.position = (this.props.stickyNav ?? true) ? 'sticky' : 'static';
+    const hero = r.querySelector('[data-scene]');
+    if (hero) hero.style.minHeight = (this.props.heroHeight ?? 92) + 'vh';
+    const glow = this.props.sceneGlow ?? 'соразмерный';
+    const k = glow === 'сдержанный' ? 0.55 : glow === 'выраженный' ? 1.25 : 1;
+    [...r.querySelectorAll('[data-scene-art]')].forEach((a) => { a.style.filter = k === 1 ? 'none' : 'saturate(' + (0.7 + k * 0.3) + ') brightness(' + (0.85 + k * 0.15) + ')'; });
+  }
+
+  root() { return this._root || (this._root = document.querySelector('[data-sc-name]') || document.body); }
+
+  setupReveal() {
+    // Content is visible as authored; the observer only ADDS the entrance
+    // animation. A non-firing observer can never hide a band.
+    const nodes = [...this.root().querySelectorAll('[data-reveal]')];
+    nodes.forEach((n) => { n.style.opacity = ''; n.style.transform = ''; n.style.transition = ''; });
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce || !('IntersectionObserver' in window)) return;
+    this._io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        if (e.boundingClientRect.top > 40) {
+          e.target.style.animation = 'cmRise 320ms cubic-bezier(.22,.61,.36,1) both';
+        }
+        this._io.unobserve(e.target);
+      });
+    }, { rootMargin: '-6% 0px -10% 0px' });
+    nodes.forEach((n) => this._io.observe(n));
+  }
+
+  setupNav() {
+    const links = [...this.root().querySelectorAll('[data-navlink]')];
+    if (!links.length || !('IntersectionObserver' in window)) return;
+    const map = new Map();
+    links.forEach((l) => {
+      const t = document.getElementById(l.getAttribute('href').slice(1));
+      if (t) map.set(t, l);
+    });
+    const setActive = (link) => {
+      links.forEach((l) => {
+        const on = l === link;
+        l.style.background = on ? '#F3EBDD' : 'transparent';
+        l.style.color = on ? '#0B1F33' : '#475569';
+        l.style.boxShadow = on ? 'inset 0 -2px 0 #B46A3C' : 'none';
+      });
+    };
+    const io = new IntersectionObserver((entries) => {
+      const vis = entries.filter((e) => e.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+      if (vis.length) setActive(map.get(vis[0].target));
+    }, { rootMargin: '-20% 0px -60% 0px' });
+    map.forEach((_, t) => io.observe(t));
+  }
+
+  // A dropped photo replaces the CSS-built scene art of that section.
+  setupSlots() {
+    const layers = [...this.root().querySelectorAll('[data-slot-layer]')];
+    layers.forEach((layer) => {
+      const scene = layer.parentElement;
+      const art = scene && scene.querySelector('[data-scene-art]');
+      // Public layer never shows the slot's own placeholder / file-picker UI:
+      // an empty slot stays fully transparent (still a live drop target),
+      // a filled one takes over from the CSS-built scene.
+      const sync = () => {
+        const filled = !!layer.querySelector('img, canvas') || /url\(/.test(layer.innerHTML);
+        layer.style.opacity = filled ? '1' : '0';
+        // A dropped photo must sit ABOVE the CSS-built scene art, whatever the
+        // DOM order of the two layers is.
+        layer.style.zIndex = filled ? '2' : '0';
+        if (art) {
+          art.style.opacity = filled ? '0.35' : '1';
+          art.style.zIndex = filled ? '1' : '';
+        }
+      };
+      const mo = new MutationObserver(sync);
+      mo.observe(layer, { childList: true, subtree: true, attributes: true });
+      setTimeout(sync, 600);
+    });
+  }
+
+  openViz = (e) => {
+    const plate = e.currentTarget.closest('[data-viz]');
+    if (!plate) return;
+    const img = plate.querySelector('img');
+    const box = this.root().querySelector('[data-lightbox]');
+    if (!img || !box) return;
+    box.querySelector('[data-lb-img]').src = img.getAttribute('src');
+    box.querySelector('[data-lb-img]').alt = img.getAttribute('alt') || '';
+    box.querySelector('[data-lb-title]').textContent = plate.getAttribute('data-viz-title') || '';
+    box.querySelector('[data-lb-caption]').textContent = plate.getAttribute('data-viz-caption') || '';
+    box.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  };
+
+  closeViz = () => {
+    const box = this.root().querySelector('[data-lightbox]');
+    if (!box || box.style.display === 'none') return;
+    box.style.display = 'none';
+    document.body.style.overflow = '';
+  };
+
+  switchLayer = (e) => {
+    const btn = e.currentTarget;
+    const layer = btn.getAttribute('data-layer');
+    [...this.root().querySelectorAll('[data-layer-btn]')].forEach((b) => {
+      const on = b === btn;
+      b.style.background = on ? '#0B1F33' : 'transparent';
+      b.style.color = on ? '#F3EBDD' : '#0B1F33';
+    });
+    const img = this.root().querySelector('[data-ba-img]');
+    const cap = this.root().querySelector('[data-viz-cap]');
+    if (!img) return;
+    const plate = img.closest('[data-viz]');
+    const set = (src, alt, title, caption) => {
+      img.src = src;
+      img.alt = alt;
+      if (cap) cap.textContent = caption;
+      if (plate) {
+        plate.setAttribute('data-viz-title', title);
+        plate.setAttribute('data-viz-caption', caption);
+      }
+    };
+    if (layer === 'managed') {
+      set('assets/vizw/viz-05-red-zone.webp',
+        'Красная зона: строка, где прибыль стала управленческой задачей',
+        'Красная зона: строка, где прибыль стала управленческой задачей',
+        'Управляемая строка: у красной зоны названы поля решения, а не выдуманные значения.');
+    } else {
+      set('assets/vizw/viz-02-average-hides.webp',
+        'Средняя маржа не показывает, где именно течёт прибыль',
+        'Средняя маржа не показывает, где именно течёт прибыль',
+        'Одна средняя цифра может скрывать несколько красных строк SKU × канал.');
+    }
+  };
+
+  toggleFaq = (e) => {
+    const item = e.currentTarget.closest('[data-faq-item]');
+    if (!item) return;
+    const ans = item.querySelector('[data-faq-a]');
+    const sign = item.querySelector('[data-faq-sign]');
+    const open = ans.style.display !== 'none' && ans.style.display !== '';
+    ans.style.display = open ? 'none' : 'block';
+    e.currentTarget.setAttribute('aria-expanded', open ? 'false' : 'true');
+    if (sign) sign.textContent = open ? '+' : '–';
+    item.style.background = open ? '#FAF6EE' : '#FFFDF8';
+  };
+
+  filterMaterials = (e) => {
+    const chip = e.currentTarget;
+    const tag = chip.getAttribute('data-tag');
+    [...this.root().querySelectorAll('[data-chip]')].forEach((c) => {
+      const on = c === chip;
+      c.style.background = on ? '#0B1F33' : '#FAF6EE';
+      c.style.color = on ? '#F3EBDD' : '#475569';
+      c.style.borderColor = on ? '#0B1F33' : '#D8CFBE';
+    });
+    [...this.root().querySelectorAll('[data-mat]')].forEach((m) => {
+      const show = tag === 'all' || m.getAttribute('data-mat') === tag;
+      m.style.display = show ? '' : 'none';
+    });
+  };
+
+  renderVals() {
+    return {
+      openViz: this.openViz,
+      closeViz: this.closeViz,
+      switchLayer: this.switchLayer,
+      toggleFaq: this.toggleFaq,
+      filterMaterials: this.filterMaterials,
+    };
+  }
+}
+</script>
+</body>
+</html>

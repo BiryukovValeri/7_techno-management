@@ -1,0 +1,133 @@
+# Промпт для Claude Code: подготовка переноса Контур Маржи в WordPress / Elementor / Novomira
+
+Ты senior WordPress / Elementor / Novomira engineer.
+
+Задача: подготовить и выполнить перенос сайта технологии `Контур Маржи` из принятого Claude Design HTML в WordPress-страницу `/kontur-marzhi/`.
+
+Важно: это не редизайн. Не менять art direction, тексты, структуру и смысл. Не начинать сайт заново.
+
+## Входные материалы
+
+1. `Контур Маржи - сайт технологии (standalone).html` или `production/index.html`.
+2. `Контур Маржи сайт.zip`.
+3. `Перенос_в_WordPress_Novomira_Контур_Маржи_v1.1.md`.
+4. `Инструкция_WordPress_Elementor_Claude_Code_Novomira_Контур_Маржи_v1.0.md`.
+5. QA-отчет Claude Design v1.2.
+6. 12 визуализаций технологии из `assets/vizw/` / `assets/viz/`.
+7. 6 финальных image slots, если уже готовы: `hero`, `leak`, `redzone`, `cases`, `materials`, `cta`.
+8. OG-картинка, если уже готова.
+
+## Что сделать сначала
+
+1. Распаковать сайт в рабочую папку.
+2. Найти чистый production HTML.
+3. Найти публичные ассеты.
+4. Отделить production-ассеты от служебных папок Claude Design.
+5. Не переносить `_ds`, `ref`, `uploads`, runtime, `x-dc`, bundler-файлы и debug-отчеты в WordPress.
+
+## Что подготовить перед Novomira
+
+Создать документы:
+
+1. `elementor-transfer-map.md`
+   - 19 секций страницы;
+   - для каждой секции: Elementor container/widget или custom HTML/CSS;
+   - какие классы / стили критично сохранить;
+   - какие элементы редактируются в Elementor.
+
+2. `wordpress-assets-map.md`
+   - список всех изображений, WebP, PNG, OG;
+   - куда загрузить в Media Library;
+   - alt для каждого изображения;
+   - какие PNG использовать только для lightbox / download.
+
+3. `seo-geo-fields.md`
+   - title;
+   - description;
+   - canonical;
+   - robots;
+   - OpenGraph;
+   - Twitter Card;
+   - JSON-LD: Organization, WebSite, WebPage, BreadcrumbList, Service + OfferCatalog, FAQPage.
+
+4. `form-spec.md`
+   - поля формы;
+   - visible labels;
+   - обязательность;
+   - success message;
+   - куда отправляется заявка;
+   - текст согласия / privacy note.
+
+5. `content-links-map.md`
+   - все CTA;
+   - все anchors;
+   - ссылки на 7 технологий;
+   - будущие slugs материалов;
+   - ссылки footer.
+
+6. `novomira-handoff.md`
+   - короткая команда для Novomira;
+   - что переносить;
+   - что не переносить;
+   - где можно использовать custom HTML/CSS;
+   - где обязательно Elementor-editable.
+
+7. `qa-after-transfer.md`
+   - чеклист после переноса;
+   - desktop 1440;
+   - mobile 430 / 390 / 360;
+   - scrollWidth = clientWidth;
+   - SEO/GEO;
+   - CTA/form;
+   - отсутствие служебного текста.
+
+## Правила переноса
+
+1. Сохранять темный cinematic hero.
+2. Сохранять красную вертикаль как смысловой акцент.
+3. Сохранять медную линию маршрута.
+4. Сохранять мягкие радиусы 14-28px.
+5. Сохранять светлые бумажные секции.
+6. Сохранять блок `Материалы`.
+7. Сохранять блок `Это не`.
+8. Сохранять продуктовую логику: Диагностика -> Сессия -> Спринт 30-60-90 -> Сопровождение.
+9. Сохранять CTA `Запросить платную Диагностику`.
+10. Не превращать страницу в BI / dashboard / финансовую панель.
+
+## Novomira
+
+После подготовки карт:
+
+1. Подключиться к WordPress через Novomira MCP.
+2. Сначала вызвать `discover-abilities`.
+3. Проверить контекст сайта через `agent-context`.
+4. Проверить плагины и страницы через WP-CLI.
+5. Создать / обновить страницу `/kontur-marzhi/`.
+6. Загрузить ассеты через upload link или Media Library.
+7. Собрать страницу в Elementor, custom HTML/CSS использовать только там, где Elementor ломает принятую композицию.
+8. Настроить SEO/GEO.
+9. Настроить форму.
+10. Вернуть QA-отчет и preview URL.
+
+## Запреты
+
+1. Не удалять файлы темы или плагины без отдельного разрешения.
+2. Не менять дизайн-систему.
+3. Не публиковать standalone HTML как финальный сайт.
+4. Не оставлять prompt, placeholder, TODO, browse files, negative prompt в публичной странице.
+5. Не менять платную Диагностику на бесплатный аудит.
+6. Не упрощать страницу до обычного лендинга.
+7. Не менять структуру 19 секций без отдельного объяснения.
+
+## Результат
+
+Вернуть:
+
+1. preview URL;
+2. список перенесенных 19 секций;
+3. список ассетов;
+4. SEO/GEO подтверждение;
+5. CTA/form подтверждение;
+6. screenshots 1440 / 430 / 390 / 360;
+7. mobile measurements;
+8. список нерешенных вопросов.

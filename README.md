@@ -12,9 +12,15 @@ Public source repository for seven management technologies and the materials use
 
 ## Navigation
 
-- `technologies/01_UM_DA/` — current verified copy of the UM/DA Mac source folder.
-- `technologies/01_UM_DA/MANIFEST_SHA256.txt` — checksums for every imported source file.
-- `docs/01_UM_DA_IMPORT_AUDIT.md` — import and cleanup evidence.
+- `technologies/01_UM_DA/` — Управленческая Математика / Управленческая Точность.
+- `technologies/02_Assortment/` — Ассортимент / Контур Маржи.
+- `technologies/03_Negotiations/` — Переговорные технологии.
+- `technologies/04_Tribal_Marketing/` — Племенной маркетинг / Повторяемый Спрос.
+- `technologies/05_AI_First/` — AI First / AI Переход.
+- `technologies/06_CLM/` — CLM / Управление Директорами.
+- `technologies/07_STRAT_OPE/` — STRAT-OPE / проSTRAнство.
+- `docs/SOURCE_CORPUS_IMPORT_AUDIT.md` — complete import, integrity, duplicate, and cleanup audit.
+- `docs/CLAUDECODE_SITE_MATERIALS_AUDIT.md` — navigation and authority map for website-production materials in `BiryukovValeri/claudecode`.
+- `docs/CHATGPT_INTRODUCTION.md` — ready-to-use introduction for ChatGPT.
 
-The remaining six technology folders will be added after the UM/DA import procedure is verified.
-
+Every technology directory contains its own `MANIFEST_SHA256.txt`.

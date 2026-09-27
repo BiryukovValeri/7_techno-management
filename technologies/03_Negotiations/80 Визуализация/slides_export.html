@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"><title>Архитектура Переговоров — визуализации 01-12</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap&subset=cyrillic,latin" rel="stylesheet">
+<style>html,body{margin:0;padding:0;background:#0B1F33}body>section{width:1920px;height:1080px;margin:0 auto 24px;display:flex}</style></head><body>
+<section data-label="01 Ядро" data-screen-label="01" data-speaker-notes="Ядро технологии: вся цепочка от сторон и интересов до соглашения и разбора результата." style="background:#F3EBDD;background-image:linear-gradient(rgba(11,31,51,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(11,31,51,.05) 1px,transparent 1px);background-size:48px 48px;color:#111827;font-family:'IBM Plex Sans',system-ui,sans-serif;padding:44px 60px 34px;display:flex;flex-direction:column;box-sizing:border-box;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:20px;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap;gap:28px;color:#0B1F33;border-bottom:1.5px solid #0B1F33;padding-bottom:12px;">
+    <span>Архитектура Переговоров &nbsp;·&nbsp; Визуализация 01</span>
+    <span style="color:#475569;">Клиентский + консультантский слой · architecture map · сложность средняя</span>
+  </div>
+  <h2 style="font-family:'Source Serif 4',Georgia,serif;font-size:56px;font-weight:600;line-height:1.1;color:#0B1F33;margin:22px 0 0;">Переговоры становятся управляемыми, когда видна вся архитектура решения</h2>
+  <p style="font-size:27px;line-height:1.35;color:#475569;margin:12px 0 0;max-width:1660px;text-wrap:pretty;">Стороны, интересы, цели, альтернатива, зона соглашения, уступки, сценарии и фиксация результата собираются в один контур.</p>
+  <div style="flex:1;display:flex;flex-direction:column;gap:12px;margin:22px 0 16px;min-height:0;">
+    <div style="display:flex;align-items:center;gap:16px;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.09em;color:#B46A3C;">МАРШРУТ РЕШЕНИЯ</span>
+      <span style="flex:1;height:2px;background:#B46A3C;"></span>
+    </div>
+    <div style="flex:1;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:1fr 1fr;gap:12px;min-height:0;">
+      <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:16px 18px;display:flex;flex-direction:column;gap:6px;">
+        <div style="display:flex;gap:10px;align-items:baseline;"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;">01</span><span style="font-size:27px;font-weight:600;color:#0B1F33;">Стороны</span></div>
+        <div style="font-size:24px;line-height:1.3;">Кто участвует, кто влияет, кто принимает или блокирует решение.</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:16px 18px;display:flex;flex-direction:column;gap:6px;">
+        <div style="display:flex;gap:10px;align-items:baseline;"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;">02</span><span style="font-size:27px;font-weight:600;color:#0B1F33;">Интересы</span></div>
+        <div style="font-size:24px;line-height:1.3;">Что каждой стороне нужно на самом деле: деньги, срок, риск, контроль, статус, отношения.</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:16px 18px;display:flex;flex-direction:column;gap:6px;">
+        <div style="display:flex;gap:10px;align-items:baseline;"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;">03</span><span style="font-size:27px;font-weight:600;color:#0B1F33;">Цели</span></div>
+        <div style="font-size:24px;line-height:1.3;">Идеал, минимум, недопустимое условие и критерий хорошего результата.</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;border-left:5px solid #0F766E;background:rgba(255,255,255,.42);padding:16px 18px;display:flex;flex-direction:column;gap:6px;">
+        <div style="display:flex;gap:10px;align-items:baseline;"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;">04</span><span style="font-size:27px;font-weight:600;color:#0B1F33;">BATNA / лучшая альтернатива</span></div>
+        <div style="font-size:24px;line-height:1.3;">Что делаем, если соглашение становится плохим или невозможным.</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;border-left:5px solid #0F766E;background:rgba(255,255,255,.42);padding:16px 18px;display:flex;flex-direction:column;gap:6px;">
+        <div style="display:flex;gap:10px;align-items:baseline;"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;">05</span><span style="font-size:27px;font-weight:600;color:#0B1F33;">ZOPA / зона соглашения</span></div>
+        <div style="font-size:24px;line-height:1.3;">Где находится приемлемый диапазон условий, а где начинается плохое соглашение.</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:16px 18px;display:flex;flex-direction:column;gap:6px;">
+        <div style="display:flex;gap:10px;align-items:baseline;"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;">06</span><span style="font-size:27px;font-weight:600;color:#0B1F33;">Уступки</span></div>
+        <div style="font-size:24px;line-height:1.3;">Что можно менять, сколько это стоит и какой встречный шаг нужен.</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:16px 18px;display:flex;flex-direction:column;gap:6px;">
+        <div style="display:flex;gap:10px;align-items:baseline;"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;">07</span><span style="font-size:27px;font-weight:600;color:#0B1F33;">Сценарии</span></div>
+        <div style="font-size:24px;line-height:1.3;">Следующий раунд: идти, менять пакет, усиливать альтернативу, брать паузу или выходить.</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;background:#0B1F33;padding:16px 18px;display:flex;flex-direction:column;gap:6px;">
+        <div style="display:flex;gap:10px;align-items:baseline;"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#D9A87C;">08</span><span style="font-size:27px;font-weight:600;color:#F3EBDD;">Соглашение</span></div>
+        <div style="font-size:24px;line-height:1.3;color:#E7DECB;">Что фиксируется, кто отвечает, какие условия и риски остаются.</div>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex;gap:36px;align-items:flex-start;">
+    <div style="flex:1;display:flex;gap:14px;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#475569;padding-top:3px;">ЛЕГЕНДА</span>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;font-size:23px;">
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#0B1F33;display:inline-block;"></span>Deep Navy — архитектурный контур решения</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#B46A3C;display:inline-block;"></span>Copper — маршрут движения по цепочке</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#0F766E;display:inline-block;"></span>Muted Teal — усиление позиции и управляемость</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#B91C1C;display:inline-block;"></span>Diagnostic Red — плохое соглашение, остановка, запрет</div>
+      </div>
+    </div>
+    <div style="border:1.5px solid #B91C1C;padding:12px 18px;width:700px;flex:none;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#B91C1C;">ЭТО НЕ</div>
+      <div style="font-size:24px;line-height:1.3;margin-top:4px;">Не тренинг, не набор приемов давления, не обещание победы, не схема манипуляции другой стороной.</div>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:40px;border-top:1px solid rgba(11,31,51,.35);padding-top:12px;margin-top:16px;">
+    <span style="font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:24px;color:#0B1F33;">Архитектура Переговоров превращает переговоры из разговора в систему управляемого решения.</span>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#475569;letter-spacing:.03em;white-space:nowrap;">Визуализация_01_Ядро_Архитектуры_Переговоров_V1</span>
+  </div>
+</section>
+<section data-label="02 Переговорное поле" data-screen-label="02" data-speaker-notes="Поле сторон, интересов, ограничений и власти, включая внутренний контур." style="background:#F3EBDD;background-image:linear-gradient(rgba(11,31,51,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(11,31,51,.05) 1px,transparent 1px);background-size:48px 48px;color:#111827;font-family:'IBM Plex Sans',system-ui,sans-serif;padding:44px 60px 34px;display:flex;flex-direction:column;box-sizing:border-box;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:20px;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap;gap:28px;color:#0B1F33;border-bottom:1.5px solid #0B1F33;padding-bottom:12px;">
+    <span>Архитектура Переговоров &nbsp;·&nbsp; Визуализация 02</span>
+    <span style="color:#475569;">Клиентский слой · negotiation field map · сложность сложная</span>
+  </div>
+  <h2 style="font-family:'Source Serif 4',Georgia,serif;font-size:56px;font-weight:600;line-height:1.1;color:#0B1F33;margin:22px 0 0;">Переговорное поле шире, чем стол переговоров</h2>
+  <p style="font-size:27px;line-height:1.35;color:#475569;margin:12px 0 0;max-width:1660px;text-wrap:pretty;">Решение формируется между явными участниками, скрытыми влияющими ролями, интересами, ограничениями и правом сказать нет.</p>
+  <div style="flex:1;display:flex;flex-direction:column;gap:12px;margin:22px 0 16px;min-height:0;">
+    <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:12px;min-height:0;">
+      <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:16px 20px;display:flex;flex-direction:column;gap:6px;">
+        <div style="font-size:28px;font-weight:600;color:#0B1F33;">Внешняя сторона</div>
+        <div style="font-size:25px;line-height:1.3;">клиент, сеть, поставщик, подрядчик, партнер или канал</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;background:#0B1F33;padding:16px 20px;display:flex;flex-direction:column;gap:6px;">
+        <div style="font-size:28px;font-weight:600;color:#F3EBDD;">Внутренний контур</div>
+        <div style="font-size:25px;line-height:1.3;color:#E7DECB;">собственник, финансы, продажи, операции, закупки, юристы, проектная команда</div>
+      </div>
+    </div>
+    <div style="flex:1;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;min-height:0;">
+      <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:16px 20px;display:flex;flex-direction:column;gap:6px;">
+        <div style="font-size:28px;font-weight:600;color:#0B1F33;">Интересы</div>
+        <div style="font-size:25px;line-height:1.3;">что участники защищают помимо заявленной позиции</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:16px 20px;display:flex;flex-direction:column;gap:6px;">
+        <div style="font-size:28px;font-weight:600;color:#0B1F33;">Ограничения</div>
+        <div style="font-size:25px;line-height:1.3;">деньги, срок, маржа, риск, ресурс, ответственность, данные</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;border-left:5px solid #0F766E;background:rgba(255,255,255,.42);padding:16px 20px;display:flex;flex-direction:column;gap:6px;">
+        <div style="font-size:28px;font-weight:600;color:#0B1F33;">Власть</div>
+        <div style="font-size:25px;line-height:1.3;">кто имеет право согласовать цену, уступку, паузу, отказ или новый пакет</div>
+      </div>
+    </div>
+    <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:12px;min-height:0;">
+      <div style="border:1.5px dashed #475569;background:rgba(255,255,255,.28);padding:16px 20px;display:flex;flex-direction:column;gap:6px;">
+        <div style="font-size:28px;font-weight:600;color:#475569;">Слепая зона</div>
+        <div style="font-size:25px;line-height:1.3;">что команда не знает и поэтому заменяет догадкой</div>
+      </div>
+      <div style="border:1.5px solid #B91C1C;background:rgba(185,28,28,.07);padding:16px 20px;display:flex;flex-direction:column;gap:6px;">
+        <div style="font-size:28px;font-weight:600;color:#B91C1C;">Точка давления</div>
+        <div style="font-size:25px;line-height:1.3;">где решение может быть принято под страхом потери, якорем или срочностью</div>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex;gap:36px;align-items:flex-start;">
+    <div style="flex:1;display:flex;gap:14px;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#475569;padding-top:3px;">ЛЕГЕНДА</span>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;font-size:23px;">
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:34px;height:2px;background:#0B1F33;display:inline-block;"></span>Полная линия — подтвержденное влияние</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:34px;height:2px;background:repeating-linear-gradient(90deg,#475569 0 7px,transparent 7px 12px);display:inline-block;"></span>Пунктир — непроверенное влияние</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:rgba(185,28,28,.15);border:1.5px solid #B91C1C;display:inline-block;"></span>Красная зона — риск плохого решения</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#0F766E;display:inline-block;"></span>Бирюзовый маркер — владелец данных или решения</div>
+      </div>
+    </div>
+    <div style="border:1.5px solid #B91C1C;padding:12px 18px;width:700px;flex:none;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#B91C1C;">ЭТО НЕ</div>
+      <div style="font-size:24px;line-height:1.3;margin-top:4px;">Не оргструктура, не психологический портрет участников, не карта политических игр.</div>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:40px;border-top:1px solid rgba(11,31,51,.35);padding-top:12px;margin-top:16px;">
+    <span style="font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:24px;color:#0B1F33;">Сильная позиция начинается с карты поля, а не с красивого аргумента.</span>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#475569;letter-spacing:.03em;white-space:nowrap;">Визуализация_02_Переговорное_Поле_V1</span>
+  </div>
+</section>
+<section data-label="03 Диагностика" data-screen-label="03" data-speaker-notes="Платная Диагностика как первый продукт: что проверяем и какой вердикт." style="background:#F3EBDD;background-image:linear-gradient(rgba(11,31,51,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(11,31,51,.05) 1px,transparent 1px);background-size:48px 48px;color:#111827;font-family:'IBM Plex Sans',system-ui,sans-serif;padding:44px 60px 34px;display:flex;flex-direction:column;box-sizing:border-box;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:20px;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap;gap:28px;color:#0B1F33;border-bottom:1.5px solid #0B1F33;padding-bottom:12px;">
+    <span>Архитектура Переговоров &nbsp;·&nbsp; Визуализация 03</span>
+    <span style="color:#475569;">Коммерческий + консультантский слой · diagnostic card · сложность средняя</span>
+  </div>
+  <h2 style="font-family:'Source Serif 4',Georgia,serif;font-size:56px;font-weight:600;line-height:1.1;color:#0B1F33;margin:22px 0 0;">Диагностика показывает переговорные разрывы до дорогого решения</h2>
+  <p style="font-size:27px;line-height:1.35;color:#475569;margin:12px 0 0;max-width:1660px;text-wrap:pretty;">За 5-7 рабочих дней проверяется 1-2 реальные ситуации и собирается карта следующего шага.</p>
+  <div style="flex:1;display:flex;flex-direction:column;gap:14px;margin:22px 0 16px;min-height:0;">
+    <div style="flex:1;display:grid;grid-template-columns:repeat(5,1fr);gap:12px;min-height:0;">
+      <div style="border:1.5px solid #0B1F33;border-top:5px solid #0F766E;background:rgba(255,255,255,.42);padding:16px 18px;display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:27px;font-weight:600;color:#0B1F33;">Что проверяем</div>
+        <div style="font-size:24px;line-height:1.32;">ситуация, цена ошибки, цель, минимум, BATNA / лучшая альтернатива, ZOPA / зона соглашения</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;border-top:5px solid #0F766E;background:rgba(255,255,255,.42);padding:16px 18px;display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:27px;font-weight:600;color:#0B1F33;">Что уточняем</div>
+        <div style="font-size:24px;line-height:1.32;">данные по деньгам, срокам, марже, полномочиям, рискам, обязательствам</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;border-top:5px solid #B46A3C;background:rgba(255,255,255,.42);padding:16px 18px;display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:27px;font-weight:600;color:#0B1F33;">Что вскрываем</div>
+        <div style="font-size:24px;line-height:1.32;">разрывы между внешней позицией и внутренним мандатом команды</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;border-top:5px solid #B46A3C;background:rgba(255,255,255,.42);padding:16px 18px;display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:27px;font-weight:600;color:#0B1F33;">Что считаем</div>
+        <div style="font-size:24px;line-height:1.32;">цену уступок, цену паузы, цену плохого соглашения как рамку для решения</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;background:#0B1F33;padding:16px 18px;display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:27px;font-weight:600;color:#F3EBDD;">Что выдаем</div>
+        <div style="font-size:24px;line-height:1.32;color:#E7DECB;">карту переговорных разрывов, список недостающих данных и управленческий вывод</div>
+      </div>
+    </div>
+    <div style="border:1.5px solid #B91C1C;padding:14px 20px;display:flex;align-items:center;gap:26px;flex:none;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:23px;letter-spacing:.08em;color:#B91C1C;">ВЕРДИКТ</span>
+      <span style="font-size:27px;font-weight:600;color:#0B1F33;">продолжать, продолжать при условиях, уточнить данные, взять паузу, отказать</span>
+    </div>
+  </div>
+  <div style="display:flex;gap:36px;align-items:flex-start;">
+    <div style="flex:1;display:flex;gap:14px;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#475569;padding-top:3px;">ЛЕГЕНДА</span>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;font-size:23px;">
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#0F766E;display:inline-block;"></span>Бирюзовый — готовность и подтвержденные данные</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#B46A3C;display:inline-block;"></span>Медный — условный переход и следующий шаг</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#B91C1C;display:inline-block;"></span>Красный — остановка, риск или запрет</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#111827;display:inline-block;"></span>Графит — не подходит для следующего продукта</div>
+      </div>
+    </div>
+    <div style="border:1.5px solid #B91C1C;padding:12px 18px;width:700px;flex:none;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#B91C1C;">ЭТО НЕ</div>
+      <div style="font-size:24px;line-height:1.3;margin-top:4px;">Не бесплатный разбор, не стратегическая консультация, не гарантия результата сделки.</div>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:40px;border-top:1px solid rgba(11,31,51,.35);padding-top:12px;margin-top:16px;">
+    <span style="font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:24px;color:#0B1F33;">Диагностика продает не мнение консультанта, а управляемую карту переговорного решения.</span>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#475569;letter-spacing:.03em;white-space:nowrap;">Визуализация_03_Диагностика_Переговоров_V1</span>
+  </div>
+</section>
+<section data-label="04 Штаб" data-screen-label="04" data-speaker-notes="Подготовка до контакта: мандат, роли, данные, право на паузу." style="background:#F3EBDD;background-image:linear-gradient(rgba(11,31,51,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(11,31,51,.05) 1px,transparent 1px);background-size:48px 48px;color:#111827;font-family:'IBM Plex Sans',system-ui,sans-serif;padding:44px 60px 34px;display:flex;flex-direction:column;box-sizing:border-box;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:20px;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap;gap:28px;color:#0B1F33;border-bottom:1.5px solid #0B1F33;padding-bottom:12px;">
+    <span>Архитектура Переговоров &nbsp;·&nbsp; Визуализация 04</span>
+    <span style="color:#475569;">Консультантский + внутренний слой · preparation map · сложность средняя</span>
+  </div>
+  <h2 style="font-family:'Source Serif 4',Georgia,serif;font-size:56px;font-weight:600;line-height:1.1;color:#0B1F33;margin:22px 0 0;">Штаб переговоров собирает позицию до контакта с другой стороной</h2>
+  <p style="font-size:27px;line-height:1.35;color:#475569;margin:12px 0 0;max-width:1660px;text-wrap:pretty;">Внешний раунд нельзя начинать, пока внутри не согласованы цель, минимум, экономика, роли, уступки и право остановки.</p>
+  <div style="flex:1;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:1fr 1fr;gap:12px;margin:22px 0 16px;min-height:0;">
+    <div style="border:1.5px solid #0B1F33;background:#0B1F33;padding:18px 20px;display:flex;flex-direction:column;gap:8px;">
+      <div style="font-size:28px;font-weight:600;color:#F3EBDD;">Руководитель решения</div>
+      <div style="font-size:25px;line-height:1.3;color:#E7DECB;">подтверждает рамку, мандат, паузу и недопустимые условия</div>
+    </div>
+    <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:18px 20px;display:flex;flex-direction:column;gap:8px;">
+      <div style="font-size:28px;font-weight:600;color:#0B1F33;">Коммерция</div>
+      <div style="font-size:25px;line-height:1.3;">цель сделки, ценность предложения, клиентский сценарий</div>
+    </div>
+    <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:18px 20px;display:flex;flex-direction:column;gap:8px;">
+      <div style="font-size:28px;font-weight:600;color:#0B1F33;">Финансы</div>
+      <div style="font-size:25px;line-height:1.3;">маржа, касса, отсрочка, цена уступок, риск плохих условий</div>
+    </div>
+    <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:18px 20px;display:flex;flex-direction:column;gap:8px;">
+      <div style="font-size:28px;font-weight:600;color:#0B1F33;">Операции</div>
+      <div style="font-size:25px;line-height:1.3;">сроки, поставка, исполнение, возвраты, сервисные обязательства</div>
+    </div>
+    <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:18px 20px;display:flex;flex-direction:column;gap:8px;">
+      <div style="font-size:28px;font-weight:600;color:#0B1F33;">Юридический контур</div>
+      <div style="font-size:25px;line-height:1.3;">ответственность, ограничения, риск договора, условия фиксации</div>
+    </div>
+    <div style="border:1.5px solid #0B1F33;border-left:5px solid #0F766E;background:rgba(255,255,255,.42);padding:18px 20px;display:flex;flex-direction:column;gap:8px;">
+      <div style="font-size:28px;font-weight:600;color:#0B1F33;">Фиксатор</div>
+      <div style="font-size:25px;line-height:1.3;">протоколирует решение, спорные точки, ответственных и следующий шаг</div>
+    </div>
+  </div>
+  <div style="display:flex;gap:36px;align-items:flex-start;">
+    <div style="flex:1;display:flex;gap:14px;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#475569;padding-top:3px;">ЛЕГЕНДА</span>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;font-size:23px;">
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#0B1F33;display:inline-block;"></span>Штаб — внутренний переговорный контур</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#B46A3C;display:inline-block;"></span>Мандат — что команда имеет право обещать и менять</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#B91C1C;display:inline-block;"></span>Пауза — кто и при каких условиях останавливает движение</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#0F766E;display:inline-block;"></span>Выход — единая позиция для следующего раунда</div>
+      </div>
+    </div>
+    <div style="border:1.5px solid #B91C1C;padding:12px 18px;width:700px;flex:none;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#B91C1C;">ЭТО НЕ</div>
+      <div style="font-size:24px;line-height:1.3;margin-top:4px;">Не совещание ради согласования мнений, не регламент отдела продаж, не юридический комитет.</div>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:40px;border-top:1px solid rgba(11,31,51,.35);padding-top:12px;margin-top:16px;">
+    <span style="font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:24px;color:#0B1F33;">Компания проигрывает внешне, когда внутри нет единой позиции и права на паузу.</span>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#475569;letter-spacing:.03em;white-space:nowrap;">Визуализация_04_Штаб_Переговоров_V1</span>
+  </div>
+</section>
+<section data-label="05 BATNA / ZOPA" data-screen-label="05" data-speaker-notes="BATNA и ZOPA — разные элементы переговорной силы; сигналы паузы и выхода." style="background:#F3EBDD;background-image:linear-gradient(rgba(11,31,51,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(11,31,51,.05) 1px,transparent 1px);background-size:48px 48px;color:#111827;font-family:'IBM Plex Sans',system-ui,sans-serif;padding:44px 60px 34px;display:flex;flex-direction:column;box-sizing:border-box;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:20px;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap;gap:28px;color:#0B1F33;border-bottom:1.5px solid #0B1F33;padding-bottom:12px;">
+    <span>Архитектура Переговоров &nbsp;·&nbsp; Визуализация 05</span>
+    <span style="color:#475569;">Клиентский + консультантский слой · batna/zopa map · сложность средняя</span>
+  </div>
+  <h2 style="font-family:'Source Serif 4',Georgia,serif;font-size:56px;font-weight:600;line-height:1.1;color:#0B1F33;margin:22px 0 0;">BATNA и ZOPA отвечают на разные вопросы переговорной силы</h2>
+  <p style="font-size:27px;line-height:1.35;color:#475569;margin:12px 0 0;max-width:1660px;text-wrap:pretty;">BATNA / лучшая альтернатива показывает, чем заменить плохое соглашение; ZOPA / зона соглашения показывает допустимый диапазон условий.</p>
+  <div style="flex:1;display:flex;flex-direction:column;gap:12px;margin:22px 0 16px;min-height:0;">
+    <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:12px;min-height:0;">
+      <div style="display:flex;flex-direction:column;gap:12px;min-height:0;">
+        <div style="flex:1;border:1.5px dashed #0B1F33;background:rgba(255,255,255,.42);padding:16px 20px;display:flex;flex-direction:column;gap:8px;">
+          <div style="font-size:28px;font-weight:600;color:#0B1F33;">BATNA / лучшая альтернатива</div>
+          <div style="font-size:25px;line-height:1.3;">что компания делает, если текущие условия неприемлемы</div>
+        </div>
+        <div style="flex:1;border:1.5px solid #0F766E;background:rgba(15,118,110,.08);padding:16px 20px;display:flex;flex-direction:column;gap:8px;">
+          <div style="font-size:28px;font-weight:600;color:#0F766E;">Усиление альтернативы</div>
+          <div style="font-size:25px;line-height:1.3;">какие действия до раунда уменьшают зависимость от одного исхода</div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;min-height:0;">
+        <div style="flex:1;border:1.5px solid #0F766E;background:rgba(15,118,110,.14);padding:16px 20px;display:flex;flex-direction:column;gap:8px;">
+          <div style="font-size:28px;font-weight:600;color:#0F766E;">ZOPA / зона соглашения</div>
+          <div style="font-size:25px;line-height:1.3;">где условия остаются приемлемыми для компании и другой стороны</div>
+        </div>
+        <div style="flex:1;border:1.5px solid #B91C1C;background:rgba(185,28,28,.08);padding:16px 20px;display:flex;flex-direction:column;gap:8px;">
+          <div style="font-size:28px;font-weight:600;color:#B91C1C;">Граница плохого соглашения</div>
+          <div style="font-size:25px;line-height:1.3;">условие, после которого сделка разрушает минимум, маржу, кассу, срок или риск</div>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;flex:none;">
+      <div style="border:1.5px solid #B46A3C;padding:14px 20px;display:flex;align-items:baseline;gap:18px;">
+        <span style="font-size:26px;font-weight:600;color:#B46A3C;white-space:nowrap;">Сигнал паузы</span>
+        <span style="font-size:25px;line-height:1.3;">момент, когда нельзя отвечать сразу и нужно вернуть решение в штаб</span>
+      </div>
+      <div style="border:1.5px solid #B91C1C;padding:14px 20px;display:flex;align-items:baseline;gap:18px;">
+        <span style="font-size:26px;font-weight:600;color:#B91C1C;white-space:nowrap;">Сигнал выхода</span>
+        <span style="font-size:25px;line-height:1.3;">момент, когда отказ лучше плохого соглашения</span>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex;gap:36px;align-items:flex-start;">
+    <div style="flex:1;display:flex;gap:14px;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#475569;padding-top:3px;">ЛЕГЕНДА</span>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;font-size:23px;">
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:rgba(15,118,110,.35);border:1.5px solid #0F766E;display:inline-block;"></span>Зеленая зона — допустимый диапазон</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#B46A3C;display:inline-block;"></span>Медная зона — условный обмен и встречный шаг</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:rgba(185,28,28,.2);border:1.5px solid #B91C1C;display:inline-block;"></span>Красная зона — плохое соглашение</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:34px;height:2px;background:repeating-linear-gradient(90deg,#0B1F33 0 7px,transparent 7px 12px);display:inline-block;"></span>Пунктир — неподтвержденная альтернатива</div>
+      </div>
+    </div>
+    <div style="border:1.5px solid #B91C1C;padding:12px 18px;width:700px;flex:none;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#B91C1C;">ЭТО НЕ</div>
+      <div style="font-size:24px;line-height:1.3;margin-top:4px;">Не одна таблица целей, не расчет желания другой стороны, не способ навязать диапазон.</div>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:40px;border-top:1px solid rgba(11,31,51,.35);padding-top:12px;margin-top:16px;">
+    <span style="font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:24px;color:#0B1F33;">Без BATNA компания зависит от сделки; без ZOPA она не видит границу плохого соглашения.</span>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#475569;letter-spacing:.03em;white-space:nowrap;">Визуализация_05_BATNA_ZOPA_V1</span>
+  </div>
+</section>
+<section data-label="06 Карта уступок" data-screen-label="06" data-speaker-notes="Уступка имеет цену, границу и встречное действие." style="background:#F3EBDD;background-image:linear-gradient(rgba(11,31,51,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(11,31,51,.05) 1px,transparent 1px);background-size:48px 48px;color:#111827;font-family:'IBM Plex Sans',system-ui,sans-serif;padding:44px 60px 34px;display:flex;flex-direction:column;box-sizing:border-box;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:20px;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap;gap:28px;color:#0B1F33;border-bottom:1.5px solid #0B1F33;padding-bottom:12px;">
+    <span>Архитектура Переговоров &nbsp;·&nbsp; Визуализация 06</span>
+    <span style="color:#475569;">Консультантский + клиентский слой · concession map · сложность средняя</span>
+  </div>
+  <h2 style="font-family:'Source Serif 4',Georgia,serif;font-size:56px;font-weight:600;line-height:1.1;color:#0B1F33;margin:22px 0 0;">Уступка не отдается бесплатно: у нее есть цена и встречный шаг</h2>
+  <p style="font-size:27px;line-height:1.35;color:#475569;margin:12px 0 0;max-width:1660px;text-wrap:pretty;">Скидка, отсрочка, объем, срок, штрафы, возвраты и дополнительные обязательства должны быть собраны в пакет условий.</p>
+  <div style="flex:1;display:flex;flex-direction:column;gap:12px;margin:22px 0 16px;min-height:0;">
+    <div style="flex:1;display:flex;align-items:stretch;gap:10px;min-height:0;">
+      <div style="flex:1;border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:16px 18px;display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:27px;font-weight:600;color:#0B1F33;">Что просит другая сторона</div>
+        <div style="font-size:24px;line-height:1.32;">скидка, отсрочка, объем, срок, эксклюзивность, доплата, возвраты</div>
+      </div>
+      <span style="align-self:center;font-size:34px;color:#B46A3C;">→</span>
+      <div style="flex:1;border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:16px 18px;display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:27px;font-weight:600;color:#0B1F33;">Цена уступки</div>
+        <div style="font-size:24px;line-height:1.32;">маржа, касса, риск исполнения, склад, ресурс, ответственность, будущие обязательства</div>
+      </div>
+      <span style="align-self:center;font-size:34px;color:#B46A3C;">→</span>
+      <div style="flex:1;border:1.5px solid #B46A3C;background:rgba(180,106,60,.08);padding:16px 18px;display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:27px;font-weight:600;color:#B46A3C;">Встречный шаг</div>
+        <div style="font-size:24px;line-height:1.32;">объем, срок оплаты, график закупок, данные, гарантия, ограничение риска, совместное действие</div>
+      </div>
+    </div>
+    <div style="flex:1;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;min-height:0;">
+      <div style="border:1.5px solid #0F766E;background:rgba(15,118,110,.1);padding:16px 18px;display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:27px;font-weight:600;color:#0F766E;">Что нельзя отдавать</div>
+        <div style="font-size:24px;line-height:1.32;">минимум сделки, критичная маржа, право на данные, контроль клиента, право на паузу</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;background:#0B1F33;padding:16px 18px;display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:27px;font-weight:600;color:#F3EBDD;">Пакет условий</div>
+        <div style="font-size:24px;line-height:1.32;color:#E7DECB;">безопасный пакет, расширенный пакет, условный пакет, отказ от плохой сделки</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:16px 18px;display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:27px;font-weight:600;color:#0B1F33;">Фиксация</div>
+        <div style="font-size:24px;line-height:1.32;">какая уступка дана, за что, кем подтверждена и как проверяется исполнение</div>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex;gap:36px;align-items:flex-start;">
+    <div style="flex:1;display:flex;gap:14px;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#475569;padding-top:3px;">ЛЕГЕНДА</span>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;font-size:23px;">
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#B91C1C;display:inline-block;"></span>Красный — уступка без встречного шага</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#B46A3C;display:inline-block;"></span>Медный — обмен ценностью</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#0F766E;display:inline-block;"></span>Бирюзовый — защищенная граница</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#111827;display:inline-block;"></span>Графит — условие, требующее расчета</div>
+      </div>
+    </div>
+    <div style="border:1.5px solid #B91C1C;padding:12px 18px;width:700px;flex:none;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#B91C1C;">ЭТО НЕ</div>
+      <div style="font-size:24px;line-height:1.3;margin-top:4px;">Не прайс-лист уступок, не техника торга, не разрешение снижать цену ради сделки.</div>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:40px;border-top:1px solid rgba(11,31,51,.35);padding-top:12px;margin-top:16px;">
+    <span style="font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:24px;color:#0B1F33;">Сильная уступка защищает ценность; слабая уступка просто отдает ее.</span>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#475569;letter-spacing:.03em;white-space:nowrap;">Визуализация_06_Карта_Уступок_V1</span>
+  </div>
+</section>
+<section data-label="07 Клиентский путь" data-screen-label="07" data-speaker-notes="Путь от платной Диагностики к Сессии, Спринту и Сопровождению." style="background:#F3EBDD;background-image:linear-gradient(rgba(11,31,51,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(11,31,51,.05) 1px,transparent 1px);background-size:48px 48px;color:#111827;font-family:'IBM Plex Sans',system-ui,sans-serif;padding:44px 60px 34px;display:flex;flex-direction:column;box-sizing:border-box;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:20px;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap;gap:28px;color:#0B1F33;border-bottom:1.5px solid #0B1F33;padding-bottom:12px;">
+    <span>Архитектура Переговоров &nbsp;·&nbsp; Визуализация 07</span>
+    <span style="color:#475569;">Коммерческий слой · product ladder · сложность простая</span>
+  </div>
+  <h2 style="font-family:'Source Serif 4',Georgia,serif;font-size:56px;font-weight:600;line-height:1.1;color:#0B1F33;margin:22px 0 0;">Путь клиента начинается с платной Диагностики</h2>
+  <p style="font-size:27px;line-height:1.35;color:#475569;margin:12px 0 0;max-width:1660px;text-wrap:pretty;">Диагностика отсекает нецелевой запрос, Сессия собирает позицию, Спринт переводит технологию в практику, Сопровождение удерживает систему.</p>
+  <div style="flex:1;display:flex;flex-direction:column;gap:14px;margin:22px 0 16px;min-height:0;">
+    <div style="border:1.5px dashed #475569;padding:12px 20px;display:flex;align-items:baseline;gap:22px;flex:none;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:23px;letter-spacing:.08em;color:#475569;">ДО ПРОДУКТА</span>
+      <span style="font-size:26px;line-height:1.3;">первичный разговор, квалификация, выбор реальной ситуации</span>
+    </div>
+    <div style="flex:1;display:flex;align-items:stretch;gap:10px;min-height:0;">
+      <div style="flex:1;background:#0B1F33;padding:20px;display:flex;flex-direction:column;gap:10px;">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#D9A87C;">01</span>
+        <div style="font-family:'Source Serif 4',Georgia,serif;font-size:34px;font-weight:600;color:#F3EBDD;">Диагностика</div>
+        <div style="font-size:25px;line-height:1.32;color:#E7DECB;">5-7 рабочих дней; карта разрывов; вердикт; цена от 350 000 руб.</div>
+      </div>
+      <span style="align-self:center;font-size:34px;color:#B46A3C;">→</span>
+      <div style="flex:1;background:#0B1F33;padding:20px;display:flex;flex-direction:column;gap:10px;">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#D9A87C;">02</span>
+        <div style="font-family:'Source Serif 4',Georgia,serif;font-size:34px;font-weight:600;color:#F3EBDD;">Сессия</div>
+        <div style="font-size:25px;line-height:1.32;color:#E7DECB;">1 день + подготовка; переговорный дизайн; единая позиция; цена от 900 000 руб.</div>
+      </div>
+      <span style="align-self:center;font-size:34px;color:#B46A3C;">→</span>
+      <div style="flex:1;background:#0B1F33;padding:20px;display:flex;flex-direction:column;gap:10px;">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#D9A87C;">03</span>
+        <div style="font-family:'Source Serif 4',Georgia,serif;font-size:34px;font-weight:600;color:#F3EBDD;">Спринт</div>
+        <div style="font-size:25px;line-height:1.32;color:#E7DECB;">4-6 недель; практика на реальных переговорах; цена от 1 800 000 руб.</div>
+      </div>
+      <span style="align-self:center;font-size:34px;color:#B46A3C;">→</span>
+      <div style="flex:1;background:#0B1F33;padding:20px;display:flex;flex-direction:column;gap:10px;">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#D9A87C;">04</span>
+        <div style="font-family:'Source Serif 4',Georgia,serif;font-size:34px;font-weight:600;color:#F3EBDD;">Сопровождение</div>
+        <div style="font-size:25px;line-height:1.32;color:#E7DECB;">от 3 месяцев; регулярный разбор и удержание переговорной силы; цена от 900 000 руб. / мес.</div>
+      </div>
+    </div>
+    <div style="border:1.5px solid #B91C1C;padding:14px 20px;display:flex;align-items:center;gap:26px;flex:none;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:23px;letter-spacing:.08em;color:#B91C1C;">ВЕРДИКТЫ</span>
+      <span style="font-size:27px;font-weight:600;color:#0B1F33;">продолжать; продолжать при условиях; уточнить данные; взять паузу; отказать</span>
+    </div>
+  </div>
+  <div style="display:flex;gap:36px;align-items:flex-start;">
+    <div style="flex:1;display:flex;gap:14px;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#475569;padding-top:3px;">ЛЕГЕНДА</span>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;font-size:23px;">
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:34px;height:2px;background:repeating-linear-gradient(90deg,#475569 0 7px,transparent 7px 12px);display:inline-block;"></span>Пунктир — до продукта, еще не платная работа</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="color:#B46A3C;font-size:22px;">→</span>Сплошная стрелка — основной продуктовый переход</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="color:#B46A3C;font-size:22px;">⇢</span>Пунктирная стрелка — условный переход после уточнения</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#B91C1C;display:inline-block;"></span>Красная блокировка — отказ или остановка</div>
+      </div>
+    </div>
+    <div style="border:1.5px solid #B91C1C;padding:12px 18px;width:700px;flex:none;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#B91C1C;">ЭТО НЕ</div>
+      <div style="font-size:24px;line-height:1.3;margin-top:4px;">Не бесплатная воронка, не продажа презентации, не набор разрозненных услуг.</div>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:40px;border-top:1px solid rgba(11,31,51,.35);padding-top:12px;margin-top:16px;">
+    <span style="font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:24px;color:#0B1F33;">Платный вход защищает технологию от халявного разбора и калибрует следующий формат.</span>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#475569;letter-spacing:.03em;white-space:nowrap;">Визуализация_07_Клиентский_Путь_4_Продуктов_V1</span>
+  </div>
+</section>
+<section data-label="08 Сессия" data-screen-label="08" data-speaker-notes="Сессия: сборка единой позиции и сценария следующего раунда." style="background:#F3EBDD;background-image:linear-gradient(rgba(11,31,51,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(11,31,51,.05) 1px,transparent 1px);background-size:48px 48px;color:#111827;font-family:'IBM Plex Sans',system-ui,sans-serif;padding:44px 60px 34px;display:flex;flex-direction:column;box-sizing:border-box;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:20px;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap;gap:28px;color:#0B1F33;border-bottom:1.5px solid #0B1F33;padding-bottom:12px;">
+    <span>Архитектура Переговоров &nbsp;·&nbsp; Визуализация 08</span>
+    <span style="color:#475569;">Консультантский + коммерческий слой · session flow · сложность средняя</span>
+  </div>
+  <h2 style="font-family:'Source Serif 4',Georgia,serif;font-size:56px;font-weight:600;line-height:1.1;color:#0B1F33;margin:22px 0 0;">Сессия собирает единую позицию и сценарий следующего раунда</h2>
+  <p style="font-size:27px;line-height:1.35;color:#475569;margin:12px 0 0;max-width:1660px;text-wrap:pretty;">Команда выходит не с общим мнением, а с целью, минимумом, картой влияния, пакетом условий, ролями и правом на паузу.</p>
+  <div style="flex:1;display:flex;flex-direction:column;gap:12px;margin:22px 0 16px;min-height:0;">
+    <div style="background:#0B1F33;padding:14px 20px;display:flex;align-items:baseline;gap:24px;flex:none;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:23px;letter-spacing:.08em;color:#D9A87C;">ВХОД</span>
+      <span style="font-size:26px;line-height:1.3;color:#F3EBDD;">результаты Диагностики, данные, участники, цена ошибки</span>
+    </div>
+    <div style="flex:1;display:grid;grid-template-columns:repeat(5,1fr);gap:10px;min-height:0;">
+      <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:16px 16px;display:flex;flex-direction:column;gap:8px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#B46A3C;">01</div>
+        <div style="font-size:26px;font-weight:600;color:#0B1F33;">Цель и минимум</div>
+        <div style="font-size:24px;line-height:1.3;">какой результат нужен и где начинается плохое соглашение</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:16px 16px;display:flex;flex-direction:column;gap:8px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#B46A3C;">02</div>
+        <div style="font-size:26px;font-weight:600;color:#0B1F33;">Карта влияния</div>
+        <div style="font-size:24px;line-height:1.3;">кто влияет, кто решает, кто блокирует, где нужен отдельный контакт</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:16px 16px;display:flex;flex-direction:column;gap:8px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#B46A3C;">03</div>
+        <div style="font-size:26px;font-weight:600;color:#0B1F33;">Пакет условий</div>
+        <div style="font-size:24px;line-height:1.3;">что предлагаем, что уступаем, что берем взамен</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:16px 16px;display:flex;flex-direction:column;gap:8px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#B46A3C;">04</div>
+        <div style="font-size:26px;font-weight:600;color:#0B1F33;">Ролевая карта</div>
+        <div style="font-size:24px;line-height:1.3;">кто говорит, кто считает, кто фиксирует, кто охраняет границы</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;border-bottom:5px solid #B91C1C;background:rgba(255,255,255,.42);padding:16px 16px;display:flex;flex-direction:column;gap:8px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#B46A3C;">05</div>
+        <div style="font-size:26px;font-weight:600;color:#0B1F33;">Сценарий</div>
+        <div style="font-size:24px;line-height:1.3;">идти, менять пакет, уточнять данные, брать паузу, усиливать альтернативу или выходить</div>
+      </div>
+    </div>
+    <div style="border:1.5px solid #0F766E;background:rgba(15,118,110,.09);padding:14px 20px;display:flex;align-items:baseline;gap:24px;flex:none;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:23px;letter-spacing:.08em;color:#0F766E;">ВЫХОД</span>
+      <span style="font-size:26px;font-weight:600;line-height:1.3;color:#0B1F33;">единая позиция команды и паспорт Спринта 30-60-90 при необходимости</span>
+    </div>
+  </div>
+  <div style="display:flex;gap:36px;align-items:flex-start;">
+    <div style="flex:1;display:flex;gap:14px;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#475569;padding-top:3px;">ЛЕГЕНДА</span>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;font-size:23px;">
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#0B1F33;display:inline-block;"></span>Deep Navy — решения команды</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#B46A3C;display:inline-block;"></span>Copper — маршрут сборки</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#0F766E;display:inline-block;"></span>Muted Teal — подтвержденный мандат</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#B91C1C;display:inline-block;"></span>Diagnostic Red — недопустимое условие</div>
+      </div>
+    </div>
+    <div style="border:1.5px solid #B91C1C;padding:12px 18px;width:700px;flex:none;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#B91C1C;">ЭТО НЕ</div>
+      <div style="font-size:24px;line-height:1.3;margin-top:4px;">Не фасилитация ради разговора, не тренинг, не мотивационная встреча команды.</div>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:40px;border-top:1px solid rgba(11,31,51,.35);padding-top:12px;margin-top:16px;">
+    <span style="font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:24px;color:#0B1F33;">Сессия нужна, когда переговорная позиция должна быть собрана командой, а не одним участником.</span>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#475569;letter-spacing:.03em;white-space:nowrap;">Визуализация_08_Сессия_Переговорная_Архитектура_V1</span>
+  </div>
+</section>
+<section data-label="09 Спринт 30-60-90" data-screen-label="09" data-speaker-notes="Перевод технологии в регулярную практику команды на ограниченном контуре." style="background:#F3EBDD;background-image:linear-gradient(rgba(11,31,51,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(11,31,51,.05) 1px,transparent 1px);background-size:48px 48px;color:#111827;font-family:'IBM Plex Sans',system-ui,sans-serif;padding:44px 60px 34px;display:flex;flex-direction:column;box-sizing:border-box;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:20px;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap;gap:28px;color:#0B1F33;border-bottom:1.5px solid #0B1F33;padding-bottom:12px;">
+    <span>Архитектура Переговоров &nbsp;·&nbsp; Визуализация 09</span>
+    <span style="color:#475569;">Консультантский слой · sprint flow · сложность средняя</span>
+  </div>
+  <h2 style="font-family:'Source Serif 4',Georgia,serif;font-size:56px;font-weight:600;line-height:1.1;color:#0B1F33;margin:22px 0 0;">Спринт 30-60-90 переводит переговорную архитектуру в практику команды</h2>
+  <p style="font-size:27px;line-height:1.35;color:#475569;margin:12px 0 0;max-width:1660px;text-wrap:pretty;">Команда проверяет сценарии, роли, аргументы, уступки и фиксацию результата на реальных внешних и внутренних ситуациях.</p>
+  <div style="flex:1;display:flex;flex-direction:column;gap:12px;margin:22px 0 16px;min-height:0;">
+    <div style="flex:1;display:flex;align-items:stretch;gap:10px;min-height:0;">
+      <div style="flex:1;border:1.5px solid #0B1F33;border-bottom:5px solid #0F766E;background:rgba(255,255,255,.42);padding:16px 20px;display:flex;flex-direction:column;gap:6px;">
+        <div style="font-family:'Source Serif 4',Georgia,serif;font-size:76px;font-weight:600;line-height:1;color:#0B1F33;">30</div>
+        <div style="font-size:25px;line-height:1.32;">зафиксировать контур, ситуации, владельцев, данные, короткий набор показателей</div>
+      </div>
+      <span style="align-self:center;font-size:34px;color:#B46A3C;">→</span>
+      <div style="flex:1;border:1.5px solid #0B1F33;border-bottom:5px solid #0F766E;background:rgba(255,255,255,.42);padding:16px 20px;display:flex;flex-direction:column;gap:6px;">
+        <div style="font-family:'Source Serif 4',Georgia,serif;font-size:76px;font-weight:600;line-height:1;color:#0B1F33;">60</div>
+        <div style="font-size:25px;line-height:1.32;">провести реальные циклы, разобрать уступки, риски, роли, паузы и фиксацию</div>
+      </div>
+      <span style="align-self:center;font-size:34px;color:#B46A3C;">→</span>
+      <div style="flex:1;border:1.5px solid #0B1F33;border-bottom:5px solid #0F766E;background:rgba(255,255,255,.42);padding:16px 20px;display:flex;flex-direction:column;gap:6px;">
+        <div style="font-family:'Source Serif 4',Georgia,serif;font-size:76px;font-weight:600;line-height:1;color:#0B1F33;">90</div>
+        <div style="font-size:25px;line-height:1.32;">закрепить маршрут, убрать откат к импровизации, принять итоговый управленческий вывод</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;flex:none;">
+      <div style="border:1.5px solid #0F766E;background:rgba(15,118,110,.09);padding:14px 18px;display:flex;flex-direction:column;gap:6px;">
+        <div style="font-size:26px;font-weight:600;color:#0F766E;">Владельцы</div>
+        <div style="font-size:24px;line-height:1.3;">владелец решения, владелец данных, владелец фиксации, владелец паузы</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:14px 18px;display:flex;flex-direction:column;gap:6px;">
+        <div style="font-size:26px;font-weight:600;color:#0B1F33;">Показатели</div>
+        <div style="font-size:24px;line-height:1.3;">цена, маржа, срок, уступки, встречные шаги, спорные точки, выполнение обязательств</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;background:#0B1F33;padding:14px 18px;display:flex;flex-direction:column;gap:6px;">
+        <div style="font-size:26px;font-weight:600;color:#F3EBDD;">Итог</div>
+        <div style="font-size:24px;line-height:1.3;color:#E7DECB;">продолжить, масштабировать, перейти в Сопровождение или завершить контур</div>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex;gap:36px;align-items:flex-start;">
+    <div style="flex:1;display:flex;gap:14px;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#475569;padding-top:3px;">ЛЕГЕНДА</span>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;font-size:23px;">
+        <div style="display:flex;gap:10px;align-items:center;"><span style="font-family:'IBM Plex Mono',monospace;color:#0B1F33;">30-60-90</span>логика зрелости контура, а не жесткое обещание одинакового срока</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#0F766E;display:inline-block;"></span>Бирюзовый — закрепленная практика</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#B46A3C;display:inline-block;"></span>Медный — переход между циклами</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#B91C1C;display:inline-block;"></span>Красный — откат к импровизации или плохой сделке</div>
+      </div>
+    </div>
+    <div style="border:1.5px solid #B91C1C;padding:12px 18px;width:700px;flex:none;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#B91C1C;">ЭТО НЕ</div>
+      <div style="font-size:24px;line-height:1.3;margin-top:4px;">Не проект ради отчетности, не обучение по календарю, не гарантия результата за 90 дней.</div>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:40px;border-top:1px solid rgba(11,31,51,.35);padding-top:12px;margin-top:16px;">
+    <span style="font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:24px;color:#0B1F33;">Спринт нужен, чтобы переговорная архитектура стала поведением команды, а не документом.</span>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#475569;letter-spacing:.03em;white-space:nowrap;">Визуализация_09_Спринт_30_60_90_V1</span>
+  </div>
+</section>
+<section data-label="10 До / после" data-screen-label="10" data-speaker-notes="Разница между импровизацией и управляемой архитектурой решения." style="background:#F3EBDD;background-image:linear-gradient(rgba(11,31,51,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(11,31,51,.05) 1px,transparent 1px);background-size:48px 48px;color:#111827;font-family:'IBM Plex Sans',system-ui,sans-serif;padding:44px 60px 34px;display:flex;flex-direction:column;box-sizing:border-box;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:20px;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap;gap:28px;color:#0B1F33;border-bottom:1.5px solid #0B1F33;padding-bottom:12px;">
+    <span>Архитектура Переговоров &nbsp;·&nbsp; Визуализация 10</span>
+    <span style="color:#475569;">Клиентский + коммерческий слой · before / after · сложность простая</span>
+  </div>
+  <h2 style="font-family:'Source Serif 4',Georgia,serif;font-size:56px;font-weight:600;line-height:1.1;color:#0B1F33;margin:22px 0 0;">До технологии компания спорит и уступает; после технологии видит поле решения</h2>
+  <p style="font-size:27px;line-height:1.35;color:#475569;margin:12px 0 0;max-width:1660px;text-wrap:pretty;">Из хаоса позиций, давления и срочности переговоры переходят в карту целей, альтернатив, условий, рисков и фиксации.</p>
+  <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:22px 0 16px;min-height:0;">
+    <div style="display:flex;flex-direction:column;gap:10px;min-height:0;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:23px;letter-spacing:.08em;color:#B91C1C;border-bottom:1.5px solid #B91C1C;padding-bottom:8px;">ЛЕВАЯ ЗОНА · ДО АРХИТЕКТУРЫ ПЕРЕГОВОРОВ</div>
+      <div style="flex:1;border-left:5px solid #B91C1C;background:rgba(255,255,255,.36);padding:12px 18px;display:flex;flex-direction:column;gap:4px;justify-content:center;">
+        <div style="font-size:26px;font-weight:600;color:#B91C1C;">До: разная цель</div>
+        <div style="font-size:24px;line-height:1.3;">участники по-разному понимают успех, минимум и красные линии</div>
+      </div>
+      <div style="flex:1;border-left:5px solid #B91C1C;background:rgba(255,255,255,.36);padding:12px 18px;display:flex;flex-direction:column;gap:4px;justify-content:center;">
+        <div style="font-size:26px;font-weight:600;color:#B91C1C;">До: уступки бесплатно</div>
+        <div style="font-size:24px;line-height:1.3;">скидка, отсрочка или срок отдаются без цены и встречного шага</div>
+      </div>
+      <div style="flex:1;border-left:5px solid #B91C1C;background:rgba(255,255,255,.36);padding:12px 18px;display:flex;flex-direction:column;gap:4px;justify-content:center;">
+        <div style="font-size:26px;font-weight:600;color:#B91C1C;">До: слабая альтернатива</div>
+        <div style="font-size:24px;line-height:1.3;">компания боится потерять сделку и зависает в одном исходе</div>
+      </div>
+      <div style="flex:1;border-left:5px solid #B91C1C;background:rgba(255,255,255,.36);padding:12px 18px;display:flex;flex-direction:column;gap:4px;justify-content:center;">
+        <div style="font-size:26px;font-weight:600;color:#B91C1C;">До: нет паузы</div>
+        <div style="font-size:24px;line-height:1.3;">решение принимается под давлением или срочностью</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;min-height:0;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:23px;letter-spacing:.08em;color:#0F766E;border-bottom:1.5px solid #0F766E;padding-bottom:8px;">ПРАВАЯ ЗОНА · ПОСЛЕ ПРИМЕНЕНИЯ ТЕХНОЛОГИИ</div>
+      <div style="flex:1;border-left:5px solid #0F766E;background:rgba(15,118,110,.08);padding:12px 18px;display:flex;flex-direction:column;gap:4px;justify-content:center;">
+        <div style="font-size:26px;font-weight:600;color:#0F766E;">После: единая позиция</div>
+        <div style="font-size:24px;line-height:1.3;">цель, минимум, границы и мандат согласованы внутри</div>
+      </div>
+      <div style="flex:1;border-left:5px solid #0F766E;background:rgba(15,118,110,.08);padding:12px 18px;display:flex;flex-direction:column;gap:4px;justify-content:center;">
+        <div style="font-size:26px;font-weight:600;color:#0F766E;">После: пакет условий</div>
+        <div style="font-size:24px;line-height:1.3;">уступки связаны с ценой, обменом и фиксацией</div>
+      </div>
+      <div style="flex:1;border-left:5px solid #0F766E;background:rgba(15,118,110,.08);padding:12px 18px;display:flex;flex-direction:column;gap:4px;justify-content:center;">
+        <div style="font-size:26px;font-weight:600;color:#0F766E;">После: альтернатива</div>
+        <div style="font-size:24px;line-height:1.3;">есть сценарий выхода или усиления позиции</div>
+      </div>
+      <div style="flex:1;border-left:5px solid #0F766E;background:rgba(15,118,110,.08);padding:12px 18px;display:flex;flex-direction:column;gap:4px;justify-content:center;">
+        <div style="font-size:26px;font-weight:600;color:#0F766E;">После: разбор</div>
+        <div style="font-size:24px;line-height:1.3;">результат превращается в данные для следующего цикла</div>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex;gap:36px;align-items:flex-start;">
+    <div style="flex:1;display:flex;gap:14px;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#475569;padding-top:3px;">ЛЕГЕНДА</span>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;font-size:23px;">
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;border:1.5px solid #B91C1C;display:inline-block;"></span>Левая зона — до Архитектуры Переговоров</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;border:1.5px solid #0F766E;display:inline-block;"></span>Правая зона — после применения технологии</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#B91C1C;display:inline-block;"></span>Красный — разрыв и риск</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#0F766E;display:inline-block;"></span>Бирюзовый — управляемость и фиксация</div>
+      </div>
+    </div>
+    <div style="border:1.5px solid #B91C1C;padding:12px 18px;width:700px;flex:none;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#B91C1C;">ЭТО НЕ</div>
+      <div style="font-size:24px;line-height:1.3;margin-top:4px;">Не обещание идеального результата, не картинка волшебного улучшения, не замена реальной работы команды.</div>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:40px;border-top:1px solid rgba(11,31,51,.35);padding-top:12px;margin-top:16px;">
+    <span style="font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:24px;color:#0B1F33;">Технология не управляет волей другой стороны; она управляет качеством позиции компании.</span>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#475569;letter-spacing:.03em;white-space:nowrap;">Визуализация_10_До_После_V1</span>
+  </div>
+</section>
+<section data-label="11 Кейсовая схема" data-screen-label="11" data-speaker-notes="Кейс переводится в Диагностику, поле, сценарий и решение о следующем продукте." style="background:#F3EBDD;background-image:linear-gradient(rgba(11,31,51,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(11,31,51,.05) 1px,transparent 1px);background-size:48px 48px;color:#111827;font-family:'IBM Plex Sans',system-ui,sans-serif;padding:44px 60px 34px;display:flex;flex-direction:column;box-sizing:border-box;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:20px;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap;gap:28px;color:#0B1F33;border-bottom:1.5px solid #0B1F33;padding-bottom:12px;">
+    <span>Архитектура Переговоров &nbsp;·&nbsp; Визуализация 11</span>
+    <span style="color:#475569;">Кейсовый + коммерческий слой · case flow · сложность средняя</span>
+  </div>
+  <h2 style="font-family:'Source Serif 4',Georgia,serif;font-size:56px;font-weight:600;line-height:1.1;color:#0B1F33;margin:22px 0 0;">Кейс ведет не к бесплатному совету, а к платной Диагностике</h2>
+  <p style="font-size:27px;line-height:1.35;color:#475569;margin:12px 0 0;max-width:1660px;text-wrap:pretty;">Боль клиента переводится в переговорный разрыв, набор форм 17-23, проверку данных и решение о следующем продукте.</p>
+  <div style="flex:1;display:flex;flex-direction:column;gap:12px;margin:22px 0 16px;min-height:0;">
+    <div style="flex:1;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;min-height:0;">
+      <div style="border:1.5px solid #B91C1C;background:rgba(185,28,28,.06);padding:16px 18px;display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;gap:10px;align-items:baseline;"><span style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#B46A3C;">01</span><span style="font-size:26px;font-weight:600;color:#B91C1C;">Боль</span></div>
+        <div style="font-size:24px;line-height:1.3;">маржа, скидка, сеть, подрядчик, поставщик, бюджет, срок, полномочия, юридический риск</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:16px 18px;display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;gap:10px;align-items:baseline;"><span style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#B46A3C;">02</span><span style="font-size:26px;font-weight:600;color:#0B1F33;">Переговорный разрыв</span></div>
+        <div style="font-size:24px;line-height:1.3;">что именно не собрано: цель, минимум, альтернатива, влияние, уступки, данные, пауза</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;background:#0B1F33;padding:16px 18px;display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;gap:10px;align-items:baseline;"><span style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#D9A87C;">03</span><span style="font-size:26px;font-weight:600;color:#F3EBDD;">Диагностика</span></div>
+        <div style="font-size:24px;line-height:1.3;color:#E7DECB;">что проверяется за 5-7 рабочих дней в 1-2 реальных ситуациях</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:16px 18px;display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;gap:10px;align-items:baseline;"><span style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#B46A3C;">04</span><span style="font-size:26px;font-weight:600;color:#0B1F33;">Формы 17-23</span></div>
+        <div style="font-size:24px;line-height:1.3;">какие инструменты включаются по разрыву</div>
+      </div>
+    </div>
+    <div style="flex:1;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;min-height:0;">
+      <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:16px 18px;display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;gap:10px;align-items:baseline;"><span style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#B46A3C;">05</span><span style="font-size:26px;font-weight:600;color:#0B1F33;">Поле решения</span></div>
+        <div style="font-size:24px;line-height:1.3;">внешний контур, внутренний контур, влияющие роли и ограничения</div>
+      </div>
+      <div style="border:1.5px solid #0B1F33;background:rgba(255,255,255,.42);padding:16px 18px;display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;gap:10px;align-items:baseline;"><span style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#B46A3C;">06</span><span style="font-size:26px;font-weight:600;color:#0B1F33;">Сценарий</span></div>
+        <div style="font-size:24px;line-height:1.3;">идти, менять пакет, уточнять, брать паузу, усиливать альтернативу, выходить</div>
+      </div>
+      <div style="border:1.5px solid #B46A3C;background:rgba(180,106,60,.08);padding:16px 18px;display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;gap:10px;align-items:baseline;"><span style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#B46A3C;">07</span><span style="font-size:26px;font-weight:600;color:#B46A3C;">Следующий продукт</span></div>
+        <div style="font-size:24px;line-height:1.3;">Сессия, Спринт, Сопровождение или отказ от движения</div>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex;gap:36px;align-items:flex-start;">
+    <div style="flex:1;display:flex;gap:14px;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#475569;padding-top:3px;">ЛЕГЕНДА</span>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;font-size:23px;">
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;border:1.5px solid #0B1F33;display:inline-block;"></span>Внешний контур — клиент, сеть, поставщик, подрядчик, партнер, канал</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#0B1F33;display:inline-block;"></span>Внутренний контур — собственник, финансы, продажи, операции, юристы, команда</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#B91C1C;display:inline-block;"></span>Красный — причина остановки</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#B46A3C;display:inline-block;"></span>Медный — следующий продукт</div>
+      </div>
+    </div>
+    <div style="border:1.5px solid #B91C1C;padding:12px 18px;width:700px;flex:none;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#B91C1C;">ЭТО НЕ</div>
+      <div style="font-size:24px;line-height:1.3;margin-top:4px;">Не история успеха, не обещание такого же результата, не бесплатный консалтинг по ситуации.</div>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:40px;border-top:1px solid rgba(11,31,51,.35);padding-top:12px;margin-top:16px;">
+    <span style="font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:24px;color:#0B1F33;">Кейс показывает место входа в Диагностику, а не гарантированный исход переговоров.</span>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#475569;letter-spacing:.03em;white-space:nowrap;">Визуализация_11_Кейсовая_Схема_V1</span>
+  </div>
+</section>
+<section data-label="12 Антипозиционирование" data-screen-label="12" data-speaker-notes="Защита технологии от неправильной категории: не тренинг, не скрипты, не манипуляции." style="background:#F3EBDD;background-image:linear-gradient(rgba(11,31,51,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(11,31,51,.05) 1px,transparent 1px);background-size:48px 48px;color:#111827;font-family:'IBM Plex Sans',system-ui,sans-serif;padding:44px 60px 34px;display:flex;flex-direction:column;box-sizing:border-box;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:20px;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap;gap:28px;color:#0B1F33;border-bottom:1.5px solid #0B1F33;padding-bottom:12px;">
+    <span>Архитектура Переговоров &nbsp;·&nbsp; Визуализация 12</span>
+    <span style="color:#475569;">Клиентский + коммерческий слой · anti-positioning matrix · сложность простая</span>
+  </div>
+  <h2 style="font-family:'Source Serif 4',Georgia,serif;font-size:56px;font-weight:600;line-height:1.1;color:#0B1F33;margin:22px 0 0;">Архитектура Переговоров — не тренинг и не манипуляция</h2>
+  <p style="font-size:27px;line-height:1.35;color:#475569;margin:12px 0 0;max-width:1660px;text-wrap:pretty;">Это система подготовки, согласования, проверки и разбора переговорных решений во внешнем и внутреннем контуре.</p>
+  <div style="flex:1;display:grid;grid-template-columns:1.25fr 1fr;gap:28px;margin:22px 0 16px;min-height:0;">
+    <div style="display:flex;flex-direction:column;gap:8px;min-height:0;">
+      <div style="flex:1;border-left:5px solid #B91C1C;padding:8px 18px;display:flex;flex-direction:column;gap:2px;justify-content:center;">
+        <div style="font-size:26px;font-weight:600;color:#B91C1C;">Не тренинг</div>
+        <div style="font-size:24px;line-height:1.3;">технология работает с реальными решениями, мандатом, данными и риском</div>
+      </div>
+      <div style="flex:1;border-left:5px solid #B91C1C;padding:8px 18px;display:flex;flex-direction:column;gap:2px;justify-content:center;">
+        <div style="font-size:26px;font-weight:600;color:#B91C1C;">Не скрипты</div>
+        <div style="font-size:24px;line-height:1.3;">готовая фраза не заменяет цель, минимум, альтернативу и карту влияния</div>
+      </div>
+      <div style="flex:1;border-left:5px solid #B91C1C;padding:8px 18px;display:flex;flex-direction:column;gap:2px;justify-content:center;">
+        <div style="font-size:26px;font-weight:600;color:#B91C1C;">Не манипуляции</div>
+        <div style="font-size:24px;line-height:1.3;">работа идет с прозрачной позицией, условиями, интересами и границами</div>
+      </div>
+      <div style="flex:1;border-left:5px solid #B91C1C;padding:8px 18px;display:flex;flex-direction:column;gap:2px;justify-content:center;">
+        <div style="font-size:26px;font-weight:600;color:#B91C1C;">Не мотивационная встреча</div>
+        <div style="font-size:24px;line-height:1.3;">выходом является управленческий вывод, а не эмоциональный подъем</div>
+      </div>
+      <div style="flex:1;border-left:5px solid #B91C1C;padding:8px 18px;display:flex;flex-direction:column;gap:2px;justify-content:center;">
+        <div style="font-size:26px;font-weight:600;color:#B91C1C;">Не юридическое заключение</div>
+        <div style="font-size:24px;line-height:1.3;">юридический риск выявляется и передается в профильный контур</div>
+      </div>
+      <div style="flex:1;border-left:5px solid #B91C1C;padding:8px 18px;display:flex;flex-direction:column;gap:2px;justify-content:center;">
+        <div style="font-size:26px;font-weight:600;color:#B91C1C;">Не финансовый аудит</div>
+        <div style="font-size:24px;line-height:1.3;">цена уступок считается на данных клиента, но не заменяет финансовую модель</div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:16px;min-height:0;">
+      <span style="font-size:34px;color:#B46A3C;">→</span>
+      <div style="flex:1;align-self:stretch;background:#0B1F33;padding:32px 30px;display:flex;flex-direction:column;justify-content:center;gap:16px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:23px;letter-spacing:.08em;color:#D9A87C;">ЧТО ЭТО ТАКОЕ</div>
+        <div style="font-family:'Source Serif 4',Georgia,serif;font-size:38px;font-weight:600;line-height:1.25;color:#F3EBDD;">технология управления переговорной силой компании во внешних и внутренних решениях</div>
+        <div style="height:2px;background:#0F766E;width:120px;"></div>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex;gap:36px;align-items:flex-start;">
+    <div style="flex:1;display:flex;gap:14px;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#475569;padding-top:3px;">ЛЕГЕНДА</span>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;font-size:23px;">
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#B91C1C;display:inline-block;"></span>Красный — неправильная категория</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#0B1F33;display:inline-block;"></span>Deep Navy — правильное определение технологии</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#B46A3C;display:inline-block;"></span>Copper — переход от ошибки восприятия к точной категории</div>
+        <div style="display:flex;gap:10px;align-items:center;"><span style="width:18px;height:18px;background:#0F766E;display:inline-block;"></span>Бирюзовый — управляемый результат</div>
+      </div>
+    </div>
+    <div style="border:1.5px solid #B91C1C;padding:12px 18px;width:700px;flex:none;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:.08em;color:#B91C1C;">ЭТО НЕ</div>
+      <div style="font-size:24px;line-height:1.3;margin-top:4px;">Не обещание победы, не обучение хитрым приемам, не давление на другую сторону.</div>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:40px;border-top:1px solid rgba(11,31,51,.35);padding-top:12px;margin-top:16px;">
+    <span style="font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:24px;color:#0B1F33;">Технология защищает компанию от слабой позиции, а не учит побеждать любой ценой.</span>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;color:#475569;letter-spacing:.03em;white-space:nowrap;">Визуализация_12_Антипозиционирование_V1</span>
+  </div>
+</section>
+</body></html>

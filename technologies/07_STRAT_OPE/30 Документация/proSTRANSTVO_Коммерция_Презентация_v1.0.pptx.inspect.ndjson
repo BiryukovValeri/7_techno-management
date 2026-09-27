@@ -1,0 +1,221 @@
+{"kind":"deck","id":"pr/2rroy9","name":"Deck"}
+{"kind":"layout","layoutId":"cea2cb31-2f23-45b3-b39b-8981d6bfe891","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"77a3661c-f54e-4443-9834-30c525105d00","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/ebggwk","slide":1,"title":"C-Level Insight","textShapes":5}
+{"kind":"textbox","id":"sh/nqdkbyts","slide":1,"name":"text","text":"C-Level Insight","textPreview":"C-Level Insight","textChars":15,"textLines":1,"bbox":[72,48,220,22]}
+{"kind":"textbox","id":"sh/obm143ad","slide":1,"name":"text","text":"проSTRAнство","textPreview":"проSTRAнство","textChars":12,"textLines":1,"bbox":[72,170,720,74]}
+{"kind":"shape","id":"sh/9cv2d8by","slide":1,"bbox":[72,268,150,5]}
+{"kind":"textbox","id":"sh/ad4j6dsj","slide":1,"name":"text","text":"Экспертная система точного выбора фреймворков и связки стратегии с операционным исполнением","textPreview":"Экспертная система точного выбора фреймворков и связки стратегии с операционным исполнением","textChars":91,"textLines":1,"bbox":[72,304,770,88]}
+{"kind":"shape","id":"sh/bedkfit4","slide":1,"bbox":[0,590,1280,130]}
+{"kind":"textbox","id":"sh/wf6183ap","slide":1,"name":"text","text":"проблема → триггеры → фреймворки → мост → инструменты → исполнение","textPreview":"проблема → триггеры → фреймворки → мост → инструменты → исполнение","textChars":66,"textLines":1,"bbox":[72,626,850,34]}
+{"kind":"textbox","id":"sh/xgf2h8ba","slide":1,"name":"text","text":"Коммерческая презентация v1.0","textPreview":"Коммерческая презентация v1.0","textChars":29,"textLines":1,"bbox":[1014,626,200,24]}
+{"kind":"notes","id":"nt/ebggwk","slide":1,"text":"[Sources]\nВнутренние материалы проSTRAнства: промпт 12B, операционная система v1.0, пакет продажи Диагностики v1.0."}
+{"kind":"slide","id":"sl/vyz9s7","slide":2,"title":"Компании тонут в веере стратегических рамок","textShapes":17}
+{"kind":"textbox","id":"sh/8rm5srap","slide":2,"name":"slide-title","text":"Компании тонут в веере стратегических рамок","textPreview":"Компании тонут в веере стратегических рамок","textChars":43,"textLines":1,"bbox":[72,42,900,54]}
+{"kind":"textbox","id":"sh/n6dozm94","slide":2,"name":"slide-subtitle","text":"Моделей, сессий и инициатив много, но непонятно, что нужно именно сейчас.","textPreview":"Моделей, сессий и инициатив много, но непонятно, что нужно именно сейчас.","textChars":73,"textLines":1,"bbox":[72,100,960,36]}
+{"kind":"shape","id":"sh/m54nqhsj","slide":2,"bbox":[72,202,320,96]}
+{"kind":"shape","id":"sh/l4v6xcry","slide":2,"bbox":[94,224,72,4]}
+{"kind":"textbox","id":"sh/03m5o7ad","slide":2,"name":"text","text":"Стратегия","textPreview":"Стратегия","textChars":9,"textLines":1,"bbox":[94,238,276,24]}
+{"kind":"textbox","id":"sh/z2t4vm9s","slide":2,"name":"text","text":"есть документ, но нет движения","textPreview":"есть документ, но нет движения","textChars":30,"textLines":1,"bbox":[94,268,276,36]}
+{"kind":"shape","id":"sh/y1knmhsn","slide":2,"bbox":[446,202,320,96]}
+{"kind":"shape","id":"sh/d0bmtcr2","slide":2,"bbox":[468,224,72,4]}
+{"kind":"textbox","id":"sh/cz25k7ah","slide":2,"name":"text","text":"Сессии","textPreview":"Сессии","textChars":6,"textLines":1,"bbox":[468,238,276,24]}
+{"kind":"textbox","id":"sh/atknuxoj","slide":2,"name":"text","text":"много идей, мало обязательств","textPreview":"много идей, мало обязательств","textChars":29,"textLines":1,"bbox":[468,268,276,36]}
+{"kind":"shape","id":"sh/buto32p4","slide":2,"bbox":[820,202,320,96]}
+{"kind":"shape","id":"sh/cf2pw76p","slide":2,"bbox":[842,224,72,4]}
+{"kind":"textbox","id":"sh/xgb65c7a","slide":2,"name":"text","text":"Инициативы","textPreview":"Инициативы","textChars":10,"textLines":1,"bbox":[842,238,276,24]}
+{"kind":"textbox","id":"sh/2pknqxon","slide":2,"name":"text","text":"приоритеты конкурируют","textPreview":"приоритеты конкурируют","textChars":22,"textLines":1,"bbox":[842,268,276,36]}
+{"kind":"shape","id":"sh/nqtoz2p8","slide":2,"bbox":[72,336,320,96]}
+{"kind":"shape","id":"sh/or25s76t","slide":2,"bbox":[94,358,72,4]}
+{"kind":"textbox","id":"sh/psb61s7y","slide":2,"name":"text","text":"Метрики","textPreview":"Метрики","textChars":7,"textLines":1,"bbox":[94,372,276,24]}
+{"kind":"textbox","id":"sh/el0nmdob","slide":2,"name":"text","text":"разные версии правды","textPreview":"разные версии правды","textChars":20,"textLines":1,"bbox":[94,402,276,36]}
+{"kind":"shape","id":"sh/fm9ovipw","slide":2,"bbox":[446,336,320,96]}
+{"kind":"shape","id":"sh/3qpkne5o","slide":2,"bbox":[468,358,72,4]}
+{"kind":"textbox","id":"sh/ipw3u943","slide":2,"name":"text","text":"Функции","textPreview":"Функции","textChars":7,"textLines":1,"bbox":[468,372,276,24]}
+{"kind":"textbox","id":"sh/5s7mponu","slide":2,"name":"text","text":"каждая защищает свой контур","textPreview":"каждая защищает свой контур","textChars":27,"textLines":1,"bbox":[468,402,276,36]}
+{"kind":"shape","id":"sh/4rylwjm9","slide":2,"bbox":[820,336,320,96]}
+{"kind":"shape","id":"sh/rup4ry50","slide":2,"bbox":[842,358,72,4]}
+{"kind":"textbox","id":"sh/qtg3yt4f","slide":2,"name":"text","text":"Исполнение","textPreview":"Исполнение","textChars":10,"textLines":1,"bbox":[842,372,276,24]}
+{"kind":"textbox","id":"sh/dw7mt8nq","slide":2,"name":"text","text":"нет владельца и ритма","textPreview":"нет владельца и ритма","textChars":21,"textLines":1,"bbox":[842,402,276,36]}
+{"kind":"textbox","id":"sh/svyl03ml","slide":2,"name":"text","text":"Диагноз: проблема не в дефиците моделей, а в дефиците точного выбора под управленческую задачу.","textPreview":"Диагноз: проблема не в дефиците моделей, а в дефиците точного выбора под управленческую задачу.","textChars":95,"textLines":1,"bbox":[72,534,940,34]}
+{"kind":"textbox","id":"sh/7ylkfu5g","slide":2,"name":"text","text":"C-Level Insight","textPreview":"C-Level Insight","textChars":15,"textLines":1,"bbox":[72,668,200,20]}
+{"kind":"textbox","id":"sh/6xc3mp4v","slide":2,"name":"text","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1166,668,40,20]}
+{"kind":"notes","id":"nt/vyz9s7","slide":2,"text":"[Sources]\nПромпт 12B; операционная система проSTRAнства v1.0."}
+{"kind":"slide","id":"sl/gishi2","slide":3,"title":"Неверный выбор стратегии дорог","textShapes":13}
+{"kind":"textbox","id":"sh/e10fexc3","slide":3,"name":"slide-title","text":"Неверный выбор стратегии дорог","textPreview":"Неверный выбор стратегии дорог","textChars":30,"textLines":1,"bbox":[72,42,900,54]}
+{"kind":"textbox","id":"sh/14bypcve","slide":3,"name":"slide-subtitle","text":"Когда выбран не тот фреймворк, компания получает активность вместо управляемости.","textPreview":"Когда выбран не тот фреймворк, компания получает активность вместо управляемости.","textChars":81,"textLines":1,"bbox":[72,100,960,36]}
+{"kind":"shape","id":"sh/032hg7ut","slide":3,"bbox":[72,226,244,248]}
+{"kind":"shape","id":"sh/n6tgr2dk","slide":3,"bbox":[94,256,72,4]}
+{"kind":"textbox","id":"sh/m5kzixcz","slide":3,"name":"text","text":"Распыление ресурсов","textPreview":"Распыление ресурсов","textChars":19,"textLines":1,"bbox":[94,278,200,34]}
+{"kind":"textbox","id":"sh/98bytcvq","slide":3,"name":"text","text":"много направлений, слабый фокус","textPreview":"много направлений, слабый фокус","textChars":31,"textLines":1,"bbox":[94,324,200,156]}
+{"kind":"shape","id":"sh/o72hk7u5","slide":3,"bbox":[350,226,244,248]}
+{"kind":"shape","id":"sh/3apgfidg","slide":3,"bbox":[372,256,72,4]}
+{"kind":"textbox","id":"sh/29gf6dwv","slide":3,"name":"text","text":"Слабое внедрение","textPreview":"Слабое внедрение","textChars":16,"textLines":1,"bbox":[372,278,200,34]}
+{"kind":"textbox","id":"sh/k3m9ony9","slide":3,"name":"text","text":"выводы не доходят до действий","textPreview":"выводы не доходят до действий","textChars":29,"textLines":1,"bbox":[372,324,200,156]}
+{"kind":"shape","id":"sh/l4vahsfu","slide":3,"bbox":[628,226,244,248]}
+{"kind":"shape","id":"sh/y14rmdgj","slide":3,"bbox":[650,256,72,4]}
+{"kind":"textbox","id":"sh/j2dsfixo","slide":3,"name":"text","text":"Конфликт приоритетов","textPreview":"Конфликт приоритетов","textChars":20,"textLines":1,"bbox":[650,278,200,34]}
+{"kind":"textbox","id":"sh/8769snyl","slide":3,"name":"text","text":"функции спорят о главном","textPreview":"функции спорят о главном","textChars":24,"textLines":1,"bbox":[650,324,200,156]}
+{"kind":"shape","id":"sh/t8falsf6","slide":3,"bbox":[906,226,244,248]}
+{"kind":"shape","id":"sh/65orqxgf","slide":3,"bbox":[928,256,72,4]}
+{"kind":"textbox","id":"sh/76xsj2x0","slide":3,"name":"text","text":"Нет владельцев и метрик","textPreview":"Нет владельцев и метрик","textChars":23,"textLines":1,"bbox":[928,278,200,34]}
+{"kind":"textbox","id":"sh/ob29g3y1","slide":3,"name":"text","text":"решения не закрепляются в ритме","textPreview":"решения не закрепляются в ритме","textChars":31,"textLines":1,"bbox":[928,324,200,156]}
+{"kind":"textbox","id":"sh/9cba98fm","slide":3,"name":"text","text":"Поэтому первый коммерческий шаг - не обсуждать любимые модели, а проверить, какую проблему действительно надо решать.","textPreview":"Поэтому первый коммерческий шаг - не обсуждать любимые модели, а проверить, какую проблему действительно надо решать.","textChars":117,"textLines":1,"bbox":[72,542,980,36]}
+{"kind":"textbox","id":"sh/p83qd47q","slide":3,"name":"text","text":"C-Level Insight","textPreview":"C-Level Insight","textChars":15,"textLines":1,"bbox":[72,668,200,20]}
+{"kind":"textbox","id":"sh/o7upkzq5","slide":3,"name":"text","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1166,668,40,20]}
+{"kind":"notes","id":"nt/gishi2","slide":3,"text":"[Sources]\nПромпт 12B; коммерческий пакет проSTRAнства v1.0."}
+{"kind":"slide","id":"sl/r7g87d","slide":4,"title":"Механизм проSTRAнства сужает выбор","textShapes":28}
+{"kind":"textbox","id":"sh/rat43m9g","slide":4,"name":"slide-title","text":"Механизм проSTRAнства сужает выбор","textPreview":"Механизм проSTRAнства сужает выбор","textChars":34,"textLines":1,"bbox":[72,42,900,54]}
+{"kind":"textbox","id":"sh/sv25wral","slide":4,"name":"slide-subtitle","text":"Технология переводит жалобу в проверяемую управленческую задачу и рабочий контур исполнения.","textPreview":"Технология переводит жалобу в проверяемую управленческую задачу и рабочий контур исполнения.","textChars":92,"textLines":1,"bbox":[72,100,960,36]}
+{"kind":"shape","id":"sh/dwbm5wr6","slide":4,"bbox":[46,278,184,118]}
+{"kind":"textbox","id":"sh/ex4nyh8r","slide":4,"name":"text","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[64,294,60,20]}
+{"kind":"textbox","id":"sh/fyd47m9c","slide":4,"name":"text","text":"Проблемная\nединица","textPreview":"Проблемная | единица","textChars":18,"textLines":2,"bbox":[64,320,148,44]}
+{"kind":"textbox","id":"sh/0zm50rqx","slide":4,"name":"text","text":"что разорвано","textPreview":"что разорвано","textChars":13,"textLines":1,"bbox":[64,368,148,26]}
+{"kind":"textbox","id":"sh/10vm9wri","slide":4,"name":"text","text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[232,322,28,28]}
+{"kind":"shape","id":"sh/214n2183","slide":4,"bbox":[248,278,184,118]}
+{"kind":"textbox","id":"sh/n2d4b698","slide":4,"name":"text","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[266,294,60,20]}
+{"kind":"textbox","id":"sh/fu1kjih4","slide":4,"name":"text","text":"Триггеры","textPreview":"Триггеры","textChars":8,"textLines":1,"bbox":[266,320,148,44]}
+{"kind":"textbox","id":"sh/etsjad0j","slide":4,"name":"text","text":"что включилось","textPreview":"что включилось","textChars":14,"textLines":1,"bbox":[266,368,148,26]}
+{"kind":"textbox","id":"sh/1wj2lszu","slide":4,"name":"text","text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[434,322,28,28]}
+{"kind":"shape","id":"sh/gvalcni9","slide":4,"bbox":[450,278,184,118]}
+{"kind":"textbox","id":"sh/r6hkfyhs","slide":4,"name":"text","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[468,294,60,20]}
+{"kind":"textbox","id":"sh/658j6d07","slide":4,"name":"text","text":"5-7\nфреймворков","textPreview":"5-7 | фреймворков","textChars":15,"textLines":2,"bbox":[468,320,148,44]}
+{"kind":"textbox","id":"sh/t8j2h8zy","slide":4,"name":"text","text":"что выбирать","textPreview":"что выбирать","textChars":12,"textLines":1,"bbox":[468,368,148,26]}
+{"kind":"textbox","id":"sh/s7q183id","slide":4,"name":"text","text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[636,322,28,28]}
+{"kind":"shape","id":"sh/b2lkr2hw","slide":4,"bbox":[652,278,184,118]}
+{"kind":"textbox","id":"sh/q1c3ix0r","slide":4,"name":"text","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[670,294,60,20]}
+{"kind":"textbox","id":"sh/mxwna1kz","slide":4,"name":"text","text":"Мост","textPreview":"Мост","textChars":4,"textLines":1,"bbox":[670,320,148,44]}
+{"kind":"textbox","id":"sh/ni5oj614","slide":4,"name":"text","text":"как перевести","textPreview":"как перевести","textChars":13,"textLines":1,"bbox":[670,368,148,26]}
+{"kind":"textbox","id":"sh/8jy5cb2p","slide":4,"name":"text","text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[838,322,28,28]}
+{"kind":"shape","id":"sh/9k76lgja","slide":4,"bbox":[854,278,184,118]}
+{"kind":"textbox","id":"sh/algne1kv","slide":4,"name":"text","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[872,294,60,20]}
+{"kind":"textbox","id":"sh/vmpon61g","slide":4,"name":"text","text":"3-5\nинструментов","textPreview":"3-5 | инструментов","textChars":16,"textLines":2,"bbox":[872,320,148,44]}
+{"kind":"textbox","id":"sh/wny5gb21","slide":4,"name":"text","text":"чем исполнять","textPreview":"чем исполнять","textChars":13,"textLines":1,"bbox":[872,368,148,26]}
+{"kind":"textbox","id":"sh/ho76pgjm","slide":4,"name":"text","text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[1040,322,28,28]}
+{"kind":"shape","id":"sh/qpcn2hkr","slide":4,"bbox":[1056,278,184,118]}
+{"kind":"textbox","id":"sh/bql4bm1c","slide":4,"name":"text","text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1074,294,60,20]}
+{"kind":"textbox","id":"sh/tkbqhk3u","slide":4,"name":"text","text":"Владельцы\nи метрики","textPreview":"Владельцы | и метрики","textChars":19,"textLines":2,"bbox":[1074,320,148,44]}
+{"kind":"textbox","id":"sh/sj2p8fm9","slide":4,"name":"text","text":"как удержать","textPreview":"как удержать","textChars":12,"textLines":1,"bbox":[1074,368,148,26]}
+{"kind":"textbox","id":"sh/rit8falo","slide":4,"name":"text","text":"Смысл ядра: выбрать не красивую модель, а минимальный рабочий набор, который можно привязать к владельцам, метрикам и Спринту.","textPreview":"Смысл ядра: выбрать не красивую модель, а минимальный рабочий набор, который можно привязать к владельцам, метрикам и Спринту.","textChars":126,"textLines":1,"bbox":[102,506,1050,48]}
+{"kind":"textbox","id":"sh/6h076543","slide":4,"name":"text","text":"C-Level Insight","textPreview":"C-Level Insight","textChars":15,"textLines":1,"bbox":[72,668,200,20]}
+{"kind":"textbox","id":"sh/18bql43q","slide":4,"name":"text","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1166,668,40,20]}
+{"kind":"notes","id":"nt/r7g87d","slide":4,"text":"[Sources]\nОперационная система проSTRAнства v1.0; справочник инструментов и карточек знания v1.0."}
+{"kind":"slide","id":"sl/gfkt74","slide":5,"title":"Первый шаг - платная Диагностика","textShapes":15}
+{"kind":"textbox","id":"sh/dofyhwva","slide":5,"name":"slide-title","text":"Первый шаг - платная Диагностика","textPreview":"Первый шаг - платная Диагностика","textChars":32,"textLines":1,"bbox":[72,42,900,54]}
+{"kind":"textbox","id":"sh/ql4fm1wj","slide":5,"name":"slide-subtitle","text":"Мы проверяем применимость технологии до того, как предлагать Сессию, Спринт или Сопровождение.","textPreview":"Мы проверяем применимость технологии до того, как предлагать Сессию, Спринт или Сопровождение.","textChars":94,"textLines":1,"bbox":[72,100,960,36]}
+{"kind":"shape","id":"sh/bmxwf6d4","slide":5,"bbox":[90,218,52,52]}
+{"kind":"textbox","id":"sh/0r6xsbel","slide":5,"name":"text","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[105,230,22,24]}
+{"kind":"textbox","id":"sh/lcfylgv6","slide":5,"name":"text","text":"Тип проблемы","textPreview":"Тип проблемы","textChars":12,"textLines":1,"bbox":[162,216,488,28]}
+{"kind":"textbox","id":"sh/ypofq1wf","slide":5,"name":"text","text":"отделить жалобу от управленческого разрыва","textPreview":"отделить жалобу от управленческого разрыва","textChars":42,"textLines":1,"bbox":[162,248,488,48]}
+{"kind":"shape","id":"sh/zqxgj6d0","slide":5,"bbox":[90,316,52,52]}
+{"kind":"textbox","id":"sh/gvmxgreh","slide":5,"name":"text","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[105,328,22,24]}
+{"kind":"textbox","id":"sh/hgve9cf2","slide":5,"name":"text","text":"Триггеры","textPreview":"Триггеры","textChars":8,"textLines":1,"bbox":[162,314,488,28]}
+{"kind":"textbox","id":"sh/psz6lwfq","slide":5,"name":"text","text":"понять, какие наборы и фреймворки действительно нужны","textPreview":"понять, какие наборы и фреймворки действительно нужны","textChars":53,"textLines":1,"bbox":[162,346,488,48]}
+{"kind":"shape","id":"sh/orq5sry5","slide":5,"bbox":[90,414,52,52]}
+{"kind":"textbox","id":"sh/3qhojmxk","slide":5,"name":"text","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[105,426,22,24]}
+{"kind":"textbox","id":"sh/2p8nqhgf","slide":5,"name":"text","text":"Текущий контур","textPreview":"Текущий контур","textChars":14,"textLines":1,"bbox":[162,412,488,28]}
+{"kind":"textbox","id":"sh/dgj6pgf2","slide":5,"name":"text","text":"проверить, что есть, что работает и что разорвано","textPreview":"проверить, что есть, что работает и что разорвано","textChars":49,"textLines":1,"bbox":[162,444,488,48]}
+{"kind":"shape","id":"sh/cfa5wbyh","slide":5,"bbox":[812,218,340,270]}
+{"kind":"textbox","id":"sh/be1on6xw","slide":5,"name":"text","text":"Результат","textPreview":"Результат","textChars":9,"textLines":1,"bbox":[848,252,220,30]}
+{"kind":"shape","id":"sh/qt8nu1gb","slide":5,"bbox":[848,314,82,4]}
+{"kind":"textbox","id":"sh/lkj6tgfy","slide":5,"name":"text","text":"Карта проблемной единицы, предварительный маршрут и условия перехода к Сессии.","textPreview":"Карта проблемной единицы, предварительный маршрут и условия перехода к Сессии.","textChars":78,"textLines":1,"bbox":[848,346,250,92]}
+{"kind":"textbox","id":"sh/0ja50byd","slide":5,"name":"text","text":"C-Level Insight","textPreview":"C-Level Insight","textChars":15,"textLines":1,"bbox":[72,668,200,20]}
+{"kind":"textbox","id":"sh/knipwfmp","slide":5,"name":"text","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1166,668,40,20]}
+{"kind":"notes","id":"nt/gfkt74","slide":5,"text":"[Sources]\nПакет продажи Диагностики v1.0; коммерческое предложение Диагностика v1.0."}
+{"kind":"slide","id":"sl/nqtp73","slide":6,"title":"Вердикт Диагностики защищает от лишней Сессии","textShapes":11}
+{"kind":"textbox","id":"sh/f6h8fqt4","slide":6,"name":"slide-title","text":"Вердикт Диагностики защищает от лишней Сессии","textPreview":"Вердикт Диагностики защищает от лишней Сессии","textChars":45,"textLines":1,"bbox":[72,42,900,54]}
+{"kind":"textbox","id":"sh/g7a9ovap","slide":6,"name":"slide-subtitle","text":"Следующий этап не продается автоматически: решение зависит от фактов, данных, мандата и готовности контура.","textPreview":"Следующий этап не продается автоматически: решение зависит от фактов, данных, мандата и готовности контура.","textChars":107,"textLines":1,"bbox":[72,100,960,36]}
+{"kind":"shape","id":"sh/18jqh0ba","slide":6,"bbox":[100,262,330,236]}
+{"kind":"shape","id":"sh/29srq5sv","slide":6,"bbox":[100,262,330,14]}
+{"kind":"textbox","id":"sh/3a1sjatg","slide":6,"name":"text","text":"Запускать","textPreview":"Запускать","textChars":9,"textLines":1,"bbox":[130,306,260,32]}
+{"kind":"textbox","id":"sh/oba9cfal","slide":6,"name":"text","text":"есть проблема, данные, владелец и условия для Сессии","textPreview":"есть проблема, данные, владелец и условия для Сессии","textChars":52,"textLines":1,"bbox":[130,364,260,80]}
+{"kind":"shape","id":"sh/pcjal0b6","slide":6,"bbox":[460,262,330,236]}
+{"kind":"shape","id":"sh/qxsre5sr","slide":6,"bbox":[460,262,330,14]}
+{"kind":"textbox","id":"sh/by1snatc","slide":6,"name":"text","text":"Удержать до условий","textPreview":"Удержать до условий","textChars":19,"textLines":1,"bbox":[490,306,260,32]}
+{"kind":"textbox","id":"sh/be5w3qdc","slide":6,"name":"text","text":"не хватает данных, мандата или готовности управленческого круга","textPreview":"не хватает данных, мандата или готовности управленческого круга","textChars":63,"textLines":1,"bbox":[490,364,260,80]}
+{"kind":"shape","id":"sh/qdwva5wr","slide":6,"bbox":[820,262,330,236]}
+{"kind":"shape","id":"sh/dgne50v2","slide":6,"bbox":[820,262,330,14]}
+{"kind":"textbox","id":"sh/cfexcvex","slide":6,"name":"text","text":"Остановить","textPreview":"Остановить","textChars":10,"textLines":1,"bbox":[850,306,260,32]}
+{"kind":"textbox","id":"sh/3qlwzqd0","slide":6,"name":"text","text":"технология сейчас не нужна или невозможна","textPreview":"технология сейчас не нужна или невозможна","textChars":41,"textLines":1,"bbox":[850,364,260,80]}
+{"kind":"textbox","id":"sh/2pcv6lwf","slide":6,"name":"text","text":"Сильный консалтинговый продукт умеет не только запускать проект, но и честно остановить неверный следующий шаг.","textPreview":"Сильный консалтинговый продукт умеет не только запускать проект, но и честно остановить неверный следующий шаг.","textChars":111,"textLines":1,"bbox":[140,548,1000,34]}
+{"kind":"textbox","id":"sh/pcne10v6","slide":6,"name":"text","text":"C-Level Insight","textPreview":"C-Level Insight","textChars":15,"textLines":1,"bbox":[72,668,200,20]}
+{"kind":"textbox","id":"sh/obed8vel","slide":6,"name":"text","text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1166,668,40,20]}
+{"kind":"notes","id":"nt/nqtp73","slide":6,"text":"[Sources]\nОперационная система проSTRAнства v1.0; квалификация клиента перед Диагностикой v1.0."}
+{"kind":"slide","id":"sl/qk7fme","slide":7,"title":"Клиент проходит 4 платных этапа","textShapes":17}
+{"kind":"textbox","id":"sh/v6hcz6t8","slide":7,"name":"slide-title","text":"Клиент проходит 4 платных этапа","textPreview":"Клиент проходит 4 платных этапа","textChars":31,"textLines":1,"bbox":[72,42,900,54]}
+{"kind":"textbox","id":"sh/w7at8but","slide":7,"name":"slide-subtitle","text":"Каждый этап имеет свой результат и право остановить или уточнить следующий шаг.","textPreview":"Каждый этап имеет свой результат и право остановить или уточнить следующий шаг.","textChars":79,"textLines":1,"bbox":[72,100,960,36]}
+{"kind":"shape","id":"sh/x8ju1wbe","slide":7,"bbox":[164,176,820,78]}
+{"kind":"textbox","id":"sh/m18b2hcr","slide":7,"name":"text","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[200,200,34,24]}
+{"kind":"textbox","id":"sh/n2hsvmtc","slide":7,"name":"text","text":"Диагностика","textPreview":"Диагностика","textChars":11,"textLines":1,"bbox":[268,198,280,30]}
+{"kind":"textbox","id":"sh/83qt4rux","slide":7,"name":"text","text":"применимость и ограничения","textPreview":"применимость и ограничения","textChars":26,"textLines":1,"bbox":[580,200,320,26]}
+{"kind":"shape","id":"sh/94zuxwbi","slide":7,"bbox":[572,256,5,34]}
+{"kind":"shape","id":"sh/yxobyhcv","slide":7,"bbox":[164,280,820,78]}
+{"kind":"textbox","id":"sh/zyxsrmt0","slide":7,"name":"text","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[200,304,34,24]}
+{"kind":"textbox","id":"sh/vaps3ql4","slide":7,"name":"text","text":"Сессия","textPreview":"Сессия","textChars":6,"textLines":1,"bbox":[268,302,280,30]}
+{"kind":"textbox","id":"sh/u9gbul4j","slide":7,"name":"text","text":"рабочий набор и мост","textPreview":"рабочий набор и мост","textChars":20,"textLines":1,"bbox":[580,304,320,26]}
+{"kind":"shape","id":"sh/hc7a503a","slide":7,"bbox":[572,360,5,34]}
+{"kind":"shape","id":"sh/gbytwvmp","slide":7,"bbox":[164,384,820,78]}
+{"kind":"textbox","id":"sh/3e9s7alg","slide":7,"name":"text","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[200,408,34,24]}
+{"kind":"textbox","id":"sh/idgby5kv","slide":7,"name":"text","text":"Спринт 30-60-90","textPreview":"Спринт 30-60-90","textChars":15,"textLines":1,"bbox":[268,406,280,30]}
+{"kind":"textbox","id":"sh/5gru9k36","slide":7,"name":"text","text":"исполнение на выбранном контуре","textPreview":"исполнение на выбранном контуре","textChars":31,"textLines":1,"bbox":[580,408,320,26]}
+{"kind":"shape","id":"sh/4fit0f21","slide":7,"bbox":[572,464,5,34]}
+{"kind":"shape","id":"sh/ji5sv6lw","slide":7,"bbox":[164,488,820,78]}
+{"kind":"textbox","id":"sh/yhwbm14r","slide":7,"name":"text","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[200,512,34,24]}
+{"kind":"textbox","id":"sh/md4vu94z","slide":7,"name":"text","text":"Сопровождение","textPreview":"Сопровождение","textChars":13,"textLines":1,"bbox":[268,510,280,30]}
+{"kind":"textbox","id":"sh/nydw3e5k","slide":7,"name":"text","text":"ритм управления и донастройка","textPreview":"ритм управления и донастройка","textChars":29,"textLines":1,"bbox":[580,512,320,26]}
+{"kind":"textbox","id":"sh/ozmdwjm5","slide":7,"name":"text","text":"На первом разговоре продается вход в проверку, а не весь проект сразу.","textPreview":"На первом разговоре продается вход в проверку, а не весь проект сразу.","textChars":70,"textLines":1,"bbox":[164,612,820,28]}
+{"kind":"textbox","id":"sh/90ve5onq","slide":7,"name":"text","text":"C-Level Insight","textPreview":"C-Level Insight","textChars":15,"textLines":1,"bbox":[72,668,200,20]}
+{"kind":"textbox","id":"sh/e9kvq9o3","slide":7,"name":"text","text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1166,668,40,20]}
+{"kind":"notes","id":"nt/qk7fme","slide":7,"text":"[Sources]\nКоммерческий пакет проSTRAнства v1.0; операционная система v1.0."}
+{"kind":"slide","id":"sl/simb4u","slide":8,"title":"Кейсы нужны для узнавания боли, а не для обещаний","textShapes":11}
+{"kind":"textbox","id":"sh/qdgrqx4b","slide":8,"name":"slide-title","text":"Кейсы нужны для узнавания боли, а не для обещаний","textPreview":"Кейсы нужны для узнавания боли, а не для обещаний","textChars":49,"textLines":1,"bbox":[72,42,900,54]}
+{"kind":"textbox","id":"sh/d0rq1sn2","slide":8,"name":"slide-subtitle","text":"В первом контакте показываются похожие ситуации, чтобы клиент увидел свою проблему и согласился на проверку.","textPreview":"В первом контакте показываются похожие ситуации, чтобы клиент увидел свою проблему и согласился на проверку.","textChars":108,"textLines":1,"bbox":[72,100,960,36]}
+{"kind":"shape","id":"sh/szi9snmh","slide":8,"bbox":[102,248,300,162]}
+{"kind":"shape","id":"sh/jap8vi50","slide":8,"bbox":[124,278,72,4]}
+{"kind":"textbox","id":"sh/i9grmd4f","slide":8,"name":"text","text":"Стратегия зависла","textPreview":"Стратегия зависла","textChars":17,"textLines":1,"bbox":[124,300,256,34]}
+{"kind":"textbox","id":"sh/5c7qxsnq","slide":8,"name":"text","text":"курс есть, но решения не доходят до владельцев и метрик","textPreview":"курс есть, но решения не доходят до владельцев и метрик","textChars":55,"textLines":1,"bbox":[124,346,256,70]}
+{"kind":"shape","id":"sh/4by9onml","slide":8,"bbox":[458,248,300,162]}
+{"kind":"shape","id":"sh/n6t87m54","slide":8,"bbox":[480,278,72,4]}
+{"kind":"textbox","id":"sh/250ryh4j","slide":8,"name":"text","text":"Моделей много","textPreview":"Моделей много","textChars":13,"textLines":1,"bbox":[480,300,256,34]}
+{"kind":"textbox","id":"sh/kjehszq1","slide":8,"name":"text","text":"команда спорит о подходах, а не о проверяемой задаче","textPreview":"команда спорит о подходах, а не о проверяемой задаче","textChars":52,"textLines":1,"bbox":[480,346,256,70]}
+{"kind":"shape","id":"sh/lkny1k7m","slide":8,"bbox":[814,248,300,162]}
+{"kind":"shape","id":"sh/yhczqp8b","slide":8,"bbox":[836,278,72,4]}
+{"kind":"textbox","id":"sh/ji5gzupw","slide":8,"name":"text","text":"Внедрение не держится","textPreview":"Внедрение не держится","textChars":21,"textLines":1,"bbox":[836,300,256,34]}
+{"kind":"textbox","id":"sh/wfuhofq5","slide":8,"name":"text","text":"Спринты идут, но контур управления не меняется","textPreview":"Спринты идут, но контур управления не меняется","textChars":46,"textLines":1,"bbox":[836,346,256,70]}
+{"kind":"textbox","id":"sh/xg3yxk7q","slide":8,"name":"text","text":"Формула разговора: «Похоже ли это на вашу ситуацию?» вместо «У нас есть универсальный рецепт».","textPreview":"Формула разговора: «Похоже ли это на вашу ситуацию?» вместо «У нас есть универсальный рецепт».","textChars":94,"textLines":1,"bbox":[166,520,948,42]}
+{"kind":"textbox","id":"sh/adcfm58z","slide":8,"name":"text","text":"C-Level Insight","textPreview":"C-Level Insight","textChars":15,"textLines":1,"bbox":[72,668,200,20]}
+{"kind":"textbox","id":"sh/belgvapk","slide":8,"name":"text","text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1166,668,40,20]}
+{"kind":"notes","id":"nt/simb4u","slide":8,"text":"[Sources]\nНавигатор кейсов и продаж v1.0; каталог кейсов проSTRAнства."}
+{"kind":"slide","id":"sl/3ljpci","slide":9,"title":"Чем проSTRAнство не является","textShapes":14}
+{"kind":"textbox","id":"sh/1g3uxwb2","slide":9,"name":"slide-title","text":"Чем проSTRAнство не является","textPreview":"Чем проSTRAнство не является","textChars":28,"textLines":1,"bbox":[72,42,900,54]}
+{"kind":"textbox","id":"sh/edcv2hsr","slide":9,"name":"slide-subtitle","text":"Это важно проговорить до продажи: иначе клиент будет ждать сессию, аудит или проектный офис.","textPreview":"Это важно проговорить до продажи: иначе клиент будет ждать сессию, аудит или проектный офис.","textChars":92,"textLines":1,"bbox":[72,100,960,36]}
+{"kind":"shape","id":"sh/felcvmtw","slide":9,"bbox":[160,202,760,48]}
+{"kind":"textbox","id":"sh/sbad07al","slide":9,"name":"text","text":"не","textPreview":"не","textChars":2,"textLines":1,"bbox":[188,214,42,20]}
+{"kind":"textbox","id":"sh/dc3utcb6","slide":9,"name":"text","text":"каталог стратегических фреймворков","textPreview":"каталог стратегических фреймворков","textChars":34,"textLines":1,"bbox":[258,212,560,24]}
+{"kind":"shape","id":"sh/q9svyhsf","slide":9,"bbox":[160,276,760,48]}
+{"kind":"textbox","id":"sh/ra1crmt0","slide":9,"name":"text","text":"не","textPreview":"не","textChars":2,"textLines":1,"bbox":[188,288,42,20]}
+{"kind":"textbox","id":"sh/c7edcbap","slide":9,"name":"text","text":"обычная стратегическая сессия","textPreview":"обычная стратегическая сессия","textChars":29,"textLines":1,"bbox":[258,286,560,24]}
+{"kind":"shape","id":"sh/x8ne5gra","slide":9,"bbox":[160,350,760,48]}
+{"kind":"textbox","id":"sh/tszetkvy","slide":9,"name":"text","text":"не","textPreview":"не","textChars":2,"textLines":1,"bbox":[188,362,42,20]}
+{"kind":"textbox","id":"sh/srqdkfud","slide":9,"name":"text","text":"аудит ради отчета","textPreview":"аудит ради отчета","textChars":17,"textLines":1,"bbox":[258,360,560,24]}
+{"kind":"shape","id":"sh/rqhwruds","slide":9,"bbox":[160,424,760,48]}
+{"kind":"textbox","id":"sh/6povipc7","slide":9,"name":"text","text":"не","textPreview":"не","textChars":2,"textLines":1,"bbox":[188,436,42,20]}
+{"kind":"textbox","id":"sh/5ofepkvm","slide":9,"name":"text","text":"проектный офис клиента","textPreview":"проектный офис клиента","textChars":22,"textLines":1,"bbox":[258,434,560,24]}
+{"kind":"shape","id":"sh/4n6dgfu1","slide":9,"bbox":[958,248,210,178]}
+{"kind":"textbox","id":"sh/j2xwnadg","slide":9,"name":"text","text":"Что продается","textPreview":"Что продается","textChars":13,"textLines":1,"bbox":[990,282,150,28]}
+{"kind":"textbox","id":"sh/i1ove5cb","slide":9,"name":"text","text":"точный вход в управленческую проверку","textPreview":"точный вход в управленческую проверку","textChars":37,"textLines":1,"bbox":[990,334,150,60]}
+{"kind":"textbox","id":"sh/pkje14b6","slide":9,"name":"text","text":"C-Level Insight","textPreview":"C-Level Insight","textChars":15,"textLines":1,"bbox":[72,668,200,20]}
+{"kind":"textbox","id":"sh/ojaxszul","slide":9,"name":"text","text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1166,668,40,20]}
+{"kind":"notes","id":"nt/3ljpci","slide":9,"text":"[Sources]\nЯзыковой стандарт v1.0; коммерческий пакет v1.0."}
+{"kind":"slide","id":"sl/q1or9s","slide":10,"title":"Следующий шаг","textShapes":8}
+{"kind":"textbox","id":"sh/julsval4","slide":10,"name":"text","text":"Следующий шаг","textPreview":"Следующий шаг","textChars":13,"textLines":1,"bbox":[72,72,420,46]}
+{"kind":"textbox","id":"sh/kvu94vmp","slide":10,"name":"text","text":"Запустить Диагностику применимости проSTRAнства","textPreview":"Запустить Диагностику применимости проSTRAнства","textChars":47,"textLines":1,"bbox":[72,202,720,92]}
+{"kind":"textbox","id":"sh/lw3ax03a","slide":10,"name":"text","text":"На выходе: карта проблемной единицы, предварительный маршрут и вердикт Диагностики по следующему этапу.","textPreview":"На выходе: карта проблемной единицы, предварительный маршрут и вердикт Диагностики по следующему этапу.","textChars":103,"textLines":1,"bbox":[72,328,700,64]}
+{"kind":"shape","id":"sh/6hwb654f","slide":10,"bbox":[898,182,250,306]}
+{"kind":"textbox","id":"sh/7i5szal0","slide":10,"name":"text","text":"Решение для клиента","textPreview":"Решение для клиента","textChars":19,"textLines":1,"bbox":[930,216,184,30]}
+{"kind":"textbox","id":"sh/8jet8fml","slide":10,"name":"text","text":"не покупать большой проект заранее\n\nпроверить применимость связки стратегии и исполнения","textPreview":"не покупать большой проект заранее |  | проверить применимость связки стратегии и исполнения","textChars":88,"textLines":3,"bbox":[928,268,190,118]}
+{"kind":"shape","id":"sh/tkna1k36","slide":10,"bbox":[930,414,186,4]}
+{"kind":"textbox","id":"sh/mlsrul4b","slide":10,"name":"text","text":"Начать с платной Диагностики","textPreview":"Начать с платной Диагностики","textChars":28,"textLines":1,"bbox":[930,434,186,44]}
+{"kind":"textbox","id":"sh/nm1sn6lw","slide":10,"name":"text","text":"C-Level Insight","textPreview":"C-Level Insight","textChars":15,"textLines":1,"bbox":[72,668,200,20]}
+{"kind":"textbox","id":"sh/zahorm1c","slide":10,"name":"text","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1166,668,40,20]}
+{"kind":"notes","id":"nt/q1or9s","slide":10,"text":"[Sources]\nПромпт 12B; пакет продажи Диагностики v1.0; коммерческое предложение Диагностика v1.0."}
