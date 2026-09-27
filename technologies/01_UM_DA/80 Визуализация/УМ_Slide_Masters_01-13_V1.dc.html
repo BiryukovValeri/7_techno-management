@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;padding:0;background:#0B1F33;}
+a{color:#B46A3C;text-decoration:none;}
+a:hover{color:#0F766E;}
+</style>
+</helmet>
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%">
+
+<section data-label="01 Ядро УМ" data-screen-label="01" data-speaker-notes="За 30 секунд показать, что УМ переводит управленческое намерение в расчетный управленческий ответ до запуска решения." style="background:#F3EBDD;color:#0B1F33;font-family:'IBM Plex Sans',sans-serif;padding:52px 72px 40px;display:flex;flex-direction:column">
+<sc-if value="{{ gridVisible }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px),repeating-linear-gradient(0deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px);pointer-events:none"></div></sc-if>
+<div style="position:relative;display:flex;flex-direction:column;height:100%">
+<div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.045em;color:#475569;text-transform:uppercase;white-space:nowrap;gap:40px;padding-bottom:14px;border-bottom:1px solid rgba(11,31,51,0.28)">
+<span>Управленческая Точность / УМ&nbsp;&nbsp;Визуализация 01</span>
+<span>Клиентский слой · flow / ядро технологии · сложность простая</span>
+</div>
+<h1 style="font-family:'Source Serif 4',serif;font-size:62px;font-weight:700;line-height:1.08;letter-spacing:-0.01em;margin:26px 0 12px">УМ переводит «хотим» в расчетный управленческий ответ</h1>
+<p style="font-size:30px;line-height:1.34;color:#475569;margin:0;max-width:1560px;text-wrap:pretty">Управленческая Точность появляется, когда намерение проходит данные, расчет, условия, статус и контроль.</p>
+<div style="flex:1;display:flex;flex-direction:column;justify-content:center;padding:16px 0">
+<div style="display:flex;align-items:stretch">
+<div style="flex:1;border:2px solid #0B1F33;background:rgba(255,255,255,0.42);padding:26px 20px;display:flex;flex-direction:column;gap:14px;min-height:250px"><span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#B46A3C;letter-spacing:0.06em">01</span><span style="font-size:31px;font-weight:600;line-height:1.22">Управленческое намерение</span></div>
+<span style="flex:0 0 46px;align-self:center;text-align:center;color:#B46A3C;font-size:32px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0F766E;background:rgba(255,255,255,0.42);padding:26px 20px;display:flex;flex-direction:column;gap:14px;min-height:250px"><span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#B46A3C;letter-spacing:0.06em">02</span><span style="font-size:31px;font-weight:600;line-height:1.22;color:#0F766E">Проверка данных</span></div>
+<span style="flex:0 0 46px;align-self:center;text-align:center;color:#B46A3C;font-size:32px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0B1F33;background:rgba(255,255,255,0.42);padding:26px 20px;display:flex;flex-direction:column;gap:14px;min-height:250px"><span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#B46A3C;letter-spacing:0.06em">03</span><span style="font-size:31px;font-weight:600;line-height:1.22">Расчет</span></div>
+<span style="flex:0 0 46px;align-self:center;text-align:center;color:#B46A3C;font-size:32px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0B1F33;background:rgba(255,255,255,0.42);padding:26px 20px;display:flex;flex-direction:column;gap:14px;min-height:250px"><span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#B46A3C;letter-spacing:0.06em">04</span><span style="font-size:31px;font-weight:600;line-height:1.22">Условия</span></div>
+<span style="flex:0 0 46px;align-self:center;text-align:center;color:#B46A3C;font-size:32px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0B1F33;background:rgba(255,255,255,0.42);padding:26px 20px;display:flex;flex-direction:column;gap:14px;min-height:250px"><span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#B46A3C;letter-spacing:0.06em">05</span><span style="font-size:31px;font-weight:600;line-height:1.22">Статус</span></div>
+<span style="flex:0 0 46px;align-self:center;text-align:center;color:#B46A3C;font-size:32px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0B1F33;background:#0B1F33;padding:26px 20px;display:flex;flex-direction:column;gap:14px;min-height:250px"><span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#B46A3C;letter-spacing:0.06em">06</span><span style="font-size:31px;font-weight:600;line-height:1.22;color:#F3EBDD">Управленческий ответ</span></div>
+</div>
+<div style="display:flex;align-items:center;margin-top:26px">
+<div style="flex:1"></div>
+<div style="flex:4;display:flex;align-items:center"><span style="color:#B91C1C;font-size:28px;line-height:1;margin-right:-2px">◀</span><div style="flex:1;border-top:2px dashed #B91C1C"></div></div>
+<div style="flex:1"></div>
+</div>
+</div>
+<div style="display:flex;gap:44px;align-items:flex-start;padding-bottom:26px">
+<div style="flex:1;display:flex;gap:22px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#475569;padding-top:4px">ЛЕГЕНДА</span>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#B46A3C;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Copper — маршрут решения</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#0F766E;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Muted Teal — подтвержденные данные и контроль</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#B91C1C;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Diagnostic Red — возврат или Stop</span></div>
+</div>
+</div>
+<div style="flex:0 0 700px;border:2px solid #B91C1C;padding:18px 24px;display:flex;flex-direction:column;gap:8px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#B91C1C">ЭТО НЕ</span>
+<span style="font-size:26px;line-height:1.32">ЭТО НЕ схема вдохновения, не стратегический лозунг и не рисунок «как хочется». Это маршрут получения расчетного ответа.</span>
+</div>
+</div>
+<div style="border-top:1px solid rgba(11,31,51,0.28);padding-top:16px;display:flex;justify-content:space-between;align-items:baseline;gap:40px">
+<span style="font-family:'Source Serif 4',serif;font-style:italic;font-size:27px;color:#0B1F33">Управленческая Точность начинается до запуска решения.</span>
+<sc-if value="{{ fileTags }}" hint-placeholder-val="{{ true }}"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#475569;white-space:nowrap">Визуализация_01_Ядро_Управленческой_Точности_V1</span></sc-if>
+</div>
+</div>
+</section>
+
+<section data-label="02 Цена «да»" data-screen-label="02" data-speaker-notes="Показать, что каждое управленческое «да» несет цену в деньгах, ресурсах, сроках, налоговом контуре и ответственности. Схема ведет к платной Диагностике." style="background:#F3EBDD;color:#0B1F33;font-family:'IBM Plex Sans',sans-serif;padding:52px 72px 40px;display:flex;flex-direction:column">
+<sc-if value="{{ gridVisible }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px),repeating-linear-gradient(0deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px);pointer-events:none"></div></sc-if>
+<div style="position:relative;display:flex;flex-direction:column;height:100%">
+<div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.045em;color:#475569;text-transform:uppercase;white-space:nowrap;gap:40px;padding-bottom:14px;border-bottom:1px solid rgba(11,31,51,0.28)">
+<span>Управленческая Точность / УМ&nbsp;&nbsp;Визуализация 02</span>
+<span>Клиентский + коммерческий слой · decision map · сложность средняя</span>
+</div>
+<h1 style="font-family:'Source Serif 4',serif;font-size:62px;font-weight:700;line-height:1.08;letter-spacing:-0.01em;margin:26px 0 12px">Цена «да» видна до запуска, если решение посчитано</h1>
+<p style="font-size:30px;line-height:1.34;color:#475569;margin:0;max-width:1620px;text-wrap:pretty">УМ показывает не только желаемый результат, но и цену последствий, которые компания принимает вместе с решением.</p>
+<div style="flex:1;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:1fr 1fr;gap:22px;padding:26px 0 30px">
+<div style="border:2px solid #B46A3C;background:rgba(255,255,255,0.42);padding:24px 24px;display:flex;flex-direction:column;gap:12px"><span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#B46A3C;letter-spacing:0.06em">01</span><span style="font-size:34px;font-weight:600;line-height:1.2">Цена в прибыли</span></div>
+<div style="border:2px solid #B46A3C;background:rgba(255,255,255,0.42);padding:24px 24px;display:flex;flex-direction:column;gap:12px"><span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#B46A3C;letter-spacing:0.06em">02</span><span style="font-size:34px;font-weight:600;line-height:1.2">Цена в денежном потоке</span></div>
+<div style="border:2px solid #B46A3C;background:rgba(255,255,255,0.42);padding:24px 24px;display:flex;flex-direction:column;gap:12px"><span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#B46A3C;letter-spacing:0.06em">03</span><span style="font-size:34px;font-weight:600;line-height:1.2">Цена в налоговом контуре</span></div>
+<div style="border:2px solid #B46A3C;background:rgba(255,255,255,0.42);padding:24px 24px;display:flex;flex-direction:column;gap:12px"><span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#B46A3C;letter-spacing:0.06em">04</span><span style="font-size:34px;font-weight:600;line-height:1.2">Цена в ресурсах</span></div>
+<div style="border:2px solid #B46A3C;background:rgba(255,255,255,0.42);padding:24px 24px;display:flex;flex-direction:column;gap:12px"><span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#B46A3C;letter-spacing:0.06em">05</span><span style="font-size:34px;font-weight:600;line-height:1.2">Цена в сроках</span></div>
+<div style="border:2px solid #B91C1C;background:rgba(255,255,255,0.42);padding:24px 24px;display:flex;flex-direction:column;gap:12px"><span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#B91C1C;letter-spacing:0.06em">06</span><span style="font-size:34px;font-weight:600;line-height:1.2">Цена ответственности</span></div>
+</div>
+<div style="display:flex;gap:44px;align-items:flex-start;padding-bottom:26px">
+<div style="flex:1;display:flex;gap:22px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#475569;padding-top:4px">ЛЕГЕНДА</span>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#0B1F33;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Deep Navy — решение</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#B46A3C;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Copper — цена «да»</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#B91C1C;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Diagnostic Red — скрытая цена, которая делает запуск опасным</span></div>
+</div>
+</div>
+<div style="flex:0 0 700px;border:2px solid #B91C1C;padding:18px 24px;display:flex;flex-direction:column;gap:8px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#B91C1C">ЭТО НЕ</span>
+<span style="font-size:26px;line-height:1.32">ЭТО НЕ запугивание клиента и не обещание гарантированной прибыли. Это карта последствий решения.</span>
+</div>
+</div>
+<div style="border-top:1px solid rgba(11,31,51,0.28);padding-top:16px;display:flex;justify-content:space-between;align-items:baseline;gap:40px">
+<span style="font-family:'Source Serif 4',serif;font-style:italic;font-size:27px;color:#0B1F33">Точное решение знает свою цену до запуска.</span>
+<sc-if value="{{ fileTags }}" hint-placeholder-val="{{ true }}"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#475569;white-space:nowrap">Визуализация_02_Цена_Управленческого_Да_V1</span></sc-if>
+</div>
+</div>
+</section>
+
+<section data-label="03 Проверка данных" data-screen-label="03" data-speaker-notes="Фильтр, который не дает выдавать вердикт при неполных вводных. «Данных недостаточно» — пред-статус, не четвертый статус решения." style="background:#F3EBDD;color:#0B1F33;font-family:'IBM Plex Sans',sans-serif;padding:52px 72px 40px;display:flex;flex-direction:column">
+<sc-if value="{{ gridVisible }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px),repeating-linear-gradient(0deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px);pointer-events:none"></div></sc-if>
+<div style="position:relative;display:flex;flex-direction:column;height:100%">
+<div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.045em;color:#475569;text-transform:uppercase;white-space:nowrap;gap:40px;padding-bottom:14px;border-bottom:1px solid rgba(11,31,51,0.28)">
+<span>Управленческая Точность / УМ&nbsp;&nbsp;Визуализация 03</span>
+<span>Консультантский слой · diagnostic card · сложность простая</span>
+</div>
+<h1 style="font-family:'Source Serif 4',serif;font-size:62px;font-weight:700;line-height:1.08;letter-spacing:-0.01em;margin:26px 0 12px">Если данных недостаточно, вердикт не выдается</h1>
+<p style="font-size:30px;line-height:1.34;color:#475569;margin:0;max-width:1620px;text-wrap:pretty">«Данных недостаточно» — не статус решения, а пред-статус: возврат на сбор вводных и повторная проверка.</p>
+<div style="flex:1;display:flex;align-items:stretch;gap:0;padding:24px 0 30px">
+<div style="flex:0 0 300px;border:2px solid #0B1F33;background:#0B1F33;padding:26px 24px;display:flex;flex-direction:column;justify-content:center;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#B46A3C;letter-spacing:0.06em">ВХОД</span><span style="font-size:34px;font-weight:600;line-height:1.2;color:#F3EBDD">Сырой запрос</span></div>
+<span style="flex:0 0 46px;align-self:center;text-align:center;color:#475569;font-size:32px;line-height:1">→</span>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px">
+<div style="flex:1;border:2px solid #475569;background:rgba(255,255,255,0.42);padding:18px 24px;display:flex;align-items:center;gap:20px"><span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#475569;letter-spacing:0.06em">01</span><span style="font-size:31px;font-weight:500;line-height:1.2">Есть числовой якорь?</span></div>
+<div style="flex:1;border:2px solid #475569;background:rgba(255,255,255,0.42);padding:18px 24px;display:flex;align-items:center;gap:20px"><span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#475569;letter-spacing:0.06em">02</span><span style="font-size:31px;font-weight:500;line-height:1.2">Есть режим налогообложения?</span></div>
+<div style="flex:1;border:2px solid #475569;background:rgba(255,255,255,0.42);padding:18px 24px;display:flex;align-items:center;gap:20px"><span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#475569;letter-spacing:0.06em">03</span><span style="font-size:31px;font-weight:500;line-height:1.2">Есть деньги и сроки?</span></div>
+<div style="flex:1;border:2px solid #475569;background:rgba(255,255,255,0.42);padding:18px 24px;display:flex;align-items:center;gap:20px"><span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#475569;letter-spacing:0.06em">04</span><span style="font-size:31px;font-weight:500;line-height:1.2">Есть формула или решатор?</span></div>
+</div>
+<span style="flex:0 0 46px;align-self:center;text-align:center;color:#475569;font-size:32px;line-height:1">→</span>
+<div style="flex:0 0 460px;display:flex;flex-direction:column;gap:20px">
+<div style="flex:1;border:2px solid #B91C1C;background:rgba(255,255,255,0.42);padding:22px 24px;display:flex;flex-direction:column;justify-content:center;gap:12px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B91C1C;letter-spacing:0.09em">◀ ВОЗВРАТ</span><span style="font-size:32px;font-weight:600;line-height:1.22;color:#B91C1C">Если нет — сбор данных</span></div>
+<div style="flex:1;border:2px solid #B46A3C;background:rgba(255,255,255,0.42);padding:22px 24px;display:flex;flex-direction:column;justify-content:center;gap:12px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.09em">ДОПУСК</span><span style="font-size:32px;font-weight:600;line-height:1.22;color:#B46A3C">Если да — расчет</span></div>
+</div>
+</div>
+<div style="display:flex;gap:44px;align-items:flex-start;padding-bottom:26px">
+<div style="flex:1;display:flex;gap:22px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#475569;padding-top:4px">ЛЕГЕНДА</span>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#475569;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Slate — служебная проверка</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#B91C1C;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Diagnostic Red — возврат на сбор данных</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#B46A3C;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Copper — допуск к расчету</span></div>
+</div>
+</div>
+<div style="flex:0 0 700px;border:2px solid #B91C1C;padding:18px 24px;display:flex;flex-direction:column;gap:8px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#B91C1C">ЭТО НЕ</span>
+<span style="font-size:26px;line-height:1.32">ЭТО НЕ четвертый статус решения. Нельзя показывать «данных недостаточно» рядом с тремя вердиктами как равный исход.</span>
+</div>
+</div>
+<div style="border-top:1px solid rgba(11,31,51,0.28);padding-top:16px;display:flex;justify-content:space-between;align-items:baseline;gap:40px">
+<span style="font-family:'Source Serif 4',serif;font-style:italic;font-size:27px;color:#0B1F33">Нет данных — нет вердикта. Есть данные — можно считать.</span>
+<sc-if value="{{ fileTags }}" hint-placeholder-val="{{ true }}"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#475569;white-space:nowrap">Визуализация_03_Проверка_Данных_До_Расчета_V1</span></sc-if>
+</div>
+</div>
+</section>
+
+<section data-label="04 Алгоритм УМ" data-screen-label="04" data-speaker-notes="Полный исполняемый алгоритм технологии в одном маршруте: каждый блок обязан дать проверяемый выход, иначе маршрут возвращается назад." style="background:#F3EBDD;color:#0B1F33;font-family:'IBM Plex Sans',sans-serif;padding:52px 72px 40px;display:flex;flex-direction:column">
+<sc-if value="{{ gridVisible }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px),repeating-linear-gradient(0deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px);pointer-events:none"></div></sc-if>
+<div style="position:relative;display:flex;flex-direction:column;height:100%">
+<div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.045em;color:#475569;text-transform:uppercase;white-space:nowrap;gap:40px;padding-bottom:14px;border-bottom:1px solid rgba(11,31,51,0.28)">
+<span>Управленческая Точность / УМ&nbsp;&nbsp;Визуализация 04</span>
+<span>Консультантский слой · flow / process map · сложность средняя</span>
+</div>
+<h1 style="font-family:'Source Serif 4',serif;font-size:62px;font-weight:700;line-height:1.08;letter-spacing:-0.01em;margin:26px 0 12px">Алгоритм УМ ведет решение от сырого запроса к контролю</h1>
+<p style="font-size:30px;line-height:1.34;color:#475569;margin:0;max-width:1620px;text-wrap:pretty">Каждый блок должен дать проверяемый выход; если выход не получен, маршрут возвращается назад.</p>
+<div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:22px;padding:20px 0 26px">
+<div style="display:flex;align-items:stretch">
+<div style="flex:1;border:2px solid #0B1F33;background:rgba(255,255,255,0.42);padding:20px 18px;display:flex;flex-direction:column;gap:10px;min-height:150px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">01</span><span style="font-size:29px;font-weight:600;line-height:1.2">Сырой запрос</span></div>
+<span style="flex:0 0 40px;align-self:center;text-align:center;color:#B46A3C;font-size:30px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0B1F33;background:rgba(255,255,255,0.42);padding:20px 18px;display:flex;flex-direction:column;gap:10px;min-height:150px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">02</span><span style="font-size:29px;font-weight:600;line-height:1.2">Домен задачи</span></div>
+<span style="flex:0 0 40px;align-self:center;text-align:center;color:#B46A3C;font-size:30px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0B1F33;background:rgba(255,255,255,0.42);padding:20px 18px;display:flex;flex-direction:column;gap:10px;min-height:150px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">03</span><span style="font-size:29px;font-weight:600;line-height:1.2">Числовой якорь</span></div>
+<span style="flex:0 0 40px;align-self:center;text-align:center;color:#B46A3C;font-size:30px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0F766E;background:rgba(255,255,255,0.42);padding:20px 18px;display:flex;flex-direction:column;gap:10px;min-height:150px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">04</span><span style="font-size:29px;font-weight:600;line-height:1.2;color:#0F766E">Данные</span></div>
+<span style="flex:0 0 40px;align-self:center;text-align:center;color:#B46A3C;font-size:30px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0B1F33;background:rgba(255,255,255,0.42);padding:20px 18px;display:flex;flex-direction:column;gap:10px;min-height:150px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">05</span><span style="font-size:29px;font-weight:600;line-height:1.2">Формула / решатор</span></div>
+</div>
+<div style="display:flex;align-items:stretch">
+<div style="flex:1;border:2px solid #0B1F33;background:rgba(255,255,255,0.42);padding:20px 18px;display:flex;flex-direction:column;gap:10px;min-height:150px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">06</span><span style="font-size:29px;font-weight:600;line-height:1.2">Сценарии</span></div>
+<span style="flex:0 0 40px;align-self:center;text-align:center;color:#B46A3C;font-size:30px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0B1F33;background:rgba(255,255,255,0.42);padding:20px 18px;display:flex;flex-direction:column;gap:10px;min-height:150px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">07</span><span style="font-size:29px;font-weight:600;line-height:1.2">Условия</span></div>
+<span style="flex:0 0 40px;align-self:center;text-align:center;color:#B46A3C;font-size:30px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0B1F33;background:rgba(255,255,255,0.42);padding:20px 18px;display:flex;flex-direction:column;gap:10px;min-height:150px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">08</span><span style="font-size:29px;font-weight:600;line-height:1.2">Статус</span></div>
+<span style="flex:0 0 40px;align-self:center;text-align:center;color:#B46A3C;font-size:30px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0B1F33;background:#0B1F33;padding:20px 18px;display:flex;flex-direction:column;gap:10px;min-height:150px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">09</span><span style="font-size:29px;font-weight:600;line-height:1.2;color:#F3EBDD">Управленческий ответ</span></div>
+<span style="flex:0 0 40px;align-self:center;text-align:center;color:#B46A3C;font-size:30px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0F766E;background:rgba(255,255,255,0.42);padding:20px 18px;display:flex;flex-direction:column;gap:10px;min-height:150px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">10</span><span style="font-size:29px;font-weight:600;line-height:1.2;color:#0F766E">Контроль</span></div>
+</div>
+<div style="display:flex;align-items:center">
+<div style="flex:2"></div>
+<div style="flex:6;display:flex;align-items:center"><span style="color:#B91C1C;font-size:28px;line-height:1;margin-right:-2px">◀</span><div style="flex:1;border-top:2px dashed #B91C1C"></div></div>
+<div style="flex:2"></div>
+</div>
+</div>
+<div style="display:flex;gap:44px;align-items:flex-start;padding-bottom:26px">
+<div style="flex:1;display:flex;gap:22px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#475569;padding-top:4px">ЛЕГЕНДА</span>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:12px;align-items:center"><span style="width:34px;flex:0 0 34px;border-top:3px solid #0B1F33"></span><span style="font-size:26px;line-height:1.3">Сплошная стрелка — обязательный переход</span></div>
+<div style="display:flex;gap:12px;align-items:center"><span style="width:34px;flex:0 0 34px;border-top:3px dashed #B91C1C"></span><span style="font-size:26px;line-height:1.3">Обратная стрелка — возврат</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#B91C1C;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Diagnostic Red — Stop или разрыв</span></div>
+</div>
+</div>
+<div style="flex:0 0 700px;border:2px solid #B91C1C;padding:18px 24px;display:flex;flex-direction:column;gap:8px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#B91C1C">ЭТО НЕ</span>
+<span style="font-size:26px;line-height:1.32">ЭТО НЕ список тем для обсуждения. Это последовательность, где каждый шаг обязан произвести выход.</span>
+</div>
+</div>
+<div style="border-top:1px solid rgba(11,31,51,0.28);padding-top:16px;display:flex;justify-content:space-between;align-items:baseline;gap:40px">
+<span style="font-family:'Source Serif 4',serif;font-style:italic;font-size:27px;color:#0B1F33">УМ работает только как исполняемый алгоритм, а не как набор рассуждений.</span>
+<sc-if value="{{ fileTags }}" hint-placeholder-val="{{ true }}"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#475569;white-space:nowrap">Визуализация_04_Алгоритм_УМ_Запрос_Контроль_V1</span></sc-if>
+</div>
+</div>
+</section>
+
+<section data-label="05 Статусы решения" data-screen-label="05" data-speaker-notes="Три вердикта плюс отдельное служебное состояние недостатка данных. Пред-статус визуально отделен от статусов решения." style="background:#F3EBDD;color:#0B1F33;font-family:'IBM Plex Sans',sans-serif;padding:52px 72px 40px;display:flex;flex-direction:column">
+<sc-if value="{{ gridVisible }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px),repeating-linear-gradient(0deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px);pointer-events:none"></div></sc-if>
+<div style="position:relative;display:flex;flex-direction:column;height:100%">
+<div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.045em;color:#475569;text-transform:uppercase;white-space:nowrap;gap:40px;padding-bottom:14px;border-bottom:1px solid rgba(11,31,51,0.28)">
+<span>Управленческая Точность / УМ&nbsp;&nbsp;Визуализация 05</span>
+<span>Diagnostic Premium · status map / gate map · сложность простая</span>
+</div>
+<h1 style="font-family:'Source Serif 4',serif;font-size:62px;font-weight:700;line-height:1.08;letter-spacing:-0.01em;margin:26px 0 12px">УМ дает три статуса решения — не четыре</h1>
+<p style="font-size:30px;line-height:1.34;color:#475569;margin:0;max-width:1620px;text-wrap:pretty">Данных недостаточно — это возврат на сбор данных, а не управленческий вердикт.</p>
+<div style="flex:1;display:flex;align-items:stretch;gap:0;padding:26px 0 30px">
+<div style="flex:0 0 420px;border:2px dashed #475569;background:rgba(71,85,105,0.07);padding:28px 26px;display:flex;flex-direction:column;justify-content:center;gap:16px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#475569">ПРЕД-СТАТУС</span>
+<span style="font-size:32px;font-weight:600;line-height:1.24;color:#475569">Пред-статус: данных недостаточно для вердикта</span>
+<div style="display:flex;align-items:center;gap:12px"><span style="color:#B91C1C;font-size:26px;line-height:1">◀</span><div style="flex:1;border-top:2px dashed #B91C1C"></div></div>
+</div>
+<div style="flex:0 0 92px;display:flex;align-items:center;justify-content:center"><div style="width:2px;height:88%;background:rgba(11,31,51,0.32)"></div></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px">
+<div style="flex:1;border:2px solid #0F766E;background:rgba(255,255,255,0.45);padding:22px 28px;display:flex;align-items:center;gap:26px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#0F766E">СТАТУС 01</span><span style="font-size:40px;font-weight:600;line-height:1.15;color:#0F766E">Можно</span></div>
+<div style="flex:1;border:2px solid #B46A3C;background:rgba(255,255,255,0.45);padding:22px 28px;display:flex;align-items:center;gap:26px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#B46A3C">СТАТУС 02</span><span style="font-size:40px;font-weight:600;line-height:1.15;color:#B46A3C">Можно при условиях</span></div>
+<div style="flex:1;border:2px solid #B91C1C;background:rgba(255,255,255,0.45);padding:22px 28px;display:flex;align-items:center;gap:26px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#B91C1C">СТАТУС 03</span><span style="font-size:40px;font-weight:600;line-height:1.15;color:#B91C1C">Нельзя в текущей модели</span></div>
+</div>
+</div>
+<div style="display:flex;gap:44px;align-items:flex-start;padding-bottom:26px">
+<div style="flex:1;display:flex;gap:22px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#475569;padding-top:4px">ЛЕГЕНДА</span>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#0F766E;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Muted Teal — можно</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#B46A3C;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Copper — можно при условиях</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#B91C1C;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Diagnostic Red — нельзя в текущей модели</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#475569;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Slate — пред-статус данных</span></div>
+</div>
+</div>
+<div style="flex:0 0 700px;border:2px solid #B91C1C;padding:18px 24px;display:flex;flex-direction:column;gap:8px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#B91C1C">ЭТО НЕ</span>
+<span style="font-size:26px;line-height:1.32">ЭТО НЕ универсальная схема 00E с Hold / No Fit. Для УМ применяется адаптированная логика технологии.</span>
+</div>
+</div>
+<div style="border-top:1px solid rgba(11,31,51,0.28);padding-top:16px;display:flex;justify-content:space-between;align-items:baseline;gap:40px">
+<span style="font-family:'Source Serif 4',serif;font-style:italic;font-size:27px;color:#0B1F33">Вердикт возможен только после данных, расчета и условий.</span>
+<sc-if value="{{ fileTags }}" hint-placeholder-val="{{ true }}"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#475569;white-space:nowrap">Визуализация_05_Статусы_Решения_И_Пред_Статус_V1</span></sc-if>
+</div>
+</div>
+</section>
+
+<section data-label="06 Логика решатора" data-screen-label="06" data-speaker-notes="Решатор исполняет расчетную часть, но работает только после постановки запроса, данных и условий." style="background:#F3EBDD;color:#0B1F33;font-family:'IBM Plex Sans',sans-serif;padding:52px 72px 40px;display:flex;flex-direction:column">
+<sc-if value="{{ gridVisible }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px),repeating-linear-gradient(0deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px);pointer-events:none"></div></sc-if>
+<div style="position:relative;display:flex;flex-direction:column;height:100%">
+<div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.045em;color:#475569;text-transform:uppercase;white-space:nowrap;gap:40px;padding-bottom:14px;border-bottom:1px solid rgba(11,31,51,0.28)">
+<span>Управленческая Точность / УМ&nbsp;&nbsp;Визуализация 06</span>
+<span>Консультантский слой · calculator logic map · сложность средняя</span>
+</div>
+<h1 style="font-family:'Source Serif 4',serif;font-size:62px;font-weight:700;line-height:1.08;letter-spacing:-0.01em;margin:26px 0 12px">Решатор считает только то, что правильно поставлено</h1>
+<p style="font-size:30px;line-height:1.34;color:#475569;margin:0;max-width:1620px;text-wrap:pretty">До решатора должны быть определены задача, вводные, налоговый режим, сценарии и критерии допустимости.</p>
+<div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:22px;padding:22px 0 28px">
+<div style="display:flex;align-items:stretch">
+<div style="flex:1;border:2px solid #0F766E;background:rgba(255,255,255,0.42);padding:22px 20px;display:flex;flex-direction:column;gap:12px;min-height:170px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">01</span><span style="font-size:31px;font-weight:600;line-height:1.2;color:#0F766E">Вводные</span></div>
+<span style="flex:0 0 42px;align-self:center;text-align:center;color:#B46A3C;font-size:30px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0B1F33;background:rgba(255,255,255,0.42);padding:22px 20px;display:flex;flex-direction:column;gap:12px;min-height:170px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">02</span><span style="font-size:31px;font-weight:600;line-height:1.2">Формулы</span></div>
+<span style="flex:0 0 42px;align-self:center;text-align:center;color:#B46A3C;font-size:30px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0B1F33;background:rgba(255,255,255,0.42);padding:22px 20px;display:flex;flex-direction:column;gap:12px;min-height:170px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">03</span><span style="font-size:31px;font-weight:600;line-height:1.2">Сценарии</span></div>
+<span style="flex:0 0 42px;align-self:center;text-align:center;color:#B46A3C;font-size:30px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0B1F33;background:rgba(255,255,255,0.42);padding:22px 20px;display:flex;flex-direction:column;gap:12px;min-height:170px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">04</span><span style="font-size:31px;font-weight:600;line-height:1.2">Налоговый контур</span></div>
+</div>
+<div style="display:flex;align-items:stretch">
+<div style="flex:1;border:2px solid #0B1F33;background:rgba(255,255,255,0.42);padding:22px 20px;display:flex;flex-direction:column;gap:12px;min-height:170px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">05</span><span style="font-size:31px;font-weight:600;line-height:1.2">Денежный контур</span></div>
+<span style="flex:0 0 42px;align-self:center;text-align:center;color:#B46A3C;font-size:30px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #B91C1C;background:rgba(255,255,255,0.42);padding:22px 20px;display:flex;flex-direction:column;gap:12px;min-height:170px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">06</span><span style="font-size:31px;font-weight:600;line-height:1.2;color:#B91C1C">Порог допустимости</span></div>
+<span style="flex:0 0 42px;align-self:center;text-align:center;color:#B46A3C;font-size:30px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0B1F33;background:#0B1F33;padding:22px 20px;display:flex;flex-direction:column;gap:12px;min-height:170px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">07</span><span style="font-size:31px;font-weight:600;line-height:1.2;color:#F3EBDD">Статус</span></div>
+<span style="flex:0 0 42px;align-self:center;text-align:center;color:#B46A3C;font-size:30px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0F766E;background:rgba(255,255,255,0.42);padding:22px 20px;display:flex;flex-direction:column;gap:12px;min-height:170px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">08</span><span style="font-size:31px;font-weight:600;line-height:1.2;color:#0F766E">Контрольная точка</span></div>
+</div>
+</div>
+<div style="display:flex;gap:44px;align-items:flex-start;padding-bottom:26px">
+<div style="flex:1;display:flex;gap:22px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#475569;padding-top:4px">ЛЕГЕНДА</span>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#0F766E;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Teal — подтвержденные данные</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#B46A3C;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Copper — расчетный маршрут</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#B91C1C;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Red — разрыв или недопустимый результат</span></div>
+</div>
+</div>
+<div style="flex:0 0 700px;border:2px solid #B91C1C;padding:18px 24px;display:flex;flex-direction:column;gap:8px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#B91C1C">ЭТО НЕ</span>
+<span style="font-size:26px;line-height:1.32">ЭТО НЕ самостоятельный калькулятор «на все случаи жизни» и не продажа Excel вместо технологии.</span>
+</div>
+</div>
+<div style="border-top:1px solid rgba(11,31,51,0.28);padding-top:16px;display:flex;justify-content:space-between;align-items:baseline;gap:40px">
+<span style="font-family:'Source Serif 4',serif;font-style:italic;font-size:27px;color:#0B1F33">Решатор — инструмент расчета, технология — контур управленческого ответа.</span>
+<sc-if value="{{ fileTags }}" hint-placeholder-val="{{ true }}"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#475569;white-space:nowrap">Визуализация_06_Логика_Решатора_Внутри_Технологии_V1</span></sc-if>
+</div>
+</div>
+</section>
+
+<section data-label="07 Решатор — инструмент" data-screen-label="07" data-speaker-notes="Защита УМ от неправильной категории Excel / таблица / финансовая модель. Инструмент считает, технология отвечает за точность ответа." style="background:#F3EBDD;color:#0B1F33;font-family:'IBM Plex Sans',sans-serif;padding:52px 72px 40px;display:flex;flex-direction:column">
+<sc-if value="{{ gridVisible }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px),repeating-linear-gradient(0deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px);pointer-events:none"></div></sc-if>
+<div style="position:relative;display:flex;flex-direction:column;height:100%">
+<div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.045em;color:#475569;text-transform:uppercase;white-space:nowrap;gap:40px;padding-bottom:14px;border-bottom:1px solid rgba(11,31,51,0.28)">
+<span>Управленческая Точность / УМ&nbsp;&nbsp;Визуализация 07</span>
+<span>Клиентский слой · anti-positioning + decision map · сложность простая</span>
+</div>
+<h1 style="font-family:'Source Serif 4',serif;font-size:62px;font-weight:700;line-height:1.08;letter-spacing:-0.01em;margin:26px 0 12px">Клиент покупает не таблицу, а способность принимать точные решения</h1>
+<p style="font-size:30px;line-height:1.34;color:#475569;margin:0;max-width:1620px;text-wrap:pretty">Решатор помогает считать, но не определяет, какое решение допустимо и кто отвечает за контроль.</p>
+<div style="flex:1;display:flex;align-items:stretch;gap:0;padding:26px 0 30px">
+<div style="flex:0 0 480px;border:2px solid #475569;background:rgba(71,85,105,0.07);padding:30px 28px;display:flex;flex-direction:column;justify-content:center;gap:18px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#475569">ИНСТРУМЕНТАЛЬНЫЙ СЛОЙ</span>
+<span style="font-size:44px;font-weight:600;line-height:1.18;color:#475569">Таблица считает</span>
+</div>
+<span style="flex:0 0 72px;align-self:center;text-align:center;color:#B46A3C;font-size:34px;line-height:1">→</span>
+<div style="flex:1;background:#0B1F33;padding:30px 34px;display:flex;flex-direction:column;justify-content:center;gap:18px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#B46A3C">ТЕХНОЛОГИЯ</span>
+<div style="display:flex;align-items:baseline;gap:22px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;flex:0 0 44px">01</span><span style="font-size:34px;font-weight:600;line-height:1.2;color:#F3EBDD">УМ ставит вопрос</span></div>
+<div style="display:flex;align-items:baseline;gap:22px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;flex:0 0 44px">02</span><span style="font-size:34px;font-weight:600;line-height:1.2;color:#F3EBDD">УМ выбирает контуры</span></div>
+<div style="display:flex;align-items:baseline;gap:22px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;flex:0 0 44px">03</span><span style="font-size:34px;font-weight:600;line-height:1.2;color:#F3EBDD">УМ задает условия</span></div>
+<div style="display:flex;align-items:baseline;gap:22px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;flex:0 0 44px">04</span><span style="font-size:34px;font-weight:600;line-height:1.2;color:#F3EBDD">УМ присваивает статус</span></div>
+<div style="display:flex;align-items:baseline;gap:22px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;flex:0 0 44px">05</span><span style="font-size:34px;font-weight:600;line-height:1.2;color:#F3EBDD">УМ фиксирует контроль</span></div>
+</div>
+</div>
+<div style="display:flex;gap:44px;align-items:flex-start;padding-bottom:26px">
+<div style="flex:1;display:flex;gap:22px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#475569;padding-top:4px">ЛЕГЕНДА</span>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#0B1F33;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Deep Navy — технология</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#F3EBDD;border:1px solid rgba(11,31,51,0.4);flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Warm Paper — рабочая поверхность</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#475569;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Slate — инструментальный слой</span></div>
+</div>
+</div>
+<div style="flex:0 0 700px;border:2px solid #B91C1C;padding:18px 24px;display:flex;flex-direction:column;gap:8px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#B91C1C">ЭТО НЕ</span>
+<span style="font-size:26px;line-height:1.32">ЭТО НЕ Excel-продукт, не BI / бизнес-аналитика, не финансовая модель и не набор шаблонов для скачивания.</span>
+</div>
+</div>
+<div style="border-top:1px solid rgba(11,31,51,0.28);padding-top:16px;display:flex;justify-content:space-between;align-items:baseline;gap:40px">
+<span style="font-family:'Source Serif 4',serif;font-style:italic;font-size:27px;color:#0B1F33">Таблица не отвечает за управленческое «да». УМ отвечает за точность ответа.</span>
+<sc-if value="{{ fileTags }}" hint-placeholder-val="{{ true }}"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#475569;white-space:nowrap">Визуализация_07_Решатор_Инструмент_Не_Продукт_V1</span></sc-if>
+</div>
+</div>
+</section>
+
+<section data-label="08 Клиентский путь" data-screen-label="08" data-speaker-notes="Как УМ покупается и проводится через четыре платных продукта. Первый шаг — платная Диагностика." style="background:#F3EBDD;color:#0B1F33;font-family:'IBM Plex Sans',sans-serif;padding:52px 72px 40px;display:flex;flex-direction:column">
+<sc-if value="{{ gridVisible }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px),repeating-linear-gradient(0deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px);pointer-events:none"></div></sc-if>
+<div style="position:relative;display:flex;flex-direction:column;height:100%">
+<div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.045em;color:#475569;text-transform:uppercase;white-space:nowrap;gap:40px;padding-bottom:14px;border-bottom:1px solid rgba(11,31,51,0.28)">
+<span>Управленческая Точность / УМ&nbsp;&nbsp;Визуализация 08</span>
+<span>Коммерческий слой · product ladder · сложность простая</span>
+</div>
+<h1 style="font-family:'Source Serif 4',serif;font-size:62px;font-weight:700;line-height:1.08;letter-spacing:-0.01em;margin:26px 0 12px">Путь УМ начинается с платной Диагностики</h1>
+<p style="font-size:30px;line-height:1.34;color:#475569;margin:0;max-width:1660px;text-wrap:pretty">Диагностика показывает разрывы; Сессия собирает правила; Спринт проверяет контур; Сопровождение удерживает точность.</p>
+<div style="flex:1;display:flex;align-items:flex-end;gap:0;padding:26px 0 30px">
+<div style="flex:1;height:62%;background:#0B1F33;border-bottom:6px solid #0F766E;padding:26px 24px;display:flex;flex-direction:column;justify-content:flex-end;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">01</span><span style="font-size:38px;font-weight:600;line-height:1.18;color:#F3EBDD;font-family:'Source Serif 4',serif">Диагностика</span></div>
+<span style="flex:0 0 54px;align-self:center;text-align:center;color:#B46A3C;font-size:32px;line-height:1">→</span>
+<div style="flex:1;height:74%;background:#0B1F33;border-bottom:6px solid #0F766E;padding:26px 24px;display:flex;flex-direction:column;justify-content:flex-end;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">02</span><span style="font-size:38px;font-weight:600;line-height:1.18;color:#F3EBDD;font-family:'Source Serif 4',serif">Сессия</span></div>
+<span style="flex:0 0 54px;align-self:center;text-align:center;color:#B46A3C;font-size:32px;line-height:1">→</span>
+<div style="flex:1;height:87%;background:#0B1F33;border-bottom:6px solid #0F766E;padding:26px 24px;display:flex;flex-direction:column;justify-content:flex-end;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">03</span><span style="font-size:38px;font-weight:600;line-height:1.18;color:#F3EBDD;font-family:'Source Serif 4',serif">Спринт</span></div>
+<span style="flex:0 0 54px;align-self:center;text-align:center;color:#B46A3C;font-size:32px;line-height:1">→</span>
+<div style="flex:1;height:100%;background:#0B1F33;border-bottom:6px solid #0F766E;padding:26px 24px;display:flex;flex-direction:column;justify-content:flex-end;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">04</span><span style="font-size:38px;font-weight:600;line-height:1.18;color:#F3EBDD;font-family:'Source Serif 4',serif">Сопровождение</span></div>
+</div>
+<div style="display:flex;gap:44px;align-items:flex-start;padding-bottom:26px">
+<div style="flex:1;display:flex;gap:22px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#475569;padding-top:4px">ЛЕГЕНДА</span>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#B46A3C;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Copper — переход между продуктами</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#0B1F33;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Deep Navy — платный продукт</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#0F766E;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Teal — закрепленный результат</span></div>
+</div>
+</div>
+<div style="flex:0 0 700px;border:2px solid #B91C1C;padding:18px 24px;display:flex;flex-direction:column;gap:8px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#B91C1C">ЭТО НЕ</span>
+<span style="font-size:26px;line-height:1.32">ЭТО НЕ линейка бесплатных касаний, не Game / Lite и не продажа решаторов отдельно от технологии.</span>
+</div>
+</div>
+<div style="border-top:1px solid rgba(11,31,51,0.28);padding-top:16px;display:flex;justify-content:space-between;align-items:baseline;gap:40px">
+<span style="font-family:'Source Serif 4',serif;font-style:italic;font-size:27px;color:#0B1F33">Каждый следующий продукт покупается потому, что предыдущий создал проверяемый результат.</span>
+<sc-if value="{{ fileTags }}" hint-placeholder-val="{{ true }}"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#475569;white-space:nowrap">Визуализация_08_Клиентский_Путь_Четыре_Продукта_V1</span></sc-if>
+</div>
+</div>
+</section>
+
+<section data-label="09 Диагностика решения" data-screen-label="09" data-speaker-notes="Содержание первого платного продукта: что проверяется до расчета и какой выход получает клиент." style="background:#F3EBDD;color:#0B1F33;font-family:'IBM Plex Sans',sans-serif;padding:52px 72px 40px;display:flex;flex-direction:column">
+<sc-if value="{{ gridVisible }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px),repeating-linear-gradient(0deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px);pointer-events:none"></div></sc-if>
+<div style="position:relative;display:flex;flex-direction:column;height:100%">
+<div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.045em;color:#475569;text-transform:uppercase;white-space:nowrap;gap:40px;padding-bottom:14px;border-bottom:1px solid rgba(11,31,51,0.28)">
+<span>Управленческая Точность / УМ&nbsp;&nbsp;Визуализация 09</span>
+<span>Diagnostic Premium · diagnostic card · сложность средняя</span>
+</div>
+<h1 style="font-family:'Source Serif 4',serif;font-size:62px;font-weight:700;line-height:1.08;letter-spacing:-0.01em;margin:26px 0 12px">Диагностика показывает, можно ли вообще давать вердикт</h1>
+<p style="font-size:30px;line-height:1.34;color:#475569;margin:0;max-width:1660px;text-wrap:pretty">Первый шаг УМ проверяет запрос, данные, цену «да», контуры риска и расчетный маршрут.</p>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;justify-content:center;padding:24px 0 28px">
+<div style="display:flex;gap:20px">
+<div style="flex:1;border:2px solid #0B1F33;background:rgba(255,255,255,0.42);padding:22px 22px;display:flex;flex-direction:column;gap:12px;min-height:150px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">01</span><span style="font-size:31px;font-weight:600;line-height:1.2">Запрос клиента</span></div>
+<div style="flex:1;border:2px solid #0B1F33;background:rgba(255,255,255,0.42);padding:22px 22px;display:flex;flex-direction:column;gap:12px;min-height:150px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">02</span><span style="font-size:31px;font-weight:600;line-height:1.2">Домен задачи</span></div>
+<div style="flex:1;border:2px solid #0B1F33;background:rgba(255,255,255,0.42);padding:22px 22px;display:flex;flex-direction:column;gap:12px;min-height:150px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">03</span><span style="font-size:31px;font-weight:600;line-height:1.2">Числовой якорь</span></div>
+<div style="flex:1;border:2px solid #0F766E;background:rgba(255,255,255,0.42);padding:22px 22px;display:flex;flex-direction:column;gap:12px;min-height:150px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">04</span><span style="font-size:31px;font-weight:600;line-height:1.2;color:#0F766E">Данные</span></div>
+</div>
+<div style="display:flex;gap:20px">
+<div style="flex:1;border:2px solid #B91C1C;background:rgba(255,255,255,0.42);padding:22px 22px;display:flex;flex-direction:column;gap:12px;min-height:150px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B91C1C;letter-spacing:0.06em">05</span><span style="font-size:31px;font-weight:600;line-height:1.2;color:#B91C1C">Разрывы</span></div>
+<div style="flex:1;border:2px solid #B46A3C;background:rgba(255,255,255,0.42);padding:22px 22px;display:flex;flex-direction:column;gap:12px;min-height:150px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">06</span><span style="font-size:31px;font-weight:600;line-height:1.2;color:#B46A3C">Расчетный маршрут</span></div>
+<div style="flex:2;border:2px solid #0F766E;background:rgba(15,118,110,0.08);padding:22px 26px;display:flex;flex-direction:column;gap:12px;min-height:150px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#0F766E;letter-spacing:0.09em">07&nbsp;&nbsp;ВЫХОД ДИАГНОСТИКИ</span><span style="font-size:31px;font-weight:600;line-height:1.2;color:#0F766E">Рекомендация следующего продукта</span></div>
+</div>
+</div>
+<div style="display:flex;gap:44px;align-items:flex-start;padding-bottom:26px">
+<div style="flex:1;display:flex;gap:22px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#475569;padding-top:4px">ЛЕГЕНДА</span>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#B91C1C;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Red — разрыв</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#B46A3C;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Copper — маршрут расчета</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#0F766E;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Teal — подтвержденный вход в следующий продукт</span></div>
+</div>
+</div>
+<div style="flex:0 0 700px;border:2px solid #B91C1C;padding:18px 24px;display:flex;flex-direction:column;gap:8px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#B91C1C">ЭТО НЕ</span>
+<span style="font-size:26px;line-height:1.32">ЭТО НЕ бесплатная консультация, не пресейл и не обещание готового решения без данных.</span>
+</div>
+</div>
+<div style="border-top:1px solid rgba(11,31,51,0.28);padding-top:16px;display:flex;justify-content:space-between;align-items:baseline;gap:40px">
+<span style="font-family:'Source Serif 4',serif;font-style:italic;font-size:27px;color:#0B1F33">Диагностика покупается, чтобы не запускать решение вслепую.</span>
+<sc-if value="{{ fileTags }}" hint-placeholder-val="{{ true }}"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#475569;white-space:nowrap">Визуализация_09_Диагностика_Решения_V1</span></sc-if>
+</div>
+</div>
+</section>
+
+<section data-label="10 Сессия · Спринт · Сопровождение" data-screen-label="10" data-speaker-notes="После Диагностики расчетная логика превращается в правила, практику и устойчивый контур управления." style="background:#F3EBDD;color:#0B1F33;font-family:'IBM Plex Sans',sans-serif;padding:52px 72px 40px;display:flex;flex-direction:column">
+<sc-if value="{{ gridVisible }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px),repeating-linear-gradient(0deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px);pointer-events:none"></div></sc-if>
+<div style="position:relative;display:flex;flex-direction:column;height:100%">
+<div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.045em;color:#475569;text-transform:uppercase;white-space:nowrap;gap:40px;padding-bottom:14px;border-bottom:1px solid rgba(11,31,51,0.28)">
+<span>Управленческая Точность / УМ&nbsp;&nbsp;Визуализация 10</span>
+<span>Консультантский слой · sprint flow · сложность средняя</span>
+</div>
+<h1 style="font-family:'Source Serif 4',serif;font-size:62px;font-weight:700;line-height:1.08;letter-spacing:-0.01em;margin:26px 0 12px">После Диагностики УМ превращается в управляемый контур решений</h1>
+<p style="font-size:30px;line-height:1.34;color:#475569;margin:0;max-width:1660px;text-wrap:pretty">Сессия задает правила; Спринт проверяет их на реальных решениях; Сопровождение удерживает дисциплину точности.</p>
+<div style="flex:1;display:flex;align-items:stretch;gap:0;padding:26px 0 30px">
+<div style="flex:1;border:2px solid #0B1F33;border-top:6px solid #B46A3C;background:rgba(255,255,255,0.42);padding:30px 26px;display:flex;flex-direction:column;gap:18px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.09em">01</span>
+<span style="font-size:38px;font-weight:600;line-height:1.16;font-family:'Source Serif 4',serif">Сессия</span>
+<span style="font-size:29px;line-height:1.32;color:#1f2f3f">критерии и правила</span>
+</div>
+<span style="flex:0 0 60px;align-self:center;text-align:center;color:#B46A3C;font-size:34px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0B1F33;border-top:6px solid #0F766E;background:rgba(255,255,255,0.42);padding:30px 26px;display:flex;flex-direction:column;gap:18px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#0F766E;letter-spacing:0.09em">02</span>
+<span style="font-size:38px;font-weight:600;line-height:1.16;font-family:'Source Serif 4',serif">Спринт</span>
+<span style="font-size:29px;line-height:1.32;color:#1f2f3f">30-60-90 на реальных решениях</span>
+</div>
+<span style="flex:0 0 60px;align-self:center;text-align:center;color:#B46A3C;font-size:34px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0B1F33;border-top:6px solid #475569;background:rgba(255,255,255,0.42);padding:30px 26px;display:flex;flex-direction:column;gap:18px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#475569;letter-spacing:0.09em">03</span>
+<span style="font-size:38px;font-weight:600;line-height:1.16;font-family:'Source Serif 4',serif">Сопровождение</span>
+<span style="font-size:29px;line-height:1.32;color:#1f2f3f">регулярный контроль качества решений</span>
+</div>
+</div>
+<div style="display:flex;gap:44px;align-items:flex-start;padding-bottom:26px">
+<div style="flex:1;display:flex;gap:22px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#475569;padding-top:4px">ЛЕГЕНДА</span>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#B46A3C;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Copper — переход в работу</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#0F766E;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Teal — закрепленный контур</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#475569;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Slate — регулярный ритм контроля</span></div>
+</div>
+</div>
+<div style="flex:0 0 700px;border:2px solid #B91C1C;padding:18px 24px;display:flex;flex-direction:column;gap:8px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#B91C1C">ЭТО НЕ</span>
+<span style="font-size:26px;line-height:1.32">ЭТО НЕ обучение ради обучения и не разовая стратегическая сессия без операционного следа.</span>
+</div>
+</div>
+<div style="border-top:1px solid rgba(11,31,51,0.28);padding-top:16px;display:flex;justify-content:space-between;align-items:baseline;gap:40px">
+<span style="font-family:'Source Serif 4',serif;font-style:italic;font-size:27px;color:#0B1F33">УМ ценна не только расчетом, но и удержанием точности во времени.</span>
+<sc-if value="{{ fileTags }}" hint-placeholder-val="{{ true }}"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#475569;white-space:nowrap">Визуализация_10_Сессия_Спринт_Сопровождение_V1</span></sc-if>
+</div>
+</div>
+</section>
+
+<section data-label="11 До / после УМ" data-screen-label="11" data-speaker-notes="Контраст между управлением через спор и управлением через расчетный статус и условия. Опыт плюс расчет, а не критика руководителя." style="background:#F3EBDD;color:#0B1F33;font-family:'IBM Plex Sans',sans-serif;padding:52px 72px 40px;display:flex;flex-direction:column">
+<sc-if value="{{ gridVisible }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px),repeating-linear-gradient(0deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px);pointer-events:none"></div></sc-if>
+<div style="position:relative;display:flex;flex-direction:column;height:100%">
+<div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.045em;color:#475569;text-transform:uppercase;white-space:nowrap;gap:40px;padding-bottom:14px;border-bottom:1px solid rgba(11,31,51,0.28)">
+<span>Управленческая Точность / УМ&nbsp;&nbsp;Визуализация 11</span>
+<span>Клиентский слой · before / after · сложность простая</span>
+</div>
+<h1 style="font-family:'Source Serif 4',serif;font-size:62px;font-weight:700;line-height:1.08;letter-spacing:-0.01em;margin:26px 0 12px">До УМ — спор о мнениях. После УМ — расчетный ответ</h1>
+<p style="font-size:30px;line-height:1.34;color:#475569;margin:0;max-width:1660px;text-wrap:pretty">Технология не отменяет управленческий опыт, а делает цену решения видимой до действия.</p>
+<div style="flex:1;display:flex;align-items:stretch;gap:0;padding:26px 0 30px">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;align-items:center;gap:20px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#B91C1C;border:2px solid #B91C1C;padding:6px 14px">ДО УМ</span><span style="font-size:27px;color:#475569">управление через спор</span></div>
+<div style="flex:1;border:2px solid #B91C1C;background:rgba(185,28,28,0.05);padding:22px 26px;display:flex;align-items:center"><span style="font-size:33px;font-weight:600;line-height:1.2;color:#B91C1C">До: хотим быстрее</span></div>
+<div style="flex:1;border:2px solid #B91C1C;background:rgba(185,28,28,0.05);padding:22px 26px;display:flex;align-items:center"><span style="font-size:33px;font-weight:600;line-height:1.2;color:#B91C1C">До: спорим о прогнозах</span></div>
+<div style="flex:1;border:2px solid #475569;background:rgba(71,85,105,0.06);padding:22px 26px;display:flex;align-items:center"><span style="font-size:33px;font-weight:600;line-height:1.2;color:#475569">До: запускаем и смотрим</span></div>
+</div>
+<span style="flex:0 0 96px;align-self:center;text-align:center;color:#B46A3C;font-size:40px;line-height:1">→</span>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;align-items:center;gap:20px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#0F766E;border:2px solid #0F766E;padding:6px 14px">ПОСЛЕ УМ</span><span style="font-size:27px;color:#475569">управление через расчет и условия</span></div>
+<div style="flex:1;border:2px solid #0F766E;background:rgba(15,118,110,0.06);padding:22px 26px;display:flex;align-items:center"><span style="font-size:33px;font-weight:600;line-height:1.2;color:#0F766E">После: данные проверены</span></div>
+<div style="flex:1;border:2px solid #B46A3C;background:rgba(180,106,60,0.06);padding:22px 26px;display:flex;align-items:center"><span style="font-size:33px;font-weight:600;line-height:1.2;color:#B46A3C">После: сценарии посчитаны</span></div>
+<div style="flex:1;border:2px solid #0F766E;background:rgba(15,118,110,0.06);padding:22px 26px;display:flex;align-items:center"><span style="font-size:33px;font-weight:600;line-height:1.2;color:#0F766E">После: условия и контроль зафиксированы</span></div>
+</div>
+</div>
+<div style="display:flex;gap:44px;align-items:flex-start;padding-bottom:26px">
+<div style="flex:1;display:flex;gap:22px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#475569;padding-top:4px">ЛЕГЕНДА</span>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#B91C1C;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Left / До — Red и Slate</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#0F766E;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Right / После — Teal и Copper</span></div>
+<div style="display:flex;gap:12px;align-items:center"><span style="width:34px;flex:0 0 34px;border-top:3px solid #B46A3C"></span><span style="font-size:26px;line-height:1.3">Стрелка — переход от мнения к точности</span></div>
+</div>
+</div>
+<div style="flex:0 0 700px;border:2px solid #B91C1C;padding:18px 24px;display:flex;flex-direction:column;gap:8px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#B91C1C">ЭТО НЕ</span>
+<span style="font-size:26px;line-height:1.32">ЭТО НЕ критика руководителя. УМ усиливает управленческий опыт расчетной дисциплиной.</span>
+</div>
+</div>
+<div style="border-top:1px solid rgba(11,31,51,0.28);padding-top:16px;display:flex;justify-content:space-between;align-items:baseline;gap:40px">
+<span style="font-family:'Source Serif 4',serif;font-style:italic;font-size:27px;color:#0B1F33">Точность не заменяет управленца. Точность усиливает его решение.</span>
+<sc-if value="{{ fileTags }}" hint-placeholder-val="{{ true }}"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#475569;white-space:nowrap">Визуализация_11_До_После_УМ_V1</span></sc-if>
+</div>
+</div>
+</section>
+
+<section data-label="12 Кейс: скидка и отсрочка" data-screen-label="12" data-speaker-notes="Кейс на узнаваемом коммерческом запросе: клиент просит скидку и отсрочку, компания переводит это в требования к объему и условиям." style="background:#F3EBDD;color:#0B1F33;font-family:'IBM Plex Sans',sans-serif;padding:52px 72px 40px;display:flex;flex-direction:column">
+<sc-if value="{{ gridVisible }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px),repeating-linear-gradient(0deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px);pointer-events:none"></div></sc-if>
+<div style="position:relative;display:flex;flex-direction:column;height:100%">
+<div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.045em;color:#475569;text-transform:uppercase;white-space:nowrap;gap:40px;padding-bottom:14px;border-bottom:1px solid rgba(11,31,51,0.28)">
+<span>Управленческая Точность / УМ&nbsp;&nbsp;Визуализация 12</span>
+<span>Кейсовый + коммерческий слой · case flow · сложность средняя</span>
+</div>
+<h1 style="font-family:'Source Serif 4',serif;font-size:62px;font-weight:700;line-height:1.08;letter-spacing:-0.01em;margin:26px 0 12px">Кейс: клиент просит скидку и отсрочку — УМ считает цену «да»</h1>
+<p style="font-size:30px;line-height:1.34;color:#475569;margin:0;max-width:1680px;text-wrap:pretty">Решение переводится из «дать / не дать» в расчетный ответ: какой объем и какие условия должны компенсировать цену уступок.</p>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;justify-content:center;padding:24px 0 28px">
+<div style="display:flex;align-items:stretch">
+<div style="flex:1;border:2px solid #B46A3C;background:rgba(255,255,255,0.42);padding:22px 22px;display:flex;flex-direction:column;gap:10px;min-height:190px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">01&nbsp;&nbsp;ЗАПРОС</span><span style="font-size:30px;font-weight:600;line-height:1.2">Запрос: скидка + отсрочка</span></div>
+<span style="flex:0 0 40px;align-self:center;text-align:center;color:#B46A3C;font-size:30px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0F766E;background:rgba(255,255,255,0.42);padding:22px 22px;display:flex;flex-direction:column;gap:10px;min-height:190px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#0F766E;letter-spacing:0.06em">02&nbsp;&nbsp;ДАННЫЕ</span><span style="font-size:30px;font-weight:600;line-height:1.2">Данные: выручка, маржа, налоговый режим, срок оплаты</span></div>
+<span style="flex:0 0 40px;align-self:center;text-align:center;color:#B46A3C;font-size:30px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0B1F33;background:rgba(255,255,255,0.42);padding:22px 22px;display:flex;flex-direction:column;gap:10px;min-height:190px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">03&nbsp;&nbsp;РАСЧЕТ</span><span style="font-size:30px;font-weight:600;line-height:1.2">Расчет: цена скидки и денег</span></div>
+</div>
+<div style="display:flex;align-items:stretch">
+<div style="flex:1;border:2px solid #0B1F33;background:rgba(255,255,255,0.42);padding:22px 22px;display:flex;flex-direction:column;gap:10px;min-height:190px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">04&nbsp;&nbsp;СЦЕНАРИИ</span><span style="font-size:30px;font-weight:600;line-height:1.2">Сценарии: базовый / стрессовый / критический</span></div>
+<span style="flex:0 0 40px;align-self:center;text-align:center;color:#B46A3C;font-size:30px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0F766E;background:rgba(15,118,110,0.07);padding:22px 22px;display:flex;flex-direction:column;gap:10px;min-height:190px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#0F766E;letter-spacing:0.06em">05&nbsp;&nbsp;УСЛОВИЯ</span><span style="font-size:30px;font-weight:600;line-height:1.2;color:#0F766E">Условия: рост объема и контроль оплаты</span></div>
+<span style="flex:0 0 40px;align-self:center;text-align:center;color:#B46A3C;font-size:30px;line-height:1">→</span>
+<div style="flex:1;border:2px solid #0B1F33;background:#0B1F33;padding:22px 22px;display:flex;flex-direction:column;gap:10px;min-height:190px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B46A3C;letter-spacing:0.06em">06&nbsp;&nbsp;СТАТУС</span><span style="font-size:30px;font-weight:600;line-height:1.2;color:#F3EBDD">Статус: можно при условиях или нельзя в текущей модели</span></div>
+</div>
+</div>
+<div style="display:flex;gap:44px;align-items:flex-start;padding-bottom:26px">
+<div style="flex:1;display:flex;gap:22px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#475569;padding-top:4px">ЛЕГЕНДА</span>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#B46A3C;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Copper — коммерческая уступка</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#B91C1C;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Red — потеря результата</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#0F766E;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Teal — условия, при которых решение становится допустимым</span></div>
+</div>
+</div>
+<div style="flex:0 0 700px;border:2px solid #B91C1C;padding:18px 24px;display:flex;flex-direction:column;gap:8px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#B91C1C">ЭТО НЕ</span>
+<span style="font-size:26px;line-height:1.32">ЭТО НЕ абстрактная математическая задача. Это схема управленческого ответа для переговоров с клиентом.</span>
+</div>
+</div>
+<div style="border-top:1px solid rgba(11,31,51,0.28);padding-top:16px;display:flex;justify-content:space-between;align-items:baseline;gap:40px">
+<span style="font-family:'Source Serif 4',serif;font-style:italic;font-size:27px;color:#0B1F33">УМ превращает уступку в точные условия сделки.</span>
+<sc-if value="{{ fileTags }}" hint-placeholder-val="{{ true }}"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#475569;white-space:nowrap">Визуализация_12_Кейс_Скидка_И_Отсрочка_V1</span></sc-if>
+</div>
+</div>
+</section>
+
+<section data-label="13 Антипозиционирование УМ" data-screen-label="13" data-speaker-notes="Защита технологии от подмены категорией Excel, BI, финмодель, тренинг или консалтинг без расчетного контура." style="background:#F3EBDD;color:#0B1F33;font-family:'IBM Plex Sans',sans-serif;padding:52px 72px 40px;display:flex;flex-direction:column">
+<sc-if value="{{ gridVisible }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px),repeating-linear-gradient(0deg,rgba(11,31,51,0.05) 0 1px,transparent 1px 48px);pointer-events:none"></div></sc-if>
+<div style="position:relative;display:flex;flex-direction:column;height:100%">
+<div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.045em;color:#475569;text-transform:uppercase;white-space:nowrap;gap:40px;padding-bottom:14px;border-bottom:1px solid rgba(11,31,51,0.28)">
+<span>Управленческая Точность / УМ&nbsp;&nbsp;Визуализация 13</span>
+<span>Клиентский слой · anti-positioning matrix · сложность простая</span>
+</div>
+<h1 style="font-family:'Source Serif 4',serif;font-size:62px;font-weight:700;line-height:1.08;letter-spacing:-0.01em;margin:26px 0 12px">УМ — не таблица. УМ — технология управленческой точности</h1>
+<p style="font-size:30px;line-height:1.34;color:#475569;margin:0;max-width:1680px;text-wrap:pretty">Инструменты могут считать, но только технология связывает запрос, данные, сценарии, условия, статус и контроль.</p>
+<div style="flex:1;display:flex;align-items:stretch;gap:0;padding:26px 0 30px">
+<div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:16px 20px">
+<div style="border-left:6px solid #B91C1C;padding:14px 20px;display:flex;align-items:center;background:rgba(255,255,255,0.35)"><span style="font-size:33px;font-weight:600;line-height:1.2;color:#B91C1C">Не Excel</span></div>
+<div style="border-left:6px solid #B91C1C;padding:14px 20px;display:flex;align-items:center;background:rgba(255,255,255,0.35)"><span style="font-size:33px;font-weight:600;line-height:1.2;color:#B91C1C">Не BI / бизнес-аналитика</span></div>
+<div style="border-left:6px solid #B91C1C;padding:14px 20px;display:flex;align-items:center;background:rgba(255,255,255,0.35)"><span style="font-size:33px;font-weight:600;line-height:1.2;color:#B91C1C">Не финансовая модель</span></div>
+<div style="border-left:6px solid #B91C1C;padding:14px 20px;display:flex;align-items:center;background:rgba(255,255,255,0.35)"><span style="font-size:33px;font-weight:600;line-height:1.2;color:#B91C1C">Не тренинг</span></div>
+<div style="border-left:6px solid #B91C1C;padding:14px 20px;display:flex;align-items:center;background:rgba(255,255,255,0.35)"><span style="font-size:33px;font-weight:600;line-height:1.2;color:#B91C1C">Не бесплатная диагностика</span></div>
+<div style="border-left:6px solid #B91C1C;padding:14px 20px;display:flex;align-items:center;background:rgba(255,255,255,0.35)"><span style="font-size:33px;font-weight:600;line-height:1.2;color:#B91C1C">Не набор шаблонов</span></div>
+</div>
+<span style="flex:0 0 92px;align-self:center;text-align:center;color:#B46A3C;font-size:38px;line-height:1">→</span>
+<div style="flex:0 0 700px;background:#0B1F33;padding:34px 34px;display:flex;flex-direction:column;justify-content:center;gap:20px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#B46A3C">ЧТО ТАКОЕ УМ</span>
+<span style="font-family:'Source Serif 4',serif;font-size:44px;font-weight:600;line-height:1.22;color:#F3EBDD">Что такое УМ: расчетный контур управленческого ответа</span>
+</div>
+</div>
+<div style="display:flex;gap:44px;align-items:flex-start;padding-bottom:26px">
+<div style="flex:1;display:flex;gap:22px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#475569;padding-top:4px">ЛЕГЕНДА</span>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#B91C1C;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Red — неправильная категория</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#0B1F33;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Deep Navy — правильное определение</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><span style="width:22px;height:22px;background:#B46A3C;flex:0 0 22px;margin-top:6px"></span><span style="font-size:26px;line-height:1.3">Copper — граница отличия</span></div>
+</div>
+</div>
+<div style="flex:0 0 700px;border:2px solid #B91C1C;padding:18px 24px;display:flex;flex-direction:column;gap:8px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.09em;color:#B91C1C">ЭТО НЕ</span>
+<span style="font-size:26px;line-height:1.32">ЭТО НЕ слайд «мы лучше всех». Это защита от неверного понимания предмета покупки.</span>
+</div>
+</div>
+<div style="border-top:1px solid rgba(11,31,51,0.28);padding-top:16px;display:flex;justify-content:space-between;align-items:baseline;gap:40px">
+<span style="font-family:'Source Serif 4',serif;font-style:italic;font-size:27px;color:#0B1F33">Клиент покупает управленческую точность, а не файл.</span>
+<sc-if value="{{ fileTags }}" hint-placeholder-val="{{ true }}"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#475569;white-space:nowrap">Визуализация_13_Антипозиционирование_УМ_V1</span></sc-if>
+</div>
+</div>
+</section>
+
+</x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;gridVisible&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Слайд-мастер&quot;},&quot;fileTags&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Слайд-мастер&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      gridVisible: this.props.gridVisible ?? true,
+      fileTags: this.props.fileTags ?? true
+    };
+  }
+}
+</script>
+</body>
+</html>
