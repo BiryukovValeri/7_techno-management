@@ -20,6 +20,7 @@ Public source repository for seven management technologies and the materials use
 - `technologies/06_CLM/` — CLM / Управление Директорами.
 - `technologies/07_STRAT_OPE/` — STRAT-OPE / проSTRAнство.
 - `docs/SOURCE_CORPUS_IMPORT_AUDIT.md` — complete import, integrity, duplicate, and cleanup audit.
+- `docs/MAC_CLEANUP_RESULT.md` — confirmed Mac cleanup and quarantine record.
 - `docs/CLAUDECODE_SITE_MATERIALS_AUDIT.md` — navigation and authority map for website-production materials in `BiryukovValeri/claudecode`.
 - `docs/CHATGPT_INTRODUCTION.md` — ready-to-use introduction for ChatGPT.
 

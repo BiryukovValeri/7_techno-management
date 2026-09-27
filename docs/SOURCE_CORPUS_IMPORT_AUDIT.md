@@ -35,7 +35,7 @@ Removing one path can make a delivery package incomplete even when another ident
 
 Status: `PRESERVED / PATH ROLE REQUIRES REVIEW`.
 
-## Version candidates
+## Version cleanup
 
 Mechanical filename grouping found three clear STRAT-OPE version families:
 
@@ -43,11 +43,17 @@ Mechanical filename grouping found three clear STRAT-OPE version families:
 - `proSTRANSTVO_Справочник_Инструментов_И_Карточек_Знания_v0.2.xlsx` and `v1.0.xlsx`;
 - `проSTRAнство*Клиентско*Смысловая*Модель*Сайта_V1_1.docx` and `V2.docx`.
 
-The lower versions are archive candidates, not deletion-approved files. Canonicality must be confirmed from the technology's release registry and author decision before moving or deleting them.
+After explicit author confirmation, the three lower versions were moved without content changes to:
+
+`technologies/07_STRAT_OPE/99 Архив/_QUARANTINE_2026-09-27/`
+
+The corresponding `v1.0` / `V2` successors remain in their active directories. STRAT-OPE checksum parity after the move is `123/123`.
 
 ## Safe cleanup candidates on Mac
 
-Exactly 22 `.DS_Store` files were detected. They were excluded from Git and may be deleted after author confirmation. No content file has been deleted or moved on the Mac.
+Exactly 22 `.DS_Store` files were detected and excluded from Git. After explicit author confirmation they were deleted from the seven Mac source folders. Post-cleanup count: `0`.
+
+No technology content file was deleted. Three superseded STRAT-OPE versions were preserved in quarantine as described above.
 
 ## Important UM correction
 
