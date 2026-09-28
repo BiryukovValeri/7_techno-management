@@ -1,6 +1,6 @@
 # PROJECT_STATE
 
-Status: M GO / S04 IN PROGRESS
+Status: S04 DIRECTIONS READY — WAITING OWNER HERO DIRECTION SELECTION
 Date: 2026-09-28
 Technology folder: technologies/03_Negotiations
 Production domain: nego.7vctr.ru
@@ -34,3 +34,6 @@ T2: not required — no material product/evidence meaning conflict; unread entit
 S03 artifacts: 03_MESSAGE/MESSAGE_STRATEGY.md; 03_MESSAGE/GOVERNING_SITE_CONCEPT.md.
 Gate M: GO / LOCKED 2026-09-28.
 No Hero or Site Architecture work has started.
+
+S04 preselection artifacts: 04_HERO/HERO_BRIEF.md; HERO_CONCEPTS.md; HERO_EVALUATION.md.
+FINAL_HERO and HERO_LOCK do not exist yet. Owner must select H1/H2/H3/H4 (or explicit hybrid) before refinement/generation.
