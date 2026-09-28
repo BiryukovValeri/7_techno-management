@@ -21,3 +21,12 @@
 | TR-014 | Current Diagnostics commercial formats/prices are offer facts, not method invariants | Commercial Proposal v1.0; Commercial Package v1.0 | §1/6 | CONFIRMED WITH BOUNDARY |
 | TR-015 | Case use = mirror/problem/question → Diagnostics; same-result promise prohibited | Case Navigator v1.0 | §4 | CONFIRMED |
 | TR-016 | Result claims require baseline/evidence | Error Scenarios v1.0; Evidence Matrix | §2/3 | CONFIRMED |
+
+## S03 additions
+| ID | Proposition | Canonical source | S03 message use | Status |
+|---|---|---|---|---|
+| TR-017 | Public category: management technology connecting strategic choice to operational execution | Offer v0.3 + OS v1.0 | category | SOURCE CONFIRMED |
+| TR-018 | Whole-site value is route problem→execution; Diagnostics is commercial entry, not whole technology | T1 + S02 + CEO one-pager | governing value + conversion | SOURCE CONFIRMED |
+| TR-019 | Governing message uses verified problem + owners + metrics + rhythm as connection mechanism | OS/Evidence + Offer | governing message | INTERPRETATION grounded in sources |
+| TR-020 | Anti-category includes session/audit/catalog/project-office/training | Language Standard + T1 | communication constraint | SOURCE CONFIRMED |
+| TR-021 | Proof hierarchy prioritizes mechanism/evidence over library size | T1/S02 + sales protections | proof strategy | INTERPRETATION grounded in sources |
