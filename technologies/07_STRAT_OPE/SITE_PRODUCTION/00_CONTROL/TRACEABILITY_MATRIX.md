@@ -13,3 +13,11 @@
 | TR-010 | Direct book-level provenance for model/instrument details | Primary books 01/02/06/07 | §11/16 boundary | pending | — | — | HOLD | H-001 |
 | TR-011 | Transition is evidence-gated, not calendar-gated | Artifact Register; Evidence Matrix; OS | §§7,12,13 | pending | pending | pending | SOURCE CONFIRMED | — |
 | TR-012 | Anti-category: not catalog, ordinary strategic session, free audit/report, project office, training | Language Standard; FAQ; visualization QA; OS | §14 | pending | pending | pending | SOURCE CONFIRMED | — |
+
+## S02 additions
+| ID | Proposition | Canonical source | S02 result | Status |
+|---|---|---|---|---|
+| TR-013 | Qualification is a filter before paid Diagnostics, not free problem-solving | Qualification Protocol v1.0 | §1/7 | CONFIRMED |
+| TR-014 | Current Diagnostics commercial formats/prices are offer facts, not method invariants | Commercial Proposal v1.0; Commercial Package v1.0 | §1/6 | CONFIRMED WITH BOUNDARY |
+| TR-015 | Case use = mirror/problem/question → Diagnostics; same-result promise prohibited | Case Navigator v1.0 | §4 | CONFIRMED |
+| TR-016 | Result claims require baseline/evidence | Error Scenarios v1.0; Evidence Matrix | §2/3 | CONFIRMED |
