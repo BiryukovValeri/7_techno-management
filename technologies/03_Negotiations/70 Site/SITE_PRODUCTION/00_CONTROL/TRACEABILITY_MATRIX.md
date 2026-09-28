@@ -14,3 +14,11 @@
 | NEG-T10 | detailed workbook/form/case propositions | XLSX/case corpus | — | pending | — | — | INDEXED UNTIL EXTRACTION |
 
 No S01 artifact from the revoked run is linked or valid.
+
+## S03 message traceability
+| NEG-M01 | category: technology for managing company negotiation power | Technology 04 / T1 | TECHNOLOGY_TRUTH.md | PRODUCT_EVIDENCE_TRUTH.md | MESSAGE_STRATEGY §1 | pending | TRACEABLE |
+| NEG-M02 | value: explicit/manageable position before decision | Technology 04/05 + protocols | TECHNOLOGY_TRUTH.md | PRODUCT_EVIDENCE_TRUTH.md | MESSAGE_STRATEGY §3 | pending | TRACEABLE |
+| NEG-M03 | governing message: position built before/between meetings | T1 mechanism + two contours | TECHNOLOGY_TRUTH.md | PRODUCT_EVIDENCE_TRUTH.md | MESSAGE_STRATEGY §4 | pending | TRACEABLE / synthesis |
+| NEG-M04 | proof hierarchy mechanism→forms→products→bounded evidence→cases later | Technology 05/06/10 | TECHNOLOGY_TRUTH.md | PUBLIC_DISCLOSURE_MATRIX.md | MESSAGE_STRATEGY §8 | pending | TRACEABLE |
+| NEG-M05 | conversion by required intervention depth | four current protocols | TECHNOLOGY_TRUTH.md | PRODUCT_EVIDENCE_TRUTH.md | MESSAGE_STRATEGY §9 | pending | TRACEABLE |
+| NEG-M06 | constructive control, not fear/victory/training | T1 anti-category/boundaries | TECHNOLOGY_TRUTH.md | PUBLIC_DISCLOSURE_MATRIX.md | MESSAGE_STRATEGY §12–13 | pending | TRACEABLE |
