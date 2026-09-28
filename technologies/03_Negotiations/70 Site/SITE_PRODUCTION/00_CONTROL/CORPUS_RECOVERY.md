@@ -26,3 +26,9 @@ Commercial B2 contains prices, extended variants and packages. These are classif
 3. Case catalog and 12 case bodies remain INDEXED and must be sampled/read according to evidence role before public case claims.
 4. Visualization binaries are inventoried but semantic QA/contract must be read before S04/S10.
 5. Legacy Site is intentionally not used to define truth.
+
+
+## S01 recovery update — 2026-09-28
+- Technology 13 / short field version located and binary content retrieved for extraction; it remains subordinate to Passport/Cycle for ontology but is part of current field-use layer.
+- Repository code search does not expose text from the large book-source DOCX; the book remains INDEXED, not READ. No claim in S01 may cite it as actually read.
+- S01 proceeds only on propositions independently confirmed by actually read canonical/current documents; unsupported book-specific claims are excluded.
