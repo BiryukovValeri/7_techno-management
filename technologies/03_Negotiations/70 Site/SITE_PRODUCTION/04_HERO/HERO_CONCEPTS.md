@@ -1,6 +1,6 @@
 # HERO_CONCEPTS — 4 DISTINCT DIRECTIONS
 
-Status: OWNER SELECTION REQUIRED
+Status: INTERNAL EXPLORATION — NOT AN OWNER PRODUCT/TECHNOLOGY CHOICE
 
 ## H1 — «Архитектурный разрез позиции»
 **Core visual:** an executive architectural drawing / exploded plan of one negotiation position. Seven/eight structural layers align around a central “решение”: goal, authority, BATNA, boundary, influence, concessions, risks, next step.
