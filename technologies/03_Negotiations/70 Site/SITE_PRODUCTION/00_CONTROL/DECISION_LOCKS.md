@@ -13,3 +13,7 @@ Owner locks in force:
 - no cross-technology semantic import without independent Negotiations evidence
 
 No Technology Truth / Message / Hero / Architecture / Content / Handoff lock exists yet.
+
+## T1 — GO — 2026-09-28
+Locked artifact: `01_TRUTH/TECHNOLOGY_TRUTH.md`.
+Locked scope: definition/object; one core/two contours; canonical mechanism/10-step cycle; Forms 17–23 V1 boundary; decision-output logic; four core products; evidence boundary; professional/ethical boundaries; anti-category; no silent cross-technology/AI additions.
