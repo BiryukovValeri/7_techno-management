@@ -17,3 +17,7 @@ No Technology Truth / Message / Hero / Architecture / Content / Handoff lock exi
 ## T1 — GO — 2026-09-28
 Locked artifact: `01_TRUTH/TECHNOLOGY_TRUTH.md`.
 Locked scope: definition/object; one core/two contours; canonical mechanism/10-step cycle; Forms 17–23 V1 boundary; decision-output logic; four core products; evidence boundary; professional/ethical boundaries; anti-category; no silent cross-technology/AI additions.
+
+## M — GO — 2026-09-28
+Locked artifacts: `03_MESSAGE/MESSAGE_STRATEGY.md`, `03_MESSAGE/GOVERNING_SITE_CONCEPT.md`.
+Locked scope: category; audience; core value; governing message; differentiation; anti-category; proof hierarchy; conversion logic; terminology/claim constraints; Hero communication implications.
