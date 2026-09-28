@@ -8,3 +8,9 @@
 | NEG-C04 | Primary book provenance | repository identifies primary book | binary content unavailable through exhausted current acquisition paths | TECHNICAL HOLD; book cannot be READ/cited | provenance depth |
 
 No S01 resolution is carried forward from the revoked run. Resolution occurs only in the new V4 stage where required.
+
+## S01 proposed resolutions for T1
+- NEG-C01: normalize current public/working name to «Архитектура Переговоров»; retain «Переговорная Архитектура» as source alias. No semantic split found.
+- NEG-C02: four core products at Technology Truth; expanded variants/packages remain derivative pending S02.
+- NEG-C03: FAQ phrase is not used to deny the four source-confirmed paid products; final public wording deferred to S02/S03.
+- NEG-C04: remains TECHNICAL HOLD; excluded from direct provenance.
