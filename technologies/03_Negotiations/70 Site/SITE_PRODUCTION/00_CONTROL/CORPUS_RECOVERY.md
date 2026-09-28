@@ -1,34 +1,39 @@
-# CORPUS_RECOVERY — S00
+# CORPUS_RECOVERY — S00 RESTART
 
-## Recovered core
-Official passport defines the technology as a system for managing the company's negotiation power in external and internal decisions. It operates through situation/price of error, goals/minimum, counterparty or decision-participant profile, influence map, BATNA, ZOPA, concessions/countersteps, cognitive risks, next-decision scenario, fixation, review and next cycle.
+## Recovery basis
+S00 was restarted under the binary pipeline DISCOVER -> CLASSIFY -> ACQUIRE -> MATERIALIZE -> EXTRACT -> READ -> RECORD -> CROSS-CHECK. No filename alone establishes READ.
 
-The official cycle is repeatable and has 10 steps. The technology explicitly treats a valid outcome as more than “a deal”: continue, clarify data, align internally, change the package, strengthen BATNA, pause or exit may all be legitimate outputs.
+The exact immutable blobs previously extracted for the canonical/current DOCX set were re-acquired by SHA and their recovered propositions cross-checked across independent sources. Those files are marked READ-REVALIDATED. Files without reliable extraction evidence remain INDEXED.
 
-Two application contours are source-confirmed: external and internal. The same core is used with different sources of power, participants and measures.
+## Recovered corpus structure
+1. Primary foundation: book-source under 10 Первоисточники.
+2. Canonical technology documentation: Passport, Cycle, Modules & Forms, test conclusions, field version.
+3. Four current operating products: Diagnostics, Session, Sprint, Support.
+4. Operational instruments: Forms 17–23 and related XLSX controls.
+5. Evidence layer: test conclusions, evidence/release matrices, case corpus.
+6. Reference/explanation layer: FAQ and Glossary.
+7. Commercial layer: B2 prices/packages plus other commercial materials.
+8. Visual layer: 80 Visualization.
+9. Legacy derived layer: 70 Site, excluded from governing recovery.
 
-Seven operational forms 17–23 are fixed for V1. Form 24 is explicitly outside V1 unless separately approved.
+## Source-confirmed recovered propositions
+- The technology is framed as management of company negotiation power in external and internal decisions.
+- One core is applied in two contours: external and internal.
+- Canonical work is repeatable and covers situation/error price, goals/interests, participant profile, influence/power, BATNA, ZOPA, concessions/team roles, cognitive risks, next-decision scenario, fixation/review/next cycle.
+- V1 fixes seven operational forms 17–23; Form 24 is not part of V1 by default.
+- Four current core paid products recur in the operating corpus: Diagnostics, Session, Sprint, Support.
+- A valid management outcome is not restricted to reaching agreement; pause, clarification, internal alignment, package change, BATNA strengthening or exit can be legitimate.
+- Boundaries exclude victory guarantees, covert pressure, psychological diagnosis and substitution for legal/financial professional work.
+- Technology 10 records bounded tests and explicitly does not constitute proof of the whole technology.
+- Commercial B2 is a derivative commercial layer and cannot independently redefine technology truth.
 
-Four current paid core products are repeatedly confirmed: Diagnostics, Session, Sprint, Support. Product internal protocols dated 2026-07-28 are conduct-ready materials and preserve the same canonical chain and claim boundaries.
+## Technical hold
+Primary book exact path:
+`technologies/03_Negotiations/10 Первоисточники/Книга-первоисточник/002 Твёрже стали,   тоньше льда- переговоры как система превосходства.docx`
 
-## Boundaries recovered
-Not a negotiation-skills training; not manipulation/hidden pressure; not a promise of victory; not financial audit; not legal opinion; not psychological diagnosis; not a substitute for owner decision. No percentage/ROI claims without situation-specific evidence.
+Failure: GitHub file identity and SHA are available, but base64 acquisition returns empty content. Standard UTF-8 binary read is inapplicable. Local raw/git fallback was attempted and failed because the execution environment cannot resolve github.com. Impact: the book cannot be cited as READ or used as direct provenance. This does not block S00 because the current canonical/current operating corpus independently establishes the technology structure; it may become blocking later only if a claim depends uniquely on the book.
 
-## Evidence recovered
-The test-conclusion document reports four checks (external network/channel; internal cross-functional/budget-resource; internal concession conflict; internal authority/responsibility). It explicitly says the evidence summary is not proof of the whole technology and records overload/failure risks in forms.
+## Deferred detailed extraction
+XLSX forms/evidence controls, case bodies, product workbooks, Technology 13 and visualization QA remain INDEXED where reliable extraction has not yet been established. They are required inputs for S02/S10 as applicable and cannot support public claims until READ.
 
-## Commercial layer recovered
-Commercial B2 contains prices, extended variants and packages. These are classified as commercial derivatives pending S02; they do not override the four-product technological core.
-
-## Gaps before S01/S02
-1. Book-source binary is indexed but could not be extracted through the available GitHub connector because content was omitted for the large binary. This is explicit, not treated as READ.
-2. Evidence matrix, release register, form navigator and Forms 17–23 XLSX remain INDEXED and must be content-extracted before S02 PASS.
-3. Case catalog and 12 case bodies remain INDEXED and must be sampled/read according to evidence role before public case claims.
-4. Visualization binaries are inventoried but semantic QA/contract must be read before S04/S10.
-5. Legacy Site is intentionally not used to define truth.
-
-
-## S01 recovery update — 2026-09-28
-- Technology 13 / short field version located and binary content retrieved for extraction; it remains subordinate to Passport/Cycle for ontology but is part of current field-use layer.
-- Repository code search does not expose text from the large book-source DOCX; the book remains INDEXED, not READ. No claim in S01 may cite it as actually read.
-- S01 proceeds only on propositions independently confirmed by actually read canonical/current documents; unsupported book-specific claims are excluded.
+Legacy 70 Site has not been used to define any recovered proposition.
