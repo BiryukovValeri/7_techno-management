@@ -1,6 +1,6 @@
 # PROJECT_STATE
 
-Status: S04 DIRECTIONS READY — WAITING OWNER HERO DIRECTION SELECTION
+Status: S04 HERO CONTENT/COMPOSITION CANDIDATE READY — VISUAL PRODUCTION NEXT
 Date: 2026-09-28
 Technology folder: technologies/03_Negotiations
 Production domain: nego.7vctr.ru
@@ -37,3 +37,5 @@ No Hero or Site Architecture work has started.
 
 S04 preselection artifacts: 04_HERO/HERO_BRIEF.md; HERO_CONCEPTS.md; HERO_EVALUATION.md.
 FINAL_HERO and HERO_LOCK do not exist yet. Owner must select H1/H2/H3/H4 (or explicit hybrid) before refinement/generation.
+
+Owner clarification: four-product ontology is invariant (Diagnostics / Session / Sprint / Support); H1-H4 were internal visual exploration, not product/technology choices. S04 converged to FINAL_HERO_CANDIDATE.md; binary Hero not yet locked.
