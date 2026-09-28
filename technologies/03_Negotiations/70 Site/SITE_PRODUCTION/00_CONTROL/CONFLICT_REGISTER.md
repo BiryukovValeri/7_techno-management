@@ -1,15 +1,10 @@
-# CONFLICT_REGISTER — S00
+# CONFLICT_REGISTER — S00 RESTART
 
-| ID | Proposition | Source 1 | Source 2 | Impact | Resolution now |
+| ID | Proposition | Evidence A | Evidence B | S00 treatment | Impact |
 |---|---|---|---|---|---|
-| NEG-C01 | Technology name wording | 2026-07-12/13 docs: “Переговорная Архитектура” | 2026-07-28 product protocols and owner brief: “Архитектура Переговоров/архитектура переговоров” | naming/public terminology | HOLD for S01 terminology normalization; no semantic inference |
-| NEG-C02 | Product ontology | Passport/core: 4 products | Commercial B2: extended variants, Board-level and packages | could inflate product truth | Core remains 4; commercial variants classified as derivatives until S02 |
-| NEG-C03 | FAQ wording says technology is “not a product line” | FAQ A1 | Passport + current product protocols explicitly fix 4 paid products | public explanation may be stale/ambiguous | Interpret FAQ statement as distinction technology ≠ commercial packaging; verify in S02, do not copy verbatim |
-| NEG-C04 | Book-source read status | manifest/tree identifies primary book | connector cannot return large binary content | S01 provenance depth | explicit HOLD; cannot cite book as READ evidence until extracted by a working path |
+| NEG-C01 | Public/current name | 12–13 Jul docs: «Переговорная Архитектура» | 28 Jul product protocols + owner brief: «Архитектура Переговоров» | OPEN for S01 normalization; no semantic split inferred | terminology |
+| NEG-C02 | Product ontology | Passport/current protocols: four core products | Commercial B2: expanded variants, Board-level and packages | commercial variants kept derivative pending S02 | product/public model |
+| NEG-C03 | “not a product line” wording | FAQ A1 | Passport/current protocols contain four paid products | OPEN semantic wording issue; do not copy FAQ phrase as product ontology | public explanation |
+| NEG-C04 | Primary book provenance | repository identifies primary book | binary content unavailable through exhausted current acquisition paths | TECHNICAL HOLD; book cannot be READ/cited | provenance depth |
 
-
-## S01 resolutions
-- NEG-C01: RESOLVED — current normalized name: Архитектура Переговоров; earlier wording retained as source alias.
-- NEG-C02: RESOLVED — four core products; commercial extended variants/bundles are derivatives.
-- NEG-C03: RESOLVED — FAQ phrase interpreted as technology != commercial packaging; four paid products remain source-confirmed.
-- NEG-C04: HOLD — primary book remains INDEXED/NOT READ; excluded as direct provenance.
+No S01 resolution is carried forward from the revoked run. Resolution occurs only in the new V4 stage where required.
