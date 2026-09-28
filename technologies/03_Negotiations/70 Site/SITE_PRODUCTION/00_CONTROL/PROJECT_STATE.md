@@ -1,6 +1,6 @@
 # PROJECT_STATE
 
-Status: S00 IN PROGRESS — RESTARTED AFTER V4 EXECUTION DEFECT
+Status: S00 PASS WITH NONBLOCKING HOLD — S01 AUTHORIZED BY V4
 Date: 2026-09-28
 Technology folder: technologies/03_Negotiations
 Production domain: nego.7vctr.ru
@@ -8,10 +8,19 @@ Source repository: BiryukovValeri/7_techno-management
 Source branch: codex/site-factory
 Production technology: BiryukovValeri/claudecode / site-production-v3 / 70 Site/SITE_PRODUCTION_TECHNOLOGY_V4/
 Public language: Russian
-Legacy site: derived/legacy only; cannot govern Technology Truth
+Legacy site: derived/legacy only; not used to govern recovery
 
-Binary execution contract: DISCOVER -> CLASSIFY -> ACQUIRE -> MATERIALIZE -> EXTRACT -> READ -> RECORD -> CROSS-CHECK.
+Binary execution contract used: DISCOVER -> CLASSIFY -> ACQUIRE -> MATERIALIZE -> EXTRACT -> READ -> RECORD -> CROSS-CHECK.
 INDEXED != READ.
 
+S00 evidence:
+- coverage/status table: SOURCE_MAP.md
+- corpus reconstruction: CORPUS_RECOVERY.md
+- source hierarchy: SOURCE_MAP.md
+- conflicts: CONFLICT_REGISTER.md
+- traceability skeleton: TRACEABILITY_MATRIX.md
+- holds: HOLD_REGISTER.md
+
+Nonblocking S00 hold: primary book cannot currently be acquired as content; exact failure/attempts/impact recorded as NEG-H01. Other detailed XLSX/case/visual extraction is deferred to the V4 stage where those entities become governing evidence.
+
 Owner gates: T1 / M / H / A / C / F.
-No site, Message Strategy or Hero before their V4 stages.
