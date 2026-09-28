@@ -20,8 +20,6 @@ The visual should make **architecture of position** visible: several decision ob
 - AI/software dashboard;
 - generic sales training;
 - guaranteed agreement/result;
-- mandatory four-product ladder;
-- Diagnostics as mandatory entry for every visitor.
 
 ## Existing visual language audit
 Useful existing system:
@@ -29,10 +27,14 @@ Warm Paper #F3EBDD; Deep Navy #0B1F33; Copper #B46A3C; Muted Teal #0F766E; Diagn
 Existing typography: Source Serif 4 + IBM Plex Sans + IBM Plex Mono.
 Useful traits: engineering grid, explicit boundaries, route/architecture semantics, no stock people/handshakes/chess.
 
-Legacy semantic conflicts to reject:
-- visualization 03 language “Диагностика как первый продукт” as universal;
-- visualization 07 “product ladder” if it implies mandatory sequence;
-- any stale price/duration as current proof without S08 currentness check.
+Product system is LOCKED and is not a subject of S04 reinterpretation:
+1. Диагностика
+2. Сессия
+3. Спринт
+4. Сопровождение
+No fifth product, substitute product or renamed ontology may be introduced.
+
+S04 concerns only the communication and visual solution of the first screen. Existing visual assets may be reused only when semantically compatible with current T1/M locks.
 
 ## Hero copy logic — not final copy
 Eyebrow/category: Архитектура Переговоров / технология управления переговорной силой компании.
