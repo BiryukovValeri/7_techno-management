@@ -1,24 +1,17 @@
 # PROJECT_STATE
 
-Status: **SUSPENDED — V4 EXECUTION DEFECT**
+Status: S00 IN PROGRESS — RESTARTED AFTER V4 EXECUTION DEFECT
 Date: 2026-09-28
-Technology: Переговоры / Архитектура переговоров
-TECHNOLOGY_FOLDER: technologies/03_Negotiations
-PRODUCTION_DOMAIN: nego.7vctr.ru
+Technology folder: technologies/03_Negotiations
+Production domain: nego.7vctr.ru
+Source repository: BiryukovValeri/7_techno-management
+Source branch: codex/site-factory
+Production technology: BiryukovValeri/claudecode / site-production-v3 / 70 Site/SITE_PRODUCTION_TECHNOLOGY_V4/
+Public language: Russian
+Legacy site: derived/legacy only; cannot govern Technology Truth
 
-Previous production instruction: **REVOKED by owner**.
+Binary execution contract: DISCOVER -> CLASSIFY -> ACQUIRE -> MATERIALIZE -> EXTRACT -> READ -> RECORD -> CROSS-CHECK.
+INDEXED != READ.
 
-S00: STOPPED / NOT PASS.
-S01 Technology Truth: REVOKED / NOT VALID.
-T1: NOT REACHED.
-S02+: NOT STARTED.
-
-Reason: mandatory SITE_PRODUCTION_TECHNOLOGY_V4 does not define the required binary source acquisition route:
-GitHub source → binary acquisition → materialization → extraction → extraction verification → READ → evidence fixation.
-
-Until centralized SITE_PRODUCTION_TECHNOLOGY correction and a new restart/resume instruction:
-- all discovered corpus items are INDEXED only;
-- INDEXED != READ;
-- no Technology Truth, Message Strategy, Hero, site architecture or implementation work;
-- legacy 70 Site is not a substitute for primary corpus;
-- no local permanent workaround may be invented.
+Owner gates: T1 / M / H / A / C / F.
+No site, Message Strategy or Hero before their V4 stages.
