@@ -1,6 +1,6 @@
 # TECHNOLOGY_TRUTH — проSTRAнство
 Stage: S01
-Status: FINAL FOR OWNER GATE T1
+Status: LOCK — OWNER GATE T1 = GO (2026-09-28)
 Rule: no site copywriting. Statements below are reconstructed from current source corpus.
 
 ## 1. Definition
@@ -166,3 +166,6 @@ PASS. No semantic proposition above is imported from UM/DA, CLM or another techn
 ## S01 Stage result
 Technology Truth is source-reconstructed and ready for mandatory Owner Gate T1.
 No Message Strategy, Hero or Site Architecture has been produced.
+
+## OWNER LOCK
+T1 Technology Truth approved by owner: GO. Subsequent stages may not change the technology definition, mechanism, product contour, verdict system, evidence boundary or anti-category without explicit reopening of T1.
