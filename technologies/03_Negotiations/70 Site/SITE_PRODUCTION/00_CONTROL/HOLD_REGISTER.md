@@ -1,8 +1,10 @@
 # HOLD_REGISTER
 
-| ID | Hold | Impact | Latest resolution point | Blocking now? |
-|---|---|---|---|---|
-| NEG-H01 | Large primary book binary not extractable through current GitHub connector path | cannot claim book READ | before S01 PASS if needed as governing canonical evidence | NO for S00; potentially YES for S01 |
-| NEG-H02 | XLSX evidence/release/form files indexed, not yet extracted | proof/product detail incomplete | before S02 PASS | NO |
-| NEG-H03 | Naming normalization | public terminology | S01/T1 | NO |
-| NEG-H04 | Design System not supplied in branch brief | later visual implementation | before S11 if required | NO |
+| ID | HOLD | Attempts/evidence | Impact | Latest resolution point | Blocking S00? |
+|---|---|---|---|---|---|
+| NEG-H01 | Primary book not readable | exact path + SHA bc192d…; normal binary UTF-8 read unsuitable; base64 returns zero content; local git/raw fallback cannot resolve github.com | no direct book provenance | before any later claim uniquely dependent on book | NO |
+| NEG-H02 | XLSX forms/evidence/release controls not yet content-extracted in restarted run | discovered/indexed; no READ claim | detailed instrument/evidence truth incomplete | before S02 PASS | NO |
+| NEG-H03 | Technology 13 current extraction not reliably retained | exact binary acquired SHA 90beeb… | field-layer detail unavailable | before relying on it in S01/S02 | NO if canonical docs suffice |
+| NEG-H04 | Case bodies/navigation remain INDEXED | corpus discovered | no public case claims yet | before S02 PASS | NO |
+| NEG-H05 | Visualization semantics/QA remain INDEXED | visual corpus discovered | no visual truth claims yet | before S04/S10 as applicable | NO |
+| NEG-H06 | Design System not supplied in current instruction | none | later visual implementation only | before S11 if required | NO |
