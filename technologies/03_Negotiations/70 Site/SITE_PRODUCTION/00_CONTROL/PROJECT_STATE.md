@@ -1,6 +1,6 @@
 # PROJECT_STATE
 
-Status: S00 PASS WITH NONBLOCKING HOLD — S01 AUTHORIZED BY V4
+Status: S01 PASS — WAITING OWNER GATE T1
 Date: 2026-09-28
 Technology folder: technologies/03_Negotiations
 Production domain: nego.7vctr.ru
@@ -22,5 +22,8 @@ S00 evidence:
 - holds: HOLD_REGISTER.md
 
 Nonblocking S00 hold: primary book cannot currently be acquired as content; exact failure/attempts/impact recorded as NEG-H01. Other detailed XLSX/case/visual extraction is deferred to the V4 stage where those entities become governing evidence.
+
+S01 artifact: 01_TRUTH/TECHNOLOGY_TRUTH.md
+T1: WAITING OWNER GO/NO-GO.
 
 Owner gates: T1 / M / H / A / C / F.
