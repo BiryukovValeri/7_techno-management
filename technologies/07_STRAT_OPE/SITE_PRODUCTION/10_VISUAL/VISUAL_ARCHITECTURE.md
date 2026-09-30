@@ -1,154 +1,167 @@
 # S10 — VISUAL ASSET ARCHITECTURE — проSTRAнство
-Status: FINAL
+Status: REVISED FINAL
 Dependencies: T1 / M / H / A / C LOCK; S09 PASS
-Rule: Hero is owner-locked. Legacy visual assets are source material only until classified here.
 
-# 1. Governing visual principle
-The site visual language must support the governing idea:
-**many plausible choices → evidence-based narrowing → working choice → verification in reality.**
+# 1. Visual model
+The site uses three distinct layers:
 
-Visuals must clarify mechanism or provide controlled context. They must not turn the site into:
-- a SaaS/dashboard interface;
-- a framework catalog;
-- an AI-tech product;
-- a decorative “consulting stock-photo” site;
-- a repeat of the cartographic visual language used on another technology site.
+1. **Image slots** — images that help the reader perceive and understand the information of the site. They support reading rhythm, comprehension and emotional/semantic orientation.
+2. **Technology visualizations** — finished semantic images that explain a part of the technology. They are stronger than ordinary supporting images and must be used selectively.
+3. **Native interface graphics** — Elementor containers, cards, status blocks, timelines and typographic/data compositions. They structure information but do not replace image slots or technology visualizations.
 
-# 2. Hero — FINAL / LOCK
-Asset: owner-selected first wide Hero image.
-Semantic content:
-- broad field of alternatives;
-- successive translucent constraint/evidence planes;
-- one deep-navy selected object;
-- warm light environment;
-- large negative space for copy.
+A website must not become a slide deck. Therefore the 12 existing technology visualizations are a source corpus, not a set to be inserted wholesale.
 
-Status: **FINAL / OWNER LOCK H**.
-Rule: no regeneration, restyling or alternate mobile artwork.
-Desktop/tablet/mobile use the same asset.
-Responsive behavior: crop/object-position only; preserve, as far as practical, selected object + constraint planes + alternative field.
-No text baked into image.
+# 2. Governing visual principle
+The site explains the technology first. Visuals support this explanation and leave controlled traces of technological depth.
 
-# 3. Existing visualization corpus
-Repository contains 12 legacy visualization PNGs plus editable/pixel-reference PPTX masters.
-These are not automatically production assets because they predate current T1/M/H/A/C locks.
-Classification:
-- semantic meaning may be reused only when it matches current truth;
-- visual styling is not governing;
-- no legacy image may overwrite current Hero or Message Strategy;
-- any selected legacy visual must be reviewed for terminology, old process logic and visual fit before production use.
+Target:
+- **3–4 technology visualizations across the entire site**, including only those that materially explain the mechanism;
+- a separate system of supporting image slots where imagery improves perception;
+- native Elementor graphics for structural information.
 
-# 4. Visual system by semantic job
+No requirement to put an image into every section.
 
-## V-A — Narrowing / selection diagrams
-Use for HOME-03, /how-it-works/, /technology/.
-Purpose: show reduction of admissible choices, not a menu.
-Preferred form: editorial semantic diagram built in Elementor/CSS where possible.
-No generated image required.
-Responsive: horizontal/stepped desktop → vertical ordered mobile.
+# 3. Hero — FINAL / OWNER LOCK
+The owner-selected first wide Hero image remains the main visual anchor.
+Status: **FINAL / LOCK H**.
+It is an image slot and a governing conceptual image, but it is not counted as one of the 3–4 legacy technology visualizations.
 
-## V-B — Evidence / verdict system
-Use for HOME-04, /diagnostics/.
-Purpose: evidence chain + four verdicts.
-Preferred form: native text/container visualization.
-No traffic-light simplification; status must remain readable without color.
-No image required.
+Use one binary on desktop/tablet/mobile. Crop/object-position only. No alternate mobile Hero.
 
-## V-C — Bridge / verification chain
-Use for HOME-06, /session/, /sprint/.
-Purpose: strategic output → operational carrier → owner → metric → rhythm → baseline → 30/60/90 → verdict.
-Preferred form: native semantic process diagram.
-No decorative illustration needed.
+# 4. Technology visualizations — selection ceiling
+Maximum production set: **4**.
 
-## V-D — Product contour
-Use for HOME-07.
-Purpose: show conditional products and stop/return paths.
-Preferred form: Elementor cards/containers.
-Not a mandatory linear funnel.
-No image required.
+## TV-01 — Narrowing the decision space
+Role: explain the central mechanism: many plausible options → evidence/triggers → bounded working choice.
+Source candidate: legacy visualization 05 “Отбор стратегических фреймворков”, rebuilt/revalidated against current M/C locks.
+Placement: HOME-03; reusable on /how-it-works/ if needed.
+Status: **SELECTED FOR PRODUCTION REWORK**.
 
-## V-E — Artifact groups
-Use for HOME-08 and product pages.
-Purpose: make outputs tangible.
-Preferred form: document-like abstract cards/icons, not fake screenshots.
-If real sanitized artifact screenshots become available later, they may replace abstractions after source/privacy review.
+## TV-02 — Bridge to operational execution
+Role: show how a justified strategic choice becomes an operational carrier with owner, metric, rhythm and verification.
+Source candidate: legacy visualization 06 “Мост к операционным инструментам”.
+Placement: HOME-06 or /session/.
+Status: **SELECTED FOR PRODUCTION REWORK**.
 
-## V-F — Depth proof
-Use for HOME-09 and /technology/.
-Purpose: 95 / 115 depth with narrowing to 5–7 / 3–5.
-Preferred form: typographic/data composition, not grid of tools.
-No catalog visual.
+## TV-03 — Sprint 30–60–90 / reality check
+Role: show that execution is a test of the chosen contour, not a ceremonial final stage.
+Source candidate: legacy visualization 10.
+Placement: /sprint/ and optionally a reduced reference on HOME-06/07 only if not repetitive.
+Status: **SELECTED FOR PRODUCTION REWORK**.
 
-## V-G — Case system
-Use for HOME-10 and /cases/.
-Purpose: distinguish situations while preserving common evidence logic.
-Default: text-led cards with restrained sector cue/icon.
-No stock company photography required.
-If contextual imagery is added later, it must be generic sector context and never imply a named client.
+## TV-04 — Conditional
+Candidate role: demonstrate either evidence/diagnostic logic or anti-catalog depth, only if the final page composition genuinely needs a fourth technology visualization.
+Candidate sources: legacy 03 or 02.
+Status: **OPTIONAL / NOT AUTOMATICALLY INCLUDED**.
 
-## V-H — Anti-category
-Use for HOME-11 and /technology/.
-Purpose: “not this / this”.
-Preferred form: paired editorial rows/containers.
-No “competitor crossed out” imagery.
+Hard rule:
+- 01, 08 and other legacy visuals are not inserted merely because they exist.
+- No page becomes a gallery of diagrams.
+- One visualization may be reused responsively/contextually, but duplicated full-size appearances should be avoided.
 
-## V-I — Qualification / CTA
-Use HOME-12/HOME-14 and product CTAs.
-Purpose: conversion.
-No decorative image required.
+# 5. Supporting image slots
+Image slot means a visual that helps the reader perceive the site content. It may be a conceptual image, contextual image, restrained illustration or designed still. It is not necessarily a technology diagram.
 
-# 5. Existing legacy visual classification
-| Legacy asset | Semantic relevance | Production status |
-|---|---|---|
-| 01 Ядро: от проблемы к исполнению | partial; risks generic strategy→execution framing | EXCLUDED as-is; semantic reference only |
-| 02 Не каталог моделей | strong anti-catalog relevance | REFERENCE; rebuild natively if needed |
-| 03 Диагностика управленческой задачи | relevant to Diagnostics | REFERENCE; terminology review required |
-| 04 Экспертная система триггеров | relevant to trigger logic | REFERENCE; do not expose protected selection logic |
-| 05 Отбор стратегических фреймворков | relevant to narrowing | REFERENCE; rebuild, no catalog UI |
-| 06 Мост к операционным инструментам | strong Bridge relevance | REFERENCE; rebuild natively |
-| 07 Операционные инструменты и измерители | relevant | REFERENCE; avoid instrument catalog |
-| 08 Клиентский путь 4 продуктов | relevant but linearity risk | EXCLUDED as-is; rebuild conditional contour |
-| 09 Сессия: сбор решения и контура | relevant | REFERENCE |
-| 10 Спринт 30/60/90 | relevant | REFERENCE |
-| 11 Кейсовая схема | relevant | REFERENCE; current 12-case content governs |
-| 12 Антипозиционирование | relevant | REFERENCE; rebuild from current anti-category copy |
+## IS-01 Hero
+HOME-01. Locked canonical image.
 
-# 6. Image-slot policy
-A section does not receive an image merely to balance layout.
-Image is required only when:
-1. it carries semantic information not better expressed by native containers;
-2. it provides necessary contextual grounding;
-3. it is a locked brand/hero asset.
+## IS-02 Decision ambiguity
+HOME-02 “Почему разумного решения недостаточно?”
+Purpose: visually support the feeling of several equally plausible routes before evidence narrows them.
+Production: new supporting conceptual image or design-system still.
+Must not duplicate Hero’s exact “filter planes” composition.
 
-Therefore most S05/S06 sections intentionally have **NO raster image slot**.
+## IS-03 Do-not-touch / preserve what works
+HOME-05.
+Purpose: help perceive the distinction between “изменить” and “не разрушить работающий контур”.
+Production: supporting conceptual image.
+Must avoid danger/alarm cliché.
 
-# 7. Responsive image rules
-Hero: same locked image; crop only.
-Contextual case image if later approved: desktop 16:9 or 4:3; mobile crop 4:3/1:1 only if subject remains intact.
-Semantic diagrams: never raster-crop away steps; rebuild/reflow responsively.
-Artifact previews: preserve document proportions; mobile opens/expands only if interaction is accessible.
-No essential meaning can exist only inside an image.
+## IS-04 Artifacts / tangible output
+HOME-08 or one product page.
+Purpose: make the technology feel materially operational through real-looking but non-fake artifact composition.
+Production: designed still based on actual public artifact types; no fabricated dashboards or fake client screenshots.
 
-# 8. Accessibility
-All semantic information has text equivalent.
-Decorative imagery uses empty alt.
-Meaningful contextual imagery receives factual alt, without SEO stuffing.
-Diagram labels remain live text where feasible.
-Status is never color-only.
-No baked-in body copy in generated imagery.
+## IS-05 Cases context
+HOME-10 / /cases/.
+Purpose: provide visual rhythm and distinguish case territory from mechanism territory.
+Production: one master contextual visual system or restrained sector illustrations. Do not create 12 unrelated stock images.
 
-# 9. Production rule
-S10 authorizes no automatic image generation.
-Claude Design may compose native section visuals inside the selected Design System but may not invent new semantic metaphors that change the locked message.
-New raster assets require explicit slot + purpose + source/production rule.
+## IS-06 Technology depth
+HOME-09 or /technology/.
+Purpose: support the idea “large internal knowledge base → small working set”.
+Production: conceptual image only if TV-04 is not used for this job. Never both merely for decoration.
 
-# 10. DoD
-- Hero classified: PASS
-- legacy visual corpus classified: PASS
-- every visual family has production rule: PASS
-- responsive behavior defined: PASS
-- accessibility defined: PASS
-- no unnecessary image generation: PASS
-- protected know-how boundary preserved: PASS
+Image-slot count is not a quota. IS-02–IS-06 are production slots justified by comprehension; final design may merge or omit a slot if the semantic job is already fully carried by a selected technology visualization.
 
-**S10 RESULT: PASS**
+# 6. Native graphics — where images are NOT needed
+Use Elementor/native composition for:
+- four diagnostic verdicts;
+- six diagnostic criteria;
+- product contour and conditional transitions;
+- qualification conditions;
+- FAQ;
+- CTA blocks;
+- compact artifact lists;
+- status comparisons;
+- internal links/navigation.
+
+These are interface/information structures, not image slots.
+
+# 7. Legacy 12-visualization corpus
+| Legacy | Decision |
+|---|---|
+| 01 Ядро: от проблемы к исполнению | EXCLUDED AS-IS — generic strategy→execution risk |
+| 02 Не каталог моделей | RESERVE candidate for TV-04 |
+| 03 Диагностика | RESERVE candidate for TV-04 |
+| 04 Экспертная система триггеров | REFERENCE only; protected-logic risk |
+| 05 Отбор стратегических фреймворков | SELECTED → TV-01 rework |
+| 06 Мост к операционным инструментам | SELECTED → TV-02 rework |
+| 07 Операционные инструменты и измерители | REFERENCE only |
+| 08 Клиентский путь 4 продуктов | EXCLUDED AS-IS — false linearity risk |
+| 09 Сессия | REFERENCE only |
+| 10 Спринт 30/60/90 | SELECTED → TV-03 rework |
+| 11 Кейсовая схема | REFERENCE only |
+| 12 Антипозиционирование | REFERENCE only |
+
+Thus only **3 are currently selected**, with **1 reserve slot**. The other 8 are not production images.
+
+# 8. Distribution / rhythm
+Homepage target:
+Hero image + 2–4 supporting image slots + no more than 2 full technology visualizations.
+
+Internal pages:
+technology visualization only where it explains a mechanism better than text/native layout.
+Avoid placing full technology diagrams in consecutive sections.
+
+The desired rhythm is:
+**content → supporting image → content/native structure → technology visualization → content**, not “slide after slide”.
+
+# 9. Responsive
+Hero: same locked binary.
+Supporting images: crop safely; no essential text inside raster.
+Technology visualizations: do not solve mobile by destructive crop. Produce/recompose responsive version or rebuild labels as live text where possible.
+No horizontal scroll required to understand a visualization.
+
+# 10. Accessibility
+Every technology visualization has a nearby text explanation.
+Supporting images never carry unique factual claims.
+Decorative assets use empty alt.
+Meaningful assets use factual alt without SEO stuffing.
+Status is not communicated by color alone.
+
+# 11. Production boundary
+S10 defines slots and selects visualization jobs; it does not generate assets automatically.
+S11 must tell Claude Design which slots need visual production and which technology visualizations must be adapted.
+Claude may improve composition/style but may not change the semantic role or introduce additional presentation-like diagrams.
+
+# 12. DoD
+- distinction image slot / visualization / native graphic: PASS
+- Hero locked: PASS
+- visualization ceiling 3–4: PASS
+- 12 legacy visuals selectively classified: PASS
+- supporting image slots defined: PASS
+- site protected from “presentation instead of website”: PASS
+- responsive/accessibility rules: PASS
+
+**S10 REVISED RESULT: PASS**
