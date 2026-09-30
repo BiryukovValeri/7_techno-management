@@ -1,6 +1,6 @@
 # PROJECT_STATE
 
-Status: S05 PASS — WAITING OWNER GATE A
+Status: A GO / S06 IN PROGRESS
 Date: 2026-09-28
 Technology folder: technologies/03_Negotiations
 Production domain: nego.7vctr.ru
@@ -42,4 +42,4 @@ Owner clarification: four-product ontology is invariant (Diagnostics / Session /
 
 Gate H: GO / LOCKED 2026-09-30. Owner approved FINAL Hero binary. S05 Site Architecture / UX / Page Story opened.
 
-S05 artifact: 04_ARCHITECTURE/SITE_ARCHITECTURE.md. Gate A: WAITING OWNER GO/NO-GO.
+S05 artifact: 04_ARCHITECTURE/SITE_ARCHITECTURE.md. Gate A: GO / LOCKED 2026-09-30.
