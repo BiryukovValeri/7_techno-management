@@ -1,5 +1,5 @@
 # S08 — SOURCE-LOCKED CONTENT MASTER — проSTRAнство
-Status: FINAL — HOMEPAGE MASTER
+Status: LOCK — OWNER GATE C = GO (2026-09-30)
 Dependencies: T1 / M / H / A LOCK; S06; S07
 Language: RU
 Rule: this is public-facing master copy. Internal codes appear only where necessary.
