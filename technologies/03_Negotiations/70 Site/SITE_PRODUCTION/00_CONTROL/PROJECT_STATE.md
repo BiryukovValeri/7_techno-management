@@ -1,6 +1,6 @@
 # PROJECT_STATE
 
-Status: H GO / S05 IN PROGRESS
+Status: S05 PASS — WAITING OWNER GATE A
 Date: 2026-09-28
 Technology folder: technologies/03_Negotiations
 Production domain: nego.7vctr.ru
@@ -41,3 +41,5 @@ FINAL_HERO and HERO_LOCK do not exist yet. Owner must select H1/H2/H3/H4 (or exp
 Owner clarification: four-product ontology is invariant (Diagnostics / Session / Sprint / Support); H1-H4 were internal visual exploration, not product/technology choices. S04 converged to FINAL_HERO_CANDIDATE.md; binary Hero not yet locked.
 
 Gate H: GO / LOCKED 2026-09-30. Owner approved FINAL Hero binary. S05 Site Architecture / UX / Page Story opened.
+
+S05 artifact: 04_ARCHITECTURE/SITE_ARCHITECTURE.md. Gate A: WAITING OWNER GO/NO-GO.
