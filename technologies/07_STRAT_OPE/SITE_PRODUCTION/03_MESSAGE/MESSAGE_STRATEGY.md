@@ -1,7 +1,7 @@
 # MESSAGE_STRATEGY — проSTRAнство
 Stage: S03
 Revision: V2 after Owner Gate M = NO-GO
-Status: FINAL FOR OWNER GATE M
+Status: LOCK — OWNER GATE M = GO (2026-09-30)
 Dependencies: T1 LOCK; S02 PASS
 
 ## 1. Positioning problem
@@ -172,3 +172,6 @@ Governing message:
 **Не больше управленческих решений. Точнее выбор.**
 
 S03 V2 is ready for Owner Gate M.
+
+## OWNER LOCK
+M approved by owner. Governing axis: «Не больше управленческих решений. Точнее выбор.» Semantic field: проSTRAнство as пространство управленческого выбора → доказательное сужение → рабочий выбор → проверка реальностью. Reopening requires explicit owner decision.
