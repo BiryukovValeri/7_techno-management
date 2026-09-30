@@ -1,5 +1,5 @@
 # S05 — SITE ARCHITECTURE / UX / PAGE STORY — проSTRAнство
-Status: FINAL FOR OWNER GATE A
+Status: LOCK — OWNER GATE A = GO (2026-09-30)
 Dependencies: T1 LOCK; M LOCK; H LOCK
 
 ## 1. Governing UX principle
@@ -239,3 +239,6 @@ No fake lead magnet, free audit, instant score, calculator or “choose your fra
 S05 is ready for Owner Gate A.
 GO locks site architecture / UX / page story and permits S06 Elementor Section & Component Architecture.
 NO-GO returns S05 for revision without reopening T1/M/H unless owner explicitly does so.
+
+## OWNER LOCK
+A approved by owner. Homepage sequence, supporting-page architecture, UX rules, conversion architecture and conditional product transitions are locked. Reopening requires explicit owner decision.
