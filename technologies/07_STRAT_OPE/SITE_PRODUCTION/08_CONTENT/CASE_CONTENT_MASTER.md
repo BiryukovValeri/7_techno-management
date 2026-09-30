@@ -1,5 +1,5 @@
 # S08 — CASE CONTENT MASTER — проSTRAнство
-Status: SOURCE-REVIEWED
+Status: LOCK — OWNER GATE C = GO (2026-09-30)
 Scope: 12 generalized management cases
 Rule: model cases; not named-client proof; model numbers must not be presented as achieved client results.
 
