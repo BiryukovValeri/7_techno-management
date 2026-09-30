@@ -95,3 +95,32 @@ A and C are the strongest semantic candidates.
 A is clearer at first glance.
 C has the deepest brand territory and the highest potential to become a site-wide visual language.
 No FINAL Hero, image prompt or generated asset is approved until owner selects/rejects a direction.
+
+
+## FINAL HERO DECISION — OWNER LOCK
+Status: GO / LOCK
+
+Owner selected the FIRST desktop image as the single Hero-image.
+
+Canonical composition:
+- 16:9 landscape master;
+- warm ivory environment;
+- final deep-navy selected object on the left/center-left pedestal;
+- successive translucent evidence/constraint planes through the center;
+- broad field of plausible alternatives on the right;
+- semantic reading: many plausible choices → evidence constraints → one justified working choice.
+
+Responsive decision:
+- NO separate mobile/portrait generated concept;
+- NO second Hero artwork;
+- NO reinterpretation of the scene for mobile;
+- responsive implementation must use the same canonical image through layout/crop/object-position rules while preserving, as far as viewport permits, the selected object + filtering planes + alternative field;
+- Claude Design must not regenerate, restyle or “improve” the Hero asset.
+
+Rejected:
+- map/cartography direction;
+- glass AI cube / analytics-dashboard direction;
+- separate portrait scene generated after desktop approval.
+
+Gate H: HERO VISUAL DIRECTION + IMAGE = OWNER LOCK.
+Next stage: S05 Site Architecture / UX / Page Story.
