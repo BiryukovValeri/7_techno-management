@@ -21,8 +21,8 @@ Date: 2026-09-30
 | Form 22 | YES | name/role complete | same | COMPLETE LIMITED | no field-level claims |
 | Form 23 | YES | name/role complete | same | COMPLETE LIMITED | no field-level claims |
 | Evidence checks ×4 | YES | bounded summary complete | Technology 10 READ | COMPLETE LIMITED | cannot generalize to whole-tech effect |
-| Case catalog identities ×12 | YES for catalog | title-only records | INDEXED | HOLD | no public body/result claims |
-| Case detail records ×12 | conditional on public case pages | absent by design pending source read | INDEXED | HOLD | detail pages cannot ship with substantive copy |
+| Case catalog identities ×12 | YES | source-read model case records | A3-00 + A3-01…12 READ | COMPLETE | must be framed as model/teaching cases |
+| Case detail records ×12 | YES | source-read records available | A3-01…12 READ | COMPLETE LIMITED | model decisions, not client outcomes/testimonials |
 | FAQ | YES | public normalized set complete | FAQ/Glossary READ + locks | COMPLETE | — |
 | Glossary concepts | YES | embedded in technology/tools/FAQ | Glossary READ + locks | COMPLETE | — |
 | Commercial configurations | NO for core explanation | withheld | derivative/currentness unresolved | HOLD NONBLOCKING | no prices/durations/packages |
@@ -42,6 +42,6 @@ Contact: CONTENT COMPLETE / IMPLEMENTATION HOLD.
 
 ## Gate C assessment
 Core public site copy is complete without inventing missing evidence.
-Blocking for **full architecture exactly as A-LOCK including substantive case-detail pages**: case bodies remain unread.
+Case-detail source bodies are now READ and no longer block the A-LOCK case architecture; disclosure remains model/teaching, not testimonial/effectiveness proof.
 Blocking for final conversion implementation: current contact/form mechanism remains unresolved.
 Therefore S08 may be called **PASS WITH HOLD only if these HOLDs are accepted as nonblocking because case-detail pages are omitted/withheld until cleared and direct contact implementation is resolved before S11**. Otherwise Gate C must remain NO-GO pending source extraction.
