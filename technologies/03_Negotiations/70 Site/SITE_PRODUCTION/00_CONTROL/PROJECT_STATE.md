@@ -1,6 +1,6 @@
 # PROJECT_STATE
 
-Status: S08 PASS WITH HOLD — WAITING OWNER GATE C
+Status: S08 REVALIDATED AFTER SOURCE RECOVERY — WAITING OWNER GATE C
 Date: 2026-09-28
 Technology folder: technologies/03_Negotiations
 Production domain: nego.7vctr.ru
@@ -48,4 +48,4 @@ S06 produced: ELEMENTOR_ARCHITECTURE, ELEMENTOR_SECTION_CANDIDATES, ELEMENTOR_SE
 
 S07 produced 04_ARCHITECTURE/BLOCK_SPECIFICATION.md. All A-LOCK pages/blocks mapped to S06 implementation families, source/evidence boundaries, CTA/visual/responsive rules. No owner gate. S08 Source-Locked Content Master opened.
 
-S08 produced 05_CONTENT/CONTENT_MASTER.md and ENTITY_COMPLETENESS_MATRIX.md. Core site copy complete at public-safe level. Holds: case bodies/details, detailed XLSX claims, contact/form implementation/current data, optional commercial currentness, optional author/legal provenance. Gate C owner decision required.
+S08 produced 05_CONTENT/CONTENT_MASTER.md and ENTITY_COMPLETENESS_MATRIX.md. 2026-09-30 source-recovery repair closed NEG-H02 and NEG-H04: Forms 17–23, evidence matrix, form navigator, release register and A3-00/A3-01…12 are READ. Case framing corrected to model/teaching cases, not client success evidence. Remaining downstream holds: contact/form implementation/current data, optional commercial currentness, optional author/legal provenance. Gate C owner decision required.
