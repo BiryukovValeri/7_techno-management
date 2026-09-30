@@ -21,3 +21,7 @@ Locked scope: definition/object; one core/two contours; canonical mechanism/10-s
 ## M — GO — 2026-09-28
 Locked artifacts: `03_MESSAGE/MESSAGE_STRATEGY.md`, `03_MESSAGE/GOVERNING_SITE_CONCEPT.md`.
 Locked scope: category; audience; core value; governing message; differentiation; anti-category; proof hierarchy; conversion logic; terminology/claim constraints; Hero communication implications.
+
+## H — GO — 2026-09-30
+Locked: owner-approved FINAL Hero binary supplied 2026-09-30 + `04_HERO/HERO_LOCK.md`.
+Selected direction: warm-paper architectural dossier / negotiation map, right-weighted artwork, left copy field. Downstream architecture must treat it as a known input.
