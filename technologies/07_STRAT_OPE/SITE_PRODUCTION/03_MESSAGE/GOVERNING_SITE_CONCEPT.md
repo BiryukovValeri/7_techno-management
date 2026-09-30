@@ -1,7 +1,7 @@
 # GOVERNING_SITE_CONCEPT — проSTRAнство
 Stage: S03
 Revision: V2 after M NO-GO
-Status: FINAL FOR OWNER GATE M
+Status: LOCK — OWNER GATE M = GO (2026-09-30)
 
 ## Positioning
 **Экспертная система управленческого выбора.**
@@ -51,3 +51,6 @@ Not AI product.
 S04–S12 must preserve **selection precision** as the governing idea.
 “Strategy → execution” may explain mechanism but may not replace the positioning.
 Diagnostics may be the commercial entry but may not replace the whole technology definition.
+
+## OWNER LOCK
+M approved by owner. Governing axis: «Не больше управленческих решений. Точнее выбор.» Semantic field: проSTRAнство as пространство управленческого выбора → доказательное сужение → рабочий выбор → проверка реальностью. Reopening requires explicit owner decision.
