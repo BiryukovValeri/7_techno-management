@@ -25,3 +25,7 @@ Locked scope: category; audience; core value; governing message; differentiation
 ## H — GO — 2026-09-30
 Locked: owner-approved FINAL Hero binary supplied 2026-09-30 + `04_HERO/HERO_LOCK.md`.
 Selected direction: warm-paper architectural dossier / negotiation map, right-weighted artwork, left copy field. Downstream architecture must treat it as a known input.
+
+## A — GO — 2026-09-30
+Locked artifact: `04_ARCHITECTURE/SITE_ARCHITECTURE.md`.
+Locked scope: sitemap; primary navigation; homepage story/order; secondary page/template set; four-product presentation; UX/conversion paths; H-LOCK integration principle.
