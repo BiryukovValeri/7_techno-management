@@ -29,3 +29,8 @@ Selected direction: warm-paper architectural dossier / negotiation map, right-we
 ## A — GO — 2026-09-30
 Locked artifact: `04_ARCHITECTURE/SITE_ARCHITECTURE.md`.
 Locked scope: sitemap; primary navigation; homepage story/order; secondary page/template set; four-product presentation; UX/conversion paths; H-LOCK integration principle.
+
+
+## C — GO — 2026-09-30
+Locked artifacts: `05_CONTENT/CONTENT_MASTER.md`, `05_CONTENT/ENTITY_COMPLETENESS_MATRIX.md`, `05_CONTENT/CASE_CONTENT_MASTER.md`, `05_CONTENT/XLSX_SOURCE_RECOVERY.md`.
+Locked scope: source-locked public content; Forms 17–23; four-product ontology; model/teaching case framing; evidence/claim boundaries; explicit remaining implementation/currentness holds. S09 may proceed without changing T1/M/H/A/C locks.
