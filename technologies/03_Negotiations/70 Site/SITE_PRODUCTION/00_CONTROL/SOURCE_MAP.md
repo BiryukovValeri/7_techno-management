@@ -16,10 +16,10 @@ READ is granted only after content extraction, or after revalidation of an alrea
 | Session protocol | B | READ-REVALIDATED | SHA 89793a… |
 | Sprint protocol | B | READ-REVALIDATED | SHA 7e27f9… |
 | Support protocol | B | READ-REVALIDATED | SHA d508b3… |
-| Forms 17–23 XLSX | B | INDEXED | operational instruments; detailed extraction belongs before S02 PASS |
-| Evidence matrix / form navigator / release register XLSX | B | INDEXED | evidence/release controls; extract before S02 PASS |
+| Forms 17–23 XLSX | B | READ | all 7 workbooks acquired by exact Git blob and OOXML content/formulas/sheets extracted 2026-09-30; operational instrument truth recovered |
+| Evidence matrix / form navigator / release register XLSX | B | READ | all 3 workbooks acquired and OOXML content/sheets extracted 2026-09-30; claim boundaries, product routing and release controls recovered |
 | Product workbooks/reports | B | INDEXED | product artifacts; extract/read in S02 |
-| 12 cases + case navigator | B/C | INDEXED | case corpus; read/classify in S02 before public claims |
+| 12 cases + case navigator | B/C | READ | A3-00 + A3-01…A3-12 content extracted/read 2026-09-30; corpus is model/teaching application cases, not client success evidence |
 | Commercial B2 | C | READ-REVALIDATED | SHA 61b0b8…; commercial derivative only |
 | Other commercial materials | C | INDEXED | downstream commercial/message evidence |
 | 80 Visualization | C | INDEXED | existing visual assets; semantic QA later |
