@@ -1,44 +1,53 @@
 # GOVERNING_SITE_CONCEPT — проSTRAнство
 Stage: S03
+Revision: V2 after M NO-GO
 Status: FINAL FOR OWNER GATE M
 
-## Category
-Управленческая технология, связывающая стратегический выбор с операционным исполнением.
+## Positioning
+**Экспертная система управленческого выбора.**
+
+## Core tension
+У руководителя редко нет вариантов. Чаще вариантов слишком много — и несколько из них выглядят разумно.
+Цена ошибки возникает не из-за отсутствия идей, а из-за выбора правдоподобного, но неверного маршрута.
 
 ## Core value
-Проверяемый маршрут от управленческой проблемы к исполнимому контуру: выбор → мост → владельцы → метрики → ритм → проверка в действии.
+**Снизить цену неверного управленческого выбора.**
 
 ## Governing message
-**Стратегический выбор должен доходить до операционного исполнения — через проверенную проблему, владельцев, метрики и управленческий ритм. проSTRAнство собирает и проверяет этот маршрут.**
+**Не больше управленческих решений. Точнее выбор.**
 
-## Hero text logic — semantic only
-First screen must communicate:
-- strategy and execution are one connected management problem;
-- проSTRAнство provides a controlled route between them;
-- no promise is made before diagnosis/evidence;
-- commercial next action is qualification for paid Diagnostics.
-Exact copy is S04.
+Expanded:
+проSTRAнство доказательно сужает пространство возможных решений до рабочего выбора для конкретной управленческой ситуации, связывает его с операционным контуром и проверяет в действии.
 
-## Proof hierarchy
-1. mechanism;
-2. evidence/transition discipline;
-3. product artifacts;
-4. generalized cases;
-5. bounded expert-core depth;
-6. current commercial facts.
+## Governing metaphor / semantic field
+**Пространство выбора → сужение → рабочий маршрут → проверка реальностью.**
 
-## Conversion principle
-Sell understanding of the whole technology; convert into the first justified paid step.
-Primary conversion: qualification → paid Diagnostics.
-Never sell the four products as a compulsory package.
+This is supported by corpus selection logic and “narrowing chaos to a working route”. It is an interpretation for communication, not a claim about the historical origin of the brand name.
+
+## Proof
+1 selection logic;
+2 evidence and rejection logic;
+3 Bridge + execution test;
+4 cases with different routes including Hold/Stop;
+5 bounded expert depth;
+6 products.
+
+## Conversion
+The visitor should move from:
+“Which solution/framework do we need?”
+to:
+“How do we establish which choice is justified for our situation?”
+Then to the first bounded paid step: Diagnostics.
 
 ## Anti-category
-Not strategic session. Not audit/report. Not tool catalog. Not outsourced management. Not training. Not AI product.
+Not another strategy session.
+Not a framework catalog.
+Not an audit report.
+Not outsourced management.
+Not transformation-for-transformation.
+Not AI product.
 
-## Governing constraint for downstream stages
-S04–S12 may express this concept visually and structurally, but may not replace it with:
-- Diagnostics-only positioning;
-- problem/deficit fear framing as the site’s dominant idea;
-- framework-library positioning;
-- generic “business transformation” language;
-- unsupported result promises.
+## Downstream lock if M=GO
+S04–S12 must preserve **selection precision** as the governing idea.
+“Strategy → execution” may explain mechanism but may not replace the positioning.
+Diagnostics may be the commercial entry but may not replace the whole technology definition.
