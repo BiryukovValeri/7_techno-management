@@ -1,5 +1,5 @@
 # S08 — CONTENT QA — проSTRAнство
-Status: PASS — READY FOR OWNER GATE C
+Status: LOCK — OWNER GATE C = GO (2026-09-30)
 Audit scope:
 - CONTENT_MASTER_HOME.md
 - CONTENT_MASTER_INTERNAL_PAGES.md
@@ -84,6 +84,5 @@ Blocking content defects: **0**
 Open nonblocking source condition: **H-001 owner-waived technical hold only**
 H-002: **CLEARED**
 
-## OWNER GATE C
-Candidate decision:
-**GO → lock S08 Source-Locked Content Master and proceed to S09 SEO / GEO / Dynamic Content.**
+## OWNER LOCK
+Gate C approved by owner on 2026-09-30. S08 Source-Locked Content Master is locked. Reopening requires explicit owner decision.
