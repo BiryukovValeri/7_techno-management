@@ -1,132 +1,243 @@
-# CLAUDE DESIGN — VISUAL PILOT / READ FIRST
+# СОПРОВОДИТЕЛЬНОЕ ПИСЬМО — CLAUDE DESIGN
+## Визуальный пилот / Архитектура Переговоров
 
-Status: QR-10 PILOT INPUT
-Scope: TWO visual objects only
-Technology: Архитектура Переговоров
-Public site: nego.7vctr.ru
+**Статус:** QR-10 PILOT INPUT  
+**Сайт:** nego.7vctr.ru  
+**Объём задания:** только два визуальных объекта.
 
-## Your task
-Do NOT design the homepage.
-Do NOT design the full site.
-Do NOT create a new visual system from scratch.
-Do NOT reinterpret the technology.
+В этой сессии будет отдельно приложена выбранная владельцем проекта **Design System**. Используй её как систему визуального исполнения. Это письмо не зависит от выбора конкретной Design System.
 
-Produce only:
-1. a web adaptation of source Technology Visualization 02 «Переговорное поле»;
-2. one Image Slot concept for the block «Семь рабочих форм — от подготовки до разбора».
+Также может быть приложен утверждённый Hero сайта. Hero нужен только для понимания общего контекста и уровня визуального исполнения. **Не используй его как шаблон для остальных изображений и не клонируй его предметную метафору.**
 
-The purpose is to verify semantic fidelity before visual production is scaled.
+---
 
-## Context you may use
-A selected Design System will be supplied separately by the Owner at session start. Apply/adapt it without changing the semantic contracts below.
+# 1. ЗАДАЧА СЕССИИ
 
-The approved Hero may also be supplied only as site-context reference. It is NOT a template for these two objects. Do not clone its compass, pen, dossier, route-map, layered-paper scene or composition merely to create consistency.
+Не проектируй главную страницу.
 
-Public language is Russian. BATNA/ZOPA are permitted only under the project language rules. Do not introduce English UI/microcopy.
+Не проектируй сайт целиком.
 
-# OBJECT A — TECHNOLOGY VISUALIZATION 02
+Не создавай новую технологию, новую структуру продуктов или новую визуальную онтологию.
 
-## Source
-You will receive the actual source image:
-«Архитектура Переговоров — Визуализация 02 — Переговорное поле».
+Нужно сделать только два объекта:
 
-Treat it as semantic source, not as a layout to copy literally.
+1. **web-adaptation исходной визуализации технологии 02 «Переговорное поле»;**
+2. **один Image Slot для блока «Семь рабочих форм — от подготовки до разбора» либо обоснованное решение NO IMAGE.**
 
-## What the visitor must understand
-Переговорное поле шире, чем стол переговоров.
+Это контрольный пилот перед масштабированием визуального производства.
 
-One negotiation decision is formed inside a field that includes:
+---
+
+# 2. ИСХОДНАЯ ВИЗУАЛИЗАЦИЯ 02
+
+Исходник уже хранится в GitHub и является источником семантики для первого объекта.
+
+**Файл:**  
+`Архитектура_Переговоров_Визуализация_02_Переговорное_Поле_V1.png`
+
+**GitHub:**  
+https://github.com/BiryukovValeri/7_techno-management/blob/codex/site-factory/technologies/03_Negotiations/80%20%D0%92%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0_%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D0%B2_%D0%92%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F_02_%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%BD%D0%BE%D0%B5_%D0%9F%D0%BE%D0%BB%D0%B5_V1.png
+
+**Repository path:**  
+`technologies/03_Negotiations/80 Визуализация/Архитектура_Переговоров_Визуализация_02_Переговорное_Поле_V1.png`
+
+**Blob SHA:**  
+`550a73511291e69396e547cf832bc648bb1e348a`
+
+Используй именно этот исходник.
+
+Это не референс «по настроению». Это **SOURCE VISUALIZATION**, смысл которой должен сохраниться в web-adaptation.
+
+Не требуется буквально копировать композицию исходного слайда. Требуется сохранить его технологическую семантику.
+
+---
+
+# 3. ОБЪЕКТ A — «ПЕРЕГОВОРНОЕ ПОЛЕ»
+
+## Что должен понять посетитель
+
+**Переговорное поле шире, чем стол переговоров.**
+
+Решение формируется в едином поле, где одновременно присутствуют:
+
 - внешняя сторона;
-- внутренний контур;
+- внутренний контур компании;
 - интересы;
 - ограничения;
-- власть / право решения;
+- власть / право принятия решения;
 - слепая зона / неизвестное;
 - точка давления / риск решения.
 
-The viewer must also understand:
-- external and internal actors belong to ONE negotiation field;
-- unknown is not fact;
-- confirmed influence and unverified influence are different;
-- decision authority is a distinct factor;
-- risk does not mean personality diagnosis.
+Из визуализации также должно быть понятно:
 
-## Source distinctions that must survive
-- confirmed influence vs unverified influence;
-- bad-decision/risk zone;
-- owner of data or decision.
+- внешний и внутренний контуры относятся к **одному переговорному полю**, а не являются двумя технологиями;
+- неизвестное нельзя изображать как установленный факт;
+- подтверждённое влияние отличается от непроверенного влияния;
+- право принимать решение является самостоятельным фактором;
+- зона риска не является психологической диагностикой человека.
 
-You may redesign the visual encoding, but these distinctions must remain explicit and understandable.
+## Семантика исходника, которую необходимо сохранить
 
-## You may
-- redesign the composition for web;
-- remove presentation chrome;
-- change geometry, spacing, typography and line system according to the supplied Design System;
-- move longer explanations outside the image when a web composition benefits from HTML;
-- create a mobile semantic reconstruction rather than shrinking desktop artwork.
+В исходной визуализации используются различия:
 
-## You may NOT
-- turn this into an org chart;
-- split it into two technologies or products;
-- invent motives/personality profiles;
-- turn «точка давления» into manipulation advice;
-- add metrics, scoring, AI, software/dashboard semantics;
-- delete source relationships merely to simplify the design;
-- replace the source meaning with a new conceptual diagram.
+- сплошная связь — подтверждённое влияние;
+- пунктирная связь — непроверенное влияние;
+- красная зона — риск плохого решения;
+- бирюзовый маркер — владелец данных или решения.
 
-# OBJECT B — IMAGE SLOT / FORMS 17–23
+Ты можешь изменить способ визуального кодирования этих различий в соответствии с Design System, но сами различия должны остаться явными и понятными.
 
-This is NOT a Technology Visualization and is NOT evidence.
+## Разрешено
 
-## What the visitor must understand better because of the image
-The seven forms are:
-1. material working artifacts rather than abstract concepts;
-2. one connected working set from preparation through post-negotiation review, not seven unrelated products/downloads.
+- полностью переработать композицию под web;
+- убрать презентационную рамку исходного слайда;
+- изменить геометрию, сетку, типографику, линии и плотность;
+- вынести длинные пояснения из изображения в HTML-композицию;
+- сделать отдельную смысловую адаптацию для mobile вместо механического уменьшения desktop;
+- использовать Design System для визуального исполнения.
 
-Forms:
-17 — Чек-лист подготовки.
-18 — Цели, BATNA и ZOPA.
-19 — Профиль участника и карта влияния.
-20 — Сценарии и карта ролей команды.
-21 — Матрица уступок и встречных шагов.
-22 — Карта когнитивных рисков.
-23 — Постпереговорный отчёт, показатели и журнал улучшений.
+## Запрещено
 
-The page HTML, not the image, will carry the authoritative readable names/descriptions.
+- превращать схему в оргструктуру;
+- изображать внешний и внутренний контуры как две разные технологии или два продукта;
+- придумывать мотивы или психотипы участников;
+- превращать «точку давления» в инструкцию по манипуляции;
+- добавлять показатели, баллы, рейтинги или новые метрики;
+- добавлять AI, copilot, agent, SaaS или dashboard-семантику;
+- удалять исходные смысловые связи только ради упрощения композиции;
+- заменять исходную технологическую схему собственной новой концепцией.
 
-## You may
-- create an abstract material/work-artifact image;
-- show continuity or progression across a connected set;
-- use document/form cues without readable pseudo-content;
-- decide that the correct result is NO IMAGE if the visual adds no comprehension.
+---
 
-## You may NOT
-- invent readable fields, scores, metrics or form content;
-- expose internal XLSX detail;
-- show seven products;
-- create a download store;
-- create SaaS/dashboard/AI UI;
-- clone the approved Hero scene;
-- fill forms with generated pseudo-text;
-- claim the forms prove effectiveness.
+# 4. ОБЪЕКТ B — IMAGE SLOT «СЕМЬ РАБОЧИХ ФОРМ»
 
-# Required output for this pilot
-For Object A:
-- desktop web visual proposal;
-- mobile semantic adaptation proposal;
-- short note listing how each mandatory source distinction is represented.
+Это **не Technology Visualization** и не доказательство эффективности технологии.
 
-For Object B:
-- one proposed Image Slot OR an explicit NO IMAGE decision;
-- short note explaining exactly what comprehension it adds.
+Задача изображения — помочь посетителю быстрее понять две вещи:
 
-Do not create other site sections/assets.
+1. Forms 17–23 — реальные рабочие инструменты, а не семь абстрактных понятий;
+2. они образуют **единый связанный рабочий комплект** от подготовки переговорной ситуации до фиксации результата и следующего цикла.
 
-# Acceptance
-Your self-check is useful but is NOT the acceptance decision.
-The project will independently compare Object A against the source-preservation contract and Object B against its comprehension test.
+Состав:
 
-Object A fails if a mandatory node/relation is lost or new technology meaning is introduced.
-Object B fails if it is merely decorative, implies unsupported detail, or looks like a product system.
+- **17** — Чек-лист подготовки;
+- **18** — Цели, BATNA и ZOPA;
+- **19** — Профиль участника и карта влияния;
+- **20** — Сценарии и карта ролей команды;
+- **21** — Матрица уступок и встречных шагов;
+- **22** — Карта когнитивных рисков;
+- **23** — Постпереговорный отчёт, показатели и журнал улучшений.
 
-End after these two objects.
+Полные названия и пояснения будут находиться в HTML сайта. Изображение не должно пытаться заменить этот текст.
+
+## Разрешено
+
+- показать материальность рабочих документов;
+- показать их связанность;
+- использовать абстрактные формы документов и рабочих артефактов без читаемого выдуманного содержимого;
+- показать движение от подготовки к постпереговорному разбору;
+- использовать номера 17–23, только если они воспроизводятся надёжно;
+- принять решение **NO IMAGE**, если изображение не добавляет понимания.
+
+## Запрещено
+
+- придумывать поля форм;
+- придумывать показатели, оценки или числовые результаты;
+- показывать внутреннее содержание XLSX, которого нет в публичном задании;
+- изображать семь форм как семь продуктов;
+- превращать блок в магазин файлов или каталог скачиваний;
+- делать SaaS/dashboard-интерфейс;
+- добавлять AI/copilot/agent;
+- создавать псевдотекст внутри документов;
+- использовать изображение как доказательство эффективности;
+- клонировать Hero.
+
+---
+
+# 5. HERO НЕ ЯВЛЯЕТСЯ ШАБЛОНОМ ДЛЯ IMAGE SLOT
+
+Утверждённый Hero — самостоятельный визуальный объект первого экрана.
+
+Его можно учитывать по общему уровню качества и совместимости с Design System.
+
+Но нельзя автоматически переносить в другие изображения:
+
+- композицию Hero;
+- компас;
+- ручку;
+- dossier;
+- маршрутную карту;
+- многослойные бумажные документы;
+- предметную сцену Hero.
+
+Сайт должен быть визуально целостным, но **не состоять из повторений одной картинки в разных вариантах**.
+
+---
+
+# 6. ЯЗЫК
+
+Публичный язык сайта — русский.
+
+Не вводи английские заголовки, подписи, кнопки или декоративные слова.
+
+BATNA и ZOPA допустимы как термины технологии, но при первом содержательном использовании должны быть понятны по-русски:
+
+- **BATNA — лучшая альтернатива соглашению**;
+- **ZOPA — зона возможного соглашения**.
+
+Внутренние технические названия задания не являются разрешением переносить английские слова в публичный интерфейс.
+
+---
+
+# 7. ЧТО НУЖНО ВЕРНУТЬ
+
+## Для объекта A
+
+Верни:
+
+- desktop-вариант web-adaptation «Переговорного поля»;
+- mobile-вариант или ясное описание его смысловой перекомпоновки;
+- короткое пояснение, где в решении сохранены:
+  - внешний контур;
+  - внутренний контур;
+  - интересы;
+  - ограничения;
+  - власть;
+  - слепая зона;
+  - точка давления;
+  - подтверждённое влияние;
+  - непроверенное влияние;
+  - владелец данных/решения.
+
+## Для объекта B
+
+Верни:
+
+- один вариант Image Slot для Forms 17–23;
+
+**или**
+
+- решение **NO IMAGE** с коротким объяснением, почему изображение не улучшает понимание блока.
+
+Если предлагается изображение, отдельно укажи, каким образом оно показывает:
+
+1. материальность рабочих инструментов;
+2. их принадлежность к одному связанному комплекту.
+
+---
+
+# 8. КРИТЕРИЙ ПИЛОТА
+
+Не создавай никаких дополнительных страниц, секций или изображений.
+
+После получения результата будет проведена отдельная независимая проверка:
+
+**SOURCE → CONTRACT → DESIGN → VERIFY**
+
+Твоя собственная проверка результата полезна, но не является финальным PASS.
+
+Для объекта A потеря обязательной сущности или связи означает отказ от адаптации.
+
+Для объекта B декоративное изображение, которое не улучшает понимание, означает **NO IMAGE / REDESIGN**.
+
+После выполнения двух объектов **остановись**.
