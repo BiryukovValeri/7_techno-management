@@ -1,6 +1,6 @@
 # PROJECT_STATE
 
-Status: S10 PASS — S11 OPEN
+Status: QUALITY RECOVERY ACTIVE — S11 BLOCKED
 Date: 2026-09-28
 Technology folder: technologies/03_Negotiations
 Production domain: nego.7vctr.ru
@@ -49,3 +49,7 @@ S06 produced: ELEMENTOR_ARCHITECTURE, ELEMENTOR_SECTION_CANDIDATES, ELEMENTOR_SE
 S07 produced 04_ARCHITECTURE/BLOCK_SPECIFICATION.md. All A-LOCK pages/blocks mapped to S06 implementation families, source/evidence boundaries, CTA/visual/responsive rules. No owner gate. S08 Source-Locked Content Master opened.
 
 S08 produced 05_CONTENT/CONTENT_MASTER.md and ENTITY_COMPLETENESS_MATRIX.md. 2026-09-30 source-recovery repair closed NEG-H02 and NEG-H04: Forms 17–23, evidence matrix, form navigator, release register and A3-00/A3-01…12 are READ. Case framing corrected to model/teaching cases, not client success evidence. Remaining downstream holds: contact/form implementation/current data, optional commercial currentness, optional author/legal provenance. Gate C: GO / LOCKED 2026-09-30. S09 SEO / GEO / Dynamic Content PASS 2026-09-30. S10 Visual Asset Architecture PASS 2026-10-01. NEG-H05 CLOSED. S11 Claude Design Package opened.
+
+
+## Quality Recovery — 2026-10-01
+Owner ordered targeted pre-S11 recovery after forensic failure analysis from a sibling technology site. S11 is blocked until recovery controls are complete. Mandatory additive public architecture: About Project, About Author, Contact, Articles/SEO-GEO knowledge layer. No missing author/contact/article facts may be invented.
