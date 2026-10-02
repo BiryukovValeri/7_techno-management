@@ -184,3 +184,15 @@ Required design consequence:
 - The 10-step cycle must show movement and return loop, not ten decorative equal cards.
 - Transitions between major acts must preserve the causal chain.
 - Do not shorten the recovered methodology back into one-line marketing definitions for visual convenience.
+
+
+## CONTENT MASTER V2 — PRODUCTS + TOOLS — REQUIRED
+For /products/, all four product detail pages, and /tools/, 04G_CONTENT_MASTER_V2_PRODUCTS_TOOLS.md is authoritative where it supersedes the earlier thin copy.
+
+Required:
+- Do not render four product pages as cloned marketing templates with changed titles.
+- Preserve each product's distinct management job and source-backed route.
+- Do not expose legacy internal routing as a mandatory public funnel. In particular, old “next product”, “Diagnostics as mandatory entry”, and fixed 30/60/90 wording do not override the current four-peer-product lock.
+- Do not publish old prices/durations without separate current approval.
+- Tools page must explain why each Form 17–23 exists, what breaks without it, what it captures, where it enters the cycle, what output it leaves, and its boundary.
+- Exactly Forms 17–23; no Form 24, separate calculator/dashboard/AI workplace/prompt pack/industry form family.
