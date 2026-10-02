@@ -1,12 +1,12 @@
 # SEO_GEO_DYNAMIC_CONTRACT — Архитектура Переговоров
-Status: S09 PASS
+Status: S09 RECOVERY / OWNER ARTICLES ADDITION — HANDOFF CURRENT
 Date: 2026-09-30
 Inputs: T1 / M / H / A / C LOCK
 Domain: nego.7vctr.ru
 Stack: WordPress + Blocksy + Elementor Free
 
 ## 1. Principle
-SEO/GEO exposes the approved technology and public entities; it does not create a blog, new product, capability, proof claim or protected know-how. C-LOCK public copy is the semantic ceiling.
+SEO/GEO exposes approved technology/public entities and includes the Owner-required source-governed Articles knowledge layer. It does not create filler content, new products, capabilities, proof claims or protected know-how. C-LOCK plus Owner-approved additions are the semantic ceiling.
 
 ## 2. Indexation contract
 INDEX:
@@ -20,7 +20,11 @@ INDEX:
 - /cases/
 - /cases/{approved-case-slug}/ — 12 model/teaching case pages only
 - /tools/
+- /articles/
+- /articles/{approved-article-slug}/ — only when an actual source/editorially approved body exists
 - /faq/
+- /about/
+- /author/
 - /contact/
 
 NOINDEX unless later intentionally published:
@@ -31,7 +35,7 @@ NOINDEX unless later intentionally published:
 - internal/private legal drafts
 - staging/test URLs
 
-No generic SEO blog/content hub is introduced at S09. A-LOCK explicitly did not establish one and the current corpus does not require it.
+A source-governed **Статьи** layer is mandatory by Owner recovery decision. It is an expert knowledge layer, not an automatic SEO blog. Empty/generated article bodies are forbidden.
 
 ## 3. Canonical URLs
 Self-referencing canonical on every indexable canonical page.
@@ -65,7 +69,7 @@ Case detail title pattern:
 Description pattern must be written from the approved CASE_CONTENT_MASTER record and explicitly preserve model/teaching framing; never invent result metrics.
 
 ## 5. Internal graph
-Global navigation: Technology → Products → Cases → Tools → FAQ; primary CTA → Contact.
+Global navigation: Технология → Продукты → Кейсы → Инструменты → Статьи; primary CTA → Contact. Secondary/trust navigation: О проекте → Об авторе → Частые вопросы → Контакты.
 
 Required contextual links:
 - Home mechanism → /technology/
@@ -78,6 +82,9 @@ Required contextual links:
 - Case detail → technology objects used; related product only when CASE_CONTENT_MASTER/source supports it; → /contact/
 - Tools → /technology/ + relevant product pages according to recovered Form Navigator
 - FAQ answers → relevant technology/product/tools page where natural
+- Articles link contextually to Technology/Tools/Cases/Products only when the subject supports the relation.
+- About Project links to Technology and appropriate knowledge pages.
+- Author links to Articles/materials and Contact without inventing credentials.
 - Contact does not become an SEO hub.
 
 No orphan indexable page.
@@ -100,12 +107,13 @@ Answer blocks may be reused semantically but must not create new factual claims.
 
 ## 7. Structured-data eligibility
 Allowed when technically supported and matching visible content:
-- Organization or Person only after current legal/author identity is verified. HOLD now.
+- Person schema may be used for Валерий Бирюков only when it mirrors the Owner-approved public author facts. Do not invent legal/company identity.
+- Organization schema remains conditional on verified legal/public organization identity.
 - WebSite on home.
 - WebPage on normal pages.
 - BreadcrumbList on secondary pages.
 - FAQPage on /faq/ only if the visible Q&A is present and current platform/search-engine eligibility warrants implementation; schema must mirror visible answers exactly.
-- Article is NOT the default for product/tool/case pages.
+- Article schema is eligible only for actual published article pages with visible article body and truthful metadata. It is NOT used for product/tool/case pages.
 - Product schema is NOT used for the four service formats merely because they are called products internally.
 - Review/AggregateRating/Testimonial schema forbidden without real verified evidence.
 - HowTo schema forbidden for the 10-step technology cycle: it would overstate public procedural disclosure and is not needed.
@@ -120,6 +128,8 @@ Implementation baseline:
 - 12 case pages = static pages using one repeatable case-detail section pattern;
 - FAQ = static visible content/accordion if Free-stack feasible;
 - tools = static records;
+- articles index/detail = WordPress native posts or static pages within the locked stack; no new plugin required;
+- about/author/contact = static pages;
 - navigation/footer = Blocksy.
 
 If a future implementation chooses CPT/fields, it is an implementation optimization only and must preserve URLs, C-LOCK content, schema rules and four-product ontology. It cannot become a semantic dependency.
@@ -180,6 +190,7 @@ PASS:
 - dynamic behavior implementable on Blocksy + Elementor Free;
 - no protected know-how leakage;
 - no new product/entity/capability;
-- no generic SEO blog invented.
+- Owner-required Articles layer included without filler/auto-generated bodies;
+- About / Author / Contact included with current Owner-approved facts;
 
 No Owner gate at S09. Proceed to S10.
