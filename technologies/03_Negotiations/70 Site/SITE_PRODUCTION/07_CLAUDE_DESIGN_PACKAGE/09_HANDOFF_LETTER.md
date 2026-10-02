@@ -172,3 +172,15 @@ Do not copy obsolete conflicts from older site/commercial documents: no mandator
 ## TECHNOLOGY EXPLANATION MASTER — NEW REQUIRED NARRATIVE AUTHORITY
 Read 04E_TECHNOLOGY_EXPLANATION_MASTER.md before revising Home or Technology.
 The current site must not remain a stack of independent marketing sections. Home and Technology must express the continuous causal explanation defined in this master. Do not mechanically create one card/section per numbered point; design one coherent reading journey. If sections can be arbitrarily reordered without breaking the explanation, the design has failed the narrative requirement.
+
+
+## CONTENT MASTER V2 — HOME + TECHNOLOGY — REQUIRED
+For Home and /technology/, 04F_CONTENT_MASTER_V2_HOME_TECHNOLOGY.md is now the authoritative public content/sequence layer where it supersedes the older fragmented sections of 04_CONTENT_MASTER.md.
+
+Required design consequence:
+- Home is a compressed continuous explanation, not a directory of equal cards.
+- /technology/ is the full methodological explanation.
+- BATNA and ZOPA must each receive a real method explanation: procedure, management function, why selected as a key technology element, how they differ, and why both are required.
+- The 10-step cycle must show movement and return loop, not ten decorative equal cards.
+- Transitions between major acts must preserve the causal chain.
+- Do not shorten the recovered methodology back into one-line marketing definitions for visual convenience.
