@@ -167,3 +167,8 @@ The previous SOURCE_UNREADABLE status for A3-01…A3-12 is CLOSED. Full source-d
 The current site was built from an under-complete content layer. Therefore the next task is not merely to add missing pages. Re-open every existing page and perform a source-to-page completeness pass. Expand thin pages with the recovered source-backed content while preserving later Owner locks.
 
 Do not copy obsolete conflicts from older site/commercial documents: no mandatory product funnel, no fifth product, no automatic publication of old prices/durations, no conversion of model cases into real client cases.
+
+
+## TECHNOLOGY EXPLANATION MASTER — NEW REQUIRED NARRATIVE AUTHORITY
+Read 04E_TECHNOLOGY_EXPLANATION_MASTER.md before revising Home or Technology.
+The current site must not remain a stack of independent marketing sections. Home and Technology must express the continuous causal explanation defined in this master. Do not mechanically create one card/section per numbered point; design one coherent reading journey. If sections can be arbitrarily reordered without breaking the explanation, the design has failed the narrative requirement.
