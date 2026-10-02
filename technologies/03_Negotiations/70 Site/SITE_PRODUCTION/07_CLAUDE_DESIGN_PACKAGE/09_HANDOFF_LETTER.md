@@ -10,10 +10,24 @@ Technology Truth, Message Strategy, публичная архитектура, �
 1. Папка 07_CLAUDE_DESIGN_PACKAGE, файлы 00–09.
 2. FINAL Hero image — отдельный Owner-approved файл. Считать его LOCK: использовать, не перерисовывать.
 3. Выбранная Design System — отдельное приложение. Это основная визуальная система сайта.
-4. Исходные Technology Visualizations находятся в репозитории:
-   technologies/03_Negotiations/80 Визуализация/
-5. Полный исходный корпус 12 кейсов:
-   technologies/03_Negotiations/50 Кейсы/
+4. Исходные Technology Visualizations хранятся в GitHub. Используй именно эти source assets и не подменяй их собственной реконструкцией:
+
+01 — Ядро Архитектуры Переговоров:
+https://github.com/BiryukovValeri/7_techno-management/blob/codex/site-factory/technologies/03_Negotiations/80%20%D0%92%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0_%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D0%B2_%D0%92%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F_01_%D0%AF%D0%B4%D1%80%D0%BE_%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D1%8B_%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D0%B2_V1.png
+
+02 — Переговорное поле:
+https://github.com/BiryukovValeri/7_techno-management/blob/codex/site-factory/technologies/03_Negotiations/80%20%D0%92%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0_%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D0%B2_%D0%92%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F_02_%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%BD%D0%BE%D0%B5_%D0%9F%D0%BE%D0%BB%D0%B5_V1.png
+
+05 — BATNA / ZOPA:
+https://github.com/BiryukovValeri/7_techno-management/blob/codex/site-factory/technologies/03_Negotiations/80%20%D0%92%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0_%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D0%B2_%D0%92%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F_05_BATNA_ZOPA_V1.png
+
+12 — Антипозиционирование, OPTIONAL:
+https://github.com/BiryukovValeri/7_techno-management/blob/codex/site-factory/technologies/03_Negotiations/80%20%D0%92%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0_%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D0%B2_%D0%92%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F_12_%D0%90%D0%BD%D1%82%D0%B8%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_V1.png
+
+5. Полный исходный корпус 12 кейсов хранится в GitHub:
+technologies/03_Negotiations/50 Кейсы/
+
+Точный manifest 12 source DOCX с path, blob SHA и GitHub link находится в 04A_CASE_SOURCE_MANIFEST.md. Это обязательный источник для case detail pages; сокращённый CASE_CONTENT_MASTER не заменяет полное тело кейса.
 
 Если приложение физически не передано, не заменяй его собственной генерацией. Проектируй корректное TBD/no-image состояние и отметь dependency.
 
