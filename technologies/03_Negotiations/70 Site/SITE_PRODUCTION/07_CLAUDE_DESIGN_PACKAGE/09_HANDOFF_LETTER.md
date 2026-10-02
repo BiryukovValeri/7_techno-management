@@ -196,3 +196,17 @@ Required:
 - Do not publish old prices/durations without separate current approval.
 - Tools page must explain why each Form 17–23 exists, what breaks without it, what it captures, where it enters the cycle, what output it leaves, and its boundary.
 - Exactly Forms 17–23; no Form 24, separate calculator/dashboard/AI workplace/prompt pack/industry form family.
+
+
+## CONTENT MASTER V2 — CASES — REQUIRED
+For /cases/ and all 12 case detail pages, 04H_CONTENT_MASTER_V2_CASES.md is authoritative together with the corresponding full source file in 04B_FULL_CASES/.
+
+Required:
+- Build the case index as a decision map, not testimonial gallery.
+- All 12 cases are model/educational. Never imply real client success or guaranteed effect.
+- A3-01/A3-02 public wording: “условная сеть формата «Магнит»”; no affiliation implication.
+- Every detail page must use its FULL A3 source body, not only the index summary.
+- Preserve the causal narrative: situation → hidden gap → 10-stage walkthrough → management decision → forms trace → relevance → boundaries.
+- In every case BATNA and ZOPA must show the actual modeled alternative/agreement space from source, not generic definitions.
+- Do not expose legacy “Diagnostics → Session” routing as mandatory funnel.
+- No decorative success imagery, testimonials, logos or before/after victory claims.
