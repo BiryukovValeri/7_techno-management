@@ -151,3 +151,19 @@ Contact.
 ## 11. Главный критерий
 Посетитель после сайта должен понимать технологию лучше, чем до сайта.
 Физическое наличие текста, карточки или картинки без передачи знания не считается выполнением задачи.
+
+
+## CRITICAL CORPUS RECOVERY — READ BEFORE ANY FURTHER DESIGN
+The Owner supplied the complete authoritative Google Drive documentation and it has now been read and materialized into this GitHub package.
+
+You MUST additionally read:
+- 00A_CORPUS_RECOVERY_DIRECTIVE.md
+- every file in 04B_FULL_CASES/
+- every file in 04C_RECOVERED_CORPUS/
+- every file in 04D_PRODUCT_CORPUS/
+
+The previous SOURCE_UNREADABLE status for A3-01…A3-12 is CLOSED. Full source-derived Russian text for all 12 cases is now physically present in the package. Do not leave case bodies empty.
+
+The current site was built from an under-complete content layer. Therefore the next task is not merely to add missing pages. Re-open every existing page and perform a source-to-page completeness pass. Expand thin pages with the recovered source-backed content while preserving later Owner locks.
+
+Do not copy obsolete conflicts from older site/commercial documents: no mandatory product funnel, no fifth product, no automatic publication of old prices/durations, no conversion of model cases into real client cases.
