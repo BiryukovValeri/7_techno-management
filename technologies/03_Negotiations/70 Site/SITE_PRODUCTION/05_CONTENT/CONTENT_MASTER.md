@@ -1,5 +1,5 @@
 # CONTENT_MASTER — Архитектура Переговоров
-Status: FINAL FOR OWNER GATE C — PASS WITH EXPLICIT NONBLOCKING HOLDS
+Status: C-LOCK CONTENT + OWNER ADDITIONS / HANDOFF SYNCHRONIZED 2026-10-02
 Date: 2026-09-30
 Inputs: T1 / M / H / A LOCK + S07
 
@@ -10,7 +10,7 @@ This master contains only public copy supported by current READ/LOCK material. C
 
 ## Header
 Архитектура Переговоров
-Навигация: Технология · Продукты · Кейсы · Инструменты · FAQ
+Навигация: Технология · Продукты · Кейсы · Инструменты · Статьи
 CTA: **Обсудить ситуацию**
 
 ## Core CTA
@@ -259,21 +259,40 @@ Q: С чего начать?
 A: С конкретной ситуации и решения, которое предстоит принять. Формат работы определяется по задаче: Диагностика, Сессия, Спринт или Сопровождение.
 
 # 9. CONTACT
-Title: **Обсудить переговорную ситуацию**
-Text: Опишите контекст, стороны и решение, которое предстоит принять. Для первичного разбора достаточно фактов, которые уже известны; неизвестное не нужно додумывать.
-Form/contact fields and exact channel: **HOLD until current implementation/contact data is confirmed.**
-No phone/email/messenger is invented.
+Canonical public contact copy: see OWNER_APPROVED_AUTHOR_CONTACT_CONTENT.md.
+Title: **Обсудим управленческую задачу**
+Person: **Валерий Бирюков** — автор C-Level Insight и системы управленческих технологий 7VCTR.
+Phone: +7 903 517-57-98
+Email: biryukovvaleri@yandex.ru
+Telegram: @BiryukovValeri
+City: Москва
+Format: очно и онлайн
+Primary CTA: **Написать в Telegram**
+Secondary CTA: **Отправить письмо**
+No contact form is required for production completeness.
 
 # 10. PROVENANCE / AUTHOR
-Technology provenance may state that the site presents «Архитектуру Переговоров» from the canonical technology corpus.
-Author/person biography, credentials, portrait, company legal identity and book-derived claims: **HOLD unless current public-safe source is explicitly verified.**
+Canonical public author copy: see OWNER_APPROVED_AUTHOR_CONTACT_CONTENT.md.
+Author identity and biography are OWNER-APPROVED for publication. Do not embellish.
+Author portrait remains optional and may be used only if Owner supplies/approves a real portrait.
+
+# 10A. ABOUT PROJECT / TECHNOLOGY INTRO
+Use T1/M/C plus the Owner-approved technology intro in OWNER_APPROVED_AUTHOR_CONTACT_CONTENT.md.
+Do not invent company history, adoption counts, awards or client counts.
+
+# 10B. ARTICLES
+/articles/ and article-detail template are REQUIRED architecture.
+Only source-derived/editorially approved article bodies may be published. Do not generate filler articles.
+Allowed topic lanes are defined by PUBLIC_KNOWLEDGE_ARCHITECTURE.md and the updated SEO_GEO_DYNAMIC_CONTRACT.
 
 # 11. COMMERCIAL
 Prices, durations, packages and Board-level variants: **HOLD for currentness/publication decision**. They are not required to explain the four core products and are not used as proof.
 
-# 12. REQUIRED HOLDS
-H-C01 Case bodies: required for public case-detail content; impact: case details/results withheld; latest resolution: before publishing case-detail pages / S11 if included.
-H-C02 Detailed XLSX forms/evidence registers: impact: no cell-level/tool-detail/evidence-row claims; public name/role records remain complete; latest resolution: before any detailed instrument/evidence claim.
-H-C03 Current contact/form route: impact: direct conversion implementation not final; latest resolution: before S11 handoff.
-H-C04 Current commercial data: impact: no prices/durations/packages; nonblocking for core site; latest resolution: before publication if commercial numbers are desired.
-H-C05 Author/legal provenance: impact: no author/credentials/legal identity record; latest resolution: before S11 only if site requires such public record.
+# 12. CURRENT HANDOFF STATES
+- Case corpus: all 12 source DOCX files are present in GitHub and are model/teaching cases. CASE_CONTENT_MASTER contains the public-safe summary layer. Full case-detail bodies must be taken from the source case corpus / final full-body package; summary may not substitute the body.
+- Forms 17–23: recovered XLSX source status is READ; public site uses approved names/roles and does not expose protected cell-level mechanics.
+- Contact route: RESOLVED by Owner-approved Telegram + email.
+- Author public content: RESOLVED by Owner-approved copy.
+- Commercial prices/durations/packages: OMIT unless separately approved/current.
+- Article bodies: publish only when actual source/editorial body exists; architecture/template still required.
+- Hero binary: use only the exact Owner-supplied FINAL Hero attachment; do not infer a binary from HERO_LOCK metadata.
