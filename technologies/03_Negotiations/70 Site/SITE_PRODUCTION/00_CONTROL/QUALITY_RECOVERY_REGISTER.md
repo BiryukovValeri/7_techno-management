@@ -1,5 +1,5 @@
 # QUALITY_RECOVERY_REGISTER — pre-S11
-Status: ACTIVE / S11 BLOCKED
+Status: ACTIVE / HANDOFF PACKAGE BUILT / FINAL GATE NOT YET OPEN
 Date: 2026-10-01
 
 ## Purpose
@@ -7,18 +7,18 @@ Prevent semantic/content/visual degradation between approved corpus and Claude D
 
 | ID | Defect | Current evidence | Risk | Required repair |
 |---|---|---|---|---|
-| QR-D01 | Generic Elementor architecture | S06 mostly grid/split/cards/container feasibility | Claude invents composition | Rebuild S06 as design-intent + semantic composition + feasibility envelope |
-| QR-D02 | Block spec lacks forbidden simplifications | S07 maps jobs but not enough composition invariants | mechanism becomes generic cards | Rebuild S07 after S06 |
-| QR-D03 | No end-to-end content coverage | Traceability stops upstream and is stale | content loss downstream | CONTENT_COVERAGE_MATRIX source→content→design→HTML |
+| QR-D01 | Generic Elementor architecture | CLOSED by DESIGN_INTENT_ARCHITECTURE | — | CLOSED 2026-10-01 |
+| QR-D02 | Block spec lacks forbidden simplifications | CLOSED by knowledge-transfer Block Specification + package 03 | — | CLOSED 2026-10-02 |
+| QR-D03 | No end-to-end content coverage | CLOSED by CONTENT_COVERAGE_MATRIX | — | CLOSED 2026-10-01 |
 | QR-D04 | Case compression | CASE_CONTENT_MASTER has summaries, not full public bodies | source evidence lost | restore 12 public-safe full case bodies + summary layer |
-| QR-D05 | Hero metaphor can leak into image slots | S10 contextual motifs overlap dossier/map language | cloned visual metaphor | separate Hero / Image Slot / Semantic Visualization contracts |
+| QR-D05 | Hero metaphor can leak into image slots | CLOSED by visual-class separation and package 05 | — | CLOSED 2026-10-02 |
 | QR-D06 | Web adaptations lack deterministic semantic diff | S10 says preserve/compare but no node-relation checklist | visual meaning drift | preservation contracts for 01/02/05 |
-| QR-D07 | Claude design freedom not bounded | “visual style may be refined by Claude” | reinterpretation of locks | LOCKED / CONSTRAINED / DESIGNABLE authority |
-| QR-D08 | No executable Russian-first gate | internal English terminology may leak public | mixed-language site | public lexicon + final HTML audit, 0 unauthorized terms |
-| QR-D09 | Missing public About Project / About Author records | no source-backed author/about file found in current corpus | incomplete trust/provenance layer | architecture slots required; content HOLD until owner/source data |
-| QR-D10 | Articles absent from S09 | S09 explicitly rejected hub | weak SEO/GEO knowledge layer | add source-governed Articles hub + article template; no invented article corpus |
-| QR-D11 | Contact exists but implementation/current data HOLD | /contact/ architecture exists; current route not verified | dead conversion | preserve Contact page; resolve route/privacy before handoff |
-| QR-D12 | Self-audit could be mistaken for acceptance | no independent build verification contract yet | false PASS | independent SOURCE→CONTRACT→BUILD→VERIFY audit |
+| QR-D07 | Claude design freedom not bounded | CLOSED by authority contract + Design Intent + package 07 | — | CLOSED 2026-10-02 |
+| QR-D08 | No executable Russian-first gate | CLOSED upstream by PUBLIC_LANGUAGE_GATE; final rendered audit still mandatory | — | CONTROL ACTIVE |
+| QR-D09 | Missing public About Project / About Author records | CLOSED by Owner-approved author/contact/project content | — | CLOSED 2026-10-02 |
+| QR-D10 | Articles absent from S09 | CLOSED by updated SEO_GEO_DYNAMIC_CONTRACT | — | CLOSED 2026-10-02 |
+| QR-D11 | Contact route | CLOSED: Owner-approved Telegram/email route; no form required | — | CLOSED 2026-10-02 |
+| QR-D12 | Self-audit could be mistaken for acceptance | Acceptance criteria explicitly deny self-PASS; independent final audit required | false PASS | CONTROL ACTIVE |
 | QR-D13 | Hero binary not repository-attached | H-LOCK metadata exists; binary path not normalized | wrong Hero attachment | identify/attach exact approved binary before S11 |
 | QR-D14 | Output path drift | strategy/hero folders differ from V4 standard | stale/wrong package inputs | normalize package inputs or explicit mapping before S11 |
 
@@ -32,4 +32,4 @@ Mandatory public architecture now includes:
 Important: no biography, credentials, contacts, article claims or article inventory may be invented. Missing source data remains explicit HOLD while architecture is prepared.
 
 ## Stop rule
-No Claude Design package and no Claude Design generation until QR-01…QR-10 recovery controls are complete and blocking HOLDs for actual handoff assets/current contact identity are resolved.
+Claude Design package now exists. Do not issue final Owner Gate F until: (1) exact FINAL Hero binary is attached/verified; (2) full 12 case bodies are available to Claude from source or curated full-body package; (3) semantic preservation/pilot visual review is completed; (4) independent final handoff audit passes.
