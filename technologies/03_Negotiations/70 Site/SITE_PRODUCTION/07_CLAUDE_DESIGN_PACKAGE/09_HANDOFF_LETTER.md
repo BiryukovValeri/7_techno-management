@@ -210,3 +210,7 @@ Required:
 - In every case BATNA and ZOPA must show the actual modeled alternative/agreement space from source, not generic definitions.
 - Do not expose legacy “Diagnostics → Session” routing as mandatory funnel.
 - No decorative success imagery, testimonials, logos or before/after victory claims.
+
+
+## Current visual authority
+Before page revision, read 05A_VISUAL_ASSET_ARCHITECTURE_V2.md. It is the current site-use authority for source visualizations and overrides earlier visual selection where different.
